@@ -144,7 +144,7 @@ class BattlePlayer:
                 .set_string(K.CHARACTER_PLAYER_ID, self.player_id)
                 .set_string(K.CHARACTER_USERNAME, self.user_name)
                 .set_string(K.CHARACTER_NAME, self.name)
-                .set_integer(K.BATTLE_CURRENT_PET_INDEX, self.current.index if self.current else -1)
+                .set_integer(K.BATTLE_CURRENT_PET_INDEX, -1)
                 .set_esobject_array(K.BATTLE_PETS, [pet.esobject() for pet in self.pets]))
 
 
@@ -233,7 +233,7 @@ class Battle:
                          .set_string(K.CHARACTER_PLAYER_ID, side.player_id)
                          .set_string(K.CHARACTER_USERNAME, side.user_name)
                          .set_string(K.CHARACTER_NAME, side.name)
-                         .set_integer(K.BATTLE_CURRENT_PET_INDEX, 0)
+                         .set_integer(K.BATTLE_CURRENT_PET_INDEX, -1)
                          .set_esobject_array(K.BATTLE_PETS, [enxuto]))
         log.info("ENTER_BATTLE enxuto (CQ_BATTLE_MIN): %d lados, 1 curio cada", len(sides))
         return (EsObject().set_integer(K.ROOM_ID, self.room_id)
@@ -269,7 +269,10 @@ class Battle:
 
     # ---------------------------------------------------------------- turns
     def start(self):
-        """First turn: the client already knows the line-ups from the enter payload."""
+        """First turn: bring out starting curios, then begin first turn."""
+        for side in self.players:
+            if side.current:
+                self._message(SELECT_PET, BATTLE_PLAYER_INDEX=side.index, BATTLE_CURRENT_PET_INDEX=side.current.index)
         self._begin_turn(self.current)
 
     def _begin_turn(self, side):

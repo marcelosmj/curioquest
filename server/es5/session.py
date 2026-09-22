@@ -26,7 +26,7 @@ def unflatten(flattened):
 
 
 class Es5Server:
-    def __init__(self, game, spec_path, host="0.0.0.0", port=9899, compress_threshold=32768):
+    def __init__(self, game, spec_path, host="0.0.0.0", port=9899, compress_threshold=None):
         self.game = game
         self.thrift = ThriftCodec(spec_path)
         self.host = host
@@ -102,7 +102,16 @@ class Es5Session:
     def join_room(self, zone_id, zone_name, room_id, room_name):
         """Put the client in a room: BattleScreen looks the room up by zone and room id."""
         log.info("[%d] entrando na sala %d da zona %d (%s)", self.id, room_id, zone_id, room_name)
-        self.send("JoinZoneEvent", zoneId=zone_id, zoneName=zone_name, rooms=[])
+        room_entry = {
+            "roomId": room_id,
+            "zoneId": zone_id,
+            "roomName": room_name,
+            "userCount": 1,
+            "roomDescription": "",
+            "capacity": 2,
+            "hasPassword": False,
+        }
+        self.send("JoinZoneEvent", zoneId=zone_id, zoneName=zone_name, rooms=[room_entry])
         self.send("JoinRoomEvent", zoneId=zone_id, roomId=room_id, roomName=room_name,
                   roomDescription="", hasPassword=False, hidden=False, capacity=2,
                   users=[{"userName": self.user_name, "userVariables": [], "sendingVideo": False,

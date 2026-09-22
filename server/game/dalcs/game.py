@@ -1,4 +1,4 @@
-"""GameDALC (DALC_ID 1): entering node battles, plus the small housekeeping calls."""
+import asyncio
 import logging
 import os
 
@@ -10,6 +10,7 @@ from .. import player as players
 
 log = logging.getLogger("gamedalc")
 
+BATTLE_PLUGIN = "BattlePlugin"
 ENTER_BATTLE = 0
 NODE_BATTLE = 1
 NOTIFICATION = 2
@@ -63,10 +64,17 @@ class GameDalc(Dalc):
         reply = (EsObject().set_integer(K.CHARACTER_ENERGY, player["energy"])
                  .set_number(K.CHARACTER_ENERGY_MILLISECONDS, countdowns["energy"]))
         self.send(session, NODE_BATTLE, reply)
-        # medido no aparelho em 2026-09-18: enviar ou nao este par nao muda nada, o cliente ignora
-        # o ENTER_BATTLE dos dois jeitos - o travamento esta noutro lugar
         session.join_room(BATTLE_ZONE_ID, "battles", battle.room_id, f"node-{node.zone_id}-{node.id}")
+        await session.writer.drain()
+        await asyncio.sleep(0.05)
         self.send(session, ENTER_BATTLE, battle.enter_payload())
+        await session.writer.drain()
+        await asyncio.sleep(0.1)
+        battle.start()
+        messages = battle.take_messages()
+        if messages:
+            payload = messages[0] if len(messages) == 1 else EsObject().set_esobject_array(K.MESSAGE_LIST, messages)
+            session.send_plugin_message(BATTLE_PLUGIN, payload, battle.zone_id, battle.room_id)
 
     @action(IDLE)
     async def idle(self, session, request):
