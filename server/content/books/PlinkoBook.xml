@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<plinko id="0" position="0">
+		<items>
+			<item id="1" type="currency" qty="500" perc="80" />
+			<item id="8" type="currency" qty="2" perc="20" />
+		</items>
+	</plinko>
+	<plinko id="1" position="1">
+		<items>
+			<item id="6" type="currency" qty="5" perc="60" />
+			<item id="1" type="currency" qty="1000" perc="40" />
+		</items>
+	</plinko>
+	<plinko id="2" position="2">
+		<items>
+			<item id="1" type="currency" qty="2000" perc="60" />
+			<item id="2" type="currency" qty="5" perc="30" />
+			<item id="1" type="grabbag" qty="1" perc="10" />
+		</items>
+	</plinko>
+	<plinko id="3" position="3">
+		<items>
+			<item id="6" type="currency" qty="5" perc="60" />
+			<item id="1" type="currency" qty="1000" perc="40" />
+		</items>
+	</plinko>
+	<plinko id="4" position="4">
+		<items>
+			<item id="1" type="currency" qty="500" perc="80" />
+			<item id="8" type="currency" qty="2" perc="20" />
+		</items>
+	</plinko>
+</data>

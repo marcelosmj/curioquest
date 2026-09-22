@@ -1,0 +1,219 @@
+<title>Plano de Port — Haxe/OpenFL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+
+<style>
+  :root {
+    --paper:#EFF2F6; --surface:#FFFFFF; --sunk:#E4E9F0; --ink:#16202B; --muted:#5C6A79;
+    --line:#D3DAE3; --accent:#C4600D; --ok:#2C6E4F; --partial:#8C5D12; --gone:#A63A2B;
+    --ok-bg:#E2EFE8; --partial-bg:#F4EAD6; --gone-bg:#F6E2DE;
+    --display:"Bitter",Georgia,serif; --body:"Source Sans 3",system-ui,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+    --col:68ch; --s1:6px; --s2:12px; --s3:20px; --s4:32px; --s5:52px; --s6:84px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:#0F151C; --surface:#171F29; --sunk:#131B24; --ink:#E4EAF1; --muted:#93A1B1;
+      --line:#263140; --accent:#F0872F; --ok:#6FC79A; --partial:#E0AC5A; --gone:#EC8873;
+      --ok-bg:#163024; --partial-bg:#302516; --gone-bg:#331915;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:#0F151C; --surface:#171F29; --sunk:#131B24; --ink:#E4EAF1; --muted:#93A1B1;
+    --line:#263140; --accent:#F0872F; --ok:#6FC79A; --partial:#E0AC5A; --gone:#EC8873;
+    --ok-bg:#163024; --partial-bg:#302516; --gone-bg:#331915;
+  }
+  * { box-sizing:border-box; }
+  body {
+    background:var(--paper); color:var(--ink); font-family:var(--body); font-size:17px;
+    line-height:1.65; margin:0; padding-inline:20px; padding-block:0; -webkit-font-smoothing:antialiased;
+  }
+  .wrap { max-width:980px; margin-inline:auto; }
+  .masthead { display:flex; flex-direction:column; gap:var(--s3); padding-block:var(--s5) var(--s4); border-bottom:3px solid var(--ink); }
+  .kicker { font-family:var(--mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin:0; }
+  h1 { font-family:var(--display); font-weight:700; font-size:clamp(32px,6vw,52px); line-height:1.05; margin:0; text-wrap:balance; letter-spacing:-.015em; }
+  .standfirst { font-size:19px; color:var(--muted); margin:0; max-width:var(--col); }
+  .figures { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); margin-block:var(--s4); }
+  .fig { background:var(--surface); padding:var(--s3); }
+  .fig b { display:block; font-family:var(--mono); font-weight:600; font-size:23px; letter-spacing:-.02em; font-variant-numeric:tabular-nums; }
+  .fig span { display:block; font-size:12.5px; color:var(--muted); text-transform:uppercase; letter-spacing:.07em; margin-top:4px; }
+  section { padding-block:var(--s5); border-bottom:1px solid var(--line); }
+  section:last-of-type { border-bottom:0; }
+  h2 { font-family:var(--display); font-weight:700; font-size:clamp(23px,3.4vw,31px); line-height:1.2; margin:0 0 var(--s3); text-wrap:balance; letter-spacing:-.01em; }
+  h3 { font-family:var(--display); font-weight:500; font-size:19px; margin:var(--s4) 0 var(--s2); text-wrap:balance; }
+  p { margin:0 0 var(--s3); max-width:var(--col); }
+  p:last-child { margin-bottom:0; }
+  ul { margin:0 0 var(--s3); padding-left:1.15em; max-width:var(--col); }
+  li { margin-bottom:var(--s1); }
+  code { font-family:var(--mono); font-size:.875em; background:var(--sunk); padding:1px 5px; border-radius:3px; }
+  strong { font-weight:600; }
+  em { color:var(--muted); }
+  .strip { overflow-x:auto; margin-block:var(--s3) var(--s4); }
+  table { border-collapse:collapse; width:100%; min-width:520px; font-size:15px; }
+  th,td { text-align:left; padding:9px 14px 9px 0; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { font-family:var(--mono); font-size:11.5px; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); border-bottom:1px solid var(--ink); white-space:nowrap; }
+  td.num { font-family:var(--mono); font-variant-numeric:tabular-nums; white-space:nowrap; }
+  td.name { font-family:var(--mono); font-size:13.5px; }
+  .chip { display:inline-block; font-family:var(--mono); font-size:11px; font-weight:600; letter-spacing:.05em; text-transform:uppercase; padding:2px 7px; border-radius:2px; white-space:nowrap; }
+  .c-ok { background:var(--ok-bg); color:var(--ok); }
+  .c-partial { background:var(--partial-bg); color:var(--partial); }
+  .c-gone { background:var(--gone-bg); color:var(--gone); }
+  .note { border-left:3px solid var(--accent); padding:var(--s2) 0 var(--s2) var(--s3); margin-block:var(--s3) var(--s4); max-width:var(--col); }
+  .note p { margin-bottom:var(--s2); }
+  .note p:last-child { margin-bottom:0; }
+  .note-label { font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); display:block; margin-bottom:4px; }
+  .fase { display:grid; grid-template-columns:62px 1fr; gap:var(--s3); margin-bottom:var(--s4); }
+  .fase-id { font-family:var(--mono); font-weight:600; font-size:15px; color:var(--surface); background:var(--ink); height:34px; display:grid; place-items:center; border-radius:2px; }
+  .fase h3 { margin-top:0; }
+  .fase-meta { font-family:var(--mono); font-size:12px; color:var(--muted); margin-bottom:var(--s2); display:flex; flex-wrap:wrap; gap:var(--s3); }
+  footer { padding-block:var(--s4) var(--s6); color:var(--muted); font-size:14.5px; }
+  footer p { max-width:var(--col); }
+  @media (max-width:560px) { body{font-size:16px;} .fase{grid-template-columns:1fr;gap:var(--s2);} .fase-id{width:62px;} }
+</style>
+
+<div class="wrap">
+
+<header class="masthead">
+  <p class="kicker">Curio Quest · plano de ação · setembro de 2026</p>
+  <h1>Plano de Port — Haxe/OpenFL</h1>
+  <p class="standfirst">O que exatamente precisa ser portado, o que desaparece, o que se reaproveita intacto, e em que ordem fazer — medido sobre o código real, não estimado.</p>
+</header>
+
+<div class="figures">
+  <div class="fig"><b>~99.000</b><span>linhas a portar</span></div>
+  <div class="fig"><b>~63.000</b><span>linhas que somem</span></div>
+  <div class="fig"><b>2.701</b><span>funções de interface</span></div>
+  <div class="fig"><b>271</b><span>símbolos reaproveitáveis</span></div>
+  <div class="fig"><b>24,6 MB</b><span>de runtime descartado</span></div>
+</div>
+
+<section>
+  <h2>A descoberta que define o plano</h2>
+  <p>A primeira leitura sugeria um desastre: <strong>267 das 309 classes de interface declaram campos públicos de display</strong> (<code>public var closeBtn:SimpleButton</code>). Isso é vínculo com símbolos autorados no Flash IDE — essas classes não são código autossuficiente, são <em>code-behind</em> de peças visuais. Se o layout tivesse de ser remontado à mão, seriam 267 telas redesenhadas e o port deixaria de fazer sentido.</p>
+  <p>Mas o layout não se perdeu: ele está dentro do próprio <code>Pets.swf</code>. A tabela <code>SymbolClass</code> do arquivo lista <strong>274 símbolos com vínculo de classe, 271 deles <code>ui.*</code></strong> — cada tela é um símbolo ligado à sua classe. E o SWF é convencional: 549 <code>DefineSprite</code>, 624 <code>DefineEditText</code>, 284 <code>DefineShape</code>, <strong>apenas 2 fontes embutidas</strong>, nada de Stage3D ou vídeo.</p>
+  <div class="note">
+    <span class="note-label">Consequência</span>
+    <p>O OpenFL consome SWF como biblioteca de assets, com vínculo de símbolo a classe. Portanto <strong>a interface não precisa ser redesenhada</strong>: os 1.687 campos de símbolo são declaração, e o trabalho real é traduzir as <strong>2.701 funções</strong> de comportamento. É a diferença entre um port caro e uma reescrita inviável.</p>
+  </div>
+</section>
+
+<section>
+  <h2>O que some, o que fica, o que se porta</h2>
+  <div class="strip">
+    <table>
+      <thead><tr><th>Bloco</th><th>Tamanho</th><th>Destino no port</th></tr></thead>
+      <tbody>
+        <tr><td class="name">com/electrotank</td><td class="num">249 arq · 53.886 linhas</td><td><span class="chip c-gone">some</span> SDK do ElectroServer: você controla os dois lados</td></tr>
+        <tr><td class="name">org/apache/thrift</td><td class="num">25 arq · 1.201 linhas</td><td><span class="chip c-gone">some</span> com o protocolo binário</td></tr>
+        <tr><td class="name">com/hurlant + com/adobe</td><td class="num">25 arq · 3.574 linhas</td><td><span class="chip c-gone">some</span> cripto/MD5 → biblioteca Haxe</td></tr>
+        <tr><td class="name">com/flashdynamix</td><td class="num">16 arq · 3.401 linhas</td><td><span class="chip c-gone">some</span> tweening → <code>actuate</code></td></tr>
+        <tr><td class="name">com/milkmangames, adjust, fpg</td><td class="num">34 arq · 2.339 linhas</td><td><span class="chip c-gone">some</span> IAP e analytics: sem sentido offline</td></tr>
+        <tr><td class="name">ui/</td><td class="num">309 arq · 63.748 linhas</td><td><span class="chip c-partial">porta</span> 2.701 funções; layout vem do SWF</td></tr>
+        <tr><td class="name">model/</td><td class="num">223 arq · 27.834 linhas</td><td><span class="chip c-partial">porta</span> domínio puro, tradução quase mecânica</td></tr>
+        <tr><td class="name">dalcs/ · events/ · plugins/</td><td class="num">45 arq · 6.334 linhas</td><td><span class="chip c-partial">porta</span> vira o cliente JSON</td></tr>
+        <tr><td class="name">servidor Python</td><td class="num">4.638 linhas</td><td><span class="chip c-ok">intacto</span> nada muda</td></tr>
+        <tr><td class="name">46 livros · 221 SWF · 1.027 PNG · 50 MP3</td><td class="num">—</td><td><span class="chip c-ok">intacto</span> conteúdo e arte</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>O runtime AIR embutido — <strong>24,6 MB de <code>.so</code> e <code>.jar</code>, só armeabi-v7a</strong> — sai do pacote. É ele que hoje impede um build 64 bits e que envelhece a cada versão do Android.</p>
+</section>
+
+<section>
+  <h2>A rede encolhe de 96 mensagens para uma</h2>
+  <p>O protocolo parece assustador e não é. Das 96 mensagens ElectroServer mapeadas, o jogo usa <strong>nove</strong>: login, conexão, plugin, sala e zona. E toda a lógica viaja dentro de um único envelope de plugin, endereçada por <code>DALC_ID</code> + <code>ACTION_TYPE</code>.</p>
+  <div class="strip">
+    <table>
+      <thead><tr><th>Hoje</th><th>No port</th></tr></thead>
+      <tbody>
+        <tr><td>9 tipos ES5 + Thrift TBinaryProtocol</td><td>1 envelope JSON sobre WebSocket</td></tr>
+        <tr><td>355 chaves <code>EsObject</code> (150 em uso)</td><td>nomes de campo legíveis</td></tr>
+        <tr><td class="num">45 ações em 6 DALCs</td><td class="num">as mesmas 45 ações</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>As 45 ações são o contrato real e <strong>não mudam</strong>. Muda só como são embrulhadas — e é por isso que 55 mil linhas de SDK e Thrift podem ser apagadas sem perder funcionalidade.</p>
+</section>
+
+<section>
+  <h2>Ordem de execução</h2>
+
+  <div class="fase">
+    <div class="fase-id">F1</div>
+    <div>
+      <h3>Provar a hipótese antes de investir</h3>
+      <div class="fase-meta"><span>dias, não semanas</span><span>decide todo o resto</span></div>
+      <p>Extrair o <code>Pets.swf</code> como biblioteca OpenFL e subir <strong>uma</strong> tela — a mais acoplada que houver, o <code>MenuScreen</code> com seus 32 campos de símbolo. Se os campos forem preenchidos a partir do símbolo, o plano inteiro se sustenta. Se não forem, pare aqui: sem isso o port vira redesenho de 267 telas e a conta muda.</p>
+    </div>
+  </div>
+
+  <div class="fase">
+    <div class="fase-id">F2</div>
+    <div>
+      <h3>Transporte novo, servidor igual</h3>
+      <div class="fase-meta"><span>~6.300 linhas</span><span>servidor ganha um adaptador</span></div>
+      <p>Trocar ElectroServer+Thrift por JSON sobre WebSocket, mantendo as 45 ações e os nomes de campo. O servidor Python passa a falar os dois dialetos no mesmo processo, de modo que o cliente AIR atual continue funcionando enquanto o novo nasce — sem <em>big bang</em>.</p>
+    </div>
+  </div>
+
+  <div class="fase">
+    <div class="fase-id">F3</div>
+    <div>
+      <h3>Modelo de domínio</h3>
+      <div class="fase-meta"><span>27.834 linhas</span><span>tradução quase mecânica</span></div>
+      <p><code>model/</code> é lógica pura: leitores de livro, fórmulas de atributo, dados de curio. AS3 e Haxe são próximos o bastante para isso ser conversão direta, e há um oráculo para conferir cada fórmula — o servidor Python já as reimplementa e concorda com o cliente.</p>
+    </div>
+  </div>
+
+  <div class="fase">
+    <div class="fase-id">F4</div>
+    <div>
+      <h3>Telas, por ordem de uso</h3>
+      <div class="fase-meta"><span>2.701 funções</span><span>o grosso do trabalho</span></div>
+      <p>Seguir o caminho do jogador: login → menu → zona → batalha → curio → loja. As pesadas são conhecidas: <code>MenuScreen</code> (2.503 linhas), <code>RevampedPetWindow</code> (1.148), <code>BattleScreen</code> (1.104) e <code>BattlePlugin</code> (1.091). As telas de PvP, clubes e eventos podem ficar por último — o servidor ainda não as atende.</p>
+    </div>
+  </div>
+
+  <div class="fase">
+    <div class="fase-id">F5</div>
+    <div>
+      <h3>Empacotar 64 bits e aposentar o AIR</h3>
+      <div class="fase-meta"><span>−24,6 MB</span><span>fim da data de validade</span></div>
+      <p>Build Android nativo pelo OpenFL, sem runtime embutido e sem as duas ANEs (analytics e compra, ambas descartáveis offline). Aposentar o cliente AIR só quando o novo empatar em funcionalidade.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Riscos, em ordem de gravidade</h2>
+  <div class="strip">
+    <table>
+      <thead><tr><th>Risco</th><th>Gravidade</th><th>Como saber cedo</th></tr></thead>
+      <tbody>
+        <tr><td>OpenFL não vincular os símbolos do SWF às classes</td><td><span class="chip c-gone">fatal</span></td><td>F1 responde em dias</td></tr>
+        <tr><td>Diferenças de layout de texto (2 fontes embutidas, 624 campos)</td><td><span class="chip c-partial">médio</span></td><td>uma tela com muito texto na F1</td></tr>
+        <tr><td>Comportamento de <code>MovieClip</code> com timeline (87 campos)</td><td><span class="chip c-partial">médio</span></td><td>roda de prêmios e Plinko na F4</td></tr>
+        <tr><td>Volume bruto: 2.701 funções</td><td><span class="chip c-partial">médio</span></td><td>medir ritmo nas 3 primeiras telas</td></tr>
+        <tr><td>Os 129 curios sem arte</td><td><span class="chip c-gone">não resolve</span></td><td>é perda de acervo, não de engenharia</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note">
+    <span class="note-label">O que o port não conserta</span>
+    <p>Nenhuma tecnologia devolve conteúdo perdido. Os 129 curios sem arte continuam sem arte, e as zonas além da segunda continuam sem cenário. O port resolve longevidade e manutenção — não acervo.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Recomendação</h2>
+  <p>Fazer a <strong>F1 antes de qualquer decisão</strong>. Ela custa dias e responde a única pergunta que pode inviabilizar tudo. Enquanto ela não for respondida, qualquer estimativa de prazo para o port é chute — inclusive as deste documento.</p>
+  <p>Enquanto isso, continuar investindo <strong>no servidor e no conteúdo</strong>, que sobrevivem intactos a qualquer decisão de cliente: são 4.638 linhas e 46 livros que valem igual no AIR de hoje e no Haxe de amanhã.</p>
+  <p>E manter em vista que o gargalo atual não é o port: é o travamento do <code>ENTER_BATTLE</code> no aparelho, que precisa do JPEXS para ser instrumentado. Um port dissolve esse problema — num cliente seu, basta um <code>trace</code> — mas leva meses, e o travamento pode levar horas se a ferramenta estiver à mão.</p>
+</section>
+
+<footer>
+  <p>Todos os números foram medidos sobre o código decompilado com JPEXS, sobre o <code>Pets.swf</code> descomprimido (3,5 MB) e sobre o APK 1.15.00. Nenhum é estimativa. Conteúdo do jogo © 5th Planet Games; este documento descreve trabalho de preservação sobre um jogo cujos servidores foram desligados.</p>
+</footer>
+
+</div>

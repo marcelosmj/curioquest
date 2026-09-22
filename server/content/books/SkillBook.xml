@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<fx>
+		<fx link="defend" asset="Defend.swf" scale="1" sound="defend" loadLocal="true" />
+		<fx link="evolution" asset="Evolution.swf" scale="1" sound="evolve" loadLocal="true" />
+		<fx link="scratch" asset="Scratch.swf" scale="1" sound="rock_1" loadLocal="true" />
+		<fx link="slash" asset="Slash.swf" scale="1" sound="rock_2" loadLocal="true" />
+		<fx link="gunshot" asset="GunShot.swf" scale="1" sound="rock_3" loadLocal="true" />
+		<fx link="heal_1" asset="Generic_Heal_1.swf" scale="1" sound="heal" loadLocal="true" />
+		<fx link="heal_2" asset="Generic_Heal_2.swf" scale="1" sound="heal" loadLocal="true" />
+		<fx link="darkblast" asset="DarkBlast.swf" scale="1" sound="dark_4" loadLocal="true" />
+		<fx link="flamestrike" asset="FlameStrike.swf" scale="1" sound="fire_4" loadLocal="true" />
+		<fx link="electricattack" asset="ElectricAttack.swf" scale="1" sound="electric_3" loadLocal="true" />
+		<fx link="fire_1" asset="Fire_Attack_1.swf" scale="1" sound="fire_1" loadLocal="true" />
+		<fx link="fire_2" asset="Fire_Attack_2.swf" scale="1" sound="fire_2" loadLocal="true" />
+		<fx link="fire_3" asset="Fire_Attack_3.swf" scale="1" sound="fire_3" loadLocal="true" />
+		<fx link="fire_4" asset="Fire_Attack_4.swf" scale="1" sound="fire_4" loadLocal="true" />
+		<fx link="water_1" asset="Water_Attack_1.swf" scale="1" sound="water_1" loadLocal="true" />
+		<fx link="water_2" asset="Water_Attack_2.swf" scale="1" sound="water_2" loadLocal="true" />
+		<fx link="water_3" asset="Water_Attack_3.swf" scale="1" sound="water_3" loadLocal="true" />
+		<fx link="water_4" asset="Water_Attack_4.swf" scale="1" sound="water_4" loadLocal="true" />
+		<fx link="electric_1" asset="Electric_Attack_1.swf" scale="1" sound="electric_1" loadLocal="true" />
+		<fx link="electric_2" asset="Electric_Attack_2.swf" scale="1" sound="electric_2" loadLocal="true" />
+		<fx link="electric_3" asset="Electric_Attack_3.swf" scale="1" sound="electric_3" loadLocal="true" />
+		<fx link="electric_4" asset="Electric_Attack_4.swf" scale="1" sound="electric_4" loadLocal="true" />
+		<fx link="light_1" asset="Light_Attack_1.swf" scale="1" sound="light_1" loadLocal="true" />
+		<fx link="light_2" asset="Light_Attack_2.swf" scale="1" sound="light_2" loadLocal="true" />
+		<fx link="light_3" asset="Light_Attack_3.swf" scale="1" sound="light_3" loadLocal="true" />
+		<fx link="light_4" asset="Light_Attack_4.swf" scale="1" sound="light_4" loadLocal="true" />
+		<fx link="dark_1" asset="Dark_Attack_1.swf" scale="1" sound="dark_1" loadLocal="true" />
+		<fx link="dark_2" asset="Dark_Attack_2.swf" scale="1" sound="dark_2" loadLocal="true" />
+		<fx link="dark_3" asset="Dark_Attack_3.swf" scale="1" sound="dark_3" loadLocal="true" />
+		<fx link="plant_1" asset="Plant_Attack_1.swf" scale="1" sound="plants_1" loadLocal="true" />
+		<fx link="plant_2" asset="Plant_Attack_2.swf" scale="1" sound="plants_2" loadLocal="true" />
+		<fx link="plant_3" asset="Plant_Attack_3.swf" scale="1" sound="plants_3" loadLocal="true" />
+		<fx link="plant_4" asset="Plant_Attack_4.swf" scale="1" sound="plants_4" loadLocal="true" />
+		<fx link="rock_1" asset="Rock_Attack_1.swf" scale="1" sound="rock_1" loadLocal="true" />
+		<fx link="rock_2" asset="Rock_Attack_2.swf" scale="1" sound="rock_2" loadLocal="true" />
+		<fx link="rock_3" asset="Rock_Attack_3.swf" scale="1" sound="rock_3" loadLocal="true" />
+		<fx link="rock_4" asset="Rock_Attack_4.swf" scale="1" sound="rock_4" loadLocal="true" />
+		<fx link="wind_1" asset="Wind_Attack_1.swf" scale="1" sound="wind_1" loadLocal="true" />
+		<fx link="wind_2" asset="Wind_Attack_2.swf" scale="1" sound="wind_2" loadLocal="true" />
+		<fx link="wind_3" asset="Wind_Attack_3.swf" scale="1" sound="wind_3" loadLocal="true" />
+		<fx link="wind_4" asset="Wind_Attack_4.swf" scale="1" sound="wind_4" loadLocal="true" />
+		<fx link="ice_1" asset="Ice_Attack_1.swf" scale="1" sound="ice_1" loadLocal="true" />
+		<fx link="ice_2" asset="Ice_Attack_2.swf" scale="1" sound="ice_2" loadLocal="true" />
+	</fx>
+	<modifiers>
+		<modifier attackerType="water" defenderType="fire" damageMultiplier="0.5" healMultiplier="0" />
+		<modifier attackerType="fire" defenderType="water" damageMultiplier="-0.3" healMultiplier="0" />
+		<modifier attackerType="fire" defenderType="air" damageMultiplier="0.5" healMultiplier="0" />
+		<modifier attackerType="air" defenderType="fire" damageMultiplier="-0.3" healMultiplier="0" />
+		<modifier attackerType="air" defenderType="earth" damageMultiplier="0.5" healMultiplier="0" />
+		<modifier attackerType="earth" defenderType="air" damageMultiplier="-0.3" healMultiplier="0" />
+		<modifier attackerType="earth" defenderType="electric" damageMultiplier="0.5" healMultiplier="0" />
+		<modifier attackerType="electric" defenderType="earth" damageMultiplier="-0.3" healMultiplier="0" />
+		<modifier attackerType="electric" defenderType="water" damageMultiplier="0.5" healMultiplier="0" />
+		<modifier attackerType="water" defenderType="electric" damageMultiplier="-0.3" healMultiplier="0" />
+		<modifier attackerType="light" defenderType="dark" damageMultiplier="0.5" healMultiplier="0" />
+		<modifier attackerType="dark" defenderType="light" damageMultiplier="0.5" healMultiplier="0" />
+	</modifiers>
+	<skills>
+		<skill link="basic_claw">
+			<ability manaCost="0" healthCost="0" cooldown="0" instant="false" desc="Deals *d*80*d*-*d*100*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="80" maxAmount="100" multiplier="1" source="self" target="enemy" linkType="physical" fx="scratch" />
+			</ability>
+			<ability manaCost="0" healthCost="0" cooldown="0" instant="false" desc="Deals *d*85*d*-*d*105*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="85" maxAmount="105" multiplier="1" source="self" target="enemy" linkType="physical" fx="scratch" />
+			</ability>
+			<ability manaCost="0" healthCost="0" cooldown="0" instant="false" desc="Deals *d*90*d*-*d*110*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="90" maxAmount="110" multiplier="1" source="self" target="enemy" linkType="physical" fx="scratch" />
+			</ability>
+			<ability manaCost="0" healthCost="0" cooldown="0" instant="false" desc="Deals *d*95*d*-*d*115*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="95" maxAmount="115" multiplier="1" source="self" target="enemy" linkType="physical" fx="scratch" />
+			</ability>
+			<ability manaCost="0" healthCost="0" cooldown="0" instant="false" desc="Deals *d*100*d*-*d*125*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="100" maxAmount="125" multiplier="1" source="self" target="enemy" linkType="physical" fx="scratch" />
+			</ability>
+		</skill>
+		<skill link="dark_strike">
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*110*d*-*d*130*d* [dark] damage to the enemy.">
+				<action type="healthdamage" minAmount="110" maxAmount="130" multiplier="1" source="self" target="enemy" linkType="dark" fx="dark_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*120*d*-*d*140*d* [dark] damage to the enemy.">
+				<action type="healthdamage" minAmount="120" maxAmount="140" multiplier="1" source="self" target="enemy" linkType="dark" fx="dark_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*130*d*-*d*150*d* [dark] damage to the enemy.">
+				<action type="healthdamage" minAmount="130" maxAmount="150" multiplier="1" source="self" target="enemy" linkType="dark" fx="dark_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*140*d*-*d*165*d* [dark] damage to the enemy.">
+				<action type="healthdamage" minAmount="140" maxAmount="165" multiplier="1" source="self" target="enemy" linkType="dark" fx="dark_1" />
+			</ability>
+		</skill>
+		<skill link="dark_drain">
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*90*d*-*d*110*d* [dark] damage and heals itself for half of the damage dealt.">
+				<action type="healthdrain" minAmount="90" maxAmount="110" multiplier="0.5" source="self" target="enemy" linkType="dark" fx="dark_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*100*d*-*d*120*d* [dark] damage and heals itself for half of the damage dealt.">
+				<action type="healthdrain" minAmount="100" maxAmount="120" multiplier="0.5" source="self" target="enemy" linkType="dark" fx="dark_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*110*d*-*d*130*d* [dark] damage and heals itself for half of the damage dealt.">
+				<action type="healthdrain" minAmount="110" maxAmount="130" multiplier="0.5" source="self" target="enemy" linkType="dark" fx="dark_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*120*d*-*d*145*d* [dark] damage and heals itself for half of the damage dealt.">
+				<action type="healthdrain" minAmount="120" maxAmount="145" multiplier="0.5" source="self" target="enemy" linkType="dark" fx="dark_2" />
+			</ability>
+		</skill>
+		<skill link="dark_blast">
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*160*d*-*d*190*d* [dark] damage to the enemy.">
+				<action type="healthdamage" minAmount="160" maxAmount="190" multiplier="1" source="self" target="enemy" linkType="dark" fx="dark_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*175*d*-*d*205*d* [dark] damage to the enemy.">
+				<action type="healthdamage" minAmount="175" maxAmount="205" multiplier="1" source="self" target="enemy" linkType="dark" fx="dark_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*190*d*-*d*220*d* [dark] damage to the enemy.">
+				<action type="healthdamage" minAmount="190" maxAmount="220" multiplier="1" source="self" target="enemy" linkType="dark" fx="dark_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*205*d*-*d*240*d* [dark] damage to the enemy.">
+				<action type="healthdamage" minAmount="205" maxAmount="240" multiplier="1" source="self" target="enemy" linkType="dark" fx="dark_2" />
+			</ability>
+		</skill>
+		<skill link="dark_storm">
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*55*d*-*d*70*d* [dark] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="55" maxAmount="70" multiplier="1" source="self" target="enemyteam" linkType="dark" fx="dark_3" />
+			</ability>
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*65*d*-*d*80*d* [dark] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="65" maxAmount="80" multiplier="1" source="self" target="enemyteam" linkType="dark" fx="dark_3" />
+			</ability>
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*75*d*-*d*90*d* [dark] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="75" maxAmount="90" multiplier="1" source="self" target="enemyteam" linkType="dark" fx="dark_3" />
+			</ability>
+		</skill>
+		<skill link="dark_fury">
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*240*d*-*d*300*d* [dark] damage to the enemy.">
+				<action type="healthdamage" minAmount="240" maxAmount="300" multiplier="1" source="self" target="enemy" linkType="dark" fx="darkblast" />
+			</ability>
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*270*d*-*d*330*d* [dark] damage to the enemy.">
+				<action type="healthdamage" minAmount="270" maxAmount="330" multiplier="1" source="self" target="enemy" linkType="dark" fx="darkblast" />
+			</ability>
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*300*d*-*d*360*d* [dark] damage to the enemy.">
+				<action type="healthdamage" minAmount="300" maxAmount="360" multiplier="1" source="self" target="enemy" linkType="dark" fx="darkblast" />
+			</ability>
+		</skill>
+		<skill link="basic_impact">
+			<ability manaCost="0" healthCost="0" cooldown="0" instant="false" desc="Deals *d*80*d*-*d*100*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="80" maxAmount="100" multiplier="1" source="self" target="enemy" linkType="physical" fx="rock_1" />
+			</ability>
+			<ability manaCost="0" healthCost="0" cooldown="0" instant="false" desc="Deals *d*85*d*-*d*105*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="85" maxAmount="105" multiplier="1" source="self" target="enemy" linkType="physical" fx="rock_1" />
+			</ability>
+			<ability manaCost="0" healthCost="0" cooldown="0" instant="false" desc="Deals *d*90*d*-*d*110*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="90" maxAmount="110" multiplier="1" source="self" target="enemy" linkType="physical" fx="rock_1" />
+			</ability>
+			<ability manaCost="0" healthCost="0" cooldown="0" instant="false" desc="Deals *d*95*d*-*d*115*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="95" maxAmount="115" multiplier="1" source="self" target="enemy" linkType="physical" fx="rock_1" />
+			</ability>
+			<ability manaCost="0" healthCost="0" cooldown="0" instant="false" desc="Deals *d*100*d*-*d*125*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="100" maxAmount="125" multiplier="1" source="self" target="enemy" linkType="physical" fx="rock_1" />
+			</ability>
+		</skill>
+		<skill link="air_strike">
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*110*d*-*d*130*d* [air] damage to the enemy.">
+				<action type="healthdamage" minAmount="110" maxAmount="130" multiplier="1" source="self" target="enemy" linkType="air" fx="wind_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*120*d*-*d*140*d* [air] damage to the enemy.">
+				<action type="healthdamage" minAmount="120" maxAmount="140" multiplier="1" source="self" target="enemy" linkType="air" fx="wind_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*130*d*-*d*150*d* [air] damage to the enemy.">
+				<action type="healthdamage" minAmount="130" maxAmount="150" multiplier="1" source="self" target="enemy" linkType="air" fx="wind_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*140*d*-*d*165*d* [air] damage to the enemy.">
+				<action type="healthdamage" minAmount="140" maxAmount="165" multiplier="1" source="self" target="enemy" linkType="air" fx="wind_1" />
+			</ability>
+		</skill>
+		<skill link="air_focus">
+			<ability manaCost="1" healthCost="0" cooldown="3" instant="false" desc="Raises critical hit chance by ^20%^ for 3 turns.">
+				<action type="none" minAmount="3" maxAmount="3" source="self" target="self" fx="heal_1">
+					<buff name="Focused" desc="Raises critical hit chance by ^20%^." type="positive" icon="Air_Heal_1.png" thumbnail="Air_Heal_1.png" loadLocal="true">
+						<effect type="critchance" amount="20" />
+					</buff>
+				</action>
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="3" instant="false" desc="Raises critical hit chance by ^30%^ for 3 turns.">
+				<action type="none" minAmount="3" maxAmount="3" source="self" target="self" fx="heal_1">
+					<buff name="Focused" desc="Raises critical hit chance by ^30%^." type="positive" icon="Air_Heal_1.png" thumbnail="Air_Heal_1.png" loadLocal="true">
+						<effect type="critchance" amount="30" />
+					</buff>
+				</action>
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="3" instant="false" desc="Raises critical hit chance by ^40%^ for 3 turns.">
+				<action type="none" minAmount="3" maxAmount="3" source="self" target="self" fx="heal_1">
+					<buff name="Focused" desc="Raises critical hit chance by ^40%^." type="positive" icon="Air_Heal_1.png" thumbnail="Air_Heal_1.png" loadLocal="true">
+						<effect type="critchance" amount="40" />
+					</buff>
+				</action>
+			</ability>
+		</skill>
+		<skill link="air_blast">
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*160*d*-*d*190*d* [air] damage to the enemy.">
+				<action type="healthdamage" minAmount="160" maxAmount="190" multiplier="1" source="self" target="enemy" linkType="air" fx="wind_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*175*d*-*d*205*d* [air] damage to the enemy.">
+				<action type="healthdamage" minAmount="175" maxAmount="205" multiplier="1" source="self" target="enemy" linkType="air" fx="wind_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*190*d*-*d*220*d* [air] damage to the enemy.">
+				<action type="healthdamage" minAmount="190" maxAmount="220" multiplier="1" source="self" target="enemy" linkType="air" fx="wind_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*205*d*-*d*240*d* [air] damage to the enemy.">
+				<action type="healthdamage" minAmount="205" maxAmount="240" multiplier="1" source="self" target="enemy" linkType="air" fx="wind_2" />
+			</ability>
+		</skill>
+		<skill link="air_storm">
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*55*d*-*d*70*d* [air] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="55" maxAmount="70" multiplier="1" source="self" target="enemyteam" linkType="air" fx="wind_3" />
+			</ability>
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*65*d*-*d*80*d* [air] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="65" maxAmount="80" multiplier="1" source="self" target="enemyteam" linkType="air" fx="wind_3" />
+			</ability>
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*75*d*-*d*90*d* [air] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="75" maxAmount="90" multiplier="1" source="self" target="enemyteam" linkType="air" fx="wind_3" />
+			</ability>
+		</skill>
+		<skill link="air_fury">
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*240*d*-*d*300*d* [air] damage to the enemy.">
+				<action type="healthdamage" minAmount="240" maxAmount="300" multiplier="1" source="self" target="enemy" linkType="air" fx="wind_4" />
+			</ability>
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*270*d*-*d*330*d* [air] damage to the enemy.">
+				<action type="healthdamage" minAmount="270" maxAmount="330" multiplier="1" source="self" target="enemy" linkType="air" fx="wind_4" />
+			</ability>
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*300*d*-*d*360*d* [air] damage to the enemy.">
+				<action type="healthdamage" minAmount="300" maxAmount="360" multiplier="1" source="self" target="enemy" linkType="air" fx="wind_4" />
+			</ability>
+		</skill>
+		<skill link="fire_strike">
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*110*d*-*d*130*d* [fire] damage to the enemy.">
+				<action type="healthdamage" minAmount="110" maxAmount="130" multiplier="1" source="self" target="enemy" linkType="fire" fx="fire_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*120*d*-*d*140*d* [fire] damage to the enemy.">
+				<action type="healthdamage" minAmount="120" maxAmount="140" multiplier="1" source="self" target="enemy" linkType="fire" fx="fire_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*130*d*-*d*150*d* [fire] damage to the enemy.">
+				<action type="healthdamage" minAmount="130" maxAmount="150" multiplier="1" source="self" target="enemy" linkType="fire" fx="fire_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*140*d*-*d*165*d* [fire] damage to the enemy.">
+				<action type="healthdamage" minAmount="140" maxAmount="165" multiplier="1" source="self" target="enemy" linkType="fire" fx="fire_1" />
+			</ability>
+		</skill>
+		<skill link="fire_burn">
+			<ability manaCost="2" healthCost="0" cooldown="3" instant="false" desc="Deals *d*60*d*-*d*80*d* [fire] damage, then *d*25*d*-*d*30*d* more at the start of each of the enemy's next 3 turns.">
+				<action type="healthdamage" minAmount="60" maxAmount="80" multiplier="1" source="self" target="enemy" linkType="fire" fx="fire_2" />
+				<action type="none" minAmount="3" maxAmount="3" source="self" target="enemy">
+					<buff name="Burning" desc="Takes damage at the start of each turn." type="negative" icon="Fire_Attack_1.png" thumbnail="Fire_Attack_1.png" loadLocal="true">
+						<trigger type="turnstart">
+							<action type="healthdamage" minAmount="25" maxAmount="30" multiplier="1" source="self" target="self" linkType="fire" fx="fire_1" />
+						</trigger>
+					</buff>
+				</action>
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="3" instant="false" desc="Deals *d*70*d*-*d*90*d* [fire] damage, then *d*30*d*-*d*35*d* more at the start of each of the enemy's next 3 turns.">
+				<action type="healthdamage" minAmount="70" maxAmount="90" multiplier="1" source="self" target="enemy" linkType="fire" fx="fire_2" />
+				<action type="none" minAmount="3" maxAmount="3" source="self" target="enemy">
+					<buff name="Burning" desc="Takes damage at the start of each turn." type="negative" icon="Fire_Attack_1.png" thumbnail="Fire_Attack_1.png" loadLocal="true">
+						<trigger type="turnstart">
+							<action type="healthdamage" minAmount="30" maxAmount="35" multiplier="1" source="self" target="self" linkType="fire" fx="fire_1" />
+						</trigger>
+					</buff>
+				</action>
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="3" instant="false" desc="Deals *d*80*d*-*d*100*d* [fire] damage, then *d*35*d*-*d*40*d* more at the start of each of the enemy's next 3 turns.">
+				<action type="healthdamage" minAmount="80" maxAmount="100" multiplier="1" source="self" target="enemy" linkType="fire" fx="fire_2" />
+				<action type="none" minAmount="3" maxAmount="3" source="self" target="enemy">
+					<buff name="Burning" desc="Takes damage at the start of each turn." type="negative" icon="Fire_Attack_1.png" thumbnail="Fire_Attack_1.png" loadLocal="true">
+						<trigger type="turnstart">
+							<action type="healthdamage" minAmount="35" maxAmount="40" multiplier="1" source="self" target="self" linkType="fire" fx="fire_1" />
+						</trigger>
+					</buff>
+				</action>
+			</ability>
+		</skill>
+		<skill link="fire_blast">
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*160*d*-*d*190*d* [fire] damage to the enemy.">
+				<action type="healthdamage" minAmount="160" maxAmount="190" multiplier="1" source="self" target="enemy" linkType="fire" fx="fire_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*175*d*-*d*205*d* [fire] damage to the enemy.">
+				<action type="healthdamage" minAmount="175" maxAmount="205" multiplier="1" source="self" target="enemy" linkType="fire" fx="fire_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*190*d*-*d*220*d* [fire] damage to the enemy.">
+				<action type="healthdamage" minAmount="190" maxAmount="220" multiplier="1" source="self" target="enemy" linkType="fire" fx="fire_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*205*d*-*d*240*d* [fire] damage to the enemy.">
+				<action type="healthdamage" minAmount="205" maxAmount="240" multiplier="1" source="self" target="enemy" linkType="fire" fx="fire_2" />
+			</ability>
+		</skill>
+		<skill link="fire_storm">
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*55*d*-*d*70*d* [fire] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="55" maxAmount="70" multiplier="1" source="self" target="enemyteam" linkType="fire" fx="fire_3" />
+			</ability>
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*65*d*-*d*80*d* [fire] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="65" maxAmount="80" multiplier="1" source="self" target="enemyteam" linkType="fire" fx="fire_3" />
+			</ability>
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*75*d*-*d*90*d* [fire] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="75" maxAmount="90" multiplier="1" source="self" target="enemyteam" linkType="fire" fx="fire_3" />
+			</ability>
+		</skill>
+		<skill link="physical_strike">
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*110*d*-*d*130*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="110" maxAmount="130" multiplier="1" source="self" target="enemy" linkType="physical" fx="rock_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*120*d*-*d*140*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="120" maxAmount="140" multiplier="1" source="self" target="enemy" linkType="physical" fx="rock_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*130*d*-*d*150*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="130" maxAmount="150" multiplier="1" source="self" target="enemy" linkType="physical" fx="rock_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*140*d*-*d*165*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="140" maxAmount="165" multiplier="1" source="self" target="enemy" linkType="physical" fx="rock_1" />
+			</ability>
+		</skill>
+		<skill link="physical_guard">
+			<ability manaCost="1" healthCost="0" cooldown="3" instant="false" desc="Takes ^30%^ less damage for 2 turns.">
+				<action type="none" minAmount="2" maxAmount="2" source="self" target="self" fx="heal_1">
+					<buff name="Guarded" desc="Takes ^30%^ less damage." type="positive" icon="Physical_Heal_1.png" thumbnail="Physical_Heal_1.png" loadLocal="true">
+						<effect type="resistperc" amount="30" />
+					</buff>
+				</action>
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="3" instant="false" desc="Takes ^40%^ less damage for 2 turns.">
+				<action type="none" minAmount="2" maxAmount="2" source="self" target="self" fx="heal_1">
+					<buff name="Guarded" desc="Takes ^40%^ less damage." type="positive" icon="Physical_Heal_1.png" thumbnail="Physical_Heal_1.png" loadLocal="true">
+						<effect type="resistperc" amount="40" />
+					</buff>
+				</action>
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="3" instant="false" desc="Takes ^50%^ less damage for 2 turns.">
+				<action type="none" minAmount="2" maxAmount="2" source="self" target="self" fx="heal_1">
+					<buff name="Guarded" desc="Takes ^50%^ less damage." type="positive" icon="Physical_Heal_1.png" thumbnail="Physical_Heal_1.png" loadLocal="true">
+						<effect type="resistperc" amount="50" />
+					</buff>
+				</action>
+			</ability>
+		</skill>
+		<skill link="physical_blast">
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*160*d*-*d*190*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="160" maxAmount="190" multiplier="1" source="self" target="enemy" linkType="physical" fx="rock_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*175*d*-*d*205*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="175" maxAmount="205" multiplier="1" source="self" target="enemy" linkType="physical" fx="rock_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*190*d*-*d*220*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="190" maxAmount="220" multiplier="1" source="self" target="enemy" linkType="physical" fx="rock_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*205*d*-*d*240*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="205" maxAmount="240" multiplier="1" source="self" target="enemy" linkType="physical" fx="rock_2" />
+			</ability>
+		</skill>
+		<skill link="physical_fury">
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*240*d*-*d*300*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="240" maxAmount="300" multiplier="1" source="self" target="enemy" linkType="physical" fx="rock_4" />
+			</ability>
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*270*d*-*d*330*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="270" maxAmount="330" multiplier="1" source="self" target="enemy" linkType="physical" fx="rock_4" />
+			</ability>
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*300*d*-*d*360*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="300" maxAmount="360" multiplier="1" source="self" target="enemy" linkType="physical" fx="rock_4" />
+			</ability>
+		</skill>
+		<skill link="electric_strike">
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*110*d*-*d*130*d* [electric] damage to the enemy.">
+				<action type="healthdamage" minAmount="110" maxAmount="130" multiplier="1" source="self" target="enemy" linkType="electric" fx="electric_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*120*d*-*d*140*d* [electric] damage to the enemy.">
+				<action type="healthdamage" minAmount="120" maxAmount="140" multiplier="1" source="self" target="enemy" linkType="electric" fx="electric_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*130*d*-*d*150*d* [electric] damage to the enemy.">
+				<action type="healthdamage" minAmount="130" maxAmount="150" multiplier="1" source="self" target="enemy" linkType="electric" fx="electric_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*140*d*-*d*165*d* [electric] damage to the enemy.">
+				<action type="healthdamage" minAmount="140" maxAmount="165" multiplier="1" source="self" target="enemy" linkType="electric" fx="electric_1" />
+			</ability>
+		</skill>
+		<skill link="electric_shock">
+			<ability manaCost="3" healthCost="0" cooldown="4" instant="false" desc="Deals *d*80*d*-*d*100*d* [electric] damage and ^stuns^ the enemy for 1 turn.">
+				<action type="healthdamage" minAmount="80" maxAmount="100" multiplier="1" source="self" target="enemy" linkType="electric" fx="electricattack" />
+				<action type="none" minAmount="1" maxAmount="1" source="self" target="enemy">
+					<buff name="Stunned" desc="Cannot act." type="negative" icon="Electric_Attack_2.png" thumbnail="Electric_Attack_2.png" loadLocal="true">
+						<effect type="stun" amount="0" />
+					</buff>
+				</action>
+			</ability>
+			<ability manaCost="3" healthCost="0" cooldown="4" instant="false" desc="Deals *d*90*d*-*d*110*d* [electric] damage and ^stuns^ the enemy for 1 turn.">
+				<action type="healthdamage" minAmount="90" maxAmount="110" multiplier="1" source="self" target="enemy" linkType="electric" fx="electricattack" />
+				<action type="none" minAmount="1" maxAmount="1" source="self" target="enemy">
+					<buff name="Stunned" desc="Cannot act." type="negative" icon="Electric_Attack_2.png" thumbnail="Electric_Attack_2.png" loadLocal="true">
+						<effect type="stun" amount="0" />
+					</buff>
+				</action>
+			</ability>
+			<ability manaCost="3" healthCost="0" cooldown="4" instant="false" desc="Deals *d*100*d*-*d*120*d* [electric] damage and ^stuns^ the enemy for 1 turn.">
+				<action type="healthdamage" minAmount="100" maxAmount="120" multiplier="1" source="self" target="enemy" linkType="electric" fx="electricattack" />
+				<action type="none" minAmount="1" maxAmount="1" source="self" target="enemy">
+					<buff name="Stunned" desc="Cannot act." type="negative" icon="Electric_Attack_2.png" thumbnail="Electric_Attack_2.png" loadLocal="true">
+						<effect type="stun" amount="0" />
+					</buff>
+				</action>
+			</ability>
+		</skill>
+		<skill link="electric_blast">
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*160*d*-*d*190*d* [electric] damage to the enemy.">
+				<action type="healthdamage" minAmount="160" maxAmount="190" multiplier="1" source="self" target="enemy" linkType="electric" fx="electric_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*175*d*-*d*205*d* [electric] damage to the enemy.">
+				<action type="healthdamage" minAmount="175" maxAmount="205" multiplier="1" source="self" target="enemy" linkType="electric" fx="electric_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*190*d*-*d*220*d* [electric] damage to the enemy.">
+				<action type="healthdamage" minAmount="190" maxAmount="220" multiplier="1" source="self" target="enemy" linkType="electric" fx="electric_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*205*d*-*d*240*d* [electric] damage to the enemy.">
+				<action type="healthdamage" minAmount="205" maxAmount="240" multiplier="1" source="self" target="enemy" linkType="electric" fx="electric_2" />
+			</ability>
+		</skill>
+		<skill link="electric_storm">
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*55*d*-*d*70*d* [electric] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="55" maxAmount="70" multiplier="1" source="self" target="enemyteam" linkType="electric" fx="electric_3" />
+			</ability>
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*65*d*-*d*80*d* [electric] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="65" maxAmount="80" multiplier="1" source="self" target="enemyteam" linkType="electric" fx="electric_3" />
+			</ability>
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*75*d*-*d*90*d* [electric] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="75" maxAmount="90" multiplier="1" source="self" target="enemyteam" linkType="electric" fx="electric_3" />
+			</ability>
+		</skill>
+		<skill link="earth_strike">
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*110*d*-*d*130*d* [earth] damage to the enemy.">
+				<action type="healthdamage" minAmount="110" maxAmount="130" multiplier="1" source="self" target="enemy" linkType="earth" fx="plant_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*120*d*-*d*140*d* [earth] damage to the enemy.">
+				<action type="healthdamage" minAmount="120" maxAmount="140" multiplier="1" source="self" target="enemy" linkType="earth" fx="plant_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*130*d*-*d*150*d* [earth] damage to the enemy.">
+				<action type="healthdamage" minAmount="130" maxAmount="150" multiplier="1" source="self" target="enemy" linkType="earth" fx="plant_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*140*d*-*d*165*d* [earth] damage to the enemy.">
+				<action type="healthdamage" minAmount="140" maxAmount="165" multiplier="1" source="self" target="enemy" linkType="earth" fx="plant_1" />
+			</ability>
+		</skill>
+		<skill link="earth_guard">
+			<ability manaCost="1" healthCost="0" cooldown="3" instant="false" desc="Takes ^30%^ less damage for 2 turns.">
+				<action type="none" minAmount="2" maxAmount="2" source="self" target="self" fx="heal_1">
+					<buff name="Guarded" desc="Takes ^30%^ less damage." type="positive" icon="Earth_Heal_1.png" thumbnail="Earth_Heal_1.png" loadLocal="true">
+						<effect type="resistperc" amount="30" />
+					</buff>
+				</action>
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="3" instant="false" desc="Takes ^40%^ less damage for 2 turns.">
+				<action type="none" minAmount="2" maxAmount="2" source="self" target="self" fx="heal_1">
+					<buff name="Guarded" desc="Takes ^40%^ less damage." type="positive" icon="Earth_Heal_1.png" thumbnail="Earth_Heal_1.png" loadLocal="true">
+						<effect type="resistperc" amount="40" />
+					</buff>
+				</action>
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="3" instant="false" desc="Takes ^50%^ less damage for 2 turns.">
+				<action type="none" minAmount="2" maxAmount="2" source="self" target="self" fx="heal_1">
+					<buff name="Guarded" desc="Takes ^50%^ less damage." type="positive" icon="Earth_Heal_1.png" thumbnail="Earth_Heal_1.png" loadLocal="true">
+						<effect type="resistperc" amount="50" />
+					</buff>
+				</action>
+			</ability>
+		</skill>
+		<skill link="earth_blast">
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*160*d*-*d*190*d* [earth] damage to the enemy.">
+				<action type="healthdamage" minAmount="160" maxAmount="190" multiplier="1" source="self" target="enemy" linkType="earth" fx="rock_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*175*d*-*d*205*d* [earth] damage to the enemy.">
+				<action type="healthdamage" minAmount="175" maxAmount="205" multiplier="1" source="self" target="enemy" linkType="earth" fx="rock_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*190*d*-*d*220*d* [earth] damage to the enemy.">
+				<action type="healthdamage" minAmount="190" maxAmount="220" multiplier="1" source="self" target="enemy" linkType="earth" fx="rock_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*205*d*-*d*240*d* [earth] damage to the enemy.">
+				<action type="healthdamage" minAmount="205" maxAmount="240" multiplier="1" source="self" target="enemy" linkType="earth" fx="rock_2" />
+			</ability>
+		</skill>
+		<skill link="earth_storm">
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*55*d*-*d*70*d* [earth] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="55" maxAmount="70" multiplier="1" source="self" target="enemyteam" linkType="earth" fx="plant_3" />
+			</ability>
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*65*d*-*d*80*d* [earth] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="65" maxAmount="80" multiplier="1" source="self" target="enemyteam" linkType="earth" fx="plant_3" />
+			</ability>
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*75*d*-*d*90*d* [earth] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="75" maxAmount="90" multiplier="1" source="self" target="enemyteam" linkType="earth" fx="plant_3" />
+			</ability>
+		</skill>
+		<skill link="earth_fury">
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*240*d*-*d*300*d* [earth] damage to the enemy.">
+				<action type="healthdamage" minAmount="240" maxAmount="300" multiplier="1" source="self" target="enemy" linkType="earth" fx="rock_4" />
+			</ability>
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*270*d*-*d*330*d* [earth] damage to the enemy.">
+				<action type="healthdamage" minAmount="270" maxAmount="330" multiplier="1" source="self" target="enemy" linkType="earth" fx="rock_4" />
+			</ability>
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*300*d*-*d*360*d* [earth] damage to the enemy.">
+				<action type="healthdamage" minAmount="300" maxAmount="360" multiplier="1" source="self" target="enemy" linkType="earth" fx="rock_4" />
+			</ability>
+		</skill>
+		<skill link="earth_mend">
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*150*h*-*h*180*h* health.">
+				<action type="healthheal" minAmount="150" maxAmount="180" multiplier="1" source="self" target="select" linkType="earth" fx="heal_1" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*170*h*-*h*200*h* health.">
+				<action type="healthheal" minAmount="170" maxAmount="200" multiplier="1" source="self" target="select" linkType="earth" fx="heal_1" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*190*h*-*h*220*h* health.">
+				<action type="healthheal" minAmount="190" maxAmount="220" multiplier="1" source="self" target="select" linkType="earth" fx="heal_1" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*210*h*-*h*245*h* health.">
+				<action type="healthheal" minAmount="210" maxAmount="245" multiplier="1" source="self" target="select" linkType="earth" fx="heal_1" />
+			</ability>
+		</skill>
+		<skill link="light_strike">
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*110*d*-*d*130*d* [light] damage to the enemy.">
+				<action type="healthdamage" minAmount="110" maxAmount="130" multiplier="1" source="self" target="enemy" linkType="light" fx="light_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*120*d*-*d*140*d* [light] damage to the enemy.">
+				<action type="healthdamage" minAmount="120" maxAmount="140" multiplier="1" source="self" target="enemy" linkType="light" fx="light_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*130*d*-*d*150*d* [light] damage to the enemy.">
+				<action type="healthdamage" minAmount="130" maxAmount="150" multiplier="1" source="self" target="enemy" linkType="light" fx="light_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*140*d*-*d*165*d* [light] damage to the enemy.">
+				<action type="healthdamage" minAmount="140" maxAmount="165" multiplier="1" source="self" target="enemy" linkType="light" fx="light_1" />
+			</ability>
+		</skill>
+		<skill link="light_mend">
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*150*h*-*h*180*h* health.">
+				<action type="healthheal" minAmount="150" maxAmount="180" multiplier="1" source="self" target="select" linkType="light" fx="heal_1" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*170*h*-*h*200*h* health.">
+				<action type="healthheal" minAmount="170" maxAmount="200" multiplier="1" source="self" target="select" linkType="light" fx="heal_1" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*190*h*-*h*220*h* health.">
+				<action type="healthheal" minAmount="190" maxAmount="220" multiplier="1" source="self" target="select" linkType="light" fx="heal_1" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*210*h*-*h*245*h* health.">
+				<action type="healthheal" minAmount="210" maxAmount="245" multiplier="1" source="self" target="select" linkType="light" fx="heal_1" />
+			</ability>
+		</skill>
+		<skill link="light_blast">
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*160*d*-*d*190*d* [light] damage to the enemy.">
+				<action type="healthdamage" minAmount="160" maxAmount="190" multiplier="1" source="self" target="enemy" linkType="light" fx="light_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*175*d*-*d*205*d* [light] damage to the enemy.">
+				<action type="healthdamage" minAmount="175" maxAmount="205" multiplier="1" source="self" target="enemy" linkType="light" fx="light_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*190*d*-*d*220*d* [light] damage to the enemy.">
+				<action type="healthdamage" minAmount="190" maxAmount="220" multiplier="1" source="self" target="enemy" linkType="light" fx="light_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*205*d*-*d*240*d* [light] damage to the enemy.">
+				<action type="healthdamage" minAmount="205" maxAmount="240" multiplier="1" source="self" target="enemy" linkType="light" fx="light_2" />
+			</ability>
+		</skill>
+		<skill link="light_storm">
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*55*d*-*d*70*d* [light] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="55" maxAmount="70" multiplier="1" source="self" target="enemyteam" linkType="light" fx="light_3" />
+			</ability>
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*65*d*-*d*80*d* [light] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="65" maxAmount="80" multiplier="1" source="self" target="enemyteam" linkType="light" fx="light_3" />
+			</ability>
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*75*d*-*d*90*d* [light] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="75" maxAmount="90" multiplier="1" source="self" target="enemyteam" linkType="light" fx="light_3" />
+			</ability>
+		</skill>
+		<skill link="basic_blade">
+			<ability manaCost="0" healthCost="0" cooldown="0" instant="false" desc="Deals *d*80*d*-*d*100*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="80" maxAmount="100" multiplier="1" source="self" target="enemy" linkType="physical" fx="slash" />
+			</ability>
+			<ability manaCost="0" healthCost="0" cooldown="0" instant="false" desc="Deals *d*85*d*-*d*105*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="85" maxAmount="105" multiplier="1" source="self" target="enemy" linkType="physical" fx="slash" />
+			</ability>
+			<ability manaCost="0" healthCost="0" cooldown="0" instant="false" desc="Deals *d*90*d*-*d*110*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="90" maxAmount="110" multiplier="1" source="self" target="enemy" linkType="physical" fx="slash" />
+			</ability>
+			<ability manaCost="0" healthCost="0" cooldown="0" instant="false" desc="Deals *d*95*d*-*d*115*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="95" maxAmount="115" multiplier="1" source="self" target="enemy" linkType="physical" fx="slash" />
+			</ability>
+			<ability manaCost="0" healthCost="0" cooldown="0" instant="false" desc="Deals *d*100*d*-*d*125*d* [physical] damage to the enemy.">
+				<action type="healthdamage" minAmount="100" maxAmount="125" multiplier="1" source="self" target="enemy" linkType="physical" fx="slash" />
+			</ability>
+		</skill>
+		<skill link="fire_fury">
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*240*d*-*d*300*d* [fire] damage to the enemy.">
+				<action type="healthdamage" minAmount="240" maxAmount="300" multiplier="1" source="self" target="enemy" linkType="fire" fx="flamestrike" />
+			</ability>
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*270*d*-*d*330*d* [fire] damage to the enemy.">
+				<action type="healthdamage" minAmount="270" maxAmount="330" multiplier="1" source="self" target="enemy" linkType="fire" fx="flamestrike" />
+			</ability>
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*300*d*-*d*360*d* [fire] damage to the enemy.">
+				<action type="healthdamage" minAmount="300" maxAmount="360" multiplier="1" source="self" target="enemy" linkType="fire" fx="flamestrike" />
+			</ability>
+		</skill>
+		<skill link="water_strike">
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*110*d*-*d*130*d* [water] damage to the enemy.">
+				<action type="healthdamage" minAmount="110" maxAmount="130" multiplier="1" source="self" target="enemy" linkType="water" fx="water_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*120*d*-*d*140*d* [water] damage to the enemy.">
+				<action type="healthdamage" minAmount="120" maxAmount="140" multiplier="1" source="self" target="enemy" linkType="water" fx="water_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*130*d*-*d*150*d* [water] damage to the enemy.">
+				<action type="healthdamage" minAmount="130" maxAmount="150" multiplier="1" source="self" target="enemy" linkType="water" fx="water_1" />
+			</ability>
+			<ability manaCost="1" healthCost="0" cooldown="1" instant="false" desc="Deals *d*140*d*-*d*165*d* [water] damage to the enemy.">
+				<action type="healthdamage" minAmount="140" maxAmount="165" multiplier="1" source="self" target="enemy" linkType="water" fx="water_1" />
+			</ability>
+		</skill>
+		<skill link="water_mend">
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*150*h*-*h*180*h* health.">
+				<action type="healthheal" minAmount="150" maxAmount="180" multiplier="1" source="self" target="select" linkType="water" fx="heal_1" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*170*h*-*h*200*h* health.">
+				<action type="healthheal" minAmount="170" maxAmount="200" multiplier="1" source="self" target="select" linkType="water" fx="heal_1" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*190*h*-*h*220*h* health.">
+				<action type="healthheal" minAmount="190" maxAmount="220" multiplier="1" source="self" target="select" linkType="water" fx="heal_1" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*210*h*-*h*245*h* health.">
+				<action type="healthheal" minAmount="210" maxAmount="245" multiplier="1" source="self" target="select" linkType="water" fx="heal_1" />
+			</ability>
+		</skill>
+		<skill link="water_blast">
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*160*d*-*d*190*d* [water] damage to the enemy.">
+				<action type="healthdamage" minAmount="160" maxAmount="190" multiplier="1" source="self" target="enemy" linkType="water" fx="water_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*175*d*-*d*205*d* [water] damage to the enemy.">
+				<action type="healthdamage" minAmount="175" maxAmount="205" multiplier="1" source="self" target="enemy" linkType="water" fx="water_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*190*d*-*d*220*d* [water] damage to the enemy.">
+				<action type="healthdamage" minAmount="190" maxAmount="220" multiplier="1" source="self" target="enemy" linkType="water" fx="water_2" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" desc="Deals *d*205*d*-*d*240*d* [water] damage to the enemy.">
+				<action type="healthdamage" minAmount="205" maxAmount="240" multiplier="1" source="self" target="enemy" linkType="water" fx="water_2" />
+			</ability>
+		</skill>
+		<skill link="water_fury">
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*240*d*-*d*300*d* [water] damage to the enemy.">
+				<action type="healthdamage" minAmount="240" maxAmount="300" multiplier="1" source="self" target="enemy" linkType="water" fx="water_4" />
+			</ability>
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*270*d*-*d*330*d* [water] damage to the enemy.">
+				<action type="healthdamage" minAmount="270" maxAmount="330" multiplier="1" source="self" target="enemy" linkType="water" fx="water_4" />
+			</ability>
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*300*d*-*d*360*d* [water] damage to the enemy.">
+				<action type="healthdamage" minAmount="300" maxAmount="360" multiplier="1" source="self" target="enemy" linkType="water" fx="water_4" />
+			</ability>
+		</skill>
+		<skill link="water_storm">
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*55*d*-*d*70*d* [water] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="55" maxAmount="70" multiplier="1" source="self" target="enemyteam" linkType="water" fx="water_3" />
+			</ability>
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*65*d*-*d*80*d* [water] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="65" maxAmount="80" multiplier="1" source="self" target="enemyteam" linkType="water" fx="water_3" />
+			</ability>
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*75*d*-*d*90*d* [water] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="75" maxAmount="90" multiplier="1" source="self" target="enemyteam" linkType="water" fx="water_3" />
+			</ability>
+		</skill>
+		<skill link="light_fury">
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*240*d*-*d*300*d* [light] damage to the enemy.">
+				<action type="healthdamage" minAmount="240" maxAmount="300" multiplier="1" source="self" target="enemy" linkType="light" fx="light_4" />
+			</ability>
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*270*d*-*d*330*d* [light] damage to the enemy.">
+				<action type="healthdamage" minAmount="270" maxAmount="330" multiplier="1" source="self" target="enemy" linkType="light" fx="light_4" />
+			</ability>
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*300*d*-*d*360*d* [light] damage to the enemy.">
+				<action type="healthdamage" minAmount="300" maxAmount="360" multiplier="1" source="self" target="enemy" linkType="light" fx="light_4" />
+			</ability>
+		</skill>
+		<skill link="physical_mend">
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*150*h*-*h*180*h* health.">
+				<action type="healthheal" minAmount="150" maxAmount="180" multiplier="1" source="self" target="select" linkType="physical" fx="heal_1" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*170*h*-*h*200*h* health.">
+				<action type="healthheal" minAmount="170" maxAmount="200" multiplier="1" source="self" target="select" linkType="physical" fx="heal_1" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*190*h*-*h*220*h* health.">
+				<action type="healthheal" minAmount="190" maxAmount="220" multiplier="1" source="self" target="select" linkType="physical" fx="heal_1" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*210*h*-*h*245*h* health.">
+				<action type="healthheal" minAmount="210" maxAmount="245" multiplier="1" source="self" target="select" linkType="physical" fx="heal_1" />
+			</ability>
+		</skill>
+		<skill link="electric_mend">
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*150*h*-*h*180*h* health.">
+				<action type="healthheal" minAmount="150" maxAmount="180" multiplier="1" source="self" target="select" linkType="electric" fx="heal_1" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*170*h*-*h*200*h* health.">
+				<action type="healthheal" minAmount="170" maxAmount="200" multiplier="1" source="self" target="select" linkType="electric" fx="heal_1" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*190*h*-*h*220*h* health.">
+				<action type="healthheal" minAmount="190" maxAmount="220" multiplier="1" source="self" target="select" linkType="electric" fx="heal_1" />
+			</ability>
+			<ability manaCost="2" healthCost="0" cooldown="2" instant="false" selectTarget="selfteam" desc="Heals a curio on your team for *h*210*h*-*h*245*h* health.">
+				<action type="healthheal" minAmount="210" maxAmount="245" multiplier="1" source="self" target="select" linkType="electric" fx="heal_1" />
+			</ability>
+		</skill>
+		<skill link="electric_fury">
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*240*d*-*d*300*d* [electric] damage to the enemy.">
+				<action type="healthdamage" minAmount="240" maxAmount="300" multiplier="1" source="self" target="enemy" linkType="electric" fx="electric_4" />
+			</ability>
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*270*d*-*d*330*d* [electric] damage to the enemy.">
+				<action type="healthdamage" minAmount="270" maxAmount="330" multiplier="1" source="self" target="enemy" linkType="electric" fx="electric_4" />
+			</ability>
+			<ability manaCost="4" healthCost="0" cooldown="3" instant="false" desc="Deals *d*300*d*-*d*360*d* [electric] damage to the enemy.">
+				<action type="healthdamage" minAmount="300" maxAmount="360" multiplier="1" source="self" target="enemy" linkType="electric" fx="electric_4" />
+			</ability>
+		</skill>
+		<skill link="physical_storm">
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*55*d*-*d*70*d* [physical] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="55" maxAmount="70" multiplier="1" source="self" target="enemyteam" linkType="physical" fx="rock_3" />
+			</ability>
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*65*d*-*d*80*d* [physical] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="65" maxAmount="80" multiplier="1" source="self" target="enemyteam" linkType="physical" fx="rock_3" />
+			</ability>
+			<ability manaCost="3" healthCost="0" cooldown="3" instant="false" desc="Deals *d*75*d*-*d*90*d* [physical] damage to every enemy curio.">
+				<action type="healthdamage" minAmount="75" maxAmount="90" multiplier="1" source="self" target="enemyteam" linkType="physical" fx="rock_3" />
+			</ability>
+		</skill>
+	</skills>
+</data>

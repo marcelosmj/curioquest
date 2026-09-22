@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<achievements>
+		<achievement id="1" name="Island Hopper" desc="Complete Home Island" icon="Zone_1.png" thumbnail="Zone_1.png" objective="complete" target="1" loadLocal="true" track="zone_complete:1">
+			<ranks>
+				<rank id="0" amtNeeded="1">
+					<rewards>
+						<item id="2" type="currency" qty="10" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="2" name="Sea Legs" desc="Complete the Open Sea" icon="Zone_2.png" thumbnail="Zone_2.png" objective="complete" target="2" loadLocal="true" track="zone_complete:2">
+			<ranks>
+				<rank id="0" amtNeeded="1">
+					<rewards>
+						<item id="2" type="currency" qty="20" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="3" name="Curio Tamer" desc="Win # zone battles" icon="DefeatNodes.png" thumbnail="DefeatNodes.png" objective="defeat" target="0" loadLocal="true" track="node_wins">
+			<ranks>
+				<rank id="0" amtNeeded="10">
+					<rewards>
+						<item id="1" type="currency" qty="1000" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="50">
+					<rewards>
+						<item id="1" type="currency" qty="2000" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="250">
+					<rewards>
+						<item id="1" type="currency" qty="3000" />
+					</rewards>
+				</rank>
+				<rank id="3" amtNeeded="1000">
+					<rewards>
+						<item id="1" type="currency" qty="4000" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="4" name="Hard Hitter" desc="Deal # damage" icon="DealDamage.png" thumbnail="DealDamage.png" objective="damage" target="-1" loadLocal="true" track="damage">
+			<ranks>
+				<rank id="0" amtNeeded="10000">
+					<rewards>
+						<item id="1" type="currency" qty="1500" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="100000">
+					<rewards>
+						<item id="1" type="currency" qty="3000" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="1000000">
+					<rewards>
+						<item id="1" type="currency" qty="4500" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="5" name="Brawler" desc="Deal # Physical damage" icon="DealPhysicalDamage.png" thumbnail="DealPhysicalDamage.png" objective="damage" target="0" loadLocal="true" track="damage:physical">
+			<ranks>
+				<rank id="0" amtNeeded="5000">
+					<rewards>
+						<item id="1" type="currency" qty="800" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="50000">
+					<rewards>
+						<item id="1" type="currency" qty="1600" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="500000">
+					<rewards>
+						<item id="1" type="currency" qty="2400" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="6" name="Windbreaker" desc="Deal # Air damage" icon="DealAirDamage.png" thumbnail="DealAirDamage.png" objective="damage" target="1" loadLocal="true" track="damage:air">
+			<ranks>
+				<rank id="0" amtNeeded="5000">
+					<rewards>
+						<item id="1" type="currency" qty="800" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="50000">
+					<rewards>
+						<item id="1" type="currency" qty="1600" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="500000">
+					<rewards>
+						<item id="1" type="currency" qty="2400" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="7" name="Landslide" desc="Deal # Earth damage" icon="DealEarthDamage.png" thumbnail="DealEarthDamage.png" objective="damage" target="2" loadLocal="true" track="damage:earth">
+			<ranks>
+				<rank id="0" amtNeeded="5000">
+					<rewards>
+						<item id="1" type="currency" qty="800" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="50000">
+					<rewards>
+						<item id="1" type="currency" qty="1600" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="500000">
+					<rewards>
+						<item id="1" type="currency" qty="2400" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="8" name="Shining Star" desc="Deal # Light damage" icon="DealLightDamage.png" thumbnail="DealLightDamage.png" objective="damage" target="3" loadLocal="true" track="damage:light">
+			<ranks>
+				<rank id="0" amtNeeded="5000">
+					<rewards>
+						<item id="1" type="currency" qty="800" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="50000">
+					<rewards>
+						<item id="1" type="currency" qty="1600" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="500000">
+					<rewards>
+						<item id="1" type="currency" qty="2400" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="9" name="Night Terror" desc="Deal # Dark damage" icon="DealDarkDamage.png" thumbnail="DealDarkDamage.png" objective="damage" target="4" loadLocal="true" track="damage:dark">
+			<ranks>
+				<rank id="0" amtNeeded="5000">
+					<rewards>
+						<item id="1" type="currency" qty="800" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="50000">
+					<rewards>
+						<item id="1" type="currency" qty="1600" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="500000">
+					<rewards>
+						<item id="1" type="currency" qty="2400" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="10" name="Live Wire" desc="Deal # Electric damage" icon="DealElectricDamage.png" thumbnail="DealElectricDamage.png" objective="damage" target="5" loadLocal="true" track="damage:electric">
+			<ranks>
+				<rank id="0" amtNeeded="5000">
+					<rewards>
+						<item id="1" type="currency" qty="800" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="50000">
+					<rewards>
+						<item id="1" type="currency" qty="1600" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="500000">
+					<rewards>
+						<item id="1" type="currency" qty="2400" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="11" name="Tsunami" desc="Deal # Water damage" icon="DealWaterDamage.png" thumbnail="DealWaterDamage.png" objective="damage" target="6" loadLocal="true" track="damage:water">
+			<ranks>
+				<rank id="0" amtNeeded="5000">
+					<rewards>
+						<item id="1" type="currency" qty="800" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="50000">
+					<rewards>
+						<item id="1" type="currency" qty="1600" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="500000">
+					<rewards>
+						<item id="1" type="currency" qty="2400" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="12" name="Firestarter" desc="Deal # Fire damage" icon="DealFireDamage.png" thumbnail="DealFireDamage.png" objective="damage" target="7" loadLocal="true" track="damage:fire">
+			<ranks>
+				<rank id="0" amtNeeded="5000">
+					<rewards>
+						<item id="1" type="currency" qty="800" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="50000">
+					<rewards>
+						<item id="1" type="currency" qty="1600" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="500000">
+					<rewards>
+						<item id="1" type="currency" qty="2400" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="13" name="Critical Thinker" desc="Land # critical hits" icon="DealCritical.png" thumbnail="DealCritical.png" objective="damage" target="-2" loadLocal="true" track="crits">
+			<ranks>
+				<rank id="0" amtNeeded="25">
+					<rewards>
+						<item id="1" type="currency" qty="1000" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="250">
+					<rewards>
+						<item id="1" type="currency" qty="2000" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="2500">
+					<rewards>
+						<item id="1" type="currency" qty="3000" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="14" name="Field Medic" desc="Heal # health" icon="HealthHealed.png" thumbnail="HealthHealed.png" objective="heal" target="0" loadLocal="true" track="healing">
+			<ranks>
+				<rank id="0" amtNeeded="5000">
+					<rewards>
+						<item id="1" type="currency" qty="1000" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="50000">
+					<rewards>
+						<item id="1" type="currency" qty="2000" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="500000">
+					<rewards>
+						<item id="1" type="currency" qty="3000" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="15" name="Gold Digger" desc="Collect # gold" icon="CollectGold.png" thumbnail="CollectGold.png" objective="collect" target="1" loadLocal="true" track="gold_earned">
+			<ranks>
+				<rank id="0" amtNeeded="10000">
+					<rewards>
+						<item id="2" type="currency" qty="5" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="100000">
+					<rewards>
+						<item id="2" type="currency" qty="10" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="1000000">
+					<rewards>
+						<item id="2" type="currency" qty="15" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="16" name="Scholar" desc="Earn # experience" icon="CollectExp.png" thumbnail="CollectExp.png" objective="collect" target="4" loadLocal="true" track="exp_earned">
+			<ranks>
+				<rank id="0" amtNeeded="1000">
+					<rewards>
+						<item id="1" type="currency" qty="1000" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="10000">
+					<rewards>
+						<item id="1" type="currency" qty="2000" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="100000">
+					<rewards>
+						<item id="1" type="currency" qty="3000" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="17" name="Plasma Collector" desc="Collect # plasma" icon="CollectPlasma.png" thumbnail="CollectPlasma.png" objective="collect" target="2" loadLocal="true" track="credits_earned">
+			<ranks>
+				<rank id="0" amtNeeded="50">
+					<rewards>
+						<item id="1" type="currency" qty="2500" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="500">
+					<rewards>
+						<item id="1" type="currency" qty="5000" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="5000">
+					<rewards>
+						<item id="1" type="currency" qty="7500" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="18" name="Common Ground" desc="Own # common curios" icon="CollectCommons.png" thumbnail="CollectCommons.png" objective="collect" target="0" loadLocal="true" track="own:common">
+			<ranks>
+				<rank id="0" amtNeeded="5">
+					<rewards>
+						<item id="1" type="currency" qty="1000" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="10">
+					<rewards>
+						<item id="1" type="currency" qty="2000" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="20">
+					<rewards>
+						<item id="1" type="currency" qty="3000" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="19" name="Rare Finds" desc="Own # rare curios" icon="CollectRares.png" thumbnail="CollectRares.png" objective="collect" target="0" loadLocal="true" track="own:rare">
+			<ranks>
+				<rank id="0" amtNeeded="3">
+					<rewards>
+						<item id="1" type="currency" qty="2000" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="6">
+					<rewards>
+						<item id="1" type="currency" qty="4000" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="10">
+					<rewards>
+						<item id="1" type="currency" qty="6000" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="20" name="Epic Collection" desc="Own # epic curios" icon="CollectEpics.png" thumbnail="CollectEpics.png" objective="collect" target="0" loadLocal="true" track="own:epic">
+			<ranks>
+				<rank id="0" amtNeeded="1">
+					<rewards>
+						<item id="2" type="currency" qty="10" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="3">
+					<rewards>
+						<item id="2" type="currency" qty="20" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="6">
+					<rewards>
+						<item id="2" type="currency" qty="30" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="21" name="Legend Keeper" desc="Own # legendary curios" icon="CollectLegendaries.png" thumbnail="CollectLegendaries.png" objective="collect" target="0" loadLocal="true" track="own:legendary">
+			<ranks>
+				<rank id="0" amtNeeded="1">
+					<rewards>
+						<item id="2" type="currency" qty="25" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="22" name="Unique Tastes" desc="Own # different curios" icon="UniqueCurios.png" thumbnail="UniqueCurios.png" objective="obtain" target="1" loadLocal="true" track="unique_species">
+			<ranks>
+				<rank id="0" amtNeeded="10">
+					<rewards>
+						<item id="2" type="currency" qty="10" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="25">
+					<rewards>
+						<item id="2" type="currency" qty="20" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="46">
+					<rewards>
+						<item id="2" type="currency" qty="30" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="23" name="Evolutionist" desc="Evolve # curios" icon="EvolveCurios.png" thumbnail="EvolveCurios.png" objective="evolve" target="0" loadLocal="true" track="evolves">
+			<ranks>
+				<rank id="0" amtNeeded="1">
+					<rewards>
+						<item id="1" type="currency" qty="2000" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="10">
+					<rewards>
+						<item id="1" type="currency" qty="4000" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="50">
+					<rewards>
+						<item id="1" type="currency" qty="6000" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="24" name="Rank Climber" desc="Rank up # curios" icon="RankUpCurios.png" thumbnail="RankUpCurios.png" objective="upgrade" target="0" loadLocal="true" track="rankups">
+			<ranks>
+				<rank id="0" amtNeeded="1">
+					<rewards>
+						<item id="1" type="currency" qty="2000" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="10">
+					<rewards>
+						<item id="1" type="currency" qty="4000" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="25">
+					<rewards>
+						<item id="1" type="currency" qty="6000" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="25" name="Max Power" desc="Raise # curios to level 40" icon="MaxLevel.png" thumbnail="MaxLevel.png" objective="level" target="40" loadLocal="true" track="max_level">
+			<ranks>
+				<rank id="0" amtNeeded="1">
+					<rewards>
+						<item id="2" type="currency" qty="10" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="5">
+					<rewards>
+						<item id="2" type="currency" qty="20" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="20">
+					<rewards>
+						<item id="2" type="currency" qty="30" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="26" name="Plinko Pro" desc="Play Plinko # times" icon="PlayPlinko.png" thumbnail="PlayPlinko.png" objective="plinko" target="0" loadLocal="true" track="plinko">
+			<ranks>
+				<rank id="0" amtNeeded="10">
+					<rewards>
+						<item id="8" type="currency" qty="10" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="100">
+					<rewards>
+						<item id="8" type="currency" qty="20" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="500">
+					<rewards>
+						<item id="8" type="currency" qty="30" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="27" name="Wheel of Fortune" desc="Spin the Prize Wheel # times" icon="PrizeWheel.png" thumbnail="PrizeWheel.png" objective="none" target="0" loadLocal="true" track="spins">
+			<ranks>
+				<rank id="0" amtNeeded="7">
+					<rewards>
+						<item id="1" type="currency" qty="1000" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="30">
+					<rewards>
+						<item id="1" type="currency" qty="2000" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="100">
+					<rewards>
+						<item id="1" type="currency" qty="3000" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="28" name="Job Well Done" desc="Complete # jobs" icon="CompleteJobs.png" thumbnail="CompleteJobs.png" objective="complete" target="0" loadLocal="true" track="jobs">
+			<ranks>
+				<rank id="0" amtNeeded="10">
+					<rewards>
+						<item id="1" type="currency" qty="1500" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="100">
+					<rewards>
+						<item id="1" type="currency" qty="3000" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="500">
+					<rewards>
+						<item id="1" type="currency" qty="4500" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="29" name="Fresh Start" desc="Reset a zone # times" icon="ResetZone.png" thumbnail="ResetZone.png" objective="reset" target="0" loadLocal="true" track="resets">
+			<ranks>
+				<rank id="0" amtNeeded="1">
+					<rewards>
+						<item id="6" type="currency" qty="10" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="10">
+					<rewards>
+						<item id="6" type="currency" qty="20" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="50">
+					<rewards>
+						<item id="6" type="currency" qty="30" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="30" name="Arena Rookie" desc="Win # PvP battles" icon="WinPvPBattles.png" thumbnail="WinPvPBattles.png" objective="defeat" target="1" loadLocal="true" track="pvp_wins">
+			<ranks>
+				<rank id="0" amtNeeded="10">
+					<rewards>
+						<item id="9" type="currency" qty="5" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="100">
+					<rewards>
+						<item id="9" type="currency" qty="10" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="1000">
+					<rewards>
+						<item id="9" type="currency" qty="15" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="31" name="Trade Master" desc="Exchange # curios" icon="ExchangedCurios.png" thumbnail="ExchangedCurios.png" objective="exchange" target="0" loadLocal="true" track="exchanges">
+			<ranks>
+				<rank id="0" amtNeeded="5">
+					<rewards>
+						<item id="5" type="currency" qty="200" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="50">
+					<rewards>
+						<item id="5" type="currency" qty="400" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="250">
+					<rewards>
+						<item id="5" type="currency" qty="600" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="32" name="Big Spender" desc="Spend # plasma" icon="SpendPlasma.png" thumbnail="SpendPlasma.png" objective="none" target="0" loadLocal="true" track="credits_spent">
+			<ranks>
+				<rank id="0" amtNeeded="100">
+					<rewards>
+						<item id="1" type="currency" qty="5000" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="1000">
+					<rewards>
+						<item id="1" type="currency" qty="10000" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+		<achievement id="33" name="Journal Keeper" desc="Discover # curios" icon="JournalEntries.png" thumbnail="JournalEntries.png" objective="obtain" target="0" loadLocal="true" track="journal">
+			<ranks>
+				<rank id="0" amtNeeded="10">
+					<rewards>
+						<item id="1" type="currency" qty="2500" />
+					</rewards>
+				</rank>
+				<rank id="1" amtNeeded="25">
+					<rewards>
+						<item id="1" type="currency" qty="5000" />
+					</rewards>
+				</rank>
+				<rank id="2" amtNeeded="46">
+					<rewards>
+						<item id="1" type="currency" qty="7500" />
+					</rewards>
+				</rank>
+			</ranks>
+		</achievement>
+	</achievements>
+</data>

@@ -1,0 +1,348 @@
+{
+  "_source": {
+    "wiki": "Curio Quest Wiki (curioquest.fandom.com) - WikiTeam dump 2022-02-27, archive.org item wiki-curioquestfandomcom",
+    "license": "Wiki text CC-BY-SA 3.0. Screenshots are game content (c) 5th Planet Games.",
+    "extracted": "2026-09-15",
+    "notes": [
+      "max_stats come from in-game 'MAX STATS' screenshots (2015-09/10 and 2017-03) unless a different source is named",
+      "skill 'cost' is the number shown in the skill-tree screen; it is NOT the battle mana cost (battle mana costs are 0-2, see Ampaca)",
+      "skill 'max_rank' is the N in the '0/N' counter of the skill-tree screen",
+      "skill-tree arrows (prerequisites) and positions are not transcribed yet"
+    ]
+  },
+  "rarities": { "1": "Common", "2": "Rare", "3": "Epic", "4": "Legendary", "5": "Mythic" },
+  "elements": ["Physical", "Air", "Earth", "Light", "Dark", "Electric", "Water", "Fire"],
+  "roster": {
+    "Mythic": {
+      "Physical": ["Geddon", "Lolli", "Bobsloth"],
+      "Air": ["Dragos", "Gustwing", "Zephyros", "Rotor", "Merika"],
+      "Earth": ["Rokisaur", "Eco", "Boletus", "Summer", "Leyline"],
+      "Light": ["Ampaca", "Jenite", "Checkmate", "Leo", "Grail"],
+      "Dark": ["Sinite", "Singularity", "Void", "Gambit", "Null"],
+      "Electric": ["Bolt", "Electron", "Bastion", "Raiju", "Perkuna"],
+      "Water": ["Razorfin", "Sarida", "Hieron", "Berg", "Winter", "Coral"],
+      "Fire": ["Core", "Flamoth", "Scorpio", "Vasuki", "Xolotl"]
+    },
+    "Legendary": {
+      "Physical": ["Amgar", "Axed", "Mantavol"],
+      "Air": ["Squall", "Arjax", "Williwaw", "Aureus", "Grotesk", "Anzu"],
+      "Earth": ["Cthusk", "Penzai", "Jackalo", "Floralei", "Sakurasaur", "Trapthorn"],
+      "Light": ["Aesalon", "Lumin", "Qilin", "Tarandus", "Silveris"],
+      "Dark": ["Strix", "Lavoi", "Shylewouf", "Phantasma", "Cryptomb", "Erebus"],
+      "Electric": ["Voltage", "Stitches", "Legacy Bot", "Twitch", "Amp", "Joules"],
+      "Water": ["Erakka", "Sapphurion", "Grogimus", "Ebb", "Octis", "Skoll"],
+      "Fire": ["Volcanis", "Malagore", "Ignitar", "Magmis", "Lavadon", "Velox"]
+    },
+    "Epic": {
+      "Physical": ["Blastek", "Mactech-1201", "Muaytail", "Nasting"],
+      "Air": ["Draconilla", "Lampyr", "Lepus", "Monobite"],
+      "Earth": ["Foleaf", "Fungolem", "Hartwood", "Legoom", "Ramsical", "Roclost", "Chelydra"],
+      "Light": ["Asclep", "Conifer", "Gryphos", "Peppermint", "Stella", "Yeteen"],
+      "Dark": ["Caniton", "Cap'n Skelly", "Kernal", "Lurking Horror", "Vastokian"],
+      "Electric": ["Ornimite", "Pterowatt", "Thundiger", "Torbolt", "Xenoun"],
+      "Water": ["Gentacles", "Jawroger", "Monstro", "Salp", "Polursa"],
+      "Fire": ["Brach", "Draking", "Drakitton", "Magmo", "Mander", "Fritter"]
+    },
+    "Rare": {
+      "Physical": ["Armordillo", "Galluvane", "Ossilis", "Stovetop"],
+      "Air": ["Blue", "Cycloud", "Oculi", "Tropigust"],
+      "Earth": ["Boone", "Claymore", "Pottor"],
+      "Light": ["Deputar", "Pentes"],
+      "Dark": ["Dangler", "Noxie", "Proteus"],
+      "Electric": ["Cathode", "Kiya"],
+      "Water": ["Ducan", "Hydragon", "Multifrost", "Nardrill"],
+      "Fire": ["Jack", "Tiki"]
+    },
+    "Common": {
+      "Physical": ["Gumley", "Mantank", "Pupette", "Liftusk"],
+      "Air": ["Pigale", "Pelica", "Vultaire"],
+      "Earth": ["Cocon", "Rosie", "Toadstone"],
+      "Light": ["Bumblebeam", "Flairy", "Prismo"],
+      "Dark": ["Nightmaroot", "Wormseed", "Batawoc", "Shado"],
+      "Electric": ["Jellot", "Macrobe", "R.E.B.O.T."],
+      "Water": ["Araknice", "Frochkon", "Penstripe"],
+      "Fire": ["Clawsphorus", "Thermant", "Impkin"]
+    }
+  },
+  "curios": {
+    "Jellot": {
+      "rarity": 1, "element": "Electric",
+      "max_stats": { "damage": 550, "health": 3225, "healing": 543, "mana": 10, "luck": 66 },
+      "description": "Under that coy smile lies an insidious curio with clandestine intent.",
+      "skills": [
+        { "name": "Slap", "cost": 0, "max_rank": 5 },
+        { "name": "Buzz", "cost": 3, "max_rank": 5 },
+        { "name": "Sprinkle", "cost": 3, "max_rank": 5 },
+        { "name": "Zap Wrap", "cost": 3, "max_rank": 4 },
+        { "name": "Jellotacle", "cost": 4, "max_rank": 5 }
+      ],
+      "sources": ["File:Screen Shot 2015-09-12 at 5.23.02 PM.png", "File:Screen Shot 2015-10-03 at 8.05.34 AM.png"]
+    },
+    "Gumley": {
+      "rarity": 1, "element": "Physical",
+      "max_stats": { "damage": 535, "health": 3262, "healing": 558, "mana": 10, "luck": 66 },
+      "description": "Gumley is composed of intelligent polysaccharides that fused together to create a unified consciousness.",
+      "skills": [
+        { "name": "Slap", "cost": 0, "max_rank": 5 },
+        { "name": "Bear Hug", "cost": 3, "max_rank": 5 },
+        { "name": "Hibernate", "cost": 5, "max_rank": 3 },
+        { "name": "Berry Juice", "cost": 5, "max_rank": 5 },
+        { "name": "Gumshoe", "cost": 5, "max_rank": 5 }
+      ],
+      "sources": ["File:Screen Shot 2015-10-03 at 7.52.41 AM.png", "File:Screen Shot 2015-10-03 at 8.00.12 AM.png"]
+    },
+    "Blue": {
+      "rarity": 2, "element": "Air", "starter": true,
+      "max_stats": { "damage": 728, "health": 4147, "healing": 710, "mana": 11, "luck": 77 },
+      "max_stats_alt": { "damage": 728, "health": 4693, "healing": 710, "mana": 11, "luck": 77, "source": "Curios List page (2016)" },
+      "description": "No information available for this curio. This is an unknown species that needs further research and documentation.",
+      "skills": [
+        { "name": "Bite", "cost": 0, "max_rank": 5 },
+        { "name": "Airflow", "cost": 0, "max_rank": 4 },
+        { "name": "Double Gust", "cost": 4, "max_rank": 4 },
+        { "name": "Sly Fox", "cost": 5, "max_rank": 4 },
+        { "name": "Fox Says...", "cost": 4, "max_rank": 5 }
+      ],
+      "cdn_image": "pets/Fox.png",
+      "sources": ["File:Screen Shot 2015-10-03 at 8.39.26 AM.png", "File:Screen Shot 2015-10-03 at 8.39.36 AM.png", "File:Fox.png", "File:Blue.PNG", "File:Blue Evo 1.PNG", "File:Blue Evo 2.PNG"]
+    },
+    "Hydragon": {
+      "rarity": 2, "element": "Water",
+      "max_stats": { "damage": 710, "health": 4532, "healing": 710, "mana": 14, "luck": 17 },
+      "description": "The Hydragon's heads can't seem to cooperate with one another unless they're in combat.",
+      "skills": [
+        { "name": "Bite", "cost": 0, "max_rank": 5 },
+        { "name": "Harpoon", "cost": 3, "max_rank": 5 },
+        { "name": "Splash", "cost": 3, "max_rank": 4 },
+        { "name": "Aqua Impale", "cost": 4, "max_rank": 5 },
+        { "name": "Tidal Wave", "cost": 3, "max_rank": 5 }
+      ],
+      "sources": ["File:Screen Shot 2015-10-03 at 8.29.13 AM.png", "File:Screen Shot 2015-10-03 at 8.29.21 AM.png"]
+    },
+    "Ducan": {
+      "rarity": 2, "element": "Water",
+      "max_stats": { "damage": 701, "health": 4532, "healing": 745, "mana": 11, "luck": 77, "level": 40 },
+      "description": "Ducans have trouble swimming and rely on their special gear to swim long distances.",
+      "obtained": "DNA",
+      "stat_table_wiki_labels": {
+        "base":  { "health": 250,  "damage": 50,  "healing": 75,  "luck": 5,  "mana": 10 },
+        "evo1":  { "health": 790,  "damage": 131, "healing": 156, "luck": 14, "mana": 10 },
+        "evo2":  { "health": 2366, "damage": 372, "healing": 407, "luck": 40, "mana": null },
+        "lvl40": { "health": 4532, "damage": 701, "healing": 745, "luck": 77, "mana": 11 },
+        "growth_per_level": { "health": 60, "damage": 9, "healing": 9, "luck": 1, "mana": 0 }
+      },
+      "stat_table_notes": [
+        "wiki editor described the columns as: Level 1, Growth Rate, Level 10 Evo1, Level 25 Evo2, Level 40 (plus rank-ups 40-S/A/B/C)",
+        "evo1 = base + growth*9 exactly (level 10)",
+        "evo2 = floor((base + growth*24) * 1.40) for health, damage, healing, luck (level 25)",
+        "lvl40 = floor((base + growth*39) * 1.75) for health, damage, healing, luck; mana does not follow the multiplier",
+        "formula is a hypothesis from one curio - confirm against the client's stat code (PetBook *Base/*Gain/*Perc)"
+      ],
+      "cdn_images": ["ducan.png", "ducan_evo1.png"]
+    },
+    "Asclep": {
+      "rarity": 3, "element": "Light",
+      "max_stats": { "damage": 960, "health": 6210, "healing": 978, "mana": 17, "luck": 118 },
+      "description": "Asclep have incredible healing powers and are drawn to areas of sickness and suffering where they can do the greatest good.",
+      "skills": [
+        { "name": "Bite", "cost": 0, "max_rank": 5 },
+        { "name": "Star Light", "cost": 3, "max_rank": 4 },
+        { "name": "Remedy", "cost": 20, "max_rank": 1 },
+        { "name": "Snakebite", "cost": 2, "max_rank": 4 },
+        { "name": "Soothe", "cost": 2, "max_rank": 5 },
+        { "name": "Sunstrike", "cost": 2, "max_rank": 5 },
+        { "name": "Medicinal", "cost": 2, "max_rank": 5 }
+      ],
+      "sources": ["File:Screen Shot 2015-10-03 at 8.21.56 AM.png", "File:Screen Shot 2015-10-03 at 8.26.12 AM.png"]
+    },
+    "Drakitton": { "rarity": 3, "element": "Fire",  "max_stats": { "damage": 998, "health": 7000, "healing": 996, "mana": 16, "luck": 130 }, "sources": ["Curios List page (2016)"] },
+    "Stella":    { "rarity": 3, "element": "Light", "max_stats": { "damage": 992, "health": 7022, "healing": 894, "mana": 18, "luck": 86 },  "sources": ["Curios List page (2016)"] },
+    "Polursa":   { "rarity": 3, "element": "Water", "max_stats": { "damage": 992, "health": 6884, "healing": 940, "mana": 15, "luck": 90 },  "sources": ["Curios List page (2016)"] },
+    "Amp":       { "rarity": 4, "element": "Electric", "max_stats": { "damage": 1212, "health": 7859, "healing": 913, "mana": 19, "luck": 105 }, "sources": ["Curios List page (2016)"] },
+    "Erakka": {
+      "rarity": 4, "element": "Water",
+      "max_stats": { "damage": 1116, "health": 7368, "healing": 1017, "mana": 15, "luck": 103 },
+      "description": "The Erakka come from a world of ice and crystal where they are commonly used to guard places of great importance.",
+      "skills": [
+        { "name": "Slash", "cost": 0, "max_rank": 5 },
+        { "name": "Form Of", "cost": 2, "max_rank": 5 },
+        { "name": "Deep Freeze", "cost": 2, "max_rank": 3 },
+        { "name": "Ice Spike", "cost": 2, "max_rank": 4 },
+        { "name": "Tidal Power", "cost": 2, "max_rank": 4 },
+        { "name": "Blizzard", "cost": 2, "max_rank": 5 },
+        { "name": "Blue Depths", "cost": 2, "max_rank": 5 },
+        { "name": "Ice Block", "cost": 38, "max_rank": 1 }
+      ],
+      "sources": ["File:Screen Shot 2015-10-03 at 2.15.13 PM.png", "File:Screen Shot 2015-10-03 at 2.15.22 PM.png"]
+    },
+    "Sapphurion": {
+      "rarity": 4, "element": "Water",
+      "max_stats": { "damage": 1284, "health": 8217, "healing": 1298, "mana": 20, "luck": 76 },
+      "description": "Sapphurions are able to lay dormant within ice for decades",
+      "skills": [
+        { "name": "Tailswipe", "cost": 0, "max_rank": 5 },
+        { "name": "Aquasap", "cost": 4, "max_rank": 4 },
+        { "name": "Washout", "cost": 2, "max_rank": 5 },
+        { "name": "Healingwave", "cost": 4, "max_rank": 4 },
+        { "name": "Mysticflow", "cost": 16, "max_rank": 1 },
+        { "name": "Aurora", "cost": 2, "max_rank": 5 },
+        { "name": "Whammy", "cost": 20, "max_rank": 1 },
+        { "name": "Crystalize", "cost": 4, "max_rank": 4 }
+      ],
+      "sources": ["File:Screen Shot 2015-10-03 at 2.14.55 PM.png", "File:Screen Shot 2015-10-03 at 2.15.03 PM.png"]
+    },
+    "Grogimus": {
+      "rarity": 4, "element": "Water",
+      "max_stats": { "damage": 1305, "health": 7983, "healing": 1217, "mana": 19, "luck": 85 },
+      "description": "Grogimus spend their time in swamps. Do not let their brutish figure fool you, when cornered they lash out with great speed.",
+      "skills": [
+        { "name": "Toxicpunch", "cost": 0, "max_rank": 1 },
+        { "name": "Poisonpunch", "cost": 25, "max_rank": 1 },
+        { "name": "Vilewater", "cost": 25, "max_rank": 1 },
+        { "name": "Venomslam", "cost": 30, "max_rank": 1 },
+        { "name": "Waterslam", "cost": 30, "max_rank": 1 },
+        { "name": "Grogged", "cost": 30, "max_rank": 1 },
+        { "name": "Water Sphere", "cost": 30, "max_rank": 1 },
+        { "name": "Waterbarbs", "cost": 30, "max_rank": 1 }
+      ],
+      "sources": ["File:Screen Shot 2015-10-03 at 2.14.37 PM.png", "File:Screen Shot 2015-10-03 at 2.14.43 PM.png"]
+    },
+    "Axed": {
+      "rarity": 4, "element": "Physical",
+      "max_stats": { "damage": 1233, "health": 12453, "healing": 1242, "mana": 23, "luck": 150 },
+      "description": "Typically a pack hunter, Axed is happiest when it's fighting beside other curios.",
+      "skills": [
+        { "name": "Cleave", "cost": 0, "max_rank": 1 },
+        { "name": "Thickhide", "cost": 20, "max_rank": 1 },
+        { "name": "Rampage", "cost": 30, "max_rank": 1 },
+        { "name": "Power Stomp", "cost": 30, "max_rank": 1 },
+        { "name": "Roar", "cost": 30, "max_rank": 1 },
+        { "name": "Tailspin", "cost": 30, "max_rank": 1 },
+        { "name": "Crushing Blow", "cost": 30, "max_rank": 1 },
+        { "name": "Manahungry", "cost": 30, "max_rank": 1 }
+      ],
+      "sources": ["File:Screenshot (254).png", "File:Screenshot (255).png"]
+    },
+    "Legacy Bot": {
+      "rarity": 4, "element": "Electric",
+      "max_stats": { "damage": 1131, "health": 12863, "healing": 1242, "mana": 23, "luck": 128 },
+      "description": "A testament to modern robotology! Just don't get too close to it...",
+      "skills": [
+        { "name": "Byte", "cost": 0, "max_rank": 1 },
+        { "name": "Megabyte", "cost": 20, "max_rank": 1 },
+        { "name": "Laser Blast", "cost": 30, "max_rank": 1 },
+        { "name": "Short Circuit", "cost": 30, "max_rank": 1 },
+        { "name": "Power Source", "cost": 30, "max_rank": 1 },
+        { "name": "Weld", "cost": 30, "max_rank": 1 },
+        { "name": "Target Lock", "cost": 30, "max_rank": 1 },
+        { "name": "Reboot", "cost": 30, "max_rank": 1 }
+      ],
+      "sources": ["File:Screenshot (256).png", "File:Screenshot (257).png"]
+    },
+    "Ebb": {
+      "rarity": 4, "element": "Water",
+      "max_stats": { "damage": 1563, "health": 14375, "healing": 1030, "mana": 15, "luck": 112 },
+      "description": "Loves streams, hates bears.",
+      "skills": [
+        { "name": "Gills", "cost": 0, "max_rank": 3 },
+        { "name": "Triton", "cost": 0, "max_rank": 3 },
+        { "name": "Scales", "cost": 5, "max_rank": 3 },
+        { "name": "Douse", "cost": 5, "max_rank": 3 },
+        { "name": "Shorecrash", "cost": 5, "max_rank": 3 },
+        { "name": "Fish Oil", "cost": 5, "max_rank": 3 },
+        { "name": "Whirlpool", "cost": 5, "max_rank": 3 },
+        { "name": "Tidal Wave", "cost": 5, "max_rank": 3 }
+      ],
+      "sources": ["File:Screenshot (258).png", "File:Screenshot (259).png"]
+    },
+    "Razorfin": {
+      "rarity": 5, "element": "Water",
+      "max_stats": { "damage": 1518, "health": 11002, "healing": 1278, "mana": 26, "luck": 150 },
+      "description": "Its vision is primarily based on movement, though other curios don't seem to have caught on yet.",
+      "skills": [
+        { "name": "Jawesome", "cost": 0, "max_rank": 1 },
+        { "name": "Chumchop", "cost": 20, "max_rank": 1 },
+        { "name": "Shark Quake", "cost": 30, "max_rank": 1 },
+        { "name": "Showboatin", "cost": 30, "max_rank": 1 },
+        { "name": "Mondo", "cost": 30, "max_rank": 1 },
+        { "name": "Totally", "cost": 30, "max_rank": 1 },
+        { "name": "Hammertime", "cost": 30, "max_rank": 1 },
+        { "name": "Finkick", "cost": 30, "max_rank": 1 }
+      ],
+      "sources": ["File:Screen Shot 2015-10-03 at 2.10.09 PM.png", "File:Screen Shot 2015-10-03 at 2.10.19 PM.png"]
+    },
+    "Rokisaur": {
+      "rarity": 5, "element": "Earth",
+      "max_stats": { "damage": 1435, "health": 12037, "healing": 1370, "mana": 27, "luck": 137 },
+      "rebalance_note": "Health changed to 16,249 (talk page, 2016-05-18)",
+      "description": "It's ill advised to play fetch with Rokisaur, as it's just as likely to crush the object you threw as it is to retrieve it.",
+      "skills": [
+        { "name": "Dark Claw", "cost": 0, "max_rank": 1 },
+        { "name": "Rock Beat", "cost": 30, "max_rank": 1 },
+        { "name": "Peck", "cost": 20, "max_rank": 1 },
+        { "name": "Rockstorm", "cost": 30, "max_rank": 1 },
+        { "name": "Root", "cost": 30, "max_rank": 1 },
+        { "name": "Feral Call", "cost": 30, "max_rank": 1 },
+        { "name": "Retaliate", "cost": 30, "max_rank": 1 },
+        { "name": "Frond", "cost": 30, "max_rank": 1 }
+      ],
+      "sources": ["File:Screen Shot 2015-10-03 at 8.30.58 AM.png", "File:Screen Shot 2015-10-03 at 8.31.08 AM.png"]
+    },
+    "Geddon": {
+      "rarity": 5, "element": "Physical",
+      "max_stats": { "damage": 1664, "health": 21028, "healing": 1050, "mana": 25, "luck": 120 },
+      "description": "A lover of bandannas, not to be confused with bananas; you'll only make that mistake once.",
+      "skills": [
+        { "name": "Smash", "cost": 0, "max_rank": 3 },
+        { "name": "Slam", "cost": 5, "max_rank": 3 },
+        { "name": "Charge", "cost": 0, "max_rank": 3 },
+        { "name": "Trooper", "cost": 5, "max_rank": 3 },
+        { "name": "Great Ape", "cost": 5, "max_rank": 3 },
+        { "name": "Primal", "cost": 5, "max_rank": 3 },
+        { "name": "Savage", "cost": 5, "max_rank": 3 },
+        { "name": "Wrath", "cost": 5, "max_rank": 3 }
+      ],
+      "sources": ["File:Screenshot (260).png", "File:Screenshot (261).png"]
+    },
+    "Ampaca": {
+      "rarity": 5, "element": "Light",
+      "max_stats": { "damage": 1670, "health": 19352, "healing": 934, "mana": 29, "luck": 124 },
+      "battle_skills_maxed": [
+        { "name": "Beats",   "range": [1660, 2286], "effect": "Physical damage", "cooldown": 0, "mana": 0 },
+        { "name": "Doctor",  "range": [2521, 2946], "effect": "Healing to target", "cooldown": 2, "mana": 1 },
+        { "name": "Dubstep", "range": [2071, 2589], "effect": "Light & Electric damage", "cooldown": 2, "mana": 2 },
+        { "name": "Spin",    "range": [2589, 5197], "effect": "Light damage to random enemy", "cooldown": 0, "mana": 1 },
+        { "name": "Mix",     "effect": "Swap enemy; applies Mix buff to all enemy curios which deals 2,178 Light damage to each curio" }
+      ],
+      "sources": ["Ampaca page (2016-05-19)"]
+    },
+    "Hieron": {
+      "rarity": 5, "element": "Water",
+      "max_stats": { "damage": 1672, "health": 20250, "healing": 1008, "mana": 31, "luck": 138 },
+      "notes": "Looks like a manta ray",
+      "skill_names": ["Pain", "Wear", "Sift", "Time", "Defy", "Will", "Wave", "Soar"],
+      "battle_skills_maxed": [
+        { "name": "Pain", "range": [1915, 2592], "effect": "Physical damage to enemy curio", "cooldown": 0, "mana": 0 }
+      ],
+      "sources": ["Curio/Hieron page (2016-04-17)", "Skill/Pain page"]
+    },
+    "Bumblebeam": {
+      "rarity": 1, "element": "Light",
+      "battle_observation": { "level": 30, "health_max": 2010, "mana_max": 12 },
+      "sources": ["File:NO 1 health!.JPG (2015-02, defeat screen)"]
+    }
+  },
+  "game_facts": [
+    "Story: the player is a teenager whose parents turn out to be intergalactic criminals and are taken away, leaving the player with their curio Blue (starter).",
+    "Rarity by stars: 1 Common, 2 Rare, 3 Epic, 4 Legendary, 5 Mythic.",
+    "Level cap 40 (2015). Per wiki editors: evolution at level 10 (evo1) and level 25 (evo2); '40-S/A/B/C' are rank upgrades at level 40.",
+    "Battle mana costs are small (0-2) and cooldowns are 0-2 turns (Ampaca skill notes).",
+    "Defeat: when every curio in the party is at 0 health; returns to the map with no experience or loot.",
+    "Arcade (Plinko): one ball costs 5 friend tokens; drops include 1,000 coins, 1 PvP ticket or a rare curio.",
+    "Curios were obtained mainly by DNA (shard) farming, PvP rewards and the premium shop.",
+    "Curio stats could be browsed in the shop (talk page, 2016).",
+    "A community Google Sheets curio database existed; its link is truncated in the wiki (https://docs.google.com/spreadsheets...vvhqUtxzZCi2bQ).",
+    "Original image CDN: http://5thplanetdawn.insnw.net/pets_live/assets/images/{pets|abilities|abilities/thumbnail|currency/icon}/<File>.png - e.g. pets/Fox.png (Blue), abilities/Air_Attack_1.png.",
+    "Battle HUD (2015 screenshot): 5x speed, Log, Defend, Quit buttons; defeat tip 'Refer a Friend for unique rewards!'."
+  ]
+}

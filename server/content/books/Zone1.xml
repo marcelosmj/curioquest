@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<zone name="Home Island" desc="A quiet island of old stones, treehouses and sandy beaches... until the Legion arrived." thumbnail="Zone_1.png" zoneBG="Zone_1_Background.swf" width="2400" height="480" starter="true">
+		<difficulty type="story">
+			<nodes>
+				<node id="1" name="Stone Circle" desc="Wild curios have gathered around the ancient stones next to your house." battleBG="Stonehenge.jpg" xPos="470" yPos="330" asset="Zone_1_Flag.swf" energy="1" exp="7" completeZone="false" hidden="false" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Wild Curios" desc="Safari Sam wants to see your Ducan in action." thumbnail="SafariDude.png" loadLocal="true" health="0" dialogEnter="z1n1_enter" dialogVictory="z1n1_win" dialogDefeat="hint_defeat" gold="25" petExp="20" dna="35">
+							<pets>
+								<pet id="19" level="1" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="2" layer="0" points="470:330,800:300" />
+					</paths>
+				</node>
+				<node id="2" name="Old Bridge" desc="Jace guards the old stone bridge and won't let anyone pass." battleBG="GuardTower.jpg" xPos="800" yPos="300" asset="Zone_1_Crate.swf" energy="1" exp="9" completeZone="false" hidden="false" unlockNodes="1" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Jace" desc="The bridge bully." thumbnail="Jace.png" loadLocal="true" health="0" dialogEnter="z1n2_enter" dialogVictory="z1n2_win" dialogDefeat="hint_defeat" gold="35" petExp="28" dna="25">
+							<pets>
+								<pet id="2" level="2" />
+								<pet id="20" level="2" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="3" layer="0" points="800:300,1010:175" />
+					</paths>
+				</node>
+				<node id="3" name="Treehouse" desc="The birds nesting in the old treehouse don't like visitors." battleBG="Treehouse.jpg" xPos="1010" yPos="175" asset="Zone_1_Birds.swf" energy="1" exp="11" completeZone="false" hidden="false" unlockNodes="2" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Nesting Curios" desc="Lee warned you about these." thumbnail="Lee.png" loadLocal="true" health="0" dialogEnter="z1n3_enter" dialogDefeat="hint_defeat" gold="45" petExp="36" dna="25">
+							<pets>
+								<pet id="8" level="3" />
+								<pet id="17" level="3" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="4" layer="0" points="1010:175,1330:280" />
+					</paths>
+				</node>
+				<node id="4" name="Jungle Generator" desc="The generator that powers the island, guarded by Jeff." battleBG="Island.jpg" xPos="1330" yPos="280" asset="Zone_1_Generator.swf" energy="1" exp="13" completeZone="false" hidden="false" unlockNodes="3" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Jeff" desc="He takes his job very seriously." thumbnail="Jeff.png" loadLocal="true" health="0" dialogEnter="z1n4_enter" dialogDefeat="hint_defeat" gold="55" petExp="44" dna="20">
+							<pets>
+								<pet id="7" level="4" />
+								<pet id="28" level="4" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="5" layer="0" points="1330:280,1800:365" />
+					</paths>
+				</node>
+				<node id="5" name="Treasure Beach" desc="Pirates are digging for treasure on the beach." battleBG="Beach.jpg" xPos="1800" yPos="365" asset="Zone_1_Shovel.swf" energy="1" exp="15" completeZone="false" hidden="false" unlockNodes="4" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Pirate Diggers" desc="They really want that treasure." thumbnail="Pirate.png" loadLocal="true" health="0" dialogEnter="z1n5_enter" dialogDefeat="hint_defeat" gold="65" petExp="52" dna="20">
+							<pets>
+								<pet id="18" level="5" />
+								<pet id="34" level="5" />
+								<pet id="21" level="5" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="6" layer="0" points="1800:365,2100:250" />
+					</paths>
+				</node>
+				<node id="6" name="The Dock" desc="The pirate ship is moored at the old dock. The Hermit waits nearby." battleBG="Ship.jpg" xPos="2100" yPos="250" asset="Zone_1_Ship.swf" energy="1" exp="19" completeZone="true" hidden="false" unlockNodes="5" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Pirate Crew" desc="The captain's loyal crew." thumbnail="Pirate.png" loadLocal="true" health="1" dialogEnter="z1n6a_enter" dialogDefeat="hint_defeat" gold="75" petExp="60" dna="20">
+							<pets>
+								<pet id="19" level="6" />
+								<pet id="5" level="6" />
+							</pets>
+						</battle>
+						<battle name="Captain Blackfin" desc="The fearsome captain of the pirate ship." thumbnail="PirateCaptain.png" loadLocal="true" health="0" dialogEnter="z1n6b_enter" dialogVictory="z1n6_win" dialogDefeat="hint_defeat" gold="82" petExp="65" dna="15">
+							<pets>
+								<pet id="5" level="6" />
+								<pet id="19" level="7" />
+								<pet id="43" level="7" />
+							</pets>
+						</battle>
+					</battles>
+				</node>
+			</nodes>
+		</difficulty>
+		<difficulty type="hard" requiredDifficulties="story">
+			<nodes>
+				<node id="1" name="Stone Circle" desc="Wild curios have gathered around the ancient stones next to your house." battleBG="Stonehenge.jpg" xPos="470" yPos="330" asset="Zone_1_Flag.swf" energy="2" exp="27" completeZone="false" hidden="false" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Wild Curios" desc="Safari Sam wants to see your Ducan in action." thumbnail="SafariDude.png" loadLocal="true" health="0" gold="188" petExp="100" dna="17">
+							<pets>
+								<pet id="19" level="11" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="2" layer="0" points="470:330,800:300" />
+					</paths>
+				</node>
+				<node id="2" name="Old Bridge" desc="Jace guards the old stone bridge and won't let anyone pass." battleBG="GuardTower.jpg" xPos="800" yPos="300" asset="Zone_1_Crate.swf" energy="2" exp="29" completeZone="false" hidden="false" unlockNodes="1" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Jace" desc="The bridge bully." thumbnail="Jace.png" loadLocal="true" health="0" gold="202" petExp="108" dna="12">
+							<pets>
+								<pet id="2" level="12" />
+								<pet id="20" level="12" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="3" layer="0" points="800:300,1010:175" />
+					</paths>
+				</node>
+				<node id="3" name="Treehouse" desc="The birds nesting in the old treehouse don't like visitors." battleBG="Treehouse.jpg" xPos="1010" yPos="175" asset="Zone_1_Birds.swf" energy="2" exp="31" completeZone="false" hidden="false" unlockNodes="2" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Nesting Curios" desc="Lee warned you about these." thumbnail="Lee.png" loadLocal="true" health="0" gold="218" petExp="116" dna="12">
+							<pets>
+								<pet id="8" level="13" />
+								<pet id="17" level="13" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="4" layer="0" points="1010:175,1330:280" />
+					</paths>
+				</node>
+				<node id="4" name="Jungle Generator" desc="The generator that powers the island, guarded by Jeff." battleBG="Island.jpg" xPos="1330" yPos="280" asset="Zone_1_Generator.swf" energy="2" exp="33" completeZone="false" hidden="false" unlockNodes="3" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Jeff" desc="He takes his job very seriously." thumbnail="Jeff.png" loadLocal="true" health="0" gold="232" petExp="124" dna="10">
+							<pets>
+								<pet id="7" level="14" />
+								<pet id="28" level="14" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="5" layer="0" points="1330:280,1800:365" />
+					</paths>
+				</node>
+				<node id="5" name="Treasure Beach" desc="Pirates are digging for treasure on the beach." battleBG="Beach.jpg" xPos="1800" yPos="365" asset="Zone_1_Shovel.swf" energy="2" exp="35" completeZone="false" hidden="false" unlockNodes="4" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Pirate Diggers" desc="They really want that treasure." thumbnail="Pirate.png" loadLocal="true" health="0" gold="248" petExp="132" dna="10">
+							<pets>
+								<pet id="18" level="15" />
+								<pet id="34" level="15" />
+								<pet id="21" level="15" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="6" layer="0" points="1800:365,2100:250" />
+					</paths>
+				</node>
+				<node id="6" name="The Dock" desc="The pirate ship is moored at the old dock. The Hermit waits nearby." battleBG="Ship.jpg" xPos="2100" yPos="250" asset="Zone_1_Ship.swf" energy="2" exp="39" completeZone="true" hidden="false" unlockNodes="5" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Pirate Crew" desc="The captain's loyal crew." thumbnail="Pirate.png" loadLocal="true" health="1" gold="262" petExp="140" dna="10">
+							<pets>
+								<pet id="19" level="16" />
+								<pet id="5" level="16" />
+							</pets>
+						</battle>
+						<battle name="Captain Blackfin" desc="The fearsome captain of the pirate ship." thumbnail="PirateCaptain.png" loadLocal="true" health="0" gold="272" petExp="145" dna="7">
+							<pets>
+								<pet id="5" level="16" />
+								<pet id="19" level="17" />
+								<pet id="43" level="17" />
+							</pets>
+						</battle>
+					</battles>
+				</node>
+			</nodes>
+		</difficulty>
+	</zone>
+</data>

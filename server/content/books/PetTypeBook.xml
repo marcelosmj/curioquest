@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<types>
+		<type name="Physical" link="physical" icon="Physical.png" visible="true" />
+		<type name="Air" link="air" icon="Air.png" visible="true" />
+		<type name="Earth" link="earth" icon="Earth.png" visible="true" />
+		<type name="Light" link="light" icon="Light.png" visible="true" />
+		<type name="Dark" link="dark" icon="Dark.png" visible="true" />
+		<type name="Electric" link="electric" icon="Electric.png" visible="true" />
+		<type name="Water" link="water" icon="Water.png" visible="true" />
+		<type name="Fire" link="fire" icon="Fire.png" visible="true" />
+	</types>
+</data>

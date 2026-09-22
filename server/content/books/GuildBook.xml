@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<levels>
+		<level id="1" totalExp="0" />
+		<level id="2" totalExp="1000" />
+		<level id="3" totalExp="3000" />
+		<level id="4" totalExp="6000" />
+		<level id="5" totalExp="10000" />
+		<level id="6" totalExp="15000" />
+		<level id="7" totalExp="21000" />
+		<level id="8" totalExp="28000" />
+		<level id="9" totalExp="36000" />
+		<level id="10" totalExp="45000" />
+	</levels>
+	<guildRep />
+	<factionRep />
+</data>

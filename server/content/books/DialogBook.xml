@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<dialogs>
+		<dialog link="start_game">
+			<frames>
+				<frame position="center" bg="Intro_House.jpg" loadLocal="true" portrait="false" image="Mom.png" name="Mom">^%name%^! Rise and shine! Your father and I have a surprise waiting for you downstairs.</frame>
+				<frame position="left" bg="Intro_House.jpg" loadLocal="true" portrait="true" image="Happy.png" name="">A surprise? Is it... is it a curio?!</frame>
+				<frame position="right" bg="Intro_House_2.jpg" loadLocal="true" portrait="false" image="Dad.png" name="Dad">Not just any curio, @son/daughter@. This is ^Ducan^. He has been with our family for a long time, and now he is yours.</frame>
+				<frame position="left" bg="Intro_House_2.jpg" loadLocal="true" portrait="true" image="Surprised.png" name="">He's amazing! Wait... why are there suitcases by the door?</frame>
+				<frame position="right" bg="Intro_House_2.jpg" loadLocal="true" portrait="false" image="Mom.png" name="Mom">Sweetie, there is something we should have told you a long time ago. We weren't always just your parents...</frame>
+				<frame position="center" bg="Intro_Street.swf" loadLocal="true" portrait="false" image="LegionairesGroup.png" name="The Legion">This is the ^Galactic Legion^! Step out of the house with your hands where we can see them!</frame>
+				<frame position="center" bg="Intro_Street.swf" loadLocal="true" portrait="false" image="ParentsHandcuff.png" name="Dad">%name%, listen to me! Take Ducan and go! Find the ^Hermit^ at the old dock. Don't trust the Legion!</frame>
+				<frame position="left" bg="Intro_InteriorWindow.swf" loadLocal="true" portrait="true" image="Scared.png" name="">Mom! Dad! ...They're gone. They took them away.</frame>
+				<frame position="right" bg="Intro_NewWorld.swf" loadLocal="true" portrait="false" image="Hermit.png" name="Hermit">Chin up, kid. Your parents are no criminals, whatever the Legion says. Cross the island and meet me at the dock, and train that Ducan along the way. You are going to need him.</frame>
+			</frames>
+		</dialog>
+		<dialog link="z1n1_enter">
+			<frames>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="SafariDude.png" name="Safari Sam">Whoa, easy there! Ever since the Legion landed, wild curios have been running all over the island.</frame>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="SafariDude.png" name="Safari Sam">Tap one of your curio's skills to attack. Stronger skills cost ^mana^ and need a few turns to recharge. Let's see what that Ducan can do!</frame>
+			</frames>
+		</dialog>
+		<dialog link="z1n1_win">
+			<frames>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="SafariDude.png" name="Safari Sam">Now that's a curio trainer! Wild curios you defeat sometimes want to ^join your team^. Keep battling and your collection will grow.</frame>
+			</frames>
+		</dialog>
+		<dialog link="z1n2_enter">
+			<frames>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="Jace.png" name="Jace">Hey, I know you! You're the kid whose parents got hauled off by the Legion. Nobody crosses my bridge without a battle!</frame>
+				<frame position="left" bg="" loadLocal="true" portrait="true" image="Angry.png" name="">My parents didn't do anything wrong! Let's go, Ducan!</frame>
+			</frames>
+		</dialog>
+		<dialog link="z1n2_win">
+			<frames>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="Jace.png" name="Jace">Okay, okay! You win. The bridge is all yours... and hey, sorry about your folks.</frame>
+			</frames>
+		</dialog>
+		<dialog link="z1n3_enter">
+			<frames>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="Lee.png" name="Lee">Shhh! The birds in the old treehouse are nesting, and their curios get grumpy when strangers climb up.</frame>
+				<frame position="left" bg="" loadLocal="true" portrait="true" image="Confused.png" name="">I just need to get to the other side of the island.</frame>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="Lee.png" name="Lee">Then you'll have to get past them first. Good luck!</frame>
+			</frames>
+		</dialog>
+		<dialog link="z1n4_enter">
+			<frames>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="Jeff.png" name="Jeff">This generator powers the whole island, and the Legion put me in charge of guarding it. Turn around!</frame>
+				<frame position="left" bg="" loadLocal="true" portrait="true" image="Normal.png" name="">The Legion put you in charge? Then you know where they took my parents!</frame>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="Jeff.png" name="Jeff">Even if I did, I wouldn't tell a fugitive's kid. Curios, attack!</frame>
+			</frames>
+		</dialog>
+		<dialog link="z1n5_enter">
+			<frames>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="Pirate.png" name="Pirate">Arr! This be where the treasure's buried, and it be OURS! Scram, landlubber!</frame>
+				<frame position="left" bg="" loadLocal="true" portrait="true" image="Happy.png" name="">Pirates? On our island? Ducan, looks like we're digging for treasure today!</frame>
+			</frames>
+		</dialog>
+		<dialog link="z1n6a_enter">
+			<frames>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="Pirate.png" name="Pirate">Captain! The @boy/girl@ from the beach is here, and @he/she@ brought that pesky Ducan!</frame>
+			</frames>
+		</dialog>
+		<dialog link="z1n6b_enter">
+			<frames>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="PirateCaptain.png" name="Captain Blackfin">So you're the little runaway everyone is talking about. You want a boat? You'll have to take mine!</frame>
+			</frames>
+		</dialog>
+		<dialog link="z1n6_win">
+			<frames>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="PirateCaptain.png" name="Captain Blackfin">Blast it! Fine, take the ship. But you haven't seen the last of me!</frame>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="Hermit.png" name="Hermit">Well fought, %name%. I saw the Legion's ship heading out across the ^Open Sea^. That pirate boat will get us there.</frame>
+				<frame position="left" bg="" loadLocal="true" portrait="true" image="Happy.png" name="">Hold on, Mom and Dad. We're coming!</frame>
+			</frames>
+		</dialog>
+		<dialog link="z2n1_enter">
+			<frames>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="Hermit.png" name="Hermit">The Open Sea is full of [water] curios. [electric] skills hit them hard, but they will wash away any [fire] curio you bring.</frame>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="Hermit.png" name="Hermit">Watch for the ^Strong^ and ^Weak^ markers during battle and choose your curios wisely.</frame>
+			</frames>
+		</dialog>
+		<dialog link="z2n4_enter">
+			<frames>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="Pirate.png" name="Pirate">Captain's orders: sink anyone who follows the Legion ship! ...Wait, what is that thing rising out of the water?!</frame>
+				<frame position="left" bg="" loadLocal="true" portrait="true" image="Scared.png" name="">That's... a SEA MONSTER!</frame>
+			</frames>
+		</dialog>
+		<dialog link="z2n5_enter">
+			<frames>
+				<frame position="left" bg="" loadLocal="true" portrait="true" image="Confused.png" name="">Ugh... it's dark, it's slimy and it smells like old fish. We got swallowed by the sea monster!</frame>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="Hermit.png" name="Hermit">Don't panic! Beat the curios living in here and this big fella will spit us right back out.</frame>
+			</frames>
+		</dialog>
+		<dialog link="z2n7_enter">
+			<frames>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="SafariDude.png" name="Safari Sam">Brrr! An iceberg in the tropics? Something is messing with the weather out here, %name%.</frame>
+			</frames>
+		</dialog>
+		<dialog link="z2n8_enter">
+			<frames>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="PirateCaptain.png" name="Captain Blackfin">Surprised? My weather machine will drown every island from here to the horizon, and the Legion pays me handsomely for it!</frame>
+				<frame position="left" bg="" loadLocal="true" portrait="true" image="Angry.png" name="">You're working for the Legion?! Ducan, let's shut this machine down!</frame>
+			</frames>
+		</dialog>
+		<dialog link="z2n8_win">
+			<frames>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="LegionairesGroup.png" name="The Legion">Captain Blackfin, you failed. The prisoners have already been moved beyond the storm. Retreat!</frame>
+				<frame position="left" bg="" loadLocal="true" portrait="true" image="Sad.png" name="">They're getting away again...</frame>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="Hermit.png" name="Hermit">Not for long. The sky is clearing and the way ahead is open. Rest up, %name%. The real journey starts now.</frame>
+			</frames>
+		</dialog>
+		<dialog link="hint_defeat">
+			<frames>
+				<frame position="right" bg="" loadLocal="true" portrait="false" image="Hermit.png" name="Hermit">Don't give up! Level up your curios, rank up their skills in the skill tree and try again.</frame>
+			</frames>
+		</dialog>
+	</dialogs>
+</data>

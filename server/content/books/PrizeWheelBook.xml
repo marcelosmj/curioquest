@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<spinRewards>
+		<spinReward id="0" icon="Gold.png" loadLocal="true" itemType="currency" itemID="1" qty="750" weight="20" />
+		<spinReward id="1" icon="Energy.png" loadLocal="true" itemType="currency" itemID="6" qty="5" weight="14" />
+		<spinReward id="2" icon="Exp.png" loadLocal="true" itemType="currency" itemID="4" qty="200" weight="12" />
+		<spinReward id="3" icon="Token.png" loadLocal="true" itemType="currency" itemID="8" qty="3" weight="12" />
+		<spinReward id="4" icon="Plasma.png" loadLocal="true" itemType="currency" itemID="2" qty="5" weight="5" />
+		<spinReward id="5" icon="Tickets.png" loadLocal="true" itemType="currency" itemID="9" qty="2" weight="10" />
+		<spinReward id="6" icon="RandomCurio.png" loadLocal="true" itemType="grabbag" itemID="1" qty="1" weight="2" />
+		<spinReward id="7" icon="FreeSpin.png" loadLocal="true" itemType="currency" itemID="7" qty="1" weight="6" />
+		<spinReward id="8" icon="ActivityPoints.png" loadLocal="true" itemType="currency" itemID="3" qty="50" weight="7" />
+		<spinReward id="9" icon="RandomItem.png" loadLocal="true" itemType="grabbag" itemID="2" qty="1" weight="5" />
+		<spinReward id="10" icon="Credit.png" loadLocal="true" itemType="currency" itemID="2" qty="2" weight="4" />
+		<spinReward id="11" icon="RandomBoost.png" loadLocal="true" itemType="currency" itemID="5" qty="100" weight="3" />
+	</spinRewards>
+</data>

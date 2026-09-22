@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<tabs>
+		<tab id="0" name="Enhancements" />
+		<tab id="1" name="Cores" />
+	</tabs>
+	<craft id="1" tab="0">
+		<result id="1" type="consumable" qty="1" />
+		<items>
+			<item id="1" type="material" qty="3" />
+			<item id="2" type="material" qty="2" />
+		</items>
+	</craft>
+	<craft id="2" tab="0">
+		<result id="2" type="consumable" qty="1" />
+		<items>
+			<item id="1" type="material" qty="3" />
+			<item id="3" type="material" qty="2" />
+		</items>
+	</craft>
+	<craft id="3" tab="0">
+		<result id="3" type="consumable" qty="1" />
+		<items>
+			<item id="3" type="material" qty="3" />
+			<item id="2" type="material" qty="2" />
+		</items>
+	</craft>
+	<craft id="4" tab="0">
+		<result id="5" type="consumable" qty="1" />
+		<items>
+			<item id="4" type="material" qty="2" />
+			<item id="2" type="material" qty="3" />
+		</items>
+	</craft>
+	<craft id="5" tab="1">
+		<result id="48" type="material" qty="1" />
+		<items>
+			<item id="4" type="material" qty="5" />
+		</items>
+	</craft>
+	<craft id="6" tab="1">
+		<result id="49" type="material" qty="1" />
+		<items>
+			<item id="48" type="material" qty="3" />
+			<item id="5" type="material" qty="2" />
+		</items>
+	</craft>
+	<craft id="7" tab="1">
+		<result id="50" type="material" qty="1" />
+		<items>
+			<item id="49" type="material" qty="3" />
+			<item id="5" type="material" qty="5" />
+		</items>
+	</craft>
+</data>

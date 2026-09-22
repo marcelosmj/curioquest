@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<zones>
+		<zone id="1" xml="Zone1.xml" loadLocal="false" />
+		<zone id="2" xml="Zone2.xml" loadLocal="false" />
+	</zones>
+</data>

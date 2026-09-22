@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<services>
+		<service id="1" rarity="common" name="Plinko Ball" desc="One extra Plinko ball." thumbnail="Token.png" icon="Token.png" loadLocal="false" costGold="0" costCredits="3" type="plinko" value="1" bonus="" bestValue="false" sellGold="0" sellCredits="0" />
+		<service id="2" rarity="common" name="Team Slot" desc="Unlocks one more curio team." thumbnail="RandomCurio.png" icon="RandomCurio.png" loadLocal="false" costGold="0" costCredits="50" type="teamslot" value="1" bonus="" bestValue="false" sellGold="0" sellCredits="0" />
+		<service id="3" rarity="common" name="Energy Refill" desc="Refills your energy." thumbnail="Energy.png" icon="Energy.png" loadLocal="false" costGold="0" costCredits="10" type="energy" value="20" bonus="" bestValue="false" sellGold="0" sellCredits="0" />
+		<service id="4" rarity="common" name="PvP Tickets" desc="Five arena tickets." thumbnail="Tickets.png" icon="Tickets.png" loadLocal="false" costGold="0" costCredits="10" type="tickets" value="5" bonus="" bestValue="false" sellGold="0" sellCredits="0" />
+		<service id="5" rarity="common" name="Gold Pouch" desc="A pouch with 5,000 gold." thumbnail="Gold.png" icon="Gold.png" loadLocal="false" costGold="0" costCredits="20" type="gold" value="5000" bonus="" bestValue="false" sellGold="0" sellCredits="0" />
+		<service id="6" rarity="common" name="Skill Reset" desc="Returns all skill points of a curio." thumbnail="ActivityPoints.png" icon="ActivityPoints.png" loadLocal="false" costGold="1000" costCredits="0" type="skillreset" value="1" bonus="" bestValue="false" sellGold="0" sellCredits="0" />
+		<service id="7" rarity="common" name="Friend Tokens" desc="Ten Friend Tokens for the arcade." thumbnail="Token.png" icon="Token.png" loadLocal="false" costGold="0" costCredits="10" type="tokens" value="10" bonus="" bestValue="false" sellGold="0" sellCredits="0" />
+		<service id="8" rarity="common" name="Upgrade Rush" desc="Skips the upgrade cooldown." thumbnail="FreeSpin.png" icon="FreeSpin.png" loadLocal="false" costGold="0" costCredits="5" type="upgradecooldownreset" value="1" bonus="" bestValue="false" sellGold="0" sellCredits="0" />
+		<service id="9" rarity="common" name="Curio Storage" desc="Room for 10 more curios." thumbnail="RandomItem.png" icon="RandomItem.png" loadLocal="false" costGold="0" costCredits="25" type="petmaxbonus" value="10" bonus="" bestValue="false" sellGold="0" sellCredits="0" />
+		<service id="10" rarity="common" name="Name Change" desc="Choose a new player name." thumbnail="Exp.png" icon="Exp.png" loadLocal="false" costGold="0" costCredits="50" type="name_change" value="1" bonus="" bestValue="false" sellGold="0" sellCredits="0" />
+	</services>
+</data>

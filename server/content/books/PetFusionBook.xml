@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<fusions>
+		<fusion id="0" name="No Fusion" desc="Fused with duplicate curios: +0% stats." loadLocal="false" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" visible="false" upgradeDupes="1" upgradeFusion="1" />
+		<fusion id="1" name="Fusion I" desc="Fused with duplicate curios: +5% stats." loadLocal="false" healthPerc="0.05" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.05" damageGain="0" healingPerc="0.05" healingGain="0" luckPerc="0.05" luckGain="0" visible="true" upgradeDupes="2" upgradeFusion="2" />
+		<fusion id="2" name="Fusion II" desc="Fused with duplicate curios: +10% stats." loadLocal="false" healthPerc="0.1" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.1" damageGain="0" healingPerc="0.1" healingGain="0" luckPerc="0.1" luckGain="0" visible="true" upgradeDupes="3" upgradeFusion="3" />
+		<fusion id="3" name="Fusion III" desc="Fused with duplicate curios: +15% stats." loadLocal="false" healthPerc="0.15" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.15" damageGain="0" healingPerc="0.15" healingGain="0" luckPerc="0.15" luckGain="0" visible="true" upgradeDupes="-1" upgradeFusion="-1" />
+	</fusions>
+</data>

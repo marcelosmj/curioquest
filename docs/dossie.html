@@ -1,0 +1,473 @@
+<title>Dossiê Curio Quest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+
+<style>
+  :root {
+    --paper:   #EFF2F6;
+    --surface: #FFFFFF;
+    --sunk:    #E4E9F0;
+    --ink:     #16202B;
+    --muted:   #5C6A79;
+    --line:    #D3DAE3;
+    --accent:  #C4600D;
+    --ok:      #2C6E4F;
+    --partial: #8C5D12;
+    --gone:    #A63A2B;
+    --ok-bg:   #E2EFE8;
+    --partial-bg: #F4EAD6;
+    --gone-bg: #F6E2DE;
+
+    --display: "Bitter", Georgia, serif;
+    --body: "Source Sans 3", system-ui, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+
+    --col: 68ch;
+    --s1: 6px; --s2: 12px; --s3: 20px; --s4: 32px; --s5: 52px; --s6: 84px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #0F151C;
+      --surface: #171F29;
+      --sunk:    #131B24;
+      --ink:     #E4EAF1;
+      --muted:   #93A1B1;
+      --line:    #263140;
+      --accent:  #F0872F;
+      --ok:      #6FC79A;
+      --partial: #E0AC5A;
+      --gone:    #EC8873;
+      --ok-bg:   #163024;
+      --partial-bg: #302516;
+      --gone-bg: #331915;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --paper:   #0F151C;
+    --surface: #171F29;
+    --sunk:    #131B24;
+    --ink:     #E4EAF1;
+    --muted:   #93A1B1;
+    --line:    #263140;
+    --accent:  #F0872F;
+    --ok:      #6FC79A;
+    --partial: #E0AC5A;
+    --gone:    #EC8873;
+    --ok-bg:   #163024;
+    --partial-bg: #302516;
+    --gone-bg: #331915;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.65;
+    margin: 0;
+    padding-inline: 20px;
+    padding-block: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 980px; margin-inline: auto; }
+  .col { max-width: var(--col); }
+
+  /* ---------- masthead ---------- */
+  .masthead {
+    display: flex; flex-direction: column; gap: var(--s3);
+    padding-block: var(--s5) var(--s4);
+    border-bottom: 3px solid var(--ink);
+  }
+  .kicker {
+    font-family: var(--mono); font-size: 12px; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--accent); margin: 0;
+  }
+  h1 {
+    font-family: var(--display); font-weight: 700;
+    font-size: clamp(34px, 6vw, 56px); line-height: 1.05;
+    margin: 0; text-wrap: balance; letter-spacing: -.015em;
+  }
+  .standfirst { font-size: 19px; color: var(--muted); margin: 0; max-width: var(--col); }
+
+  .figures {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1px; background: var(--line); border: 1px solid var(--line);
+    margin-block: var(--s4);
+  }
+  .fig { background: var(--surface); padding: var(--s3) var(--s3); }
+  .fig b {
+    display: block; font-family: var(--mono); font-weight: 600;
+    font-size: 24px; letter-spacing: -.02em; font-variant-numeric: tabular-nums;
+  }
+  .fig span {
+    display: block; font-size: 12.5px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: .07em; margin-top: 4px;
+  }
+
+  /* ---------- sections ---------- */
+  section { padding-block: var(--s5); border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: 0; }
+
+  h2 {
+    font-family: var(--display); font-weight: 700;
+    font-size: clamp(23px, 3.4vw, 31px); line-height: 1.2;
+    margin: 0 0 var(--s3); text-wrap: balance; letter-spacing: -.01em;
+  }
+  h3 {
+    font-family: var(--display); font-weight: 500; font-size: 19px;
+    margin: var(--s4) 0 var(--s2); text-wrap: balance;
+  }
+  p { margin: 0 0 var(--s3); max-width: var(--col); }
+  p:last-child { margin-bottom: 0; }
+  ul { margin: 0 0 var(--s3); padding-left: 1.15em; max-width: var(--col); }
+  li { margin-bottom: var(--s1); }
+  code {
+    font-family: var(--mono); font-size: .875em;
+    background: var(--sunk); padding: 1px 5px; border-radius: 3px;
+  }
+  strong { font-weight: 600; }
+  em { color: var(--muted); }
+
+  /* ---------- tables ---------- */
+  .strip { overflow-x: auto; margin-block: var(--s3) var(--s4); }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 15px; }
+  th, td {
+    text-align: left; padding: 9px 14px 9px 0;
+    border-bottom: 1px solid var(--line); vertical-align: top;
+  }
+  th {
+    font-family: var(--mono); font-size: 11.5px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: .08em; color: var(--muted);
+    border-bottom: 1px solid var(--ink); white-space: nowrap;
+  }
+  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td.name { font-family: var(--mono); font-size: 13.5px; white-space: nowrap; }
+
+  .chip {
+    display: inline-block; font-family: var(--mono); font-size: 11px;
+    font-weight: 600; letter-spacing: .05em; text-transform: uppercase;
+    padding: 2px 7px; border-radius: 2px; white-space: nowrap;
+  }
+  .c-ok { background: var(--ok-bg); color: var(--ok); }
+  .c-partial { background: var(--partial-bg); color: var(--partial); }
+  .c-gone { background: var(--gone-bg); color: var(--gone); }
+
+  /* ---------- callouts ---------- */
+  .note {
+    border-left: 3px solid var(--accent); padding: var(--s2) 0 var(--s2) var(--s3);
+    margin-block: var(--s3) var(--s4); max-width: var(--col);
+  }
+  .note p { margin-bottom: var(--s2); }
+  .note p:last-child { margin-bottom: 0; }
+  .note-label {
+    font-family: var(--mono); font-size: 11px; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 4px;
+  }
+
+  /* ---------- tiers ---------- */
+  .tier { display: grid; grid-template-columns: 62px 1fr; gap: var(--s3); margin-bottom: var(--s4); }
+  .tier-id {
+    font-family: var(--mono); font-weight: 600; font-size: 15px;
+    color: var(--surface); background: var(--ink);
+    height: 34px; display: grid; place-items: center; border-radius: 2px;
+  }
+  .tier h3 { margin-top: 0; }
+  .tier-meta {
+    font-family: var(--mono); font-size: 12px; color: var(--muted);
+    margin-bottom: var(--s2); display: flex; flex-wrap: wrap; gap: var(--s3);
+  }
+
+  /* ---------- verdict cards ---------- */
+  .verdicts { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); margin-block: var(--s3) var(--s4); }
+  .verdict { background: var(--surface); padding: var(--s3); }
+  .verdict h3 { margin: 0 0 var(--s1); font-size: 17px; }
+  .verdict p { font-size: 15px; margin-bottom: var(--s2); }
+  .verdict .vmeta { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+
+  footer {
+    padding-block: var(--s4) var(--s6); color: var(--muted); font-size: 14.5px;
+  }
+  footer p { max-width: var(--col); }
+
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    .tier { grid-template-columns: 1fr; gap: var(--s2); }
+    .tier-id { width: 62px; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="kicker">Engenharia reversa · servidor offline · setembro de 2026</p>
+    <h1>Dossiê Curio Quest</h1>
+    <p class="standfirst">O que o jogo era por dentro, o que sobreviveu ao desligamento dos servidores, o que já voltou a funcionar e o que ainda precisa ser inventado do zero.</p>
+  </header>
+
+  <div class="figures">
+    <div class="fig"><b>942</b><span>classes AS3 no cliente</span></div>
+    <div class="fig"><b>167.822</b><span>linhas decompiladas</span></div>
+    <div class="fig"><b>96</b><span>tipos de mensagem</span></div>
+    <div class="fig"><b>46 / 175</b><span>curios com arte</span></div>
+    <div class="fig"><b>25 / 46</b><span>livros preenchidos</span></div>
+  </div>
+
+  <section>
+    <h2>O que é o aplicativo, tecnicamente</h2>
+    <p>Curio Quest é um RPG de coleção lançado pela 5th Planet Games e desligado com o fim dos servidores. O APK <code>1.15.00</code> tem 45 MB e 1.672 arquivos, e é um <strong>Adobe AIR de runtime embutido</strong>: o jogo inteiro é um único <code>assets/Pets.swf</code> de 2,4 MB em ActionScript 3, executado por um interpretador nativo que vem junto no pacote.</p>
+
+    <div class="strip">
+      <table>
+        <thead><tr><th>Camada</th><th>Tecnologia</th><th>Peso no APK</th></tr></thead>
+        <tbody>
+          <tr><td>Lógica do jogo</td><td class="name">ActionScript 3 (Pets.swf)</td><td class="num">2,4 MB</td></tr>
+          <tr><td>Runtime</td><td class="name">Adobe AIR 3.4.3 · armeabi-v7a</td><td class="num">20,1 MB (.so)</td></tr>
+          <tr><td>Ponte Android</td><td class="name">classes.dex + 11 .jar</td><td class="num">10,1 MB</td></tr>
+          <tr><td>Arte vetorial</td><td class="name">221 arquivos .swf</td><td class="num">19,4 MB</td></tr>
+          <tr><td>Arte raster</td><td class="name">1.027 .png · 13 .jpg</td><td class="num">4,8 MB</td></tr>
+          <tr><td>Áudio</td><td class="name">50 .mp3</td><td class="num">7,1 MB</td></tr>
+          <tr><td>Dados locais</td><td class="name">333 .xml</td><td class="num">1,0 MB</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>O detalhe que define tudo o que vem depois: <strong>o APK não continha o jogo completo</strong>. Regras, catálogo de curios, habilidades, zonas, economia e textos ficavam em 44 arquivos XML chamados <em>Books</em>, baixados de um CDN (<code>5thplanetdawn.insnw.net/pets_live/</code>) que morreu junto com os servidores. O aplicativo sozinho é uma casca sem conteúdo.</p>
+  </section>
+
+  <section>
+    <h2>Arquitetura do cliente</h2>
+    <p>O código decompilado se organiza em camadas bem separadas — raro em jogo mobile dessa época e a razão de a reconstrução ter sido possível.</p>
+
+    <div class="strip">
+      <table>
+        <thead><tr><th>Pacote</th><th>Classes</th><th>Papel</th></tr></thead>
+        <tbody>
+          <tr><td class="name">com/</td><td class="num">324</td><td>SDK do ElectroServer 5, Thrift, bibliotecas de terceiros</td></tr>
+          <tr><td class="name">ui/</td><td class="num">309</td><td>Telas e componentes, em 52 subpastas (batalha, zona, loja, curio…)</td></tr>
+          <tr><td class="name">model/</td><td class="num">223</td><td>Modelo de domínio e leitores de Book, em 66 subpastas</td></tr>
+          <tr><td class="name">dalcs/</td><td class="num">18</td><td>Camadas de acesso a dados: a fronteira com o servidor</td></tr>
+          <tr><td class="name">events/ · plugins/</td><td class="num">27</td><td>Eventos tipados e os dois plugins de servidor</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>O padrão DALC</h3>
+    <p>Toda conversa com o servidor passa por um <em>DALC</em> numerado. O cliente envia um <code>EsObject</code> com <code>DALC_ID</code> e <code>ACTION_TYPE</code>; o servidor responde ecoando os dois, e o <code>ServerPlugin</code> despacha para a classe certa, que dispara um evento tipado para a tela interessada. São 17 DALCs no total, de 1 (Jogo) a 17 (Ofertas).</p>
+
+    <h3>Books: conteúdo como dado</h3>
+    <p>Nada de balanceamento está compilado no SWF. O <code>PetBook</code> descreve cada curio com estatísticas-base, ganho por nível, evoluções e árvore de habilidades; o <code>SkillBook</code> descreve efeitos, buffs e animações; os <code>ZoneN</code> descrevem nós, inimigos, diálogos e recompensas. Trocar um XML muda o jogo sem tocar no binário — o que torna o servidor offline um projeto de <em>autoria de conteúdo</em> tanto quanto de rede.</p>
+
+    <h3>Carregamento de assets</h3>
+    <p>Cada asset tem um sinalizador <code>loadLocal</code>: verdadeiro carrega do próprio aplicativo, falso busca por HTTP no CDN, com <code>?v=&lt;versão&gt;</code> anexado à URL. Esse sinalizador vira uma ferramenta de diagnóstico: forçando tudo para HTTP, o log do servidor passa a ser um rastro exato de até onde o cliente chegou antes de falhar.</p>
+  </section>
+
+  <section>
+    <h2>O protocolo</h2>
+    <p>A comunicação é <strong>ElectroServer 5 sobre TCP binário</strong>, com structs Apache Thrift (<code>TBinaryProtocol</code>) dentro de um enquadramento próprio. Reimplementá-lo do zero foi a metade mais exata do trabalho — e hoje está completa: 96 tipos de mensagem mapeados dos dois lados, 93 structs Thrift e 338 chaves de <code>EsObject</code> conhecidas.</p>
+
+    <div class="strip">
+      <table>
+        <thead><tr><th>Elemento</th><th>Formato</th></tr></thead>
+        <tbody>
+          <tr><td>Enquadramento</td><td class="name">int32 tamanho · byte flags (bit 0 = zlib) · int16 indicador · int32 número</td></tr>
+          <tr><td>Corpo</td><td class="name">struct Thrift TBinaryProtocol</td></tr>
+          <tr><td>Número de mensagem</td><td class="name">-1 = processar imediatamente (sem fila de ordem)</td></tr>
+          <tr><td>Handshake</td><td class="name">política de domínio terminada em <code>\0</code>, depois ConnectionResponse</td></tr>
+          <tr><td>Indicadores-chave</td><td class="name">76/109 login · 67/102 plugin · 82 sala · 90 zona</td></tr>
+          <tr><td>EsObject</td><td class="name">chave curta + char de tipo (0 int, 1 string, 4 bool, 9 objeto, a lista…)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Uma sutileza que custou horas: o envelope do <code>PluginMessageEvent</code> tem um campo <code>roomLevelPlugin</code>. Respostas de DALC precisam dele <strong>falso</strong> — o cliente descarta em silêncio qualquer mensagem de nível de sala que chegue pelo caminho do <code>ServerPlugin</code>.</p>
+  </section>
+
+  <section>
+    <h2>O que a ressurreição já faz</h2>
+    <p>O servidor offline é Python 3 com <code>asyncio</code>, sem dependências externas: 3.814 linhas no servidor e 1.841 nas ferramentas de autoria e depuração.</p>
+
+    <div class="strip">
+      <table>
+        <thead><tr><th>Módulo</th><th>Linhas</th><th>Responsabilidade</th></tr></thead>
+        <tbody>
+          <tr><td class="name">game/battle.py</td><td class="num">568</td><td>Motor de combate por turnos, buffs, DNA, recompensas</td></tr>
+          <tr><td class="name">game/gamedata.py</td><td class="num">502</td><td>Leitura dos 46 Books para memória</td></tr>
+          <tr><td class="name">game/player.py</td><td class="num">315</td><td>Save, payload do personagem, curva de experiência</td></tr>
+          <tr><td class="name">es5/ (4 arquivos)</td><td class="num">744</td><td>Protocolo, Thrift, EsObject, sessões</td></tr>
+          <tr><td class="name">game/dalcs/ (7 arquivos)</td><td class="num">1.005</td><td>Jogo, Personagem, Loja, Amigos, Curio, Trabalhos, Conquistas</td></tr>
+          <tr><td class="name">tools/build_books.py</td><td class="num">738</td><td>Gera os 46 XML e valida cada asset contra o APK</td></tr>
+          <tr><td class="name">tools/content.py</td><td class="num">585</td><td>Todo o conteúdo autoral: zonas, história, economia</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Provado ponta a ponta contra o cliente real, no protocolo: login e criação de personagem, os 46 Books, mapa de zona renderizando no aparelho, diálogos de história, batalhas de nó com recompensas, experiência e nível de curio, nós repetíveis, loja com curios, sacolas e dez serviços, árvore de habilidades, evolução, rank, troca, roda de prêmios, Plinko com a mesa simulada no servidor, recompensa diária, trabalhos diários e 33 conquistas empurradas pelo servidor.</p>
+
+    <div class="note">
+      <span class="note-label">Defeito em aberto</span>
+      <p>Depois que o servidor responde <code>ENTER_BATTLE</code>, o cliente fica no carregamento e não monta a tela de batalha. Quinze hipóteses foram eliminadas com evidência — campos do payload, ids de struct, compressão, ordenação, envelope do plugin, entrada em sala, assets, e até um payload mínimo. O próximo passo é instrumentar o próprio SWF com JPEXS.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Inventário: o que sobreviveu</h2>
+    <p>A separação entre <em>restaurável</em> e <em>criar do zero</em> é decidida por três acervos: o que está dentro do APK, o que o dump comunitário da wiki preservou, e o que só existia no CDN.</p>
+
+    <h3>Arte e som — dentro do APK</h3>
+    <div class="strip">
+      <table>
+        <thead><tr><th>Acervo</th><th>Quantidade</th><th>Situação</th></tr></thead>
+        <tbody>
+          <tr><td>Curios com arte (base + 2 evoluções)</td><td class="num">46 de 175</td><td><span class="chip c-partial">parcial</span></td></tr>
+          <tr><td>Cenários de zona</td><td class="num">2</td><td><span class="chip c-partial">zonas 1 e 2 apenas</span></td></tr>
+          <tr><td>Cenários de batalha</td><td class="num">10</td><td><span class="chip c-ok">suficiente</span></td></tr>
+          <tr><td>Assets de nó de zona</td><td class="num">15</td><td><span class="chip c-ok">suficiente</span></td></tr>
+          <tr><td>Efeitos, ícones, interface</td><td class="num">1.027 PNG</td><td><span class="chip c-ok">íntegro</span></td></tr>
+          <tr><td>Música e efeitos sonoros</td><td class="num">50 MP3</td><td><span class="chip c-ok">íntegro</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>O roster da wiki lista <strong>175 curios</strong> — 39 míticos, 44 lendários, 42 épicos, 24 raros e 26 comuns. O APK traz arte de 46. Os <strong>129 restantes existem só como nome</strong>: a arte vivia no CDN e não há cópia conhecida. É a perda mais dura do projeto e nenhuma tecnologia a desfaz.</p>
+
+    <h3>Regras e números — no dump da wiki</h3>
+    <p>O dump WikiTeam de 27/02/2022 (47 MB) preservou 22 curios com estatísticas máximas completas e árvores de habilidade, a tabela de crescimento do Ducan, a roda de raridades, o teto de nível 40, as evoluções em 10 e 25, e fatos de sistema — custo do Plinko em 5 fichas, obtenção de curios por DNA, a história do jogador cujos pais são criminosos intergalácticos. É pouco perto do jogo inteiro, mas é o suficiente para ancorar o balanceamento em algo real em vez de inventado.</p>
+
+    <h3>Livros: 25 preenchidos, 21 vazios</h3>
+    <div class="strip">
+      <table>
+        <thead><tr><th>Estado</th><th>Livros</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="chip c-ok">preenchido</span></td>
+            <td class="name">Pet · Skill · Zone1 · Zone2 · Zone · Achievement · Job · Shop · GrabBag · Service · Currency · Rarity · PetType · PetRank · PetFusion · Plinko · PrizeWheel · Daily · Dialog · Sound · Tip · Variable · Success · Guild · RarityOverride</td>
+          </tr>
+          <tr>
+            <td><span class="chip c-gone">vazio</span></td>
+            <td class="name">Consumable · Craft · Enchant · Material · Skin · WelcomePack · LimitedOffer · VideoOffer · TimedModifier · PetCollection · Refer · Social · News · Marketing · InApp · Filter · PvPEvent · PvEEvent · GvGEvent · GvEEvent · FvFEvent</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Cada livro vazio é uma tela do jogo que existe no cliente e não tem o que mostrar. É aí que mora quase todo o trabalho restante.</p>
+  </section>
+
+  <section>
+    <h2>Regras duramente aprendidas</h2>
+    <p>Coisas que só apareceram medindo, e que qualquer continuação deste trabalho deve saber antes de começar:</p>
+    <ul>
+      <li><strong>O AIR extrai o aplicativo na primeira execução</strong> e continua usando essa cópia. Reinstalar um APK apontado para outro endereço não muda nada até rodar <code>pm clear</code>.</li>
+      <li><strong>Emulador x86 com tradução ARM mente.</strong> Ele transforma qualquer falha de ActionScript em SIGSEGV sem mensagem. Falhas pós-login vistas só no emulador não são falhas reais.</li>
+      <li><strong>Um nó de zona com batalha de <code>health &lt;= 0</code> é repetível para sempre</strong> (<code>getCurrentBattleRef</code> devolve sempre a mesma). Com tudo em <code>health=1</code>, cada nó morre após uma vitória e a zona inteira fica injogável.</li>
+      <li><strong>O custo do rank fica no rank que o curio já tem</strong>, não no que ele quer alcançar. Deslocar isso deixa o botão de melhorar permanentemente desabilitado.</li>
+      <li><strong>Cada lado ataca com um curio por turno.</strong> Dificuldade é vida total do inimigo dividida pelo dano de um atacante — somar o dano de todos inventa derrotas que não acontecem.</li>
+      <li><strong>Arte de zona precisa vir por HTTP.</strong> Carregada do próprio aplicativo ela fica pronta rápido demais e a transição do cliente perde o próprio evento de carregamento, deixando o mapa preto.</li>
+      <li><strong>O cliente desiste em 60 segundos</strong> e vira zumbi: a interface continua respondendo e animando, mas a camada de rede está fechada e não envia mais nada. Só reiniciar o aplicativo dá uma sessão que vale medir.</li>
+      <li><strong>Prove que seu log cresce.</strong> Um processo de servidor pode sobreviver à morte do invólucro que o lançou, continuar servindo e escrever em lugar nenhum — e toda conclusão tirada de "o log está vazio" passa a ser falsa.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Plano de restauração, por dificuldade</h2>
+    <p>A numeração aqui é real: cada nível pressupõe o anterior resolvido, e o esforço cresce de forma acentuada entre o T3 e o T4.</p>
+
+    <div class="tier">
+      <div class="tier-id">T0</div>
+      <div>
+        <h3>Desbloquear a tela de batalha no aparelho</h3>
+        <div class="tier-meta"><span>restaurável</span><span>bloqueia T1–T4 no celular</span></div>
+        <p>Instrumentar o <code>Pets.swf</code> com JPEXS — inserir rastros dentro de <code>MenuScreen.onEnterGame</code> e republicar o APK — para o cliente dizer o que faz ao receber o <code>ENTER_BATTLE</code>. É o único ponto que separa "servidor completo" de "jogo jogável", e nenhum trabalho novo de conteúdo muda isso.</p>
+      </div>
+    </div>
+
+    <div class="tier">
+      <div class="tier-id">T1</div>
+      <div>
+        <h3>Livros de dados puros</h3>
+        <div class="tier-meta"><span>criar do zero (só dados)</span><span>código do cliente já existe</span></div>
+        <p>Consumíveis, materiais, skins, pacote de boas-vindas, ofertas limitadas e vídeo, programa de indicação. Cada um é uma tabela em <code>content.py</code> mais uma ação de DALC de poucas linhas. O cliente já sabe desenhar todas essas telas — só nunca recebe conteúdo.</p>
+      </div>
+    </div>
+
+    <div class="tier">
+      <div class="tier-id">T2</div>
+      <div>
+        <h3>Sistemas com regra própria</h3>
+        <div class="tier-meta"><span>criar do zero (dados + regras)</span><span>PetDALC 5/6/10/14/15 · MerchantDALC 1</span></div>
+        <p>Forja, encantos (quatro ações já mapeadas no cliente), modificadores temporários e coleção de curios. Exigem desenhar economia e progressão, não só preencher tabelas — quanto custa, o que melhora, qual o teto.</p>
+      </div>
+    </div>
+
+    <div class="tier">
+      <div class="tier-id">T3</div>
+      <div>
+        <h3>Zonas 3 e além</h3>
+        <div class="tier-meta"><span>parcialmente restaurável</span><span>arte ausente</span></div>
+        <p>A estrutura de zona é conhecida e o gerador já produz zonas válidas, mas só existem <strong>dois cenários</strong> no APK. Zonas novas precisam de arte nova — desenhada, gerada ou reaproveitada dos dez cenários de batalha. O texto de história é autoral de qualquer forma.</p>
+      </div>
+    </div>
+
+    <div class="tier">
+      <div class="tier-id">T4</div>
+      <div>
+        <h3>Arena, clubes e eventos</h3>
+        <div class="tier-meta"><span>criar do zero (sistema inteiro)</span><span>5 DALCs · 5 livros vazios</span></div>
+        <p>PvP contra IA, clubes, GvG, GvE e FvF. São 10 ações só no DALC de arena, mais agenda de eventos, geração de adversários, rating, faixas de prêmio e histórico. Sem nenhum conteúdo original preservado, é desenho de jogo do começo ao fim — o maior bloco restante, e o único que dá para adiar indefinidamente sem prejudicar o resto.</p>
+      </div>
+    </div>
+
+    <div class="tier">
+      <div class="tier-id">T5</div>
+      <div>
+        <h3>Os 129 curios sem arte</h3>
+        <div class="tier-meta"><span>irrecuperável como era</span><span>só recriação</span></div>
+        <p>Nomes, raridades e elementos estão preservados na wiki; a arte não existe mais. As saídas são recriar ilustração por ilustração, aceitar o jogo com 46 curios, ou procurar cópias do CDN no Wayback Machine — a única via que traria o material original de volta.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Vale traduzir para outra tecnologia?</h2>
+    <p>A pergunta importa por um motivo concreto e datado: o runtime embutido é <strong>AIR 3.4.3 só em armeabi-v7a</strong>. Não há biblioteca 64 bits no pacote. Cada versão nova do Android aperta mais o suporte a aplicativos exclusivamente 32 bits, e o dia em que o aparelho recusar a instalação não depende de nada que eu faça no servidor.</p>
+
+    <div class="verdicts">
+      <div class="verdict">
+        <h3>Manter o cliente AIR · servidor offline</h3>
+        <p class="vmeta">Esforço restante: baixo · Reaproveita: 100% da arte · Risco: o runtime 32 bits envelhece</p>
+        <p>É o caminho atual e o único em que o jogo é <em>o jogo</em>, com a arte vetorial original animando. Todo o investimento em protocolo continua valendo. Recomendado enquanto o APK instalar.</p>
+      </div>
+      <div class="verdict">
+        <h3>Portar para Haxe / OpenFL</h3>
+        <p class="vmeta">Esforço: alto (~570 classes de jogo) · Reaproveita: arte SWF via biblioteca swf · Gera APK 64 bits</p>
+        <p>Haxe é o parente mais próximo do ActionScript 3 e o OpenFL consome SWF como asset — é a única rota que reconstrói o aplicativo <strong>sem redesenhar a arte</strong>. Das 942 classes, cerca de 350 são SDK de rede e bibliotecas que simplesmente somem: com os dois lados sob seu controle, dá para trocar Thrift e ElectroServer por JSON sobre WebSocket e apagar a camada mais complexa do sistema. Sobram interface, modelo e DALCs. É a resposta certa se o objetivo for um APK novo e sustentável.</p>
+        <p>A medição posterior confirmou e precisou isto: <strong>~63.000 linhas somem</strong> (só o SDK do ElectroServer são 53.886) e <strong>~99.000 ficam para portar</strong>. E o ponto que decide tudo: <strong>o layout das telas não está no código, está no <code>Pets.swf</code></strong> — a tabela <code>SymbolClass</code> lista 274 símbolos com vínculo de classe, 271 deles <code>ui.*</code>. As 267 telas não precisam ser redesenhadas; o trabalho real são as 2.701 funções de comportamento. O plano detalhado está em <code>docs/plano-port-haxe.html</code>.</p>
+      </div>
+      <div class="verdict">
+        <h3>Reescrever em Godot, Unity ou Flutter</h3>
+        <p class="vmeta">Esforço: muito alto · Reaproveita: só PNG e MP3 · Arte vetorial precisa ser rerrenderizada</p>
+        <p>Tecnicamente confortável e moderno, mas esbarra nos 221 SWFs de arte vetorial animada: nenhuma dessas engines os lê. Seria preciso exportar quadro a quadro para sprites ou refazer as animações — e é justamente a arte que não pode ser recriada em massa. Só faz sentido se a intenção for um jogo novo inspirado no original, não a restauração dele.</p>
+      </div>
+      <div class="verdict">
+        <h3>Ruffle no navegador</h3>
+        <p class="vmeta">Esforço: médio · Não gera APK · Suporte a AS3 ainda parcial</p>
+        <p>Rodar o SWF no navegador contorna o runtime obsoleto, mas o aplicativo usa extensões nativas (compras, analytics, Google Games) que não existem fora do AIR e precisariam de substitutos. Vale como experimento de preservação, não como entrega.</p>
+      </div>
+    </div>
+
+    <div class="note">
+      <span class="note-label">Veredito</span>
+      <p>Traduzir é viável e, a prazo, provavelmente necessário — mas por <strong>Haxe/OpenFL</strong>, que é a única rota que preserva a arte. Qualquer port herda intacta a lacuna dos 129 curios: tecnologia nova não devolve conteúdo perdido. E nada disso deve começar antes do T0, porque um port carregaria o mesmo defeito de batalha para dentro de uma base de código nova, agora sem um cliente original com que comparar.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Números apurados diretamente do APK 1.15.00, do código decompilado com JPEXS e do dump WikiTeam de 27/02/2022 do curioquest.fandom.com. Texto da wiki sob CC-BY-SA 3.0; o conteúdo do jogo permanece © 5th Planet Games. Este dossiê descreve trabalho de preservação sobre um jogo cujos servidores foram desligados.</p>
+  </footer>
+
+</div>

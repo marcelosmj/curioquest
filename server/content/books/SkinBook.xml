@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<skins>
+		<skin id="1" petID="15" offsetX="0" offsetY="0" rarity="rare" name="Tuxedo Ducan" desc="Ducan dressed for the cold, borrowed from the island's penguins." thumbnail="Penguin.png" icon="Penguin.png" loadLocal="false" costGold="0" costCredits="0" sellGold="0" sellCredits="0">
+			<prestige id="0" thumbnail="Penguin.png" icon="Penguin.png" image="Penguin.swf" offsetX="0" offsetY="0" loadLocal="false" />
+			<prestige id="1" thumbnail="Penguin_E1.png" icon="Penguin_E1.png" image="Penguin_E1.swf" offsetX="0" offsetY="0" loadLocal="false" />
+			<prestige id="2" thumbnail="Penguin_E2.png" icon="Penguin_E2.png" image="Penguin_E2.swf" offsetX="0" offsetY="0" loadLocal="false" />
+		</skin>
+		<skin id="2" petID="12" offsetX="0" offsetY="0" rarity="common" name="Rooted Cocon" desc="A Cocon that stayed in the ground a little too long." thumbnail="Turnip.png" icon="Turnip.png" loadLocal="false" costGold="0" costCredits="0" sellGold="0" sellCredits="0">
+			<prestige id="0" thumbnail="Turnip.png" icon="Turnip.png" image="Turnip.swf" offsetX="0" offsetY="0" loadLocal="false" />
+			<prestige id="1" thumbnail="Turnip_E1.png" icon="Turnip_E1.png" image="Turnip_E1.swf" offsetX="0" offsetY="0" loadLocal="false" />
+			<prestige id="2" thumbnail="Turnip_E2.png" icon="Turnip_E2.png" image="Turnip_E2.swf" offsetX="0" offsetY="0" loadLocal="false" />
+		</skin>
+		<skin id="3" petID="19" offsetX="0" offsetY="0" rarity="common" name="Emberclaw Impkin" desc="An Impkin that traded its horns for a pair of burning claws." thumbnail="FireCrab.png" icon="FireCrab.png" loadLocal="false" costGold="0" costCredits="0" sellGold="0" sellCredits="0">
+			<prestige id="0" thumbnail="FireCrab.png" icon="FireCrab.png" image="FireCrab.swf" offsetX="0" offsetY="0" loadLocal="false" />
+			<prestige id="1" thumbnail="FireCrab_E1.png" icon="FireCrab_E1.png" image="FireCrab_E1.swf" offsetX="0" offsetY="0" loadLocal="false" />
+			<prestige id="2" thumbnail="FireCrab_E2.png" icon="FireCrab_E2.png" image="FireCrab_E2.swf" offsetX="0" offsetY="0" loadLocal="false" />
+		</skin>
+		<skin id="4" petID="41" offsetX="0" offsetY="0" rarity="common" name="Nightwing Shado" desc="The shadow took wing and never came back down." thumbnail="Bat.png" icon="Bat.png" loadLocal="false" costGold="0" costCredits="0" sellGold="0" sellCredits="0">
+			<prestige id="0" thumbnail="Bat.png" icon="Bat.png" image="Bat.swf" offsetX="0" offsetY="0" loadLocal="false" />
+			<prestige id="1" thumbnail="Bat_E1.png" icon="Bat_E1.png" image="Bat_E1.swf" offsetX="0" offsetY="0" loadLocal="false" />
+			<prestige id="2" thumbnail="Bat_E2.png" icon="Bat_E2.png" image="Bat_E2.swf" offsetX="0" offsetY="0" loadLocal="false" />
+		</skin>
+		<skin id="5" petID="20" offsetX="0" offsetY="0" rarity="common" name="Toadbloom Rosie" desc="Rosie's petals closed around something that croaks." thumbnail="PlantToad.png" icon="PlantToad.png" loadLocal="false" costGold="0" costCredits="0" sellGold="0" sellCredits="0">
+			<prestige id="0" thumbnail="PlantToad.png" icon="PlantToad.png" image="PlantToad.swf" offsetX="0" offsetY="0" loadLocal="false" />
+			<prestige id="1" thumbnail="PlantToad_E1.png" icon="PlantToad_E1.png" image="PlantToad_E1.swf" offsetX="0" offsetY="0" loadLocal="false" />
+			<prestige id="2" thumbnail="PlantToad_E2.png" icon="PlantToad_E2.png" image="PlantToad_E2.swf" offsetX="0" offsetY="0" loadLocal="false" />
+		</skin>
+		<skin id="6" petID="2" offsetX="0" offsetY="0" rarity="rare" name="Gale Pigale" desc="Pigale caught a sea breeze and came back with a beak." thumbnail="Pelican.png" icon="Pelican.png" loadLocal="false" costGold="0" costCredits="0" sellGold="0" sellCredits="0">
+			<prestige id="0" thumbnail="Pelican.png" icon="Pelican.png" image="Pelican.swf" offsetX="0" offsetY="0" loadLocal="false" />
+			<prestige id="1" thumbnail="Pelican_E1.png" icon="Pelican_E1.png" image="Pelican_E1.swf" offsetX="0" offsetY="0" loadLocal="false" />
+			<prestige id="2" thumbnail="Pelican_E2.png" icon="Pelican_E2.png" image="Pelican_E2.swf" offsetX="0" offsetY="0" loadLocal="false" />
+		</skin>
+	</skins>
+</data>

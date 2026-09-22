@@ -1,0 +1,24 @@
+{
+  "project_name": "Curio Quest Revival",
+  "tech_stack": {
+    "server": "Python 3.10+ (asyncio, sockets, HTTP)",
+    "protocol": "ElectroServer 5 binary TCP, Apache Thrift binary, EsObject",
+    "client": "Adobe AIR 3.4.3 (ActionScript 3), Android",
+    "tools": "Android SDK / ADB, APK patching (zipfile, jarsigner), JPEXS Flash Decompiler"
+  },
+  "rules": {
+    "documentation": {
+      "auto_record_md": true,
+      "docs_path": "docs/",
+      "description": "Always document discoveries, hypotheses, test outcomes, and architectural decisions in Markdown."
+    },
+    "git": {
+      "clean_commits": true,
+      "track_changes": true
+    },
+    "testing": {
+      "validate_live_and_sim": true,
+      "description": "Validate network packets against real client AS3 definitions and simulate before device testing."
+    }
+  }
+}

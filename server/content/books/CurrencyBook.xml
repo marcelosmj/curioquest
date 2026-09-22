@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<currencies>
+		<currency id="1" rarity="common" name="Gold" desc="Coins used to evolve, rank up and buy curios." thumbnail="Gold.png" icon="Gold.png" loadLocal="false" />
+		<currency id="2" rarity="common" name="Plasma" desc="Rare energy crystals used for premium items." thumbnail="Plasma.png" icon="Plasma.png" loadLocal="false" />
+		<currency id="3" rarity="common" name="Battle Points" desc="Earned by battling other players." thumbnail="ActivityPoints.png" icon="ActivityPoints.png" loadLocal="false" />
+		<currency id="4" rarity="common" name="Experience" desc="Experience for your curios." thumbnail="Exp.png" icon="Exp.png" loadLocal="false" />
+		<currency id="5" rarity="common" name="Stardust" desc="Left behind by exchanged curios. Used to rank up." thumbnail="RandomBoost.png" icon="RandomBoost.png" loadLocal="false" />
+		<currency id="6" rarity="common" name="Energy" desc="Spent to battle in the zones." thumbnail="Energy.png" icon="Energy.png" loadLocal="false" />
+		<currency id="7" rarity="common" name="Prize Wheel Spin" desc="One extra spin of the Prize Wheel." thumbnail="FreeSpin.png" icon="FreeSpin.png" loadLocal="false" />
+		<currency id="8" rarity="common" name="Friend Tokens" desc="Used to play Plinko in the arcade." thumbnail="Token.png" icon="Token.png" loadLocal="false" />
+		<currency id="9" rarity="common" name="PvP Tickets" desc="Used to battle in the arena." thumbnail="Tickets.png" icon="Tickets.png" loadLocal="false" />
+		<currency id="10" rarity="common" name="Arena Coins" desc="Rewards from arena events." thumbnail="Credit.png" icon="Credit.png" loadLocal="false" />
+		<currency id="11" rarity="common" name="Event Coins" desc="Rewards from special events." thumbnail="RandomItem.png" icon="RandomItem.png" loadLocal="false" />
+		<currency id="12" rarity="common" name="Club Coins" desc="Rewards from club battles." thumbnail="Token.png" icon="Token.png" loadLocal="false" />
+		<currency id="13" rarity="common" name="Shipment Coins" desc="Rewards from shipments." thumbnail="RandomItem.png" icon="RandomItem.png" loadLocal="false" />
+	</currencies>
+</data>

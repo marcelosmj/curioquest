@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<enchants>
+		<enchant id="1" rarity="common" name="Ruby Chip" desc="A chip of fire-glass. Raises ^damage^." thumbnail="ActivityPoints.png" icon="ActivityPoints.png" loadLocal="false" costGold="800" costCredits="0" sellGold="50" sellCredits="0" slots="red" damage="8" destroyGold="50" upgradeGold="600" />
+		<enchant id="2" rarity="rare" name="Ruby Shard" desc="A shard of fire-glass. Raises ^damage^ a lot." thumbnail="ActivityPoints.png" icon="ActivityPoints.png" loadLocal="false" costGold="0" costCredits="0" sellGold="150" sellCredits="0" slots="red" damage="18" destroyGold="150" upgradeGold="2000" upgradeID="1" />
+		<enchant id="3" rarity="epic" name="Ruby Core" desc="The heart of a fire-glass vein. Raises ^damage^ enormously." thumbnail="ActivityPoints.png" icon="ActivityPoints.png" loadLocal="false" costGold="0" costCredits="0" sellGold="400" sellCredits="0" slots="red" damage="32" destroyGold="400" upgradeID="2" />
+		<enchant id="4" rarity="common" name="Amber Chip" desc="Warm amber. Raises ^luck^." thumbnail="Credit.png" icon="Credit.png" loadLocal="false" costGold="800" costCredits="0" sellGold="50" sellCredits="0" slots="yellow" luck="4" destroyGold="50" upgradeGold="600" />
+		<enchant id="5" rarity="rare" name="Amber Shard" desc="Clear amber. Raises ^luck^ a lot." thumbnail="Credit.png" icon="Credit.png" loadLocal="false" costGold="0" costCredits="0" sellGold="150" sellCredits="0" slots="yellow" luck="9" destroyGold="150" upgradeGold="2000" upgradeID="4" />
+		<enchant id="6" rarity="epic" name="Amber Core" desc="Amber with something alive inside. Raises ^luck^ and ^mana^." thumbnail="Credit.png" icon="Credit.png" loadLocal="false" costGold="0" costCredits="0" sellGold="400" sellCredits="0" slots="yellow" mana="1" luck="16" destroyGold="400" upgradeID="5" />
+		<enchant id="7" rarity="common" name="Sapphire Chip" desc="Cold blue stone. Raises ^health^ and ^healing^." thumbnail="RandomBoost.png" icon="RandomBoost.png" loadLocal="false" costGold="800" costCredits="0" sellGold="50" sellCredits="0" slots="blue" health="60" healing="6" destroyGold="50" upgradeGold="600" />
+		<enchant id="8" rarity="rare" name="Sapphire Shard" desc="Deep blue stone. Raises ^health^ and ^healing^ a lot." thumbnail="RandomBoost.png" icon="RandomBoost.png" loadLocal="false" costGold="0" costCredits="0" sellGold="150" sellCredits="0" slots="blue" health="130" healing="14" destroyGold="150" upgradeGold="2000" upgradeID="7" />
+		<enchant id="9" rarity="epic" name="Sapphire Core" desc="A frozen spring in stone. Raises ^health^ and ^healing^ enormously." thumbnail="RandomBoost.png" icon="RandomBoost.png" loadLocal="false" costGold="0" costCredits="0" sellGold="400" sellCredits="0" slots="blue" health="240" healing="26" destroyGold="400" upgradeID="8" />
+	</enchants>
+</data>

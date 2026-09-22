@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<welcomePack id="1" rarity="epic" name="Welcome Pack" desc="A hand from the islanders to get you started." thumbnail="RandomItem.png" icon="RandomItem.png" loadLocal="false">
+		<items>
+			<item id="1" type="currency" qty="1000" />
+			<item id="2" type="currency" qty="25" />
+			<item id="6" type="currency" qty="20" />
+			<item id="1" type="grabbag" qty="1" />
+		</items>
+	</welcomePack>
+</data>

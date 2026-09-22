@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<daily day="0">
+		<items>
+			<item id="1" type="currency" qty="500" />
+		</items>
+	</daily>
+	<daily day="1">
+		<items>
+			<item id="6" type="currency" qty="10" />
+		</items>
+	</daily>
+	<daily day="2">
+		<items>
+			<item id="1" type="currency" qty="1000" />
+		</items>
+	</daily>
+	<daily day="3">
+		<items>
+			<item id="8" type="currency" qty="5" />
+		</items>
+	</daily>
+	<daily day="4">
+		<items>
+			<item id="2" type="currency" qty="10" />
+		</items>
+	</daily>
+	<daily day="5">
+		<items>
+			<item id="1" type="currency" qty="2500" />
+			<item id="9" type="currency" qty="5" />
+		</items>
+	</daily>
+	<daily day="6">
+		<items>
+			<item id="1" type="grabbag" qty="1" />
+		</items>
+	</daily>
+</data>

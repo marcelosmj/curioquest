@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<success name="Low" color="FF4444" minPerc="0" maxPerc="24" />
+	<success name="Medium" color="FF9900" minPerc="25" maxPerc="49" />
+	<success name="High" color="FFFF00" minPerc="50" maxPerc="74" />
+	<success name="Very High" color="66FF33" minPerc="75" maxPerc="99" />
+	<success name="Guaranteed" color="33FFFF" minPerc="100" maxPerc="1000" />
+</data>

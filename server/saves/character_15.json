@@ -1,0 +1,277 @@
+{
+ "char_id": 15,
+ "device_id": "teste-exp",
+ "player_id": "CQ00015",
+ "name": "",
+ "gender": "F",
+ "created": 1789642188.5252705,
+ "last_login": 1789642188.5684905,
+ "level": 1,
+ "bps": 0,
+ "exp": 0,
+ "dust": 0,
+ "pet_max_bonus": 0,
+ "zone_id": 1,
+ "zone_difficulty": 0,
+ "offense_team": 0,
+ "defense_team": 0,
+ "battle_speed": 1,
+ "global_chat": false,
+ "friend_requests": true,
+ "chat_channel": 0,
+ "daily": 0,
+ "daily_time": 0,
+ "num_spins": 0,
+ "num_free_spins": 1,
+ "tutorial": [],
+ "next_pet_uid": 3,
+ "pets": [
+  {
+   "uid": 1,
+   "species": 15,
+   "name": "",
+   "prestige": 0,
+   "rank": 0,
+   "fusion": 0,
+   "level": 1,
+   "exp": 50,
+   "skin": 0,
+   "skill_points": 0,
+   "fatigue": 0,
+   "skill_ranks": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    0
+   ],
+   "skill_slots": [
+    1,
+    2,
+    0,
+    0
+   ]
+  }
+ ],
+ "teams": [
+  {
+   "id": 0,
+   "name": "",
+   "pet_uids": [
+    1
+   ]
+  }
+ ],
+ "zones": [],
+ "inventory": [],
+ "jobs_active": [
+  {
+   "id": 7,
+   "progress": 0,
+   "looted": false
+  },
+  {
+   "id": 3,
+   "progress": 0,
+   "looted": false
+  },
+  {
+   "id": 2,
+   "progress": 0,
+   "looted": false
+  },
+  {
+   "id": 1,
+   "progress": 0,
+   "looted": false
+  },
+  {
+   "id": 8,
+   "progress": 0,
+   "looted": false
+  }
+ ],
+ "jobs_complete": [],
+ "achievements": [
+  {
+   "id": 1,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 2,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 3,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 4,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 5,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 6,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 7,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 8,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 9,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 10,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 11,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 12,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 13,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 14,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 15,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 16,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 17,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 18,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 19,
+   "progress": 1,
+   "rank": 0
+  },
+  {
+   "id": 20,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 21,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 22,
+   "progress": 1,
+   "rank": 0
+  },
+  {
+   "id": 23,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 24,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 25,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 26,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 27,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 28,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 29,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 30,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 31,
+   "progress": 1,
+   "rank": 0
+  },
+  {
+   "id": 32,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 33,
+   "progress": 1,
+   "rank": 0
+  }
+ ],
+ "gold": 4000,
+ "credits": 5,
+ "energy": 20,
+ "tokens": 5,
+ "tickets": 5,
+ "rating": 1000,
+ "teams_max": 3,
+ "energy_updated": 1789642188.5252705,
+ "tokens_updated": 1789642188.5252705,
+ "tickets_updated": 1789642188.568502,
+ "jobs_day": 20713,
+ "counters": {
+  "exchanges": 1
+ }
+}

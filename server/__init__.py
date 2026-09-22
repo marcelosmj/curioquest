@@ -1,0 +1,1 @@
+"""Curio Quest offline server."""

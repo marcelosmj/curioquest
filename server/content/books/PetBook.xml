@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<pets>
+		<pet id="1" name="Caniton" desc="A toxic hound whose drool eats through steel." rarity="epic" type="dark" costGold="0" costCredits="180" sellGold="2000" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="396" healthGain="87" damageBase="94" damageGain="13" healingBase="62" healingGain="10" luckBase="28" luckGain="1" manaBase="15" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Bite" icon="Physical_Bite.png" thumbnail="Physical_Bite.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="dark_strike" name="Shadow Claw" icon="Dark_Attack_1.png" thumbnail="Dark_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="dark_drain" name="Life Leech" icon="Dark_Attack_2.png" thumbnail="Dark_Attack_2.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="dark_blast" name="Dark Pulse" icon="Dark_Attack_2.png" thumbnail="Dark_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="dark_storm" name="Nightfall" icon="Dark_Attack_3.png" thumbnail="Dark_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+				<skill id="6" link="dark_fury" name="Dark Blast" icon="Dark_Attack_4.png" thumbnail="Dark_Attack_4.png" xPos="240" yPos="110" startRank="0" levelReq="20" skillsReq="2" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="AcidDog.png" icon="AcidDog.png" image="AcidDog.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="AcidDog_E1.png" icon="AcidDog_E1.png" image="AcidDog_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="AcidDog_E2.png" icon="AcidDog_E2.png" image="AcidDog_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="2" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="2" name="Pigale" desc="Its fluffy wool traps gusts of wind that it lets loose in a single burst." rarity="common" type="air" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Home Island" loadLocal="true">
+			<stats healthBase="277" healthGain="38" damageBase="41" damageGain="8" healingBase="76" healingGain="6" luckBase="3" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Tackle" icon="Physical_Stomp.png" thumbnail="Physical_Stomp.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="air_strike" name="Gust" icon="Air_Attack_1.png" thumbnail="Air_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="air_focus" name="Tailwind" icon="Air_Heal_1.png" thumbnail="Air_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="air_blast" name="Air Slash" icon="Air_Attack_2.png" thumbnail="Air_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="air_storm" name="Tornado" icon="Air_Attack_3.png" thumbnail="Air_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="AirHog.png" icon="AirHog.png" image="AirHog.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="AirHog_E1.png" icon="AirHog_E1.png" image="AirHog_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="AirHog_E2.png" icon="AirHog_E2.png" image="AirHog_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="3" name="Tropigust" desc="Tropigust rides warm island breezes and never lands for long." rarity="rare" type="air" costGold="2000" costCredits="60" sellGold="500" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Open Sea" loadLocal="true">
+			<stats healthBase="238" healthGain="57" damageBase="52" damageGain="9" healingBase="72" healingGain="9" luckBase="6" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Peck" icon="Physical_Bite.png" thumbnail="Physical_Bite.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="air_strike" name="Gust" icon="Air_Attack_1.png" thumbnail="Air_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="air_focus" name="Tailwind" icon="Air_Heal_1.png" thumbnail="Air_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="air_blast" name="Air Slash" icon="Air_Attack_2.png" thumbnail="Air_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="air_fury" name="Sky Dive" icon="Air_Attack_4.png" thumbnail="Air_Attack_4.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="AirParrot.png" icon="AirParrot.png" image="AirParrot.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="AirParrot_E1.png" icon="AirParrot_E1.png" image="AirParrot_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="AirParrot_E2.png" icon="AirParrot_E2.png" image="AirParrot_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="1" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="4" name="Dangler" desc="The light on its lure is the last thing its prey ever sees." rarity="rare" type="dark" costGold="2000" costCredits="60" sellGold="500" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Open Sea" loadLocal="true">
+			<stats healthBase="249" healthGain="60" damageBase="57" damageGain="10" healingBase="64" healingGain="8" luckBase="5" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Bite" icon="Physical_Bite.png" thumbnail="Physical_Bite.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="dark_strike" name="Shadow Claw" icon="Dark_Attack_1.png" thumbnail="Dark_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="dark_drain" name="Life Leech" icon="Dark_Attack_2.png" thumbnail="Dark_Attack_2.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="dark_blast" name="Dark Pulse" icon="Dark_Attack_2.png" thumbnail="Dark_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="dark_fury" name="Dark Blast" icon="Dark_Attack_4.png" thumbnail="Dark_Attack_4.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Anglerfish.png" icon="Anglerfish.png" image="Anglerfish.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Anglerfish_E1.png" icon="Anglerfish_E1.png" image="Anglerfish_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Anglerfish_E2.png" icon="Anglerfish_E2.png" image="Anglerfish_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="1" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="5" name="Thermant" desc="A tiny ant that burns hot enough to melt sand into glass." rarity="common" type="fire" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Home Island" loadLocal="true">
+			<stats healthBase="265" healthGain="37" damageBase="46" damageGain="9" healingBase="70" healingGain="5" luckBase="2" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Pinch" icon="Physical_Scratch.png" thumbnail="Physical_Scratch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="fire_strike" name="Ember" icon="Fire_Attack_1.png" thumbnail="Fire_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="fire_burn" name="Scorch" icon="Fire_Attack_3.png" thumbnail="Fire_Attack_3.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,3" required="false" loadLocal="true" />
+				<skill id="4" link="fire_blast" name="Fireball" icon="Fire_Attack_2.png" thumbnail="Fire_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="fire_storm" name="Inferno" icon="Fire_Attack_3.png" thumbnail="Fire_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Ant.png" icon="Ant.png" image="Ant.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Ant_E1.png" icon="Ant_E1.png" image="Ant_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Ant_E2.png" icon="Ant_E2.png" image="Ant_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="6" name="Armordillo" desc="Sworn to protect its friends, it never takes off its armor." rarity="rare" type="physical" costGold="2000" costCredits="60" sellGold="500" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="285" healthGain="68" damageBase="51" damageGain="9" healingBase="62" healingGain="7" luckBase="5" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Roll Out" icon="Physical_Stomp.png" thumbnail="Physical_Stomp.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="physical_strike" name="Tackle" icon="Physical_Attack_1.png" thumbnail="Physical_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="physical_guard" name="Thick Hide" icon="Physical_Heal_1.png" thumbnail="Physical_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="physical_blast" name="Body Slam" icon="Physical_Attack_2.png" thumbnail="Physical_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="physical_fury" name="Crushing Blow" icon="Physical_Attack_4.png" thumbnail="Physical_Attack_4.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Armordillo.png" icon="Armordillo.png" image="Armordillo.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Armordillo_E1.png" icon="Armordillo_E1.png" image="Armordillo_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Armordillo_E2.png" icon="Armordillo_E2.png" image="Armordillo_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="1" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="7" name="Macrobe" desc="A giant microbe that feeds on stray static charge." rarity="common" type="electric" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Home Island, Open Sea" loadLocal="true">
+			<stats healthBase="279" healthGain="39" damageBase="42" damageGain="8" healingBase="77" healingGain="6" luckBase="2" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Slap" icon="Physical_Punch.png" thumbnail="Physical_Punch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="electric_strike" name="Zap" icon="Electric_Attack_1.png" thumbnail="Electric_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="electric_shock" name="Static Shock" icon="Electric_Attack_2.png" thumbnail="Electric_Attack_2.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="3,2,3" required="false" loadLocal="true" />
+				<skill id="4" link="electric_blast" name="Thunderbolt" icon="Electric_Attack_2.png" thumbnail="Electric_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="electric_storm" name="Chain Lightning" icon="Electric_Attack_3.png" thumbnail="Electric_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Bacteria.png" icon="Bacteria.png" image="Bacteria.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Bacteria_E1.png" icon="Bacteria_E1.png" image="Bacteria_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Bacteria_E2.png" icon="Bacteria_E2.png" image="Bacteria_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="8" name="Batawoc" desc="It sleeps in skulls and wakes up hungry." rarity="common" type="dark" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Home Island" loadLocal="true">
+			<stats healthBase="285" healthGain="39" damageBase="42" damageGain="8" healingBase="66" healingGain="5" luckBase="2" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Bite" icon="Physical_Bite.png" thumbnail="Physical_Bite.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="dark_strike" name="Shadow Claw" icon="Dark_Attack_1.png" thumbnail="Dark_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="dark_drain" name="Life Leech" icon="Dark_Attack_2.png" thumbnail="Dark_Attack_2.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="dark_blast" name="Dark Pulse" icon="Dark_Attack_2.png" thumbnail="Dark_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="dark_storm" name="Nightfall" icon="Dark_Attack_3.png" thumbnail="Dark_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Bat.png" icon="Bat.png" image="Bat.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Bat_E1.png" icon="Bat_E1.png" image="Bat_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Bat_E2.png" icon="Bat_E2.png" image="Bat_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="9" name="Penzai" desc="An ancient stone guardian that has grown a garden on its back." rarity="legendary" type="earth" costGold="0" costCredits="450" sellGold="5000" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="577" healthGain="120" damageBase="100" damageGain="16" healingBase="99" healingGain="14" luckBase="16" luckGain="1" manaBase="17" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Stomp" icon="Physical_Stomp.png" thumbnail="Physical_Stomp.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="earth_strike" name="Vine Whip" icon="Earth_Attack_1.png" thumbnail="Earth_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="earth_guard" name="Bark Skin" icon="Earth_Heal_1.png" thumbnail="Earth_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="earth_blast" name="Rock Slide" icon="Rock_Attack_2.png" thumbnail="Rock_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="earth_storm" name="Earthquake" icon="Earth_Attack_3.png" thumbnail="Earth_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+				<skill id="6" link="earth_fury" name="Boulder Crush" icon="Rock_Attack_4.png" thumbnail="Rock_Attack_4.png" xPos="240" yPos="110" startRank="0" levelReq="20" skillsReq="2" rankCosts="4,2,3" required="false" loadLocal="true" />
+				<skill id="7" link="earth_mend" name="Photosynthesis" icon="Earth_Heal_1.png" thumbnail="Earth_Heal_1.png" xPos="240" yPos="220" startRank="0" levelReq="30" skillsReq="6" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Bonsai.png" icon="Bonsai.png" image="Bonsai.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Bonsai_E1.png" icon="Bonsai_E1.png" image="Bonsai_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Bonsai_E2.png" icon="Bonsai_E2.png" image="Bonsai_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="2" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="10" name="Bumblebeam" desc="Its glowing abdomen lights up the hive at night." rarity="common" type="light" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="272" healthGain="38" damageBase="35" damageGain="6" healingBase="99" healingGain="7" luckBase="2" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Sting" icon="Physical_Scratch.png" thumbnail="Physical_Scratch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="light_strike" name="Flash" icon="Light_Attack_1.png" thumbnail="Light_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="light_mend" name="Soothe" icon="Light_Heal_1.png" thumbnail="Light_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="light_blast" name="Sunbeam" icon="Light_Attack_2.png" thumbnail="Light_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="light_storm" name="Radiance" icon="Light_Attack_3.png" thumbnail="Light_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="BulbBee.png" icon="BulbBee.png" image="BulbBee.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="BulbBee_E1.png" icon="BulbBee_E1.png" image="BulbBee_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="BulbBee_E2.png" icon="BulbBee_E2.png" image="BulbBee_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="11" name="Cap'n Skelly" desc="The captain went down with the ship, and came back up again." rarity="epic" type="dark" costGold="0" costCredits="180" sellGold="2000" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Open Sea" loadLocal="true">
+			<stats healthBase="383" healthGain="84" damageBase="97" damageGain="14" healingBase="65" healingGain="10" luckBase="25" luckGain="1" manaBase="15" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_blade" name="Cutlass" icon="Physical_Slash.png" thumbnail="Physical_Slash.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="dark_strike" name="Shadow Claw" icon="Dark_Attack_1.png" thumbnail="Dark_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="dark_drain" name="Life Leech" icon="Dark_Attack_2.png" thumbnail="Dark_Attack_2.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="dark_blast" name="Dark Pulse" icon="Dark_Attack_2.png" thumbnail="Dark_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="dark_storm" name="Nightfall" icon="Dark_Attack_3.png" thumbnail="Dark_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+				<skill id="6" link="dark_fury" name="Dark Blast" icon="Dark_Attack_4.png" thumbnail="Dark_Attack_4.png" xPos="240" yPos="110" startRank="0" levelReq="20" skillsReq="2" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="CapnSkelly.png" icon="CapnSkelly.png" image="CapnSkelly.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="CapnSkelly_E1.png" icon="CapnSkelly_E1.png" image="CapnSkelly_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="CapnSkelly_E2.png" icon="CapnSkelly_E2.png" image="CapnSkelly_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="2" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="12" name="Cocon" desc="A coconut that trained in the art of stealth. Mostly it just falls on people." rarity="common" type="earth" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="334" healthGain="46" damageBase="36" damageGain="7" healingBase="73" healingGain="5" luckBase="2" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Headbutt" icon="Physical_Punch.png" thumbnail="Physical_Punch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="earth_strike" name="Vine Whip" icon="Earth_Attack_1.png" thumbnail="Earth_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="earth_guard" name="Bark Skin" icon="Earth_Heal_1.png" thumbnail="Earth_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="earth_blast" name="Rock Slide" icon="Rock_Attack_2.png" thumbnail="Rock_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="earth_storm" name="Earthquake" icon="Earth_Attack_3.png" thumbnail="Earth_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Coconut.png" icon="Coconut.png" image="Coconut.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Coconut_E1.png" icon="Coconut_E1.png" image="Coconut_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Coconut_E2.png" icon="Coconut_E2.png" image="Coconut_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="13" name="Drakitton" desc="Playful as a kitten, fierce as a dragon." rarity="epic" type="fire" costGold="0" costCredits="180" sellGold="2000" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="375" healthGain="83" damageBase="104" damageGain="15" healingBase="61" healingGain="10" luckBase="23" luckGain="1" manaBase="15" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Scratch" icon="Physical_Scratch.png" thumbnail="Physical_Scratch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="fire_strike" name="Ember" icon="Fire_Attack_1.png" thumbnail="Fire_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="fire_burn" name="Scorch" icon="Fire_Attack_3.png" thumbnail="Fire_Attack_3.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,3" required="false" loadLocal="true" />
+				<skill id="4" link="fire_blast" name="Fireball" icon="Fire_Attack_2.png" thumbnail="Fire_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="fire_storm" name="Inferno" icon="Fire_Attack_3.png" thumbnail="Fire_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+				<skill id="6" link="fire_fury" name="Flame Strike" icon="Fire_Attack_4.png" thumbnail="Fire_Attack_4.png" xPos="240" yPos="110" startRank="0" levelReq="20" skillsReq="2" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Dragon.png" icon="Dragon.png" image="Dragon.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Dragon_E1.png" icon="Dragon_E1.png" image="Dragon_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Dragon_E2.png" icon="Dragon_E2.png" image="Dragon_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="2" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="14" name="Hartwood" desc="Carved from driftwood by the tide, it roams the shore at dawn." rarity="epic" type="earth" costGold="0" costCredits="180" sellGold="2000" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="461" healthGain="101" damageBase="82" damageGain="12" healingBase="73" healingGain="12" luckBase="22" luckGain="1" manaBase="15" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Ram" icon="Physical_Stomp.png" thumbnail="Physical_Stomp.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="earth_strike" name="Vine Whip" icon="Earth_Attack_1.png" thumbnail="Earth_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="earth_guard" name="Bark Skin" icon="Earth_Heal_1.png" thumbnail="Earth_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="earth_blast" name="Rock Slide" icon="Rock_Attack_2.png" thumbnail="Rock_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="earth_storm" name="Earthquake" icon="Earth_Attack_3.png" thumbnail="Earth_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+				<skill id="6" link="earth_fury" name="Boulder Crush" icon="Rock_Attack_4.png" thumbnail="Rock_Attack_4.png" xPos="240" yPos="110" startRank="0" levelReq="20" skillsReq="2" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="DriftDeer.png" icon="DriftDeer.png" image="Driftdeer.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Driftdeer_E1.png" icon="Driftdeer_E1.png" image="Driftdeer_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Driftdeer_E2.png" icon="Driftdeer_E2.png" image="Driftdeer_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="2" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="15" name="Ducan" desc="Ducans have trouble swimming and rely on their special gear to swim long distances." rarity="rare" type="water" costGold="0" costCredits="0" sellGold="500" sellCredits="0" size="1" exchangable="false" starter="true" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="250" healthGain="60" damageBase="50" damageGain="9" healingBase="75" healingGain="9" luckBase="5" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Slap" icon="Physical_Punch.png" thumbnail="Physical_Punch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="water_strike" name="Splash" icon="Water_Attack_1.png" thumbnail="Water_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="water_mend" name="Healing Rain" icon="Water_Heal_1.png" thumbnail="Water_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="water_blast" name="Water Jet" icon="Water_Attack_2.png" thumbnail="Water_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="water_fury" name="Aqua Impale" icon="Water_Attack_4.png" thumbnail="Water_Attack_4.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Duck.png" icon="Duck.png" image="Duck.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Duck_E1.png" icon="Duck_E1.png" image="Duck_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Duck_E2.png" icon="Duck_E2.png" image="Duck_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="1" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="16" name="Claymore" desc="Handle with care. Claymore has a very short fuse." rarity="rare" type="earth" costGold="2000" costCredits="60" sellGold="500" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="282" healthGain="68" damageBase="49" damageGain="9" healingBase="69" healingGain="8" luckBase="4" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Stomp" icon="Physical_Stomp.png" thumbnail="Physical_Stomp.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="earth_strike" name="Vine Whip" icon="Earth_Attack_1.png" thumbnail="Earth_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="earth_guard" name="Bark Skin" icon="Earth_Heal_1.png" thumbnail="Earth_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="earth_blast" name="Rock Slide" icon="Rock_Attack_2.png" thumbnail="Rock_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="earth_fury" name="Boulder Crush" icon="Rock_Attack_4.png" thumbnail="Rock_Attack_4.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="EarthBomb.png" icon="EarthBomb.png" image="EarthBomb.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="EarthBomb_E1.png" icon="EarthBomb_E1.png" image="EarthBomb_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="EarthBomb_E2.png" icon="EarthBomb_E2.png" image="EarthBomb_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="1" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="17" name="Flairy" desc="A spark of sunlight that learned how to giggle." rarity="common" type="light" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Home Island" loadLocal="true">
+			<stats healthBase="281" healthGain="39" damageBase="37" damageGain="7" healingBase="97" healingGain="7" luckBase="2" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Slap" icon="Physical_Punch.png" thumbnail="Physical_Punch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="light_strike" name="Flash" icon="Light_Attack_1.png" thumbnail="Light_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="light_mend" name="Soothe" icon="Light_Heal_1.png" thumbnail="Light_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="light_blast" name="Sunbeam" icon="Light_Attack_2.png" thumbnail="Light_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="light_storm" name="Radiance" icon="Light_Attack_3.png" thumbnail="Light_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Fairy.png" icon="Fairy.png" image="Fairy.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Fairy_E1.png" icon="Fairy_E1.png" image="Fairy_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Fairy_E2.png" icon="Fairy_E2.png" image="Fairy_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="18" name="Clawsphorus" desc="Its shell glows red hot whenever it gets angry, which is often." rarity="common" type="fire" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Home Island" loadLocal="true">
+			<stats healthBase="263" healthGain="36" damageBase="48" damageGain="9" healingBase="70" healingGain="5" luckBase="2" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_blade" name="Pinch" icon="Physical_Slash.png" thumbnail="Physical_Slash.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="fire_strike" name="Ember" icon="Fire_Attack_1.png" thumbnail="Fire_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="fire_burn" name="Scorch" icon="Fire_Attack_3.png" thumbnail="Fire_Attack_3.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,3" required="false" loadLocal="true" />
+				<skill id="4" link="fire_blast" name="Fireball" icon="Fire_Attack_2.png" thumbnail="Fire_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="fire_storm" name="Inferno" icon="Fire_Attack_3.png" thumbnail="Fire_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="FireCrab.png" icon="FireCrab.png" image="FireCrab.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="FireCrab_E1.png" icon="FireCrab_E1.png" image="FireCrab_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="FireCrab_E2.png" icon="FireCrab_E2.png" image="FireCrab_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="19" name="Impkin" desc="A mischievous little flame that loves to play tricks." rarity="common" type="fire" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Home Island, Open Sea" loadLocal="true">
+			<stats healthBase="265" healthGain="37" damageBase="44" damageGain="8" healingBase="70" healingGain="5" luckBase="2" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Scratch" icon="Physical_Scratch.png" thumbnail="Physical_Scratch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="fire_strike" name="Ember" icon="Fire_Attack_1.png" thumbnail="Fire_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="fire_burn" name="Scorch" icon="Fire_Attack_3.png" thumbnail="Fire_Attack_3.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,3" required="false" loadLocal="true" />
+				<skill id="4" link="fire_blast" name="Fireball" icon="Fire_Attack_2.png" thumbnail="Fire_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="fire_storm" name="Inferno" icon="Fire_Attack_3.png" thumbnail="Fire_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="FireImp.png" icon="FireImp.png" image="FireImp.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="FireImp_E1.png" icon="FireImp_E1.png" image="FireImp_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="FireImp_E2.png" icon="FireImp_E2.png" image="FireImp_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="20" name="Rosie" desc="Beautiful to look at, painful to pick." rarity="common" type="earth" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Home Island" loadLocal="true">
+			<stats healthBase="330" healthGain="46" damageBase="36" damageGain="7" healingBase="73" healingGain="5" luckBase="2" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_blade" name="Thorn" icon="Physical_Slash.png" thumbnail="Physical_Slash.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="earth_strike" name="Vine Whip" icon="Earth_Attack_1.png" thumbnail="Earth_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="earth_guard" name="Bark Skin" icon="Earth_Heal_1.png" thumbnail="Earth_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="earth_blast" name="Rock Slide" icon="Rock_Attack_2.png" thumbnail="Rock_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="earth_storm" name="Earthquake" icon="Earth_Attack_3.png" thumbnail="Earth_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Flower.png" icon="Flower.png" image="Flower.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Flower_E1.png" icon="Flower_E1.png" image="Flower_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Flower_E2.png" icon="Flower_E2.png" image="Flower_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="21" name="Frochkon" desc="Nobody knows which kingdom it rules, including the frog itself." rarity="common" type="water" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Home Island, Open Sea" loadLocal="true">
+			<stats healthBase="293" healthGain="40" damageBase="36" damageGain="7" healingBase="88" healingGain="7" luckBase="2" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Slap" icon="Physical_Punch.png" thumbnail="Physical_Punch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="water_strike" name="Splash" icon="Water_Attack_1.png" thumbnail="Water_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="water_mend" name="Healing Rain" icon="Water_Heal_1.png" thumbnail="Water_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="water_blast" name="Water Jet" icon="Water_Attack_2.png" thumbnail="Water_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="water_storm" name="Tidal Wave" icon="Water_Attack_3.png" thumbnail="Water_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="FrogPrince.png" icon="FrogPrince.png" image="FrogPrince.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="FrogPrince_E1.png" icon="FrogPrince_E1.png" image="FrogPrince_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="FrogPrince_E2.png" icon="FrogPrince_E2.png" image="FrogPrince_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="22" name="Mander" desc="It sheds its skin in a puff of smoke." rarity="epic" type="fire" costGold="0" costCredits="180" sellGold="2000" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="354" healthGain="78" damageBase="104" damageGain="15" healingBase="62" healingGain="10" luckBase="24" luckGain="1" manaBase="15" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Bite" icon="Physical_Bite.png" thumbnail="Physical_Bite.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="fire_strike" name="Ember" icon="Fire_Attack_1.png" thumbnail="Fire_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="fire_burn" name="Scorch" icon="Fire_Attack_3.png" thumbnail="Fire_Attack_3.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,3" required="false" loadLocal="true" />
+				<skill id="4" link="fire_blast" name="Fireball" icon="Fire_Attack_2.png" thumbnail="Fire_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="fire_storm" name="Inferno" icon="Fire_Attack_3.png" thumbnail="Fire_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+				<skill id="6" link="fire_fury" name="Flame Strike" icon="Fire_Attack_4.png" thumbnail="Fire_Attack_4.png" xPos="240" yPos="110" startRank="0" levelReq="20" skillsReq="2" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Gecko.png" icon="Gecko.png" image="Gecko.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Gecko_E1.png" icon="Gecko_E1.png" image="Gecko_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Gecko_E2.png" icon="Gecko_E2.png" image="Gecko_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="2" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="23" name="Gryphos" desc="A noble sky hunter that answers only to the brave." rarity="epic" type="light" costGold="0" costCredits="180" sellGold="2000" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="371" healthGain="82" damageBase="77" damageGain="11" healingBase="89" healingGain="14" luckBase="25" luckGain="1" manaBase="15" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Talon" icon="Physical_Scratch.png" thumbnail="Physical_Scratch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="light_strike" name="Flash" icon="Light_Attack_1.png" thumbnail="Light_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="light_mend" name="Soothe" icon="Light_Heal_1.png" thumbnail="Light_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="light_blast" name="Sunbeam" icon="Light_Attack_2.png" thumbnail="Light_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="light_storm" name="Radiance" icon="Light_Attack_3.png" thumbnail="Light_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+				<skill id="6" link="light_fury" name="Holy Lance" icon="Light_Attack_4.png" thumbnail="Light_Attack_4.png" xPos="240" yPos="110" startRank="0" levelReq="20" skillsReq="2" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Gryphon.png" icon="Gryphon.png" image="Gryphon.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Gryphon_E1.png" icon="Gryphon_E1.png" image="Gryphon_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Gryphon_E2.png" icon="Gryphon_E2.png" image="Gryphon_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="2" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="24" name="Gumley" desc="Gumley is composed of intelligent polysaccharides that fused together to create a unified consciousness." rarity="common" type="physical" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="304" healthGain="40" damageBase="32" damageGain="7" healingBase="85" healingGain="6" luckBase="1" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Slap" icon="Physical_Punch.png" thumbnail="Physical_Punch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="physical_strike" name="Bear Hug" icon="Physical_Attack_1.png" thumbnail="Physical_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="physical_guard" name="Hibernate" icon="Physical_Heal_1.png" thumbnail="Physical_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="physical_mend" name="Berry Juice" icon="Physical_Heal_1.png" thumbnail="Physical_Heal_1.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="physical_blast" name="Gumshoe" icon="Physical_Attack_2.png" thumbnail="Physical_Attack_2.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="GummiBear.png" icon="GummiBear.png" image="GummiBear.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="GummiBear_E1.png" icon="GummiBear_E1.png" image="GummiBear_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="GummiBear_E2.png" icon="GummiBear_E2.png" image="GummiBear_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="25" name="Hydragon" desc="The Hydragon's heads can't seem to cooperate with one another unless they're in combat." rarity="rare" type="water" costGold="2000" costCredits="60" sellGold="500" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Open Sea" loadLocal="true">
+			<stats healthBase="250" healthGain="60" damageBase="55" damageGain="9" healingBase="55" healingGain="9" luckBase="10" luckGain="0" manaBase="13" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Bite" icon="Physical_Bite.png" thumbnail="Physical_Bite.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="water_blast" name="Harpoon" icon="Water_Attack_2.png" thumbnail="Water_Attack_2.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="water_strike" name="Splash" icon="Water_Attack_1.png" thumbnail="Water_Attack_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="water_fury" name="Aqua Impale" icon="Water_Attack_4.png" thumbnail="Water_Attack_4.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="4,2,3" required="false" loadLocal="true" />
+				<skill id="5" link="water_storm" name="Tidal Wave" icon="Water_Attack_3.png" thumbnail="Water_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Hydra.png" icon="Hydra.png" image="Hydra.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Hydra_E1.png" icon="Hydra_E1.png" image="Hydra_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Hydra_E2.png" icon="Hydra_E2.png" image="Hydra_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="1" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="26" name="Vultaire" desc="It circles over frozen peaks waiting for the wind to change." rarity="common" type="air" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Open Sea" loadLocal="true">
+			<stats healthBase="271" healthGain="37" damageBase="42" damageGain="8" healingBase="82" healingGain="6" luckBase="3" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Peck" icon="Physical_Bite.png" thumbnail="Physical_Bite.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="air_strike" name="Gust" icon="Air_Attack_1.png" thumbnail="Air_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="air_focus" name="Tailwind" icon="Air_Heal_1.png" thumbnail="Air_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="air_blast" name="Air Slash" icon="Air_Attack_2.png" thumbnail="Air_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="air_storm" name="Tornado" icon="Air_Attack_3.png" thumbnail="Air_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="IceVulture.png" icon="IceVulture.png" image="IceVulture.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="IceVulture_E1.png" icon="IceVulture_E1.png" image="IceVulture_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="IceVulture_E2.png" icon="IceVulture_E2.png" image="IceVulture_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="27" name="Jack" desc="Its grin burns brighter every night of the harvest." rarity="rare" type="fire" costGold="2000" costCredits="60" sellGold="500" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="231" healthGain="55" damageBase="58" damageGain="10" healingBase="65" healingGain="8" luckBase="5" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_blade" name="Slash" icon="Physical_Slash.png" thumbnail="Physical_Slash.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="fire_strike" name="Ember" icon="Fire_Attack_1.png" thumbnail="Fire_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="fire_burn" name="Scorch" icon="Fire_Attack_3.png" thumbnail="Fire_Attack_3.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,3" required="false" loadLocal="true" />
+				<skill id="4" link="fire_blast" name="Fireball" icon="Fire_Attack_2.png" thumbnail="Fire_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="fire_fury" name="Flame Strike" icon="Fire_Attack_4.png" thumbnail="Fire_Attack_4.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Jack.png" icon="Jack.png" image="Jack.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Jack_E1.png" icon="Jack_E1.png" image="Jack_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Jack_E2.png" icon="Jack_E2.png" image="Jack_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="1" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="28" name="Jellot" desc="Under that coy smile lies an insidious curio with clandestine intent." rarity="common" type="electric" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Home Island, Open Sea" loadLocal="true">
+			<stats healthBase="283" healthGain="40" damageBase="41" damageGain="7" healingBase="76" healingGain="6" luckBase="1" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Slap" icon="Physical_Punch.png" thumbnail="Physical_Punch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="electric_strike" name="Buzz" icon="Electric_Attack_1.png" thumbnail="Electric_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="electric_mend" name="Sprinkle" icon="Electric_Heal_1.png" thumbnail="Electric_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="electric_shock" name="Zap Wrap" icon="Electric_Attack_2.png" thumbnail="Electric_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="3,2,3" required="false" loadLocal="true" />
+				<skill id="5" link="electric_blast" name="Jellotacle" icon="Electric_Attack_2.png" thumbnail="Electric_Attack_2.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Jellyfish.png" icon="Jellyfish.png" image="Jellyfish.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Jellyfish_E1.png" icon="Jellyfish_E1.png" image="Jellyfish_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Jellyfish_E2.png" icon="Jellyfish_E2.png" image="Jellyfish_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="29" name="Thundiger" desc="Its mane crackles with lightning before every pounce." rarity="epic" type="electric" costGold="0" costCredits="180" sellGold="2000" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="363" healthGain="80" damageBase="91" damageGain="13" healingBase="71" healingGain="11" luckBase="26" luckGain="1" manaBase="15" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Maul" icon="Physical_Scratch.png" thumbnail="Physical_Scratch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="electric_strike" name="Zap" icon="Electric_Attack_1.png" thumbnail="Electric_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="electric_shock" name="Static Shock" icon="Electric_Attack_2.png" thumbnail="Electric_Attack_2.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="3,2,3" required="false" loadLocal="true" />
+				<skill id="4" link="electric_blast" name="Thunderbolt" icon="Electric_Attack_2.png" thumbnail="Electric_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="electric_storm" name="Chain Lightning" icon="Electric_Attack_3.png" thumbnail="Electric_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+				<skill id="6" link="electric_fury" name="Overload" icon="Electric_Attack_4.png" thumbnail="Electric_Attack_4.png" xPos="240" yPos="110" startRank="0" levelReq="20" skillsReq="2" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Liger.png" icon="Liger.png" image="Liger.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Liger_E1.png" icon="Liger_E1.png" image="Liger_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Liger_E2.png" icon="Liger_E2.png" image="Liger_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="2" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="30" name="Magmo" desc="A walking furnace built around a molten heart." rarity="epic" type="fire" costGold="0" costCredits="180" sellGold="2000" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="359" healthGain="79" damageBase="104" damageGain="15" healingBase="65" healingGain="10" luckBase="24" luckGain="1" manaBase="15" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Smash" icon="Physical_Punch.png" thumbnail="Physical_Punch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="fire_strike" name="Ember" icon="Fire_Attack_1.png" thumbnail="Fire_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="fire_burn" name="Scorch" icon="Fire_Attack_3.png" thumbnail="Fire_Attack_3.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,3" required="false" loadLocal="true" />
+				<skill id="4" link="fire_blast" name="Fireball" icon="Fire_Attack_2.png" thumbnail="Fire_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="fire_storm" name="Inferno" icon="Fire_Attack_3.png" thumbnail="Fire_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+				<skill id="6" link="fire_fury" name="Flame Strike" icon="Fire_Attack_4.png" thumbnail="Fire_Attack_4.png" xPos="240" yPos="110" startRank="0" levelReq="20" skillsReq="2" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Magmo.png" icon="Magmo.png" image="Magmo.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Magmo_E1.png" icon="Magmo_E1.png" image="Magmo_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Magmo_E2.png" icon="Magmo_E2.png" image="Magmo_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="2" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="31" name="Mantank" desc="Half mantis, half artillery, all business." rarity="common" type="physical" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="321" healthGain="44" damageBase="40" damageGain="7" healingBase="69" healingGain="5" luckBase="2" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_blade" name="Slash" icon="Physical_Slash.png" thumbnail="Physical_Slash.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="physical_strike" name="Tackle" icon="Physical_Attack_1.png" thumbnail="Physical_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="physical_guard" name="Thick Hide" icon="Physical_Heal_1.png" thumbnail="Physical_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="physical_blast" name="Body Slam" icon="Physical_Attack_2.png" thumbnail="Physical_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="physical_storm" name="Rampage" icon="Physical_Attack_3.png" thumbnail="Physical_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Mantis.png" icon="Mantis.png" image="Mantis.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Mantis_E1.png" icon="Mantis_E1.png" image="Mantis_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Mantis_E2.png" icon="Mantis_E2.png" image="Mantis_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="32" name="Yeteen" desc="A young yeti whose fur reflects the glow of the northern lights." rarity="epic" type="light" costGold="0" costCredits="180" sellGold="2000" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Open Sea" loadLocal="true">
+			<stats healthBase="368" healthGain="81" damageBase="80" damageGain="11" healingBase="94" healingGain="15" luckBase="24" luckGain="1" manaBase="15" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Punch" icon="Physical_Punch.png" thumbnail="Physical_Punch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="light_strike" name="Flash" icon="Light_Attack_1.png" thumbnail="Light_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="light_mend" name="Soothe" icon="Light_Heal_1.png" thumbnail="Light_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="light_blast" name="Sunbeam" icon="Light_Attack_2.png" thumbnail="Light_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="light_storm" name="Radiance" icon="Light_Attack_3.png" thumbnail="Light_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+				<skill id="6" link="light_fury" name="Holy Lance" icon="Light_Attack_4.png" thumbnail="Light_Attack_4.png" xPos="240" yPos="110" startRank="0" levelReq="20" skillsReq="2" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="MiniYeti.png" icon="MiniYeti.png" image="MiniYeti.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="MiniYeti_E1.png" icon="MiniYeti_E1.png" image="MiniYeti_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="MiniYeti_E2.png" icon="MiniYeti_E2.png" image="MiniYeti_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="2" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="33" name="Pelica" desc="It carries messages, snacks and the occasional lost curio in its beak." rarity="common" type="air" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Open Sea" loadLocal="true">
+			<stats healthBase="273" healthGain="38" damageBase="39" damageGain="7" healingBase="79" healingGain="6" luckBase="3" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Peck" icon="Physical_Bite.png" thumbnail="Physical_Bite.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="air_strike" name="Gust" icon="Air_Attack_1.png" thumbnail="Air_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="air_focus" name="Tailwind" icon="Air_Heal_1.png" thumbnail="Air_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="air_blast" name="Air Slash" icon="Air_Attack_2.png" thumbnail="Air_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="air_storm" name="Tornado" icon="Air_Attack_3.png" thumbnail="Air_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Pelican.png" icon="Pelican.png" image="Pelican.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Pelican_E1.png" icon="Pelican_E1.png" image="Pelican_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Pelican_E2.png" icon="Pelican_E2.png" image="Pelican_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="34" name="Penstripe" desc="Always dressed for the occasion, even underwater." rarity="common" type="water" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Home Island, Open Sea" loadLocal="true">
+			<stats healthBase="277" healthGain="38" damageBase="38" damageGain="7" healingBase="92" healingGain="7" luckBase="2" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Slap" icon="Physical_Punch.png" thumbnail="Physical_Punch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="water_strike" name="Splash" icon="Water_Attack_1.png" thumbnail="Water_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="water_mend" name="Healing Rain" icon="Water_Heal_1.png" thumbnail="Water_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="water_blast" name="Water Jet" icon="Water_Attack_2.png" thumbnail="Water_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="water_storm" name="Tidal Wave" icon="Water_Attack_3.png" thumbnail="Water_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Penguin.png" icon="Penguin.png" image="Penguin.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Penguin_E1.png" icon="Penguin_E1.png" image="Penguin_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Penguin_E2.png" icon="Penguin_E2.png" image="Penguin_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="35" name="Jawroger" desc="The terror of the seven seas, and of the local fish market." rarity="epic" type="water" costGold="0" costCredits="180" sellGold="2000" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Open Sea" loadLocal="true">
+			<stats healthBase="391" healthGain="86" damageBase="80" damageGain="11" healingBase="78" healingGain="13" luckBase="25" luckGain="1" manaBase="15" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Chomp" icon="Physical_Bite.png" thumbnail="Physical_Bite.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="water_strike" name="Splash" icon="Water_Attack_1.png" thumbnail="Water_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="water_mend" name="Healing Rain" icon="Water_Heal_1.png" thumbnail="Water_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="water_blast" name="Water Jet" icon="Water_Attack_2.png" thumbnail="Water_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="water_storm" name="Tidal Wave" icon="Water_Attack_3.png" thumbnail="Water_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+				<skill id="6" link="water_fury" name="Aqua Impale" icon="Water_Attack_4.png" thumbnail="Water_Attack_4.png" xPos="240" yPos="110" startRank="0" levelReq="20" skillsReq="2" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="PirateShark.png" icon="PirateShark.png" image="PirateShark.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="PirateShark_E1.png" icon="PirateShark_E1.png" image="PirateShark_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="PirateShark_E2.png" icon="PirateShark_E2.png" image="PirateShark_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="2" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="36" name="Pottor" desc="It hides inside its pot and peeks out only to fight." rarity="rare" type="earth" costGold="2000" costCredits="60" sellGold="500" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="300" healthGain="72" damageBase="49" damageGain="9" healingBase="68" healingGain="8" luckBase="5" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Stomp" icon="Physical_Stomp.png" thumbnail="Physical_Stomp.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="earth_strike" name="Vine Whip" icon="Earth_Attack_1.png" thumbnail="Earth_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="earth_guard" name="Bark Skin" icon="Earth_Heal_1.png" thumbnail="Earth_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="earth_blast" name="Rock Slide" icon="Rock_Attack_2.png" thumbnail="Rock_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="earth_fury" name="Boulder Crush" icon="Rock_Attack_4.png" thumbnail="Rock_Attack_4.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="PlantRock.png" icon="PlantRock.png" image="PlantRock.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="PlantRock_E1.png" icon="PlantRock_E1.png" image="PlantRock_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="PlantRock_E2.png" icon="PlantRock_E2.png" image="PlantRock_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="1" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="37" name="Toadstone" desc="Moss grows on its back because it rarely moves." rarity="common" type="earth" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="324" healthGain="45" damageBase="36" damageGain="7" healingBase="72" healingGain="5" luckBase="2" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Tongue Lash" icon="Physical_Punch.png" thumbnail="Physical_Punch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="earth_strike" name="Vine Whip" icon="Earth_Attack_1.png" thumbnail="Earth_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="earth_guard" name="Bark Skin" icon="Earth_Heal_1.png" thumbnail="Earth_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="earth_blast" name="Rock Slide" icon="Rock_Attack_2.png" thumbnail="Rock_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="earth_storm" name="Earthquake" icon="Earth_Attack_3.png" thumbnail="Earth_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="PlantToad.png" icon="PlantToad.png" image="PlantToad.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="PlantToad_E1.png" icon="PlantToad_E1.png" image="PlantToad_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="PlantToad_E2.png" icon="PlantToad_E2.png" image="PlantToad_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="38" name="Prismo" desc="It splits sunlight into rainbows, and enemies into pieces." rarity="common" type="light" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="274" healthGain="38" damageBase="35" damageGain="6" healingBase="100" healingGain="7" luckBase="2" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Punch" icon="Physical_Punch.png" thumbnail="Physical_Punch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="light_strike" name="Flash" icon="Light_Attack_1.png" thumbnail="Light_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="light_mend" name="Soothe" icon="Light_Heal_1.png" thumbnail="Light_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="light_blast" name="Sunbeam" icon="Light_Attack_2.png" thumbnail="Light_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="light_storm" name="Radiance" icon="Light_Attack_3.png" thumbnail="Light_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="PrismGuy.png" icon="PrismGuy.png" image="PrismGuy.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="PrismGuy_E1.png" icon="PrismGuy_E1.png" image="PrismGuy_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="PrismGuy_E2.png" icon="PrismGuy_E2.png" image="PrismGuy_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="39" name="Pupette" desc="A forgotten doll stitched together with a stubborn will." rarity="common" type="physical" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="315" healthGain="43" damageBase="40" damageGain="7" healingBase="67" healingGain="5" luckBase="2" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Punch" icon="Physical_Punch.png" thumbnail="Physical_Punch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="physical_strike" name="Tackle" icon="Physical_Attack_1.png" thumbnail="Physical_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="physical_guard" name="Thick Hide" icon="Physical_Heal_1.png" thumbnail="Physical_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="physical_blast" name="Body Slam" icon="Physical_Attack_2.png" thumbnail="Physical_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="physical_storm" name="Rampage" icon="Physical_Attack_3.png" thumbnail="Physical_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Puppet.png" icon="Puppet.png" image="Puppet.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Puppet_E1.png" icon="Puppet_E1.png" image="Puppet_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Puppet_E2.png" icon="Puppet_E2.png" image="Puppet_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="40" name="Ossilis" desc="Its shell is harder than the rocks it sleeps under." rarity="rare" type="physical" costGold="2000" costCredits="60" sellGold="500" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="271" healthGain="65" damageBase="55" damageGain="10" healingBase="67" healingGain="8" luckBase="5" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_blade" name="Pinch" icon="Physical_Slash.png" thumbnail="Physical_Slash.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="physical_strike" name="Tackle" icon="Physical_Attack_1.png" thumbnail="Physical_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="physical_guard" name="Thick Hide" icon="Physical_Heal_1.png" thumbnail="Physical_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="physical_blast" name="Body Slam" icon="Physical_Attack_2.png" thumbnail="Physical_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="physical_fury" name="Crushing Blow" icon="Physical_Attack_4.png" thumbnail="Physical_Attack_4.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="RockLobster.png" icon="RockLobster.png" image="RockLobster.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="RockLobster_E1.png" icon="RockLobster_E1.png" image="RockLobster_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="RockLobster_E2.png" icon="RockLobster_E2.png" image="RockLobster_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="1" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="41" name="Shado" desc="It is always right behind you." rarity="common" type="dark" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="286" healthGain="39" damageBase="45" damageGain="8" healingBase="70" healingGain="5" luckBase="2" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Scratch" icon="Physical_Scratch.png" thumbnail="Physical_Scratch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="dark_strike" name="Shadow Claw" icon="Dark_Attack_1.png" thumbnail="Dark_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="dark_drain" name="Life Leech" icon="Dark_Attack_2.png" thumbnail="Dark_Attack_2.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="dark_blast" name="Dark Pulse" icon="Dark_Attack_2.png" thumbnail="Dark_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="dark_storm" name="Nightfall" icon="Dark_Attack_3.png" thumbnail="Dark_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Shadow.png" icon="Shadow.png" image="Shadow.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Shadow_E1.png" icon="Shadow_E1.png" image="Shadow_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Shadow_E2.png" icon="Shadow_E2.png" image="Shadow_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="42" name="Cathode" desc="It sings during thunderstorms, and the storms sing back." rarity="rare" type="electric" costGold="2000" costCredits="60" sellGold="500" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Open Sea" loadLocal="true">
+			<stats healthBase="248" healthGain="60" damageBase="56" damageGain="10" healingBase="74" healingGain="9" luckBase="5" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Peck" icon="Physical_Bite.png" thumbnail="Physical_Bite.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="electric_strike" name="Zap" icon="Electric_Attack_1.png" thumbnail="Electric_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="electric_shock" name="Static Shock" icon="Electric_Attack_2.png" thumbnail="Electric_Attack_2.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="3,2,3" required="false" loadLocal="true" />
+				<skill id="4" link="electric_blast" name="Thunderbolt" icon="Electric_Attack_2.png" thumbnail="Electric_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="electric_fury" name="Overload" icon="Electric_Attack_4.png" thumbnail="Electric_Attack_4.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="ThunderBird.png" icon="ThunderBird.png" image="ThunderBird.swf" loadLocal="false" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="ThunderBird_E1.png" icon="ThunderBird_E1.png" image="ThunderBird_E1.swf" loadLocal="false" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="ThunderBird_E2.png" icon="ThunderBird_E2.png" image="ThunderBird_E2.swf" loadLocal="false" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="1" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="43" name="Tiki" desc="An ancient mask that dances around the island bonfires." rarity="rare" type="fire" costGold="2000" costCredits="60" sellGold="500" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Home Island, Open Sea" loadLocal="true">
+			<stats healthBase="233" healthGain="56" damageBase="59" damageGain="11" healingBase="66" healingGain="8" luckBase="5" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Headbutt" icon="Physical_Punch.png" thumbnail="Physical_Punch.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="fire_strike" name="Ember" icon="Fire_Attack_1.png" thumbnail="Fire_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="fire_burn" name="Scorch" icon="Fire_Attack_3.png" thumbnail="Fire_Attack_3.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,3" required="false" loadLocal="true" />
+				<skill id="4" link="fire_blast" name="Fireball" icon="Fire_Attack_2.png" thumbnail="Fire_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="fire_fury" name="Flame Strike" icon="Fire_Attack_4.png" thumbnail="Fire_Attack_4.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="TikiMask.png" icon="TikiMask.png" image="TikiMask.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="TikiMask_E1.png" icon="TikiMask_E1.png" image="TikiMask_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="TikiMask_E2.png" icon="TikiMask_E2.png" image="TikiMask_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="1" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="44" name="Nightmaroot" desc="Pulled from the ground at midnight, it has been cranky ever since." rarity="common" type="dark" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Open Sea" loadLocal="true">
+			<stats healthBase="263" healthGain="36" damageBase="42" damageGain="8" healingBase="71" healingGain="5" luckBase="2" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Bite" icon="Physical_Bite.png" thumbnail="Physical_Bite.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="dark_strike" name="Shadow Claw" icon="Dark_Attack_1.png" thumbnail="Dark_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="dark_drain" name="Life Leech" icon="Dark_Attack_2.png" thumbnail="Dark_Attack_2.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="dark_blast" name="Dark Pulse" icon="Dark_Attack_2.png" thumbnail="Dark_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="dark_storm" name="Nightfall" icon="Dark_Attack_3.png" thumbnail="Dark_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Turnip.png" icon="Turnip.png" image="Turnip.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Turnip_E1.png" icon="Turnip_E1.png" image="Turnip_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Turnip_E2.png" icon="Turnip_E2.png" image="Turnip_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="45" name="Chelydra" desc="Slow, patient and absolutely impossible to move." rarity="epic" type="earth" costGold="0" costCredits="180" sellGold="2000" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Curio Capsules" loadLocal="true">
+			<stats healthBase="476" healthGain="105" damageBase="83" damageGain="12" healingBase="71" healingGain="11" luckBase="21" luckGain="1" manaBase="15" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_impact" name="Stomp" icon="Physical_Stomp.png" thumbnail="Physical_Stomp.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="earth_strike" name="Vine Whip" icon="Earth_Attack_1.png" thumbnail="Earth_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="earth_guard" name="Bark Skin" icon="Earth_Heal_1.png" thumbnail="Earth_Heal_1.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="earth_blast" name="Rock Slide" icon="Rock_Attack_2.png" thumbnail="Rock_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="earth_storm" name="Earthquake" icon="Earth_Attack_3.png" thumbnail="Earth_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+				<skill id="6" link="earth_fury" name="Boulder Crush" icon="Rock_Attack_4.png" thumbnail="Rock_Attack_4.png" xPos="240" yPos="110" startRank="0" levelReq="20" skillsReq="2" rankCosts="4,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="Turtle.png" icon="Turtle.png" image="Turtle.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="Turtle_E1.png" icon="Turtle_E1.png" image="Turtle_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="Turtle_E2.png" icon="Turtle_E2.png" image="Turtle_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="2" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+		<pet id="46" name="Wormseed" desc="Don't take a bite. It bites back." rarity="common" type="dark" costGold="400" costCredits="0" sellGold="100" sellCredits="0" size="1" exchangable="true" starter="false" visible="true" foundIn="Open Sea" loadLocal="true">
+			<stats healthBase="265" healthGain="37" damageBase="43" damageGain="8" healingBase="67" healingGain="5" luckBase="2" luckGain="1" manaBase="10" manaGain="0" />
+			<skills>
+				<skill id="1" link="basic_claw" name="Bite" icon="Physical_Bite.png" thumbnail="Physical_Bite.png" xPos="0" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,1,2,2" required="true" loadLocal="true" />
+				<skill id="2" link="dark_strike" name="Shadow Claw" icon="Dark_Attack_1.png" thumbnail="Dark_Attack_1.png" xPos="120" yPos="0" startRank="1" levelReq="1" skillsReq="" rankCosts="0,1,2,2" required="false" loadLocal="true" />
+				<skill id="3" link="dark_drain" name="Life Leech" icon="Dark_Attack_2.png" thumbnail="Dark_Attack_2.png" xPos="0" yPos="110" startRank="0" levelReq="5" skillsReq="1" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="4" link="dark_blast" name="Dark Pulse" icon="Dark_Attack_2.png" thumbnail="Dark_Attack_2.png" xPos="120" yPos="110" startRank="0" levelReq="8" skillsReq="2" rankCosts="2,1,2,2" required="false" loadLocal="true" />
+				<skill id="5" link="dark_storm" name="Nightfall" icon="Dark_Attack_3.png" thumbnail="Dark_Attack_3.png" xPos="60" yPos="220" startRank="0" levelReq="15" skillsReq="3,4" rankCosts="3,2,3" required="false" loadLocal="true" />
+			</skills>
+			<prestiges>
+				<prestige id="0" maxLevel="10" thumbnail="WormApple.png" icon="WormApple.png" image="WormApple.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" />
+				<prestige id="1" maxLevel="25" thumbnail="WormApple_E1.png" icon="WormApple_E1.png" image="WormApple_E1.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.4" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.4" damageGain="0" healingPerc="0.4" healingGain="0" luckPerc="0.4" luckGain="0" />
+				<prestige id="2" maxLevel="40" thumbnail="WormApple_E2.png" icon="WormApple_E2.png" image="WormApple_E2.swf" loadLocal="true" offsetX="0" offsetY="0" healthPerc="0.75" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.75" damageGain="0" healingPerc="0.75" healingGain="0" luckPerc="0.75" luckGain="0" />
+			</prestiges>
+		</pet>
+	</pets>
+</data>

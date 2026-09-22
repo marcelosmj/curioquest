@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<ranks>
+		<rank id="0" name="Unranked" healthPerc="0" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0" damageGain="0" healingPerc="0" healingGain="0" luckPerc="0" luckGain="0" itemID="5" itemType="currency" itemQty="100" upgradeRank="1" />
+		<rank id="1" name="C" healthPerc="0.1" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.1" damageGain="0" healingPerc="0.1" healingGain="0" luckPerc="0.1" luckGain="0" itemID="5" itemType="currency" itemQty="300" upgradeRank="2" />
+		<rank id="2" name="B" healthPerc="0.2" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.2" damageGain="0" healingPerc="0.2" healingGain="0" luckPerc="0.2" luckGain="0" itemID="5" itemType="currency" itemQty="800" upgradeRank="3" />
+		<rank id="3" name="A" healthPerc="0.35" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.35" damageGain="0" healingPerc="0.35" healingGain="0" luckPerc="0.35" luckGain="0" itemID="5" itemType="currency" itemQty="2000" upgradeRank="4" />
+		<rank id="4" name="S" healthPerc="0.5" healthGain="0" manaPerc="0" manaGain="0" damagePerc="0.5" damageGain="0" healingPerc="0.5" healingGain="0" luckPerc="0.5" luckGain="0" upgradeRank="-1" />
+	</ranks>
+</data>

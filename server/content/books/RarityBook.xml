@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<raritys>
+		<rarity link="common" name="Common" color="FFFFFF" exchangeExpBase="50" exchangeExpMult="1" exchangeConfirm="false" maxBonusDamage="50" maxBonusHealing="50" maxBonusHealth="400" maxBonusMana="1" maxBonusLuck="10">
+			<prestige id="0" costGold="0" />
+			<prestige id="1" costGold="500" />
+			<prestige id="2" costGold="2500" />
+		</rarity>
+		<rarity link="rare" name="Rare" color="33B5FF" exchangeExpBase="150" exchangeExpMult="1" exchangeConfirm="false" exchangeEpicCorePieces="1" maxBonusDamage="100" maxBonusHealing="100" maxBonusHealth="800" maxBonusMana="2" maxBonusLuck="20">
+			<prestige id="0" costGold="0" />
+			<prestige id="1" costGold="1000" />
+			<prestige id="2" costGold="5000" />
+		</rarity>
+		<rarity link="epic" name="Epic" color="C066FF" exchangeExpBase="500" exchangeExpMult="1" exchangeConfirm="true" exchangeEpicCorePieces="3" exchangeLegendaryCorePieces="1" maxBonusDamage="150" maxBonusHealing="150" maxBonusHealth="1200" maxBonusMana="3" maxBonusLuck="30">
+			<prestige id="0" costGold="0" />
+			<prestige id="1" costGold="2500" />
+			<prestige id="2" costGold="12500" />
+		</rarity>
+		<rarity link="legendary" name="Legendary" color="FF9900" exchangeExpBase="1500" exchangeExpMult="1" exchangeConfirm="true" exchangeEpicCorePieces="6" exchangeLegendaryCorePieces="3" exchangeMythicCorePieces="1" maxBonusDamage="200" maxBonusHealing="200" maxBonusHealth="1600" maxBonusMana="4" maxBonusLuck="40">
+			<prestige id="0" costGold="0" />
+			<prestige id="1" costGold="5000" />
+			<prestige id="2" costGold="25000" />
+		</rarity>
+		<rarity link="mythic" name="Mythic" color="FF3B5C" exchangeExpBase="5000" exchangeExpMult="1" exchangeConfirm="true" exchangeEpicCorePieces="10" exchangeLegendaryCorePieces="6" exchangeMythicCorePieces="3" maxBonusDamage="250" maxBonusHealing="250" maxBonusHealth="2000" maxBonusMana="5" maxBonusLuck="50">
+			<prestige id="0" costGold="0" />
+			<prestige id="1" costGold="10000" />
+			<prestige id="2" costGold="50000" />
+		</rarity>
+	</raritys>
+</data>

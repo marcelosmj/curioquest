@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<grabbag id="1" rarity="rare" name="Curio Capsule" roll="1" desc="Contains a random curio." thumbnail="RandomCurio.png" icon="RandomCurio.png" loadLocal="false" costGold="0" costCredits="30" sellGold="0" sellCredits="0">
+		<items>
+			<item id="2" type="pet" qty="1" perc="3.043" />
+			<item id="5" type="pet" qty="1" perc="3.043" />
+			<item id="7" type="pet" qty="1" perc="3.043" />
+			<item id="8" type="pet" qty="1" perc="3.043" />
+			<item id="10" type="pet" qty="1" perc="3.043" />
+			<item id="12" type="pet" qty="1" perc="3.043" />
+			<item id="17" type="pet" qty="1" perc="3.043" />
+			<item id="18" type="pet" qty="1" perc="3.043" />
+			<item id="19" type="pet" qty="1" perc="3.043" />
+			<item id="20" type="pet" qty="1" perc="3.043" />
+			<item id="21" type="pet" qty="1" perc="3.043" />
+			<item id="24" type="pet" qty="1" perc="3.043" />
+			<item id="26" type="pet" qty="1" perc="3.043" />
+			<item id="28" type="pet" qty="1" perc="3.043" />
+			<item id="31" type="pet" qty="1" perc="3.043" />
+			<item id="33" type="pet" qty="1" perc="3.043" />
+			<item id="34" type="pet" qty="1" perc="3.043" />
+			<item id="37" type="pet" qty="1" perc="3.043" />
+			<item id="38" type="pet" qty="1" perc="3.043" />
+			<item id="39" type="pet" qty="1" perc="3.043" />
+			<item id="41" type="pet" qty="1" perc="3.043" />
+			<item id="44" type="pet" qty="1" perc="3.043" />
+			<item id="46" type="pet" qty="1" perc="3.043" />
+			<item id="3" type="pet" qty="1" perc="2.5" />
+			<item id="4" type="pet" qty="1" perc="2.5" />
+			<item id="6" type="pet" qty="1" perc="2.5" />
+			<item id="16" type="pet" qty="1" perc="2.5" />
+			<item id="25" type="pet" qty="1" perc="2.5" />
+			<item id="27" type="pet" qty="1" perc="2.5" />
+			<item id="36" type="pet" qty="1" perc="2.5" />
+			<item id="40" type="pet" qty="1" perc="2.5" />
+			<item id="42" type="pet" qty="1" perc="2.5" />
+			<item id="43" type="pet" qty="1" perc="2.5" />
+			<item id="1" type="pet" qty="1" perc="0.455" />
+			<item id="11" type="pet" qty="1" perc="0.455" />
+			<item id="13" type="pet" qty="1" perc="0.455" />
+			<item id="14" type="pet" qty="1" perc="0.455" />
+			<item id="22" type="pet" qty="1" perc="0.455" />
+			<item id="23" type="pet" qty="1" perc="0.455" />
+			<item id="29" type="pet" qty="1" perc="0.455" />
+			<item id="30" type="pet" qty="1" perc="0.455" />
+			<item id="32" type="pet" qty="1" perc="0.455" />
+			<item id="35" type="pet" qty="1" perc="0.455" />
+			<item id="45" type="pet" qty="1" perc="0.455" />
+		</items>
+	</grabbag>
+	<grabbag id="2" rarity="common" name="Mystery Box" roll="1" desc="A box full of surprises." thumbnail="RandomItem.png" icon="RandomItem.png" loadLocal="false" costGold="2500" costCredits="0" sellGold="0" sellCredits="0">
+		<items>
+			<item id="1" type="currency" qty="1000" perc="30" />
+			<item id="6" type="currency" qty="10" perc="20" />
+			<item id="8" type="currency" qty="5" perc="15" />
+			<item id="2" type="currency" qty="5" perc="10" />
+			<item id="1" type="grabbag" qty="1" perc="5" />
+			<item id="1" type="material" qty="2" perc="8" />
+			<item id="2" type="material" qty="2" perc="7" />
+			<item id="3" type="material" qty="1" perc="5" />
+		</items>
+	</grabbag>
+</data>

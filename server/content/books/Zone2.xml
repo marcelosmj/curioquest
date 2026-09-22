@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<zone name="Open Sea" desc="Endless water, strange weather and something huge swimming below the waves." thumbnail="Zone_2.png" zoneBG="Zone_2_Background.swf" width="1430" height="480" starter="false" requiredZones="1">
+		<difficulty type="story">
+			<nodes>
+				<node id="1" name="Sunny Shore" desc="The last stretch of sand before the open water." battleBG="Beach.jpg" xPos="100" yPos="300" asset="Zone_2_Umbrella.swf" energy="2" exp="19" completeZone="false" hidden="false" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Beach Birds" desc="They want your sandwich." thumbnail="Hermit.png" loadLocal="true" health="0" dialogEnter="z2n1_enter" dialogDefeat="hint_defeat" gold="85" petExp="68" dna="20">
+							<pets>
+								<pet id="33" level="7" />
+								<pet id="26" level="7" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="2" layer="0" points="100:300,265:390" />
+					</paths>
+				</node>
+				<node id="2" name="Floating Tube" desc="Something is splashing around a lost inner tube." battleBG="Beach.jpg" xPos="265" yPos="390" asset="Zone_2_Tube.swf" energy="2" exp="21" completeZone="false" hidden="false" unlockNodes="1" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Splashers" desc="Wild water curios." thumbnail="SafariDude.png" loadLocal="true" health="0" dialogDefeat="hint_defeat" gold="95" petExp="76" dna="20">
+							<pets>
+								<pet id="34" level="8" />
+								<pet id="21" level="8" />
+								<pet id="28" level="8" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="3" layer="0" points="265:390,480:420" />
+					</paths>
+				</node>
+				<node id="3" name="Giant Clam" desc="A clam the size of a house. Is that a pearl inside?" battleBG="Island.jpg" xPos="480" yPos="420" asset="Zone_2_Clam.swf" energy="2" exp="23" completeZone="false" hidden="false" unlockNodes="2" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Deep Dwellers" desc="Curios from the bottom of the sea." thumbnail="Pirate.png" loadLocal="true" health="0" dialogDefeat="hint_defeat" gold="105" petExp="84" dna="15">
+							<pets>
+								<pet id="4" level="9" />
+								<pet id="28" level="9" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="4" layer="0" points="480:420,640:290" />
+					</paths>
+				</node>
+				<node id="4" name="Pirate Submarine" desc="The pirates are following you... from below." battleBG="SeaMonster.jpg" xPos="640" yPos="290" asset="Zone_2_Submarine.swf" energy="2" exp="25" completeZone="false" hidden="false" unlockNodes="3" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Submarine Crew" desc="Something big is coming." thumbnail="Pirate.png" loadLocal="true" health="0" dialogEnter="z2n4_enter" dialogDefeat="hint_defeat" gold="115" petExp="92" dna="15">
+							<pets>
+								<pet id="25" level="10" />
+								<pet id="34" level="10" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="5" layer="0" points="640:290,940:125" />
+					</paths>
+				</node>
+				<node id="5" name="Monster's Belly" desc="Swallowed whole! Find a way out." battleBG="Stomach.jpg" xPos="940" yPos="125" asset="Zone_2_Flag.swf" energy="2" exp="27" completeZone="false" hidden="false" unlockNodes="4" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Belly Bugs" desc="Curios that live inside the sea monster." thumbnail="Hermit.png" loadLocal="true" health="0" dialogEnter="z2n5_enter" dialogDefeat="hint_defeat" gold="125" petExp="100" dna="15">
+							<pets>
+								<pet id="7" level="11" />
+								<pet id="46" level="11" />
+								<pet id="44" level="11" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="6" layer="0" points="940:125,1365:165" />
+					</paths>
+				</node>
+				<node id="6" name="Bonfire Island" desc="A tiny island with a big bonfire and a party of fire curios." battleBG="Island.jpg" xPos="1365" yPos="165" asset="Zone_2_Bonfire.swf" energy="2" exp="29" completeZone="false" hidden="false" unlockNodes="5" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Island Party" desc="Hot, hot, hot!" thumbnail="Pirate.png" loadLocal="true" health="0" dialogDefeat="hint_defeat" gold="135" petExp="108" dna="15">
+							<pets>
+								<pet id="43" level="12" />
+								<pet id="19" level="12" />
+								<pet id="3" level="12" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="7" layer="0" points="1365:165,1360:405" />
+					</paths>
+				</node>
+				<node id="7" name="Frozen Sculpture" desc="An iceberg in the tropics. Something is wrong with the weather." battleBG="Iceberg.jpg" xPos="1360" yPos="405" asset="Zone_2_Ice_Sculpture.swf" energy="2" exp="31" completeZone="false" hidden="false" unlockNodes="6" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Ice Guardians" desc="They came with the cold." thumbnail="SafariDude.png" loadLocal="true" health="0" dialogEnter="z2n7_enter" dialogDefeat="hint_defeat" gold="145" petExp="116" dna="10">
+							<pets>
+								<pet id="32" level="13" />
+								<pet id="34" level="13" />
+								<pet id="26" level="13" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="8" layer="0" points="1360:405,1080:300" />
+					</paths>
+				</node>
+				<node id="8" name="Weather Machine" desc="Captain Blackfin's machine is stirring up the storm." battleBG="Ship.jpg" xPos="1080" yPos="300" asset="Zone_2_Weather_Machine.swf" energy="2" exp="37" completeZone="true" hidden="false" unlockNodes="7" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Storm Crew" desc="The machine's guards." thumbnail="Pirate.png" loadLocal="true" health="1" dialogDefeat="hint_defeat" gold="155" petExp="124" dna="10">
+							<pets>
+								<pet id="42" level="14" />
+								<pet id="33" level="14" />
+								<pet id="28" level="14" />
+							</pets>
+						</battle>
+						<battle name="Captain Blackfin" desc="The captain, working for the Legion." thumbnail="PirateCaptain.png" loadLocal="true" health="0" dialogEnter="z2n8_enter" dialogVictory="z2n8_win" dialogDefeat="hint_defeat" gold="168" petExp="135" dna="10">
+							<pets>
+								<pet id="11" level="15" />
+								<pet id="42" level="15" />
+								<pet id="35" level="16" />
+							</pets>
+						</battle>
+					</battles>
+				</node>
+			</nodes>
+		</difficulty>
+		<difficulty type="hard" requiredDifficulties="story">
+			<nodes>
+				<node id="1" name="Sunny Shore" desc="The last stretch of sand before the open water." battleBG="Beach.jpg" xPos="100" yPos="300" asset="Zone_2_Umbrella.swf" energy="3" exp="39" completeZone="false" hidden="false" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Beach Birds" desc="They want your sandwich." thumbnail="Hermit.png" loadLocal="true" health="0" gold="278" petExp="148" dna="10">
+							<pets>
+								<pet id="33" level="17" />
+								<pet id="26" level="17" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="2" layer="0" points="100:300,265:390" />
+					</paths>
+				</node>
+				<node id="2" name="Floating Tube" desc="Something is splashing around a lost inner tube." battleBG="Beach.jpg" xPos="265" yPos="390" asset="Zone_2_Tube.swf" energy="3" exp="41" completeZone="false" hidden="false" unlockNodes="1" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Splashers" desc="Wild water curios." thumbnail="SafariDude.png" loadLocal="true" health="0" gold="292" petExp="156" dna="10">
+							<pets>
+								<pet id="34" level="18" />
+								<pet id="21" level="18" />
+								<pet id="28" level="18" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="3" layer="0" points="265:390,480:420" />
+					</paths>
+				</node>
+				<node id="3" name="Giant Clam" desc="A clam the size of a house. Is that a pearl inside?" battleBG="Island.jpg" xPos="480" yPos="420" asset="Zone_2_Clam.swf" energy="3" exp="43" completeZone="false" hidden="false" unlockNodes="2" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Deep Dwellers" desc="Curios from the bottom of the sea." thumbnail="Pirate.png" loadLocal="true" health="0" gold="308" petExp="164" dna="7">
+							<pets>
+								<pet id="4" level="19" />
+								<pet id="28" level="19" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="4" layer="0" points="480:420,640:290" />
+					</paths>
+				</node>
+				<node id="4" name="Pirate Submarine" desc="The pirates are following you... from below." battleBG="SeaMonster.jpg" xPos="640" yPos="290" asset="Zone_2_Submarine.swf" energy="3" exp="45" completeZone="false" hidden="false" unlockNodes="3" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Submarine Crew" desc="Something big is coming." thumbnail="Pirate.png" loadLocal="true" health="0" gold="322" petExp="172" dna="7">
+							<pets>
+								<pet id="25" level="20" />
+								<pet id="34" level="20" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="5" layer="0" points="640:290,940:125" />
+					</paths>
+				</node>
+				<node id="5" name="Monster's Belly" desc="Swallowed whole! Find a way out." battleBG="Stomach.jpg" xPos="940" yPos="125" asset="Zone_2_Flag.swf" energy="3" exp="47" completeZone="false" hidden="false" unlockNodes="4" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Belly Bugs" desc="Curios that live inside the sea monster." thumbnail="Hermit.png" loadLocal="true" health="0" gold="338" petExp="180" dna="7">
+							<pets>
+								<pet id="7" level="21" />
+								<pet id="46" level="21" />
+								<pet id="44" level="21" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="6" layer="0" points="940:125,1365:165" />
+					</paths>
+				</node>
+				<node id="6" name="Bonfire Island" desc="A tiny island with a big bonfire and a party of fire curios." battleBG="Island.jpg" xPos="1365" yPos="165" asset="Zone_2_Bonfire.swf" energy="3" exp="49" completeZone="false" hidden="false" unlockNodes="5" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Island Party" desc="Hot, hot, hot!" thumbnail="Pirate.png" loadLocal="true" health="0" gold="352" petExp="188" dna="7">
+							<pets>
+								<pet id="43" level="22" />
+								<pet id="19" level="22" />
+								<pet id="3" level="22" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="7" layer="0" points="1365:165,1360:405" />
+					</paths>
+				</node>
+				<node id="7" name="Frozen Sculpture" desc="An iceberg in the tropics. Something is wrong with the weather." battleBG="Iceberg.jpg" xPos="1360" yPos="405" asset="Zone_2_Ice_Sculpture.swf" energy="3" exp="51" completeZone="false" hidden="false" unlockNodes="6" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Ice Guardians" desc="They came with the cold." thumbnail="SafariDude.png" loadLocal="true" health="0" gold="368" petExp="196" dna="5">
+							<pets>
+								<pet id="32" level="23" />
+								<pet id="34" level="23" />
+								<pet id="26" level="23" />
+							</pets>
+						</battle>
+					</battles>
+					<paths>
+						<path node="8" layer="0" points="1360:405,1080:300" />
+					</paths>
+				</node>
+				<node id="8" name="Weather Machine" desc="Captain Blackfin's machine is stirring up the storm." battleBG="Ship.jpg" xPos="1080" yPos="300" asset="Zone_2_Weather_Machine.swf" energy="3" exp="57" completeZone="true" hidden="false" unlockNodes="7" hitbox="-50,-50,100,100" starsOffsetX="0" starsOffsetY="0" layer="0">
+					<battles>
+						<battle name="Storm Crew" desc="The machine's guards." thumbnail="Pirate.png" loadLocal="true" health="1" gold="382" petExp="204" dna="5">
+							<pets>
+								<pet id="42" level="24" />
+								<pet id="33" level="24" />
+								<pet id="28" level="24" />
+							</pets>
+						</battle>
+						<battle name="Captain Blackfin" desc="The captain, working for the Legion." thumbnail="PirateCaptain.png" loadLocal="true" health="0" gold="402" petExp="215" dna="5">
+							<pets>
+								<pet id="11" level="25" />
+								<pet id="42" level="25" />
+								<pet id="35" level="26" />
+							</pets>
+						</battle>
+					</battles>
+				</node>
+			</nodes>
+		</difficulty>
+	</zone>
+</data>

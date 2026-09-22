@@ -1,0 +1,120 @@
+{
+ "char_id": 22,
+ "device_id": "teste-welcome-1",
+ "player_id": "CQ00022",
+ "name": "",
+ "gender": "F",
+ "created": 1789753517.812611,
+ "last_login": 1789753517.8404458,
+ "level": 1,
+ "bps": 0,
+ "exp": 0,
+ "dust": 0,
+ "pet_max_bonus": 0,
+ "zone_id": 1,
+ "zone_difficulty": 0,
+ "offense_team": 0,
+ "defense_team": 0,
+ "battle_speed": 1,
+ "global_chat": false,
+ "friend_requests": true,
+ "chat_channel": 0,
+ "daily": 0,
+ "daily_time": 0,
+ "num_spins": 0,
+ "num_free_spins": 1,
+ "tutorial": [],
+ "next_pet_uid": 2,
+ "pets": [
+  {
+   "uid": 1,
+   "species": 15,
+   "name": "",
+   "prestige": 0,
+   "rank": 0,
+   "fusion": 0,
+   "level": 1,
+   "exp": 0,
+   "skin": 0,
+   "skill_points": 0,
+   "fatigue": 0,
+   "bonus": {},
+   "skill_ranks": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    0
+   ],
+   "skill_slots": [
+    1,
+    2,
+    0,
+    0
+   ]
+  }
+ ],
+ "teams": [
+  {
+   "id": 0,
+   "name": "",
+   "pet_uids": [
+    1
+   ]
+  }
+ ],
+ "zones": [],
+ "inventory": [
+  {
+   "id": 1,
+   "type": 6,
+   "qty": 1
+  },
+  {
+   "id": 1,
+   "type": 10,
+   "qty": 1
+  }
+ ],
+ "jobs_active": [
+  {
+   "id": 1,
+   "progress": 0,
+   "looted": false
+  },
+  {
+   "id": 3,
+   "progress": 0,
+   "looted": false
+  },
+  {
+   "id": 10,
+   "progress": 0,
+   "looted": false
+  },
+  {
+   "id": 4,
+   "progress": 0,
+   "looted": false
+  },
+  {
+   "id": 6,
+   "progress": 0,
+   "looted": false
+  }
+ ],
+ "jobs_complete": [],
+ "achievements": [],
+ "gold": 1500,
+ "credits": 50,
+ "energy": 40,
+ "tokens": 5,
+ "tickets": 5,
+ "rating": 1000,
+ "teams_max": 3,
+ "energy_updated": 1789753517.8404565,
+ "tokens_updated": 1789753517.812611,
+ "tickets_updated": 1789753517.8404565,
+ "jobs_day": 20714
+}

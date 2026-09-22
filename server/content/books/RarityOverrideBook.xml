@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<overrides>
+		<rarityOverride id="default" default="true">
+			<rarity link="common" />
+			<rarity link="rare" promotionShards="10" promotionGoldCost="1500" summonShards="20" summonGoldCost="3000" />
+			<rarity link="epic" promotionShards="25" promotionGoldCost="5000" summonShards="50" summonGoldCost="10000" />
+			<rarity link="legendary" promotionShards="50" promotionGoldCost="15000" summonShards="100" summonGoldCost="30000" />
+			<rarity link="mythic" promotionShards="100" promotionGoldCost="40000" summonShards="200" summonGoldCost="80000" />
+		</rarityOverride>
+	</overrides>
+</data>

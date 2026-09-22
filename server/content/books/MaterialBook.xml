@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<materials>
+		<material id="1" rarity="common" name="Scrap Metal" desc="Bent plating from a crashed shuttle. Useful to a patient builder." thumbnail="RandomItem.png" icon="RandomItem.png" loadLocal="false" costGold="0" costCredits="0" sellGold="25" sellCredits="0" />
+		<material id="2" rarity="common" name="Glass Shard" desc="A sliver of cockpit glass, still faintly warm." thumbnail="RandomItem.png" icon="RandomItem.png" loadLocal="false" costGold="0" costCredits="0" sellGold="25" sellCredits="0" />
+		<material id="3" rarity="common" name="Coral Bead" desc="Washed up on the beach at Home Island." thumbnail="RandomBoost.png" icon="RandomBoost.png" loadLocal="false" costGold="0" costCredits="0" sellGold="40" sellCredits="0" />
+		<material id="4" rarity="rare" name="Beacon Filament" desc="The glowing thread from inside a distress beacon." thumbnail="Energy.png" icon="Energy.png" loadLocal="false" costGold="0" costCredits="0" sellGold="150" sellCredits="0" />
+		<material id="5" rarity="epic" name="Starfall Ore" desc="Ore that only forms where a meteor has struck." thumbnail="Gold.png" icon="Gold.png" loadLocal="false" costGold="0" costCredits="0" sellGold="400" sellCredits="0" />
+		<material id="48" rarity="epic" name="Epic Core Fragment" desc="Part of an epic curio core. Collect them to rebuild the core." thumbnail="RandomCurio.png" icon="RandomCurio.png" loadLocal="false" costGold="0" costCredits="0" sellGold="500" sellCredits="0" />
+		<material id="49" rarity="legendary" name="Legendary Core Fragment" desc="Part of a legendary curio core." thumbnail="RandomCurio.png" icon="RandomCurio.png" loadLocal="false" costGold="0" costCredits="0" sellGold="1500" sellCredits="0" />
+		<material id="50" rarity="mythic" name="Mythic Core Fragment" desc="Part of a mythic curio core. Vanishingly rare." thumbnail="RandomCurio.png" icon="RandomCurio.png" loadLocal="false" costGold="0" costCredits="0" sellGold="5000" sellCredits="0" />
+	</materials>
+</data>

@@ -1,0 +1,296 @@
+{
+ "char_id": 40,
+ "device_id": "loot-m2",
+ "player_id": "CQ00040",
+ "name": "",
+ "gender": "F",
+ "created": 1789755519.9195037,
+ "last_login": 1789755519.9321902,
+ "level": 1,
+ "bps": 0,
+ "exp": 7,
+ "dust": 0,
+ "pet_max_bonus": 0,
+ "zone_id": 1,
+ "zone_difficulty": 0,
+ "offense_team": 0,
+ "defense_team": 0,
+ "battle_speed": 1,
+ "global_chat": false,
+ "friend_requests": true,
+ "chat_channel": 0,
+ "daily": 0,
+ "daily_time": 0,
+ "num_spins": 0,
+ "num_free_spins": 1,
+ "tutorial": [],
+ "next_pet_uid": 2,
+ "pets": [
+  {
+   "uid": 1,
+   "species": 15,
+   "name": "",
+   "prestige": 0,
+   "rank": 0,
+   "fusion": 0,
+   "level": 1,
+   "exp": 20,
+   "skin": 0,
+   "skill_points": 0,
+   "fatigue": 0,
+   "bonus": {},
+   "skill_ranks": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    0
+   ],
+   "skill_slots": [
+    1,
+    2,
+    0,
+    0
+   ]
+  }
+ ],
+ "teams": [
+  {
+   "id": 0,
+   "name": "",
+   "pet_uids": [
+    1
+   ]
+  }
+ ],
+ "zones": [
+  {
+   "zone_id": 1,
+   "difficulty": 0,
+   "completes": 0,
+   "node_completes": [
+    0,
+    1
+   ]
+  }
+ ],
+ "inventory": [],
+ "jobs_active": [
+  {
+   "id": 3,
+   "progress": 0,
+   "looted": false
+  },
+  {
+   "id": 4,
+   "progress": 0,
+   "looted": false
+  },
+  {
+   "id": 2,
+   "progress": 1,
+   "looted": false
+  },
+  {
+   "id": 10,
+   "progress": 0,
+   "looted": false
+  },
+  {
+   "id": 1,
+   "progress": 1,
+   "looted": false
+  }
+ ],
+ "jobs_complete": [],
+ "achievements": [
+  {
+   "id": 1,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 2,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 3,
+   "progress": 1,
+   "rank": 0
+  },
+  {
+   "id": 4,
+   "progress": 275,
+   "rank": 0
+  },
+  {
+   "id": 5,
+   "progress": 275,
+   "rank": 0
+  },
+  {
+   "id": 6,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 7,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 8,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 9,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 10,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 11,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 12,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 13,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 14,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 15,
+   "progress": 25,
+   "rank": 0
+  },
+  {
+   "id": 16,
+   "progress": 7,
+   "rank": 0
+  },
+  {
+   "id": 17,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 18,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 19,
+   "progress": 1,
+   "rank": 0
+  },
+  {
+   "id": 20,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 21,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 22,
+   "progress": 1,
+   "rank": 0
+  },
+  {
+   "id": 23,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 24,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 25,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 26,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 27,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 28,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 29,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 30,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 31,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 32,
+   "progress": 0,
+   "rank": 0
+  },
+  {
+   "id": 33,
+   "progress": 2,
+   "rank": 0
+  }
+ ],
+ "gold": 525,
+ "credits": 25,
+ "energy": 19,
+ "tokens": 5,
+ "tickets": 5,
+ "rating": 1000,
+ "teams_max": 3,
+ "energy_updated": 1789755519.9195037,
+ "tokens_updated": 1789755519.9195037,
+ "tickets_updated": 1789755527.9334466,
+ "jobs_day": 20714,
+ "dna": {
+  "19": 17
+ },
+ "pending_roll": 19,
+ "counters": {
+  "damage": 275,
+  "damage:physical": 275,
+  "node_wins": 1,
+  "gold_earned": 25,
+  "exp_earned": 7
+ }
+}

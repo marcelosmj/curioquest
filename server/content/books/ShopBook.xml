@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<tabs>
+		<tab name="Curios" tutorial="false">
+			<items>
+				<item id="8" type="pet" desc="It sleeps in skulls and wakes up hungry." />
+				<item id="10" type="pet" desc="Its glowing abdomen lights up the hive at night." />
+				<item id="18" type="pet" desc="Its shell glows red hot whenever it gets angry, which is often." />
+				<item id="12" type="pet" desc="A coconut that trained in the art of stealth. Mostly it just falls on people." />
+				<item id="17" type="pet" desc="A spark of sunlight that learned how to giggle." />
+				<item id="21" type="pet" desc="Nobody knows which kingdom it rules, including the frog itself." />
+				<item id="24" type="pet" desc="Gumley is composed of intelligent polysaccharides that fused together to create a unified consciousness." />
+				<item id="19" type="pet" desc="A mischievous little flame that loves to play tricks." />
+				<item id="28" type="pet" desc="Under that coy smile lies an insidious curio with clandestine intent." />
+				<item id="7" type="pet" desc="A giant microbe that feeds on stray static charge." />
+				<item id="31" type="pet" desc="Half mantis, half artillery, all business." />
+				<item id="44" type="pet" desc="Pulled from the ground at midnight, it has been cranky ever since." />
+				<item id="33" type="pet" desc="It carries messages, snacks and the occasional lost curio in its beak." />
+				<item id="34" type="pet" desc="Always dressed for the occasion, even underwater." />
+				<item id="2" type="pet" desc="Its fluffy wool traps gusts of wind that it lets loose in a single burst." />
+				<item id="38" type="pet" desc="It splits sunlight into rainbows, and enemies into pieces." />
+				<item id="39" type="pet" desc="A forgotten doll stitched together with a stubborn will." />
+				<item id="20" type="pet" desc="Beautiful to look at, painful to pick." />
+				<item id="41" type="pet" desc="It is always right behind you." />
+				<item id="5" type="pet" desc="A tiny ant that burns hot enough to melt sand into glass." />
+				<item id="37" type="pet" desc="Moss grows on its back because it rarely moves." />
+				<item id="26" type="pet" desc="It circles over frozen peaks waiting for the wind to change." />
+				<item id="46" type="pet" desc="Don't take a bite. It bites back." />
+				<item id="6" type="pet" desc="Sworn to protect its friends, it never takes off its armor." />
+				<item id="42" type="pet" desc="It sings during thunderstorms, and the storms sing back." />
+				<item id="16" type="pet" desc="Handle with care. Claymore has a very short fuse." />
+				<item id="4" type="pet" desc="The light on its lure is the last thing its prey ever sees." />
+				<item id="25" type="pet" desc="The Hydragon's heads can't seem to cooperate with one another unless they're in combat." />
+				<item id="27" type="pet" desc="Its grin burns brighter every night of the harvest." />
+				<item id="40" type="pet" desc="Its shell is harder than the rocks it sleeps under." />
+				<item id="36" type="pet" desc="It hides inside its pot and peeks out only to fight." />
+				<item id="43" type="pet" desc="An ancient mask that dances around the island bonfires." />
+				<item id="3" type="pet" desc="Tropigust rides warm island breezes and never lands for long." />
+				<item id="1" type="pet" desc="A toxic hound whose drool eats through steel." />
+				<item id="11" type="pet" desc="The captain went down with the ship, and came back up again." />
+				<item id="45" type="pet" desc="Slow, patient and absolutely impossible to move." />
+				<item id="13" type="pet" desc="Playful as a kitten, fierce as a dragon." />
+				<item id="23" type="pet" desc="A noble sky hunter that answers only to the brave." />
+				<item id="14" type="pet" desc="Carved from driftwood by the tide, it roams the shore at dawn." />
+				<item id="35" type="pet" desc="The terror of the seven seas, and of the local fish market." />
+				<item id="30" type="pet" desc="A walking furnace built around a molten heart." />
+				<item id="22" type="pet" desc="It sheds its skin in a puff of smoke." />
+				<item id="29" type="pet" desc="Its mane crackles with lightning before every pounce." />
+				<item id="32" type="pet" desc="A young yeti whose fur reflects the glow of the northern lights." />
+				<item id="9" type="pet" desc="An ancient stone guardian that has grown a garden on its back." />
+			</items>
+		</tab>
+		<tab name="Items" tutorial="false">
+			<items>
+				<item id="1" type="grabbag" desc="A random curio!" />
+				<item id="2" type="grabbag" desc="Gold, energy and more." />
+				<item id="3" type="service" desc="Get back into battle." />
+				<item id="7" type="service" desc="Play more Plinko." />
+				<item id="4" type="service" desc="Battle in the arena." />
+				<item id="5" type="service" desc="Instant gold." />
+			</items>
+		</tab>
+		<tab name="Services" tutorial="false">
+			<items>
+				<item id="2" type="service" desc="Build another team." />
+				<item id="9" type="service" desc="Keep more curios." />
+				<item id="6" type="service" desc="Try a new build." />
+				<item id="10" type="service" desc="A fresh start." />
+			</items>
+		</tab>
+		<tab name="Enhancements" tutorial="false">
+			<items>
+				<item id="1" type="consumable" desc="More health, for good." />
+				<item id="2" type="consumable" desc="More damage, for good." />
+				<item id="3" type="consumable" desc="More healing, for good." />
+				<item id="4" type="consumable" desc="Crit more often." />
+				<item id="5" type="consumable" desc="Cast the heavy skills sooner." />
+				<item id="6" type="consumable" desc="A lot more health." />
+				<item id="7" type="consumable" desc="A lot more damage." />
+				<item id="8" type="consumable" desc="A lot more healing." />
+				<item id="9" type="consumable" desc="Health and damage at once." />
+				<item id="10" type="consumable" desc="Every stat at once." />
+			</items>
+		</tab>
+		<tab name="Boosts" tutorial="false">
+			<items>
+				<item id="1" type="enchant" desc="Red socket: more damage." />
+				<item id="4" type="enchant" desc="Yellow socket: more luck." />
+				<item id="7" type="enchant" desc="Blue socket: more health." />
+			</items>
+		</tab>
+	</tabs>
+</data>

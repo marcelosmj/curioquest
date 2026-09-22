@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<variables>
+		<energyCooldown>180000</energyCooldown>
+		<energyMax>30</energyMax>
+		<tokenCooldown>1800000</tokenCooldown>
+		<tokenMax>10</tokenMax>
+		<ticketCooldown>3600000</ticketCooldown>
+		<ticketMax>5</ticketMax>
+		<fatigueCooldown>60000</fatigueCooldown>
+		<fatigueMax>100</fatigueMax>
+		<skillSlots>4</skillSlots>
+		<friendsMax>50</friendsMax>
+		<petDuplicateMax>99</petDuplicateMax>
+		<petTeamSize>3</petTeamSize>
+		<petPrestigeGain>0</petPrestigeGain>
+		<petLimit>100</petLimit>
+		<petBonusLimit>400</petBonusLimit>
+		<consumableGoldBase>100</consumableGoldBase>
+		<consumableGoldPerLevel>10</consumableGoldPerLevel>
+		<teamsMin>1</teamsMin>
+		<teamsMax>5</teamsMax>
+		<pvpEventBattleTickets>1</pvpEventBattleTickets>
+		<pvpEventRepickTickets>1</pvpEventRepickTickets>
+		<gvgEventBattleTokens>1</gvgEventBattleTokens>
+		<gvgEventRepickTokens>1</gvgEventRepickTokens>
+		<upgradePlasmaResetCost>5</upgradePlasmaResetCost>
+		<plinkoCostItemType>3</plinkoCostItemType>
+		<plinkoCostItemID>8</plinkoCostItemID>
+		<plinkoCostItemQty>5</plinkoCostItemQty>
+		<characterLoadLocal>true</characterLoadLocal>
+		<loadingTag />
+		<tapjoyEnabled>false</tapjoyEnabled>
+		<facebookEnabled>false</facebookEnabled>
+		<leaderboardEnabled>false</leaderboardEnabled>
+		<guildInitialChars>3</guildInitialChars>
+		<livePvPEnabled>false</livePvPEnabled>
+		<livePvPInfo />
+		<livePvPBG>Colosseum.jpg</livePvPBG>
+		<livePvPTurnSeconds>30</livePvPTurnSeconds>
+		<chatEnabled>false</chatEnabled>
+		<chatAgeConfirm />
+		<chatMuteSeconds>300,3600,86400</chatMuteSeconds>
+		<chatMuteReasons>Spam,Language,Harassment</chatMuteReasons>
+		<chatChannels>Global</chatChannels>
+		<chatTermsOfService />
+		<paymentCheck>false</paymentCheck>
+		<showSeasonDecaration>false</showSeasonDecaration>
+		<seasonDecarationAsset />
+		<limitedOfferRotation>0</limitedOfferRotation>
+		<maxJobsPerDay>5</maxJobsPerDay>
+		<notificationRetentionSeconds>86400,259200,604800</notificationRetentionSeconds>
+		<newPlayerGold>500</newPlayerGold>
+		<newPlayerCredits>25</newPlayerCredits>
+		<newPlayerEnergy>20</newPlayerEnergy>
+		<newPlayerTokens>5</newPlayerTokens>
+		<newPlayerTickets>5</newPlayerTickets>
+	</variables>
+	<battleLoot>
+		<tier level="0">
+			<drop id="1" perc="30" />
+			<drop id="2" perc="25" />
+		</tier>
+		<tier level="5">
+			<drop id="1" perc="25" />
+			<drop id="2" perc="25" />
+			<drop id="3" perc="20" />
+		</tier>
+		<tier level="10">
+			<drop id="2" perc="20" />
+			<drop id="3" perc="25" />
+			<drop id="4" perc="12" />
+		</tier>
+		<tier level="20">
+			<drop id="3" perc="20" />
+			<drop id="4" perc="18" />
+			<drop id="5" perc="8" />
+		</tier>
+	</battleLoot>
+</data>

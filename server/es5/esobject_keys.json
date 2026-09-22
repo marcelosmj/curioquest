@@ -1,0 +1,3981 @@
+{
+ "ACHIEVEMENTS_UPDATED": {
+  "wire": "ach3",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "dalcs/AchievementDALC"
+  ],
+  "written_by": []
+ },
+ "ACHIEVEMENT_ID": {
+  "wire": "ach0",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/achievements/AchievementData"
+  ],
+  "written_by": []
+ },
+ "ACHIEVEMENT_PROGRESS": {
+  "wire": "ach1",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/achievements/AchievementData"
+  ],
+  "written_by": []
+ },
+ "ACHIEVEMENT_RANK": {
+  "wire": "ach2",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/achievements/AchievementData"
+  ],
+  "written_by": []
+ },
+ "ACTION_ERROR": {
+  "wire": "act1",
+  "types": {
+   "Integer": 117
+  },
+  "read_by": [
+   "Project",
+   "model/dialog/DialogManager",
+   "ui/admin/AdminLoginWindow",
+   "ui/admin/AdminWindow",
+   "ui/battle/victory/VictoryPetsTile",
+   "ui/character/CharacterCreateWindow",
+   "ui/character/CharacterCustomizeWindow",
+   "ui/character/CharacterLoginWindow",
+   "ui/character/CharacterSelectWindow",
+   "ui/chat/ChatBox",
+   "ui/chat/ChatIgnoreTile",
+   "ui/chat/ChatMuteTile",
+   "ui/chat/ChatMuteWindow",
+   "ui/chat/ChatPlayerOptionsWindow",
+   "ui/consumable/ConsumableSelectWindow",
+   "ui/craft/CraftTile",
+   "ui/daily/DailyWindow",
+   "ui/enchant/EnchantExchangeWindow",
+   "ui/enchant/EnchantSelectWindow",
+   "ui/enchant/EnchantUpgradeWindow",
+   "ui/event/EventTile",
+   "ui/friend/FriendRequestTile",
+   "ui/friend/FriendTileOptions",
+   "ui/fvf/FvFEventPage",
+   "ui/fvf/FvFEventSelectWindow",
+   "ui/fvf/FvFFactionWindow",
+   "ui/fvf/FvFLeaderboardTab",
+   "ui/guild/GuildCreateWindow",
+   "ui/guild/GuildInviteWindow",
+   "ui/guild/GuildListTile",
+   "ui/guild/GuildOptionsWindow",
+   "ui/guild/GuildPanel",
+   "ui/guild/GuildSendInviteWindow",
+   "ui/guild/GuildZoneNodePopup",
+   "ui/guild/options/GuildApplicationsWindow",
+   "ui/guild/options/GuildRosterWindow",
+   "ui/gve/GvEBracketPanel",
+   "ui/gve/GvEEventSelectWindow",
+   "ui/gve/GvELeaderboardTab",
+   "ui/gvg/GvGBracketPanel",
+   "ui/gvg/GvGLeaderboardTab",
+   "ui/gvg/GvGPlayerTile",
+   "ui/gvg/GvGPlayerWindow",
+   "ui/item/ItemPurchaseWindow",
+   "ui/limitedoffer/LimitedOfferWindow",
+   "ui/menu/MenuFriendPanel",
+   "ui/menu/MenuProfilePanel",
+   "ui/menu/MenuScreen",
+   "ui/options/OptionsWindow",
+   "ui/payment/CreditPopupBase",
+   "ui/pet/PetEnchantOptionsWindow",
+   "ui/pet/PetExchangeWindow",
+   "ui/pet/PetFusionWindow",
+   "ui/pet/PetNameWindow",
+   "ui/pet/PetPrestigeWindow",
+   "ui/pet/PetPurchaseWindow",
+   "ui/pet/PetSkillWindow",
+   "ui/pet/PetSkinWindow",
+   "ui/pet/PetUpgradeCooldownPanel",
+   "ui/pet/PetUpgradePrestigePanel",
+   "ui/pet/PetUpgradeRankPanel",
+   "ui/pet/PetWindowSkillsPanel",
+   "ui/pet/RevampedPetWindow",
+   "ui/plinko/PlinkoWindow",
+   "ui/promo/PromoWindow",
+   "ui/pve/PvEEventPage",
+   "ui/pve/PvEEventSelectWindow",
+   "ui/pve/PvELeaderboardPanel",
+   "ui/pvp/PvPLeaderboardPanel",
+   "ui/pvp/PvPPage",
+   "ui/pvp/PvPPlayerWindow",
+   "ui/service/ServiceSelectWindow",
+   "ui/team/TeamPage",
+   "ui/video/VideoOfferWindow",
+   "ui/wheel/PrizeWheelScreen",
+   "ui/zone/ZoneNodePopup",
+   "ui/zone/ZoneWindow"
+  ],
+  "written_by": []
+ },
+ "ACTION_TYPE": {
+  "wire": "act0",
+  "types": {
+   "Integer": 189
+  },
+  "read_by": [
+   "dalcs/AchievementDALC",
+   "dalcs/AdminDALC",
+   "dalcs/CharacterDALC",
+   "dalcs/ChatDALC",
+   "dalcs/FriendDALC",
+   "dalcs/FvFDALC",
+   "dalcs/GameDALC",
+   "dalcs/GuildDALC",
+   "dalcs/GvEDALC",
+   "dalcs/GvGDALC",
+   "dalcs/JobDALC",
+   "dalcs/LeaderboardDALC",
+   "dalcs/LimitedOfferDALC",
+   "dalcs/MerchantDALC",
+   "dalcs/PetDALC",
+   "dalcs/PvEDALC",
+   "dalcs/PvPDALC",
+   "plugins/BattlePlugin"
+  ],
+  "written_by": [
+   "dalcs/AdminDALC",
+   "dalcs/CharacterDALC",
+   "dalcs/ChatDALC",
+   "dalcs/FriendDALC",
+   "dalcs/FvFDALC",
+   "dalcs/GameDALC",
+   "dalcs/GuildDALC",
+   "dalcs/GvEDALC",
+   "dalcs/GvGDALC",
+   "dalcs/JobDALC",
+   "dalcs/LeaderboardDALC",
+   "dalcs/LimitedOfferDALC",
+   "dalcs/MerchantDALC",
+   "dalcs/PetDALC",
+   "dalcs/PvEDALC",
+   "dalcs/PvPDALC",
+   "plugins/BattlePlugin"
+  ]
+ },
+ "ADMIN_PASSWORD": {
+  "wire": "adm0",
+  "types": {
+   "String": 2
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/AdminDALC",
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "BADGE_TYPE": {
+  "wire": "bad1",
+  "types": {
+   "String": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "BATTLE_ABILITY_INDEX": {
+  "wire": "bat12",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": []
+ },
+ "BATTLE_CURRENT_PET_INDEX": {
+  "wire": "bat9",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "plugins/BattlePlugin",
+   "ui/battle/BattlePlayer"
+  ],
+  "written_by": []
+ },
+ "BATTLE_CURRENT_PLAYER_INDEX": {
+  "wire": "bat8",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "plugins/BattlePlugin",
+   "ui/battle/BattleScreen"
+  ],
+  "written_by": []
+ },
+ "BATTLE_DISABLED": {
+  "wire": "bat38",
+  "types": {
+   "Boolean": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/AdminDALC"
+  ]
+ },
+ "BATTLE_EFFECT_CRIT": {
+  "wire": "bat26",
+  "types": {
+   "Boolean": 1
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": []
+ },
+ "BATTLE_EFFECT_MODIFIER": {
+  "wire": "bat17",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": []
+ },
+ "BATTLE_EFFECT_TYPE": {
+  "wire": "bat18",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": []
+ },
+ "BATTLE_EXP": {
+  "wire": "bat20",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": []
+ },
+ "BATTLE_FX": {
+  "wire": "bat27",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": []
+ },
+ "BATTLE_GOLD": {
+  "wire": "bat19",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": []
+ },
+ "BATTLE_GUILDEXP": {
+  "wire": "bat35",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": []
+ },
+ "BATTLE_HEALTH_CHANGE": {
+  "wire": "bat10",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": []
+ },
+ "BATTLE_JOINING_PET": {
+  "wire": "bat21",
+  "types": {
+   "EsObject": 1
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": []
+ },
+ "BATTLE_JOINING_PETPERC": {
+  "wire": "bat36",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": []
+ },
+ "BATTLE_MANA_CHANGE": {
+  "wire": "bat11",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": []
+ },
+ "BATTLE_PETS": {
+  "wire": "bat2",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "ui/battle/BattlePlayer"
+  ],
+  "written_by": []
+ },
+ "BATTLE_PET_BUFFS": {
+  "wire": "bat22",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "ui/battle/BattlePet"
+  ],
+  "written_by": []
+ },
+ "BATTLE_PET_BUFF_DURATION": {
+  "wire": "bat25",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/battle/BattlePetBuff"
+  ],
+  "written_by": []
+ },
+ "BATTLE_PET_BUFF_ID": {
+  "wire": "bat24",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/battle/BattlePetBuff"
+  ],
+  "written_by": []
+ },
+ "BATTLE_PET_BUFF_INDEX": {
+  "wire": "bat23",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "plugins/BattlePlugin",
+   "ui/battle/BattlePetBuff"
+  ],
+  "written_by": []
+ },
+ "BATTLE_PET_COOLDOWNS": {
+  "wire": "bat31",
+  "types": {
+   "IntegerArray": 3
+  },
+  "read_by": [
+   "plugins/BattlePlugin",
+   "ui/battle/BattlePet"
+  ],
+  "written_by": []
+ },
+ "BATTLE_PET_CURRENT_HEALTH": {
+  "wire": "bat5",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "plugins/BattlePlugin",
+   "ui/battle/BattlePet"
+  ],
+  "written_by": []
+ },
+ "BATTLE_PET_CURRENT_MANA": {
+  "wire": "bat7",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "plugins/BattlePlugin",
+   "ui/battle/BattlePet"
+  ],
+  "written_by": []
+ },
+ "BATTLE_PET_DEFENDING": {
+  "wire": "bat34",
+  "types": {
+   "Boolean": 2
+  },
+  "read_by": [
+   "plugins/BattlePlugin",
+   "ui/battle/BattlePet"
+  ],
+  "written_by": []
+ },
+ "BATTLE_PET_INDEX": {
+  "wire": "bat3",
+  "types": {
+   "Integer": 12
+  },
+  "read_by": [
+   "plugins/BattlePlugin",
+   "ui/battle/BattlePet"
+  ],
+  "written_by": [
+   "plugins/BattlePlugin"
+  ]
+ },
+ "BATTLE_PET_SKILL_DURATION": {
+  "wire": "bat33",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": []
+ },
+ "BATTLE_PET_SKILL_ID": {
+  "wire": "bat32",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": []
+ },
+ "BATTLE_PET_TOTAL_HEALTH": {
+  "wire": "bat4",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/battle/BattlePet"
+  ],
+  "written_by": []
+ },
+ "BATTLE_PET_TOTAL_MANA": {
+  "wire": "bat6",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/battle/BattlePet"
+  ],
+  "written_by": []
+ },
+ "BATTLE_PLAYERS": {
+  "wire": "bat0",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "ui/battle/BattleScreen"
+  ],
+  "written_by": []
+ },
+ "BATTLE_PLAYER_INDEX": {
+  "wire": "bat1",
+  "types": {
+   "Integer": 16
+  },
+  "read_by": [
+   "plugins/BattlePlugin",
+   "ui/battle/BattlePlayer"
+  ],
+  "written_by": []
+ },
+ "BATTLE_POINTS": {
+  "wire": "bat37",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": []
+ },
+ "BATTLE_SKILL_ID": {
+  "wire": "bat29",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": [
+   "plugins/BattlePlugin"
+  ]
+ },
+ "BATTLE_SOURCE_PET_INDEX": {
+  "wire": "bat14",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": []
+ },
+ "BATTLE_SOURCE_PLAYER_INDEX": {
+  "wire": "bat13",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": []
+ },
+ "BATTLE_TARGET_PET_INDEX": {
+  "wire": "bat16",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": [
+   "plugins/BattlePlugin"
+  ]
+ },
+ "BATTLE_TARGET_PLAYER_INDEX": {
+  "wire": "bat15",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": [
+   "plugins/BattlePlugin"
+  ]
+ },
+ "BATTLE_TYPE": {
+  "wire": "bat30",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/battle/BattleScreen"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_ACHIEVEMENTS": {
+  "wire": "cha44",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "model/achievements/Achievements"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_ADMIN": {
+  "wire": "cha30",
+  "types": {
+   "Boolean": 2
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/chat/ChatBox"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_ADVERTISING_ID": {
+  "wire": "cha64",
+  "types": {
+   "String": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "CHARACTER_ADVERTISING_OPTOUT": {
+  "wire": "cha65",
+  "types": {
+   "Boolean": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "CHARACTER_BATTLE_SPEED": {
+  "wire": "cha39",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "CHARACTER_BPS": {
+  "wire": "cha4",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_CHAT_CHANNEL": {
+  "wire": "cha55",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "CHARACTER_CHAT_IGNORES": {
+  "wire": "cha54",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_CHAT_MUTE_REASON": {
+  "wire": "cha56",
+  "types": {
+   "Integer": 3
+  },
+  "read_by": [
+   "model/chat/ChatMuteData",
+   "ui/chat/ChatBox"
+  ],
+  "written_by": [
+   "dalcs/ChatDALC"
+  ]
+ },
+ "CHARACTER_CHAT_MUTE_TIME": {
+  "wire": "cha53",
+  "types": {
+   "Integer": 1,
+   "Number": 2,
+   "String": 1
+  },
+  "read_by": [
+   "model/character/Character",
+   "model/chat/ChatMuteData",
+   "ui/chat/ChatBox"
+  ],
+  "written_by": [
+   "dalcs/ChatDALC"
+  ]
+ },
+ "CHARACTER_CREATE_TIME": {
+  "wire": "cha43",
+  "types": {
+   "String": 1
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_CREDITS": {
+  "wire": "cha9",
+  "types": {
+   "Integer": 17
+  },
+  "read_by": [
+   "model/character/Character",
+   "model/payment/purchase/Purchase",
+   "model/supersonic/Supersonic",
+   "ui/item/ItemPurchaseWindow",
+   "ui/limitedoffer/LimitedOfferWindow",
+   "ui/menu/MenuProfilePanel",
+   "ui/payment/CreditPopupBase",
+   "ui/pet/PetPurchaseWindow",
+   "ui/pet/PetUpgradeCooldownPanel",
+   "ui/pet/PetUpgradePrestigePanel",
+   "ui/pet/PetUpgradeRankPanel",
+   "ui/pet/PetWindowSkillsPanel",
+   "ui/service/ServiceSelectWindow"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_DAILY": {
+  "wire": "cha49",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/daily/DailyWindow"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_DAILY_TIME": {
+  "wire": "cha48",
+  "types": {
+   "String": 2
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/daily/DailyWindow"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_DEFENSE_TEAM_ID": {
+  "wire": "cha33",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_DUST": {
+  "wire": "cha42",
+  "types": {
+   "Boolean": 1,
+   "Integer": 4
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/pet/PetUpgradeCooldownPanel",
+   "ui/pet/PetUpgradePrestigePanel",
+   "ui/pet/PetUpgradeRankPanel"
+  ],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "CHARACTER_EMAIL": {
+  "wire": "cha3",
+  "types": {
+   "String": 2
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "CHARACTER_ENERGY": {
+  "wire": "cha21",
+  "types": {
+   "Integer": 3
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/service/ServiceSelectWindow",
+   "ui/zone/ZoneNodePopup"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_ENERGY_MILLISECONDS": {
+  "wire": "cha22",
+  "types": {
+   "Number": 3
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/service/ServiceSelectWindow",
+   "ui/zone/ZoneNodePopup"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_EXP": {
+  "wire": "cha40",
+  "types": {
+   "Integer": 4
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/battle/victory/VictoryPetsTile",
+   "ui/pet/PetExchangeWindow",
+   "ui/pet/RevampedPetWindow"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_FRIENDS": {
+  "wire": "cha16",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_FRIEND_REQUESTS_ENABLED": {
+  "wire": "cha58",
+  "types": {
+   "Boolean": 2
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "CHARACTER_GENDER": {
+  "wire": "cha15",
+  "types": {
+   "Boolean": 1,
+   "String": 5
+  },
+  "read_by": [
+   "model/character/CharData",
+   "model/character/CharProfileData",
+   "model/character/Character",
+   "ui/character/CharacterCustomizeWindow",
+   "ui/menu/MenuScreen"
+  ],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "CHARACTER_GLOBAL_CHAT_ENABLED": {
+  "wire": "cha36",
+  "types": {
+   "Boolean": 2
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "CHARACTER_GOLD": {
+  "wire": "cha7",
+  "types": {
+   "Integer": 20
+  },
+  "read_by": [
+   "model/character/Character",
+   "model/payment/purchase/Purchase",
+   "ui/consumable/ConsumableSelectWindow",
+   "ui/enchant/EnchantExchangeWindow",
+   "ui/enchant/EnchantUpgradeWindow",
+   "ui/item/ItemPurchaseWindow",
+   "ui/limitedoffer/LimitedOfferWindow",
+   "ui/menu/MenuProfilePanel",
+   "ui/menu/MenuScreen",
+   "ui/payment/CreditPopupBase",
+   "ui/pet/PetPrestigeWindow",
+   "ui/pet/PetPurchaseWindow",
+   "ui/pet/PetWindowSkillsPanel",
+   "ui/pet/RevampedPetWindow",
+   "ui/service/ServiceSelectWindow"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_ID": {
+  "wire": "cha0",
+  "types": {
+   "Integer": 38,
+   "Short": 1
+  },
+  "read_by": [
+   "model/character/CharData",
+   "model/character/CharProfileData",
+   "model/character/Character",
+   "model/chat/ChatData",
+   "model/chat/ChatMuteData",
+   "model/guild/GuildApplicantData",
+   "model/guild/GuildChatMsgData",
+   "model/guild/GuildMemberData",
+   "model/leaderboard/LeaderboardData",
+   "model/service/NameRef",
+   "ui/chat/ChatBox",
+   "ui/chat/ChatIgnoreTile",
+   "ui/chat/ChatPlayerOptionsWindow",
+   "ui/friend/FriendTileOptions",
+   "ui/guild/GuildChat",
+   "ui/menu/MenuScreen"
+  ],
+  "written_by": [
+   "dalcs/CharacterDALC",
+   "dalcs/ChatDALC",
+   "dalcs/FriendDALC",
+   "dalcs/GuildDALC",
+   "dalcs/GvGDALC"
+  ]
+ },
+ "CHARACTER_INVENTORY_ITEMS": {
+  "wire": "cha19",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "model/character/Inventory"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_JOBS_ACTIVE": {
+  "wire": "cha37",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "model/job/Jobs"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_JOBS_COMPLETE": {
+  "wire": "cha38",
+  "types": {
+   "IntegerArray": 1
+  },
+  "read_by": [
+   "model/job/Jobs"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_LAST_LOGIN": {
+  "wire": "cha41",
+  "types": {
+   "String": 4
+  },
+  "read_by": [
+   "model/character/CharProfileData",
+   "model/character/Character",
+   "model/guild/GuildMemberData",
+   "ui/friend/FriendTileOptions"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_LEVEL": {
+  "wire": "cha5",
+  "types": {
+   "Integer": 4
+  },
+  "read_by": [
+   "model/character/Character",
+   "model/guild/GuildApplicantData",
+   "model/guild/GuildMemberData",
+   "model/leaderboard/LeaderboardData"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_LIMITED_OFFERS": {
+  "wire": "cha61",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "model/limitedoffer/LimitedOffers"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_MODERATOR": {
+  "wire": "cha52",
+  "types": {
+   "Boolean": 1
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_NAME": {
+  "wire": "cha1",
+  "types": {
+   "String": 17
+  },
+  "read_by": [
+   "model/character/CharData",
+   "model/character/CharProfileData",
+   "model/character/Character",
+   "model/chat/ChatData",
+   "model/chat/ChatMuteData",
+   "model/guild/GuildApplicantData",
+   "model/guild/GuildChatMsgData",
+   "model/guild/GuildMemberData",
+   "model/leaderboard/LeaderboardData",
+   "ui/battle/BattlePlayer",
+   "ui/character/CharacterCustomizeWindow",
+   "ui/chat/ChatBox",
+   "ui/guild/GuildChat",
+   "ui/menu/MenuScreen"
+  ],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "CHARACTER_NUM_FREE_SPINS": {
+  "wire": "cha47",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/wheel/PrizeWheelScreen"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_NUM_SPINS": {
+  "wire": "cha46",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/wheel/PrizeWheelScreen"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_OFFENSE_PETS": {
+  "wire": "cha57",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "model/character/CharProfileData"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_OFFENSE_TEAM_ID": {
+  "wire": "cha32",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_PASSWORD": {
+  "wire": "cha2",
+  "types": {
+   "String": 2
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "CHARACTER_PETS": {
+  "wire": "cha12",
+  "types": {
+   "IntegerArray": 5,
+   "EsObjectArray": 6
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/battle/victory/VictoryPetsTile",
+   "ui/menu/MenuScreen",
+   "ui/pet/PetFusionWindow",
+   "ui/pet/RevampedPetWindow"
+  ],
+  "written_by": [
+   "dalcs/FvFDALC",
+   "dalcs/GvEDALC",
+   "dalcs/PetDALC",
+   "dalcs/PvEDALC"
+  ]
+ },
+ "CHARACTER_PET_MAX_BONUS": {
+  "wire": "cha60",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/service/ServiceSelectWindow"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_PLAYER_ID": {
+  "wire": "cha35",
+  "types": {
+   "String": 12
+  },
+  "read_by": [
+   "model/character/CharProfileData",
+   "model/character/Character",
+   "model/friend/FriendData",
+   "ui/battle/BattlePlayer",
+   "ui/chat/ChatBox",
+   "ui/menu/MenuProfilePanel",
+   "ui/menu/MenuScreen"
+  ],
+  "written_by": [
+   "dalcs/AdminDALC",
+   "dalcs/CharacterDALC",
+   "dalcs/FriendDALC"
+  ]
+ },
+ "CHARACTER_RATING": {
+  "wire": "cha6",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_REFER_ID": {
+  "wire": "cha50",
+  "types": {
+   "String": 2
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "CHARACTER_REQUESTS": {
+  "wire": "cha17",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_REREFER_ID": {
+  "wire": "cha51",
+  "types": {
+   "String": 3
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "CHARACTER_SPIN_MILLISECONDS": {
+  "wire": "cha20",
+  "types": {
+   "Number": 2
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/wheel/PrizeWheelScreen"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_TEAMS": {
+  "wire": "cha31",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_TEAMS_MAX": {
+  "wire": "cha34",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/service/ServiceSelectWindow"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_TICKETS": {
+  "wire": "cha28",
+  "types": {
+   "Integer": 4
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/pvp/PvPPage",
+   "ui/pvp/PvPPlayerWindow",
+   "ui/service/ServiceSelectWindow"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_TICKET_MILLISECONDS": {
+  "wire": "cha29",
+  "types": {
+   "Number": 4
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/pvp/PvPPage",
+   "ui/pvp/PvPPlayerWindow",
+   "ui/service/ServiceSelectWindow"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_TIMED_MODIFIERS": {
+  "wire": "cha59",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "model/timedmodifier/TimedModifierData"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_TOKENS": {
+  "wire": "cha26",
+  "types": {
+   "Integer": 8
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/fvf/FvFEventSelectWindow",
+   "ui/guild/GuildZoneNodePopup",
+   "ui/gve/GvEEventSelectWindow",
+   "ui/gvg/GvGBracketPanel",
+   "ui/gvg/GvGPlayerWindow",
+   "ui/pve/PvEEventSelectWindow",
+   "ui/service/ServiceSelectWindow"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_TOKEN_MILLISECONDS": {
+  "wire": "cha27",
+  "types": {
+   "Number": 7
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/fvf/FvFEventSelectWindow",
+   "ui/gve/GvEEventSelectWindow",
+   "ui/gvg/GvGBracketPanel",
+   "ui/gvg/GvGPlayerWindow",
+   "ui/pve/PvEEventSelectWindow",
+   "ui/service/ServiceSelectWindow"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_TUTORIAL_STATES": {
+  "wire": "cha18",
+  "types": {
+   "BooleanArray": 2
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "CHARACTER_UPGRADE_MILLISECONDS": {
+  "wire": "cha45",
+  "types": {
+   "Number": 6
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/pet/PetPrestigeWindow",
+   "ui/pet/PetUpgradeCooldownPanel",
+   "ui/pet/PetUpgradePrestigePanel",
+   "ui/pet/PetUpgradeRankPanel"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_USERNAME": {
+  "wire": "cha11",
+  "types": {
+   "String": 2
+  },
+  "read_by": [
+   "model/character/Character",
+   "ui/battle/BattlePlayer"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_VIDEO_OFFERS": {
+  "wire": "cha62",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "model/video/VideoOffers"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_ZONES": {
+  "wire": "cha13",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_ZONE_DIFFICULTY": {
+  "wire": "cha25",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": []
+ },
+ "CHARACTER_ZONE_ID": {
+  "wire": "cha14",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": []
+ },
+ "CHAT_LIST": {
+  "wire": "chat3",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "model/chat/ChatMuteData"
+  ],
+  "written_by": []
+ },
+ "CHAT_LOG": {
+  "wire": "chat4",
+  "types": {
+   "String": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/ChatDALC"
+  ]
+ },
+ "CHAT_MESSAGE": {
+  "wire": "chat0",
+  "types": {
+   "String": 7
+  },
+  "read_by": [
+   "model/guild/GuildChatMsgData",
+   "ui/chat/ChatBox",
+   "ui/guild/GuildChat",
+   "ui/menu/MenuScreen"
+  ],
+  "written_by": [
+   "dalcs/ChatDALC"
+  ]
+ },
+ "CHAT_PLAYER_CHAR_ID": {
+  "wire": "chat2",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/menu/MenuScreen"
+  ],
+  "written_by": []
+ },
+ "CHAT_PLAYER_NAME": {
+  "wire": "chat1",
+  "types": {
+   "String": 1
+  },
+  "read_by": [
+   "ui/menu/MenuScreen"
+  ],
+  "written_by": []
+ },
+ "CHAT_SHADOW": {
+  "wire": "chat5",
+  "types": {
+   "Boolean": 2
+  },
+  "read_by": [
+   "ui/chat/ChatBox"
+  ],
+  "written_by": [
+   "dalcs/ChatDALC"
+  ]
+ },
+ "CRAFT_ID": {
+  "wire": "cra0",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/MerchantDALC"
+  ]
+ },
+ "CURRENCY_ID": {
+  "wire": "cur0",
+  "types": {
+   "Integer": 6
+  },
+  "read_by": [
+   "ui/item/ItemPurchaseWindow",
+   "ui/menu/MenuProfilePanel",
+   "ui/payment/CreditPopupBase",
+   "ui/service/ServiceSelectWindow"
+  ],
+  "written_by": [
+   "dalcs/MerchantDALC"
+  ]
+ },
+ "CUSTOM_SHOP_HEADER_TEXT": {
+  "wire": "cus2",
+  "types": {
+   "String": 1
+  },
+  "read_by": [
+   "ui/customRefreshableShop/CustomRefreshableShop"
+  ],
+  "written_by": []
+ },
+ "CUSTOM_SHOP_ITEMS": {
+  "wire": "cus5",
+  "types": {
+   "EsObject": 1
+  },
+  "read_by": [
+   "ui/customRefreshableShop/CustomRefreshableShop"
+  ],
+  "written_by": []
+ },
+ "CUSTOM_SHOP_ITEM_COSTS": {
+  "wire": "cus6",
+  "types": {
+   "IntegerArray": 1
+  },
+  "read_by": [
+   "ui/customRefreshableShop/CustomRefreshableShop"
+  ],
+  "written_by": []
+ },
+ "CUSTOM_SHOP_ITEM_STATUS": {
+  "wire": "cus7",
+  "types": {
+   "IntegerArray": 1
+  },
+  "read_by": [
+   "ui/customRefreshableShop/CustomRefreshableShop"
+  ],
+  "written_by": []
+ },
+ "CUSTOM_SHOP_REFRESH_COST": {
+  "wire": "cus3",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/customRefreshableShop/CustomRefreshableShop"
+  ],
+  "written_by": []
+ },
+ "CUSTOM_SHOP_SHOP_ID": {
+  "wire": "cus8",
+  "types": {
+   "Number": 1
+  },
+  "read_by": [
+   "ui/customRefreshableShop/CustomRefreshableShop"
+  ],
+  "written_by": []
+ },
+ "CUSTOM_SHOP_TIME_LEFT": {
+  "wire": "cus4",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/customRefreshableShop/CustomRefreshableShop"
+  ],
+  "written_by": []
+ },
+ "CUSTOM_SHOP_TYPE": {
+  "wire": "cus1",
+  "types": {
+   "Integer": 3
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "DALC_ID": {
+  "wire": "dal0",
+  "types": {
+   "Integer": 18
+  },
+  "read_by": [
+   "plugins/ServerPlugin"
+  ],
+  "written_by": [
+   "dalcs/AchievementDALC",
+   "dalcs/AdminDALC",
+   "dalcs/CharacterDALC",
+   "dalcs/ChatDALC",
+   "dalcs/FriendDALC",
+   "dalcs/FvFDALC",
+   "dalcs/GameDALC",
+   "dalcs/GuildDALC",
+   "dalcs/GvEDALC",
+   "dalcs/GvGDALC",
+   "dalcs/JobDALC",
+   "dalcs/LeaderboardDALC",
+   "dalcs/LimitedOfferDALC",
+   "dalcs/MerchantDALC",
+   "dalcs/PetDALC",
+   "dalcs/PvEDALC",
+   "dalcs/PvPDALC"
+  ]
+ },
+ "ENCHANT_ID": {
+  "wire": "ench0",
+  "types": {
+   "Integer": 4,
+   "IntegerArray": 1
+  },
+  "read_by": [
+   "ui/enchant/EnchantSelectWindow",
+   "ui/pet/PetEnchantOptionsWindow"
+  ],
+  "written_by": [
+   "dalcs/MerchantDALC",
+   "dalcs/PetDALC"
+  ]
+ },
+ "ENCHANT_SLOT": {
+  "wire": "ench1",
+  "types": {
+   "Integer": 3
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/PetDALC"
+  ]
+ },
+ "EPIC_CORE_PIECES": {
+  "wire": "exc1",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/pet/PetExchangeWindow"
+  ],
+  "written_by": []
+ },
+ "FRIEND_CHARID": {
+  "wire": "fre0",
+  "types": {
+   "Integer": 3,
+   "IntegerArray": 2
+  },
+  "read_by": [
+   "model/friend/FriendData",
+   "model/friend/RequestData",
+   "ui/menu/MenuScreen"
+  ],
+  "written_by": [
+   "dalcs/FriendDALC"
+  ]
+ },
+ "FRIEND_GIFT_ALL": {
+  "wire": "fre5",
+  "types": {
+   "Boolean": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/FriendDALC"
+  ]
+ },
+ "FRIEND_GIFT_COUNT": {
+  "wire": "fre6",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/menu/MenuFriendPanel"
+  ],
+  "written_by": []
+ },
+ "FRIEND_GIFT_OBJ": {
+  "wire": "fre4",
+  "types": {
+   "String": 1
+  },
+  "read_by": [
+   "ui/friend/FriendTileOptions"
+  ],
+  "written_by": []
+ },
+ "FRIEND_LEVEL": {
+  "wire": "fre2",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/friend/FriendData"
+  ],
+  "written_by": []
+ },
+ "FRIEND_NAME": {
+  "wire": "fre1",
+  "types": {
+   "String": 2
+  },
+  "read_by": [
+   "model/friend/FriendData",
+   "model/friend/RequestData"
+  ],
+  "written_by": []
+ },
+ "FRIEND_ONLINE": {
+  "wire": "fre3",
+  "types": {
+   "Boolean": 1
+  },
+  "read_by": [
+   "model/friend/FriendData"
+  ],
+  "written_by": []
+ },
+ "FVF_EVENT_DIFFICULTY_ID": {
+  "wire": "fvf6",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/FvFDALC"
+  ]
+ },
+ "FVF_EVENT_FACTION": {
+  "wire": "fvf3",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/fvf/FvFEventData"
+  ],
+  "written_by": [
+   "dalcs/LeaderboardDALC"
+  ]
+ },
+ "FVF_EVENT_FACTION_POINTS": {
+  "wire": "fvf4",
+  "types": {
+   "IntegerArray": 1
+  },
+  "read_by": [
+   "model/fvf/FvFEventData"
+  ],
+  "written_by": []
+ },
+ "FVF_EVENT_FACTION_RANKS": {
+  "wire": "fvf5",
+  "types": {
+   "IntegerArray": 1
+  },
+  "read_by": [
+   "model/fvf/FvFEventData"
+  ],
+  "written_by": []
+ },
+ "FVF_EVENT_ID": {
+  "wire": "fvf0",
+  "types": {
+   "Integer": 9
+  },
+  "read_by": [
+   "model/fvf/FvFEventData",
+   "ui/battle/BattleScreen",
+   "ui/event/EventTile",
+   "ui/fvf/FvFEventPage"
+  ],
+  "written_by": [
+   "dalcs/FvFDALC",
+   "dalcs/LeaderboardDALC"
+  ]
+ },
+ "FVF_EVENT_POINTS": {
+  "wire": "fvf2",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/fvf/FvFEventData"
+  ],
+  "written_by": []
+ },
+ "FVF_EVENT_RANK": {
+  "wire": "fvf1",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/fvf/FvFEventData"
+  ],
+  "written_by": []
+ },
+ "GUILD_APPLICATIONSOBJ": {
+  "wire": "gui23",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "ui/guild/options/GuildApplicationsWindow"
+  ],
+  "written_by": []
+ },
+ "GUILD_APPLICATIONSRESPONSE": {
+  "wire": "gui24",
+  "types": {
+   "Boolean": 2
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/GuildDALC"
+  ]
+ },
+ "GUILD_CHANGERANK": {
+  "wire": "gui29",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/GuildDALC"
+  ]
+ },
+ "GUILD_DATAOBJ": {
+  "wire": "gui8",
+  "types": {
+   "EsObject": 1
+  },
+  "read_by": [
+   "model/guild/GuildData"
+  ],
+  "written_by": []
+ },
+ "GUILD_EXP": {
+  "wire": "gui15",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/guild/GuildData"
+  ],
+  "written_by": []
+ },
+ "GUILD_ID": {
+  "wire": "gui0",
+  "types": {
+   "Integer": 11
+  },
+  "read_by": [
+   "model/character/CharProfileData",
+   "model/event/EventPlayerData",
+   "model/friend/FriendData",
+   "model/guild/GuildData",
+   "model/guild/GuildPlayerData",
+   "model/gve/GvEBracketGuildData",
+   "model/gvg/GvGBracketGuildData",
+   "ui/menu/MenuScreen"
+  ],
+  "written_by": [
+   "dalcs/GameDALC",
+   "dalcs/GuildDALC"
+  ]
+ },
+ "GUILD_INITIALS": {
+  "wire": "gui3",
+  "types": {
+   "String": 12
+  },
+  "read_by": [
+   "model/character/CharProfileData",
+   "model/chat/ChatData",
+   "model/chat/ChatMuteData",
+   "model/event/EventPlayerData",
+   "model/friend/FriendData",
+   "model/guild/GuildData",
+   "model/guild/GuildPlayerData",
+   "model/gve/GvEBracketGuildData",
+   "model/gvg/GvGBracketGuildData",
+   "model/leaderboard/LeaderboardData",
+   "ui/chat/ChatBox"
+  ],
+  "written_by": [
+   "dalcs/GuildDALC"
+  ]
+ },
+ "GUILD_INVITEOBJ": {
+  "wire": "gui12",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "ui/guild/GuildInviteWindow"
+  ],
+  "written_by": []
+ },
+ "GUILD_LEADER": {
+  "wire": "gui19",
+  "types": {
+   "String": 1
+  },
+  "read_by": [
+   "model/guild/GuildData"
+  ],
+  "written_by": []
+ },
+ "GUILD_LEVEL": {
+  "wire": "gui14",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/guild/GuildData"
+  ],
+  "written_by": []
+ },
+ "GUILD_LISTOBJ": {
+  "wire": "gui6",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "ui/guild/GuildListWindow"
+  ],
+  "written_by": []
+ },
+ "GUILD_LISTPAGE": {
+  "wire": "gui5",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/GuildDALC"
+  ]
+ },
+ "GUILD_MAXMEMBERS": {
+  "wire": "gui16",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/guild/GuildData"
+  ],
+  "written_by": []
+ },
+ "GUILD_MAXOFFICERS": {
+  "wire": "gui17",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/guild/GuildData"
+  ],
+  "written_by": []
+ },
+ "GUILD_MEMBERPERMISSIONS": {
+  "wire": "gui20",
+  "types": {
+   "IntegerArray": 2
+  },
+  "read_by": [
+   "model/guild/GuildData"
+  ],
+  "written_by": [
+   "dalcs/GuildDALC"
+  ]
+ },
+ "GUILD_MEMBERSOBJ": {
+  "wire": "gui13",
+  "types": {
+   "EsObjectArray": 2
+  },
+  "read_by": [
+   "ui/guild/GuildMembersPanel",
+   "ui/guild/options/GuildRosterWindow"
+  ],
+  "written_by": []
+ },
+ "GUILD_MSG": {
+  "wire": "gui10",
+  "types": {
+   "String": 1
+  },
+  "read_by": [
+   "model/guild/GuildInviteData"
+  ],
+  "written_by": []
+ },
+ "GUILD_MSG_OBJ": {
+  "wire": "gui26",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "ui/guild/GuildChat"
+  ],
+  "written_by": []
+ },
+ "GUILD_MSG_TIME": {
+  "wire": "gui25",
+  "types": {
+   "String": 1
+  },
+  "read_by": [
+   "model/guild/GuildChatMsgData"
+  ],
+  "written_by": []
+ },
+ "GUILD_NAME": {
+  "wire": "gui2",
+  "types": {
+   "String": 8
+  },
+  "read_by": [
+   "model/character/CharProfileData",
+   "model/event/EventPlayerData",
+   "model/guild/GuildData",
+   "model/guild/GuildPlayerData",
+   "model/gve/GvEBracketGuildData",
+   "model/gvg/GvGBracketGuildData",
+   "ui/menu/MenuScreen"
+  ],
+  "written_by": [
+   "dalcs/GuildDALC"
+  ]
+ },
+ "GUILD_NUMMEMBERS": {
+  "wire": "gui18",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/guild/GuildData"
+  ],
+  "written_by": []
+ },
+ "GUILD_OFFICERPERMISSIONS": {
+  "wire": "gui22",
+  "types": {
+   "IntegerArray": 2
+  },
+  "read_by": [
+   "model/guild/GuildData"
+  ],
+  "written_by": [
+   "dalcs/GuildDALC"
+  ]
+ },
+ "GUILD_PLAYERNAME": {
+  "wire": "gui11",
+  "types": {
+   "String": 1
+  },
+  "read_by": [
+   "model/guild/GuildInviteData"
+  ],
+  "written_by": []
+ },
+ "GUILD_RANK": {
+  "wire": "gui1",
+  "types": {
+   "Integer": 3
+  },
+  "read_by": [
+   "model/guild/GuildMemberData",
+   "model/guild/GuildPlayerData"
+  ],
+  "written_by": [
+   "dalcs/GuildDALC"
+  ]
+ },
+ "GUILD_REPUTATIONGUILD": {
+  "wire": "gui27",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/guild/GuildMemberData"
+  ],
+  "written_by": []
+ },
+ "GUILD_SEARCHNAME": {
+  "wire": "gui7",
+  "types": {
+   "String": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/GuildDALC"
+  ]
+ },
+ "GUILD_SOLDIERPERMISSIONS": {
+  "wire": "gui21",
+  "types": {
+   "IntegerArray": 2
+  },
+  "read_by": [
+   "model/guild/GuildData"
+  ],
+  "written_by": [
+   "dalcs/GuildDALC"
+  ]
+ },
+ "GUILD_SORTTYPE": {
+  "wire": "gui4",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/GuildDALC"
+  ]
+ },
+ "GVE_EVENT_BRACKET_ID": {
+  "wire": "gve6",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/gve/GvEBracketData"
+  ],
+  "written_by": []
+ },
+ "GVE_EVENT_DIFFICULTY_ID": {
+  "wire": "gve1",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/GvEDALC"
+  ]
+ },
+ "GVE_EVENT_GUILDS": {
+  "wire": "gve2",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "model/gve/GvEBracketData"
+  ],
+  "written_by": []
+ },
+ "GVE_EVENT_GUILD_BRACKET_POINTS": {
+  "wire": "gve4",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/gve/GvEBracketGuildData"
+  ],
+  "written_by": []
+ },
+ "GVE_EVENT_GUILD_POINTS": {
+  "wire": "gve3",
+  "types": {
+   "Integer": 3
+  },
+  "read_by": [
+   "model/gve/GvEBracketGuildData",
+   "model/gve/GvELootPanel",
+   "ui/gve/GvELeaderboardTab"
+  ],
+  "written_by": []
+ },
+ "GVE_EVENT_GUILD_RANK": {
+  "wire": "gve7",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/gve/GvELootPanel",
+   "ui/gve/GvELeaderboardTab"
+  ],
+  "written_by": []
+ },
+ "GVE_EVENT_ID": {
+  "wire": "gve0",
+  "types": {
+   "Integer": 10
+  },
+  "read_by": [
+   "model/gve/GvEBracketData",
+   "ui/battle/BattleScreen",
+   "ui/event/EventTile"
+  ],
+  "written_by": [
+   "dalcs/GvEDALC",
+   "dalcs/LeaderboardDALC"
+  ]
+ },
+ "GVE_EVENT_LOOT_ID": {
+  "wire": "gve5",
+  "types": {
+   "Integer": 3
+  },
+  "read_by": [
+   "ui/event/EventTile",
+   "ui/gve/GvEBracketPanel"
+  ],
+  "written_by": []
+ },
+ "GVE_EVENT_PLAYER_POINTS": {
+  "wire": "gve9",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/gve/GvELeaderboardTab"
+  ],
+  "written_by": []
+ },
+ "GVE_EVENT_PLAYER_RANK": {
+  "wire": "gve8",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/gve/GvELootPanel",
+   "ui/gve/GvELeaderboardTab"
+  ],
+  "written_by": []
+ },
+ "GVG_EVENT_BRACKET_ID": {
+  "wire": "gvg6",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/gvg/GvGBracketData"
+  ],
+  "written_by": []
+ },
+ "GVG_EVENT_GUILDS": {
+  "wire": "gvg2",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "model/gvg/GvGBracketData"
+  ],
+  "written_by": []
+ },
+ "GVG_EVENT_GUILD_BRACKET_POINTS": {
+  "wire": "gvg4",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/gvg/GvGBracketGuildData"
+  ],
+  "written_by": []
+ },
+ "GVG_EVENT_GUILD_POINTS": {
+  "wire": "gvg3",
+  "types": {
+   "Integer": 3
+  },
+  "read_by": [
+   "model/gvg/GvGBracketGuildData",
+   "ui/gvg/GvGLeaderboardTab",
+   "ui/gvg/GvGLootPanel"
+  ],
+  "written_by": []
+ },
+ "GVG_EVENT_GUILD_RANK": {
+  "wire": "gvg7",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "ui/gvg/GvGLeaderboardTab",
+   "ui/gvg/GvGLootPanel"
+  ],
+  "written_by": []
+ },
+ "GVG_EVENT_ID": {
+  "wire": "gvg0",
+  "types": {
+   "Integer": 10
+  },
+  "read_by": [
+   "model/gvg/GvGBracketData",
+   "ui/battle/BattleScreen",
+   "ui/event/EventTile"
+  ],
+  "written_by": [
+   "dalcs/GvGDALC",
+   "dalcs/LeaderboardDALC"
+  ]
+ },
+ "GVG_EVENT_LOOT_ID": {
+  "wire": "gvg5",
+  "types": {
+   "Integer": 3
+  },
+  "read_by": [
+   "ui/event/EventTile",
+   "ui/gvg/GvGBracketPanel"
+  ],
+  "written_by": []
+ },
+ "GVG_EVENT_PLAYERS": {
+  "wire": "gvg1",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "model/gvg/GvGPlayerListData"
+  ],
+  "written_by": []
+ },
+ "GVG_EVENT_PLAYER_POINTS": {
+  "wire": "gvg9",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/gvg/GvGPlayerInfo",
+   "ui/gvg/GvGLeaderboardTab"
+  ],
+  "written_by": []
+ },
+ "GVG_EVENT_PLAYER_RANK": {
+  "wire": "gvg8",
+  "types": {
+   "Integer": 3
+  },
+  "read_by": [
+   "model/gvg/GvGPlayerInfo",
+   "ui/gvg/GvGLeaderboardTab",
+   "ui/gvg/GvGLootPanel"
+  ],
+  "written_by": []
+ },
+ "ITEM_ADDED": {
+  "wire": "ite4",
+  "types": {
+   "EsObject": 1
+  },
+  "read_by": [
+   "ui/enchant/EnchantUpgradeWindow"
+  ],
+  "written_by": []
+ },
+ "ITEM_ID": {
+  "wire": "ite0",
+  "types": {
+   "Integer": 16,
+   "String": 3
+  },
+  "read_by": [
+   "model/item/ItemData",
+   "model/pet/PetDisplayData",
+   "model/timedmodifier/TimedModifierData",
+   "ui/consumable/ConsumableSelectWindow",
+   "ui/item/ItemPurchaseWindow",
+   "ui/menu/MenuProfilePanel",
+   "ui/payment/CreditPopupBase",
+   "ui/pet/PetWindowSkillsPanel",
+   "ui/service/ServiceSelectWindow",
+   "ui/video/VideoOfferWindow"
+  ],
+  "written_by": [
+   "dalcs/CharacterDALC",
+   "dalcs/MerchantDALC",
+   "dalcs/PetDALC",
+   "model/item/ItemData"
+  ]
+ },
+ "ITEM_LIST": {
+  "wire": "ite3",
+  "types": {
+   "EsObjectArray": 6
+  },
+  "read_by": [
+   "model/item/ItemData",
+   "ui/craft/CraftTile",
+   "ui/customRefreshableShop/CustomCurrencyShopItemTile",
+   "ui/customRefreshableShop/CustomRefreshableShop",
+   "ui/menu/MenuFriendPanel"
+  ],
+  "written_by": [
+   "model/item/ItemData"
+  ]
+ },
+ "ITEM_MILLISECONDS": {
+  "wire": "ite6",
+  "types": {
+   "Number": 1
+  },
+  "read_by": [
+   "model/timedmodifier/TimedModifierData"
+  ],
+  "written_by": []
+ },
+ "ITEM_QTY": {
+  "wire": "ite2",
+  "types": {
+   "Integer": 10
+  },
+  "read_by": [
+   "model/item/ItemData",
+   "ui/consumable/ConsumableSelectWindow",
+   "ui/enchant/EnchantSelectWindow",
+   "ui/pet/PetEnchantOptionsWindow",
+   "ui/pet/RevampedPetWindow"
+  ],
+  "written_by": [
+   "dalcs/MerchantDALC",
+   "dalcs/PetDALC",
+   "model/item/ItemData"
+  ]
+ },
+ "ITEM_REMOVED": {
+  "wire": "ite5",
+  "types": {
+   "Boolean": 1,
+   "EsObject": 1
+  },
+  "read_by": [
+   "ui/enchant/EnchantUpgradeWindow"
+  ],
+  "written_by": [
+   "dalcs/PetDALC"
+  ]
+ },
+ "ITEM_TYPE": {
+  "wire": "ite1",
+  "types": {
+   "Integer": 5
+  },
+  "read_by": [
+   "model/item/ItemData",
+   "model/pet/PetDisplayData",
+   "ui/item/ItemPurchaseWindow"
+  ],
+  "written_by": [
+   "dalcs/MerchantDALC",
+   "model/item/ItemData"
+  ]
+ },
+ "JOBS_UPDATED": {
+  "wire": "job3",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "ui/menu/MenuScreen"
+  ],
+  "written_by": []
+ },
+ "JOB_ID": {
+  "wire": "job0",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/job/JobData"
+  ],
+  "written_by": [
+   "dalcs/JobDALC"
+  ]
+ },
+ "JOB_ISLOOTED": {
+  "wire": "job2",
+  "types": {
+   "Boolean": 1
+  },
+  "read_by": [
+   "model/job/JobData"
+  ],
+  "written_by": []
+ },
+ "JOB_PROGRESS": {
+  "wire": "job1",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/job/JobData"
+  ],
+  "written_by": []
+ },
+ "LAST_DAILY_JOB_UPDATE_TIME": {
+  "wire": "cha63",
+  "types": {
+   "String": 1
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": []
+ },
+ "LAST_DATE_NAME_WAS_VALID": {
+  "wire": "nam3",
+  "types": {
+   "String": 1
+  },
+  "read_by": [
+   "model/service/NameRef"
+  ],
+  "written_by": []
+ },
+ "LEADERBOARD_LIST": {
+  "wire": "lea2",
+  "types": {
+   "EsObjectArray": 7
+  },
+  "read_by": [
+   "ui/fvf/FvFLeaderboardTab",
+   "ui/gve/GvELeaderboardTab",
+   "ui/gvg/GvGLeaderboardTab",
+   "ui/pve/PvELeaderboardPanel",
+   "ui/pvp/PvPLeaderboardPanel"
+  ],
+  "written_by": []
+ },
+ "LEADERBOARD_RANK": {
+  "wire": "lea4",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/leaderboard/LeaderboardData"
+  ],
+  "written_by": []
+ },
+ "LEADERBOARD_TYPE": {
+  "wire": "lea0",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/LeaderboardDALC"
+  ]
+ },
+ "LEADERBOARD_VALUE": {
+  "wire": "lea1",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/leaderboard/LeaderboardData"
+  ],
+  "written_by": []
+ },
+ "LEGENDARY_CORE_PIECES": {
+  "wire": "exc2",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/pet/PetExchangeWindow"
+  ],
+  "written_by": []
+ },
+ "LIMITED_OFFER_ENDTIME": {
+  "wire": "lo03",
+  "types": {
+   "Double": 1
+  },
+  "read_by": [
+   "model/limitedoffer/LimitedOfferData"
+  ],
+  "written_by": []
+ },
+ "LIMITED_OFFER_ID": {
+  "wire": "lo01",
+  "types": {
+   "Short": 4,
+   "Integer": 2
+  },
+  "read_by": [
+   "model/limitedoffer/LimitedOfferData",
+   "model/payment/purchase/Purchase",
+   "ui/limitedoffer/LimitedOfferWindow"
+  ],
+  "written_by": [
+   "dalcs/LimitedOfferDALC"
+  ]
+ },
+ "LIMITED_OFFER_RESULT": {
+  "wire": "lo04",
+  "types": {
+   "Boolean": 1
+  },
+  "read_by": [
+   "ui/limitedoffer/LimitedOfferWindow"
+  ],
+  "written_by": []
+ },
+ "LIMITED_OFFER_STATUS": {
+  "wire": "lo02",
+  "types": {
+   "Short": 1
+  },
+  "read_by": [
+   "model/limitedoffer/LimitedOfferData"
+  ],
+  "written_by": []
+ },
+ "LINK_DATA": {
+  "wire": "lin2",
+  "types": {
+   "EsObject": 1
+  },
+  "read_by": [
+   "Project"
+  ],
+  "written_by": []
+ },
+ "LINK_ID": {
+  "wire": "lin1",
+  "types": {
+   "String": 2
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "LINK_PLATFORM": {
+  "wire": "lin0",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "LINK_TOKEN": {
+  "wire": "lin3",
+  "types": {
+   "String": 2
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "MESSAGE_LIST": {
+  "wire": "mes0",
+  "types": {
+   "EsObjectArray": 2
+  },
+  "read_by": [
+   "plugins/BattlePlugin"
+  ],
+  "written_by": [
+   "plugins/BattlePlugin"
+  ]
+ },
+ "MYTHIC_CORE_PIECES": {
+  "wire": "exc3",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/pet/PetExchangeWindow"
+  ],
+  "written_by": []
+ },
+ "NOTIFICATION_DATA": {
+  "wire": "not1",
+  "types": {
+   "String": 2
+  },
+  "read_by": [
+   "ui/menu/MenuScreen"
+  ],
+  "written_by": [
+   "dalcs/AdminDALC"
+  ]
+ },
+ "NOTIFICATION_TYPE": {
+  "wire": "not0",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "ui/menu/MenuScreen",
+   "ui/pve/PvEEventPage"
+  ],
+  "written_by": []
+ },
+ "PET_BLUE_ENCHANT": {
+  "wire": "pet17",
+  "types": {
+   "Integer": 5
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/enchant/EnchantSelectWindow",
+   "ui/enchant/EnchantUpgradeWindow",
+   "ui/pet/PetEnchantOptionsWindow"
+  ],
+  "written_by": []
+ },
+ "PET_BLUE_ENCHANTS": {
+  "wire": "pet27",
+  "types": {
+   "IntegerArray": 5
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/enchant/EnchantSelectWindow",
+   "ui/enchant/EnchantUpgradeWindow",
+   "ui/pet/PetEnchantOptionsWindow"
+  ],
+  "written_by": []
+ },
+ "PET_BONUS_DAMAGE": {
+  "wire": "pet20",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/consumable/ConsumableSelectWindow"
+  ],
+  "written_by": []
+ },
+ "PET_BONUS_HEALING": {
+  "wire": "pet21",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/consumable/ConsumableSelectWindow"
+  ],
+  "written_by": []
+ },
+ "PET_BONUS_HEALTH": {
+  "wire": "pet22",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/consumable/ConsumableSelectWindow"
+  ],
+  "written_by": []
+ },
+ "PET_BONUS_LUCK": {
+  "wire": "pet24",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/consumable/ConsumableSelectWindow"
+  ],
+  "written_by": []
+ },
+ "PET_BONUS_MANA": {
+  "wire": "pet23",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/consumable/ConsumableSelectWindow"
+  ],
+  "written_by": []
+ },
+ "PET_COLLECTION": {
+  "wire": "pet33",
+  "types": {
+   "EsObject": 1
+  },
+  "read_by": [
+   "model/pet/PetCollection"
+  ],
+  "written_by": []
+ },
+ "PET_EXP": {
+  "wire": "pet2",
+  "types": {
+   "Integer": 5
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/battle/victory/VictoryPetsTile",
+   "ui/pet/PetPrestigeWindow",
+   "ui/pet/RevampedPetWindow"
+  ],
+  "written_by": [
+   "dalcs/PetDALC"
+  ]
+ },
+ "PET_FATIGUE": {
+  "wire": "pet7",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/pet/PetData"
+  ],
+  "written_by": []
+ },
+ "PET_FATIGUE_MILLISECONDS": {
+  "wire": "pet8",
+  "types": {
+   "Number": 1
+  },
+  "read_by": [
+   "model/pet/PetData"
+  ],
+  "written_by": []
+ },
+ "PET_FUSION": {
+  "wire": "pet28",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/pet/PetFusionWindow"
+  ],
+  "written_by": []
+ },
+ "PET_FUSIONS": {
+  "wire": "pet32",
+  "types": {
+   "IntegerArray": 1
+  },
+  "read_by": [
+   "model/pet/PetCollection"
+  ],
+  "written_by": []
+ },
+ "PET_ID": {
+  "wire": "pet0",
+  "types": {
+   "Integer": 6
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "model/pet/PetDisplayData",
+   "ui/pet/RevampedPetWindow"
+  ],
+  "written_by": [
+   "dalcs/PetDALC"
+  ]
+ },
+ "PET_LEVEL": {
+  "wire": "pet1",
+  "types": {
+   "Integer": 5
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "model/pet/PetDisplayData",
+   "ui/battle/victory/VictoryPetsTile",
+   "ui/pet/PetPrestigeWindow",
+   "ui/pet/RevampedPetWindow"
+  ],
+  "written_by": []
+ },
+ "PET_LEVELS": {
+  "wire": "pet29",
+  "types": {
+   "IntegerArray": 1
+  },
+  "read_by": [
+   "model/pet/PetCollection"
+  ],
+  "written_by": []
+ },
+ "PET_NAME": {
+  "wire": "pet4",
+  "types": {
+   "String": 3
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/pet/PetNameWindow"
+  ],
+  "written_by": [
+   "dalcs/PetDALC"
+  ]
+ },
+ "PET_PRESTIGE": {
+  "wire": "pet13",
+  "types": {
+   "Integer": 4
+  },
+  "read_by": [
+   "model/item/ItemData",
+   "model/pet/PetData",
+   "model/pet/PetDisplayData",
+   "ui/pet/PetPrestigeWindow"
+  ],
+  "written_by": []
+ },
+ "PET_PRESTIGES": {
+  "wire": "pet30",
+  "types": {
+   "IntegerArray": 1
+  },
+  "read_by": [
+   "model/pet/PetCollection"
+  ],
+  "written_by": []
+ },
+ "PET_PROMOTED": {
+  "wire": "pet35",
+  "types": {
+   "EsObject": 1
+  },
+  "read_by": [
+   "ui/pet/RevampedPetWindow"
+  ],
+  "written_by": []
+ },
+ "PET_RANK": {
+  "wire": "pet18",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/pet/PetUpgradeRankPanel"
+  ],
+  "written_by": []
+ },
+ "PET_RANKS": {
+  "wire": "pet31",
+  "types": {
+   "IntegerArray": 1
+  },
+  "read_by": [
+   "model/pet/PetCollection"
+  ],
+  "written_by": []
+ },
+ "PET_RARITY": {
+  "wire": "pet34",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/pet/PetData"
+  ],
+  "written_by": [
+   "dalcs/PetDALC"
+  ]
+ },
+ "PET_RED_ENCHANT": {
+  "wire": "pet15",
+  "types": {
+   "Integer": 5
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/enchant/EnchantSelectWindow",
+   "ui/enchant/EnchantUpgradeWindow",
+   "ui/pet/PetEnchantOptionsWindow"
+  ],
+  "written_by": []
+ },
+ "PET_RED_ENCHANTS": {
+  "wire": "pet25",
+  "types": {
+   "IntegerArray": 5
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/enchant/EnchantSelectWindow",
+   "ui/enchant/EnchantUpgradeWindow",
+   "ui/pet/PetEnchantOptionsWindow"
+  ],
+  "written_by": []
+ },
+ "PET_ROLL_SUCCESS": {
+  "wire": "pet19",
+  "types": {
+   "Boolean": 1
+  },
+  "read_by": [
+   "ui/pet/PetPurchaseWindow"
+  ],
+  "written_by": []
+ },
+ "PET_SKILL_ID": {
+  "wire": "pet12",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/PetDALC"
+  ]
+ },
+ "PET_SKILL_POINTS": {
+  "wire": "pet9",
+  "types": {
+   "Integer": 6
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/battle/victory/VictoryPetsTile",
+   "ui/pet/PetPrestigeWindow",
+   "ui/pet/PetSkillWindow",
+   "ui/pet/PetWindowSkillsPanel",
+   "ui/pet/RevampedPetWindow"
+  ],
+  "written_by": []
+ },
+ "PET_SKILL_RANKS": {
+  "wire": "pet10",
+  "types": {
+   "IntegerArray": 4
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/pet/PetPrestigeWindow",
+   "ui/pet/PetSkillWindow",
+   "ui/pet/PetWindowSkillsPanel"
+  ],
+  "written_by": []
+ },
+ "PET_SKILL_SLOTS": {
+  "wire": "pet11",
+  "types": {
+   "IntegerArray": 5
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/pet/PetPrestigeWindow",
+   "ui/pet/PetSkillWindow",
+   "ui/pet/PetWindowSkillsPanel"
+  ],
+  "written_by": [
+   "dalcs/PetDALC"
+  ]
+ },
+ "PET_SKIN": {
+  "wire": "pet14",
+  "types": {
+   "Integer": 6
+  },
+  "read_by": [
+   "model/item/ItemData",
+   "model/pet/PetData",
+   "model/pet/PetDisplayData",
+   "ui/pet/PetPrestigeWindow",
+   "ui/pet/PetSkinWindow"
+  ],
+  "written_by": [
+   "dalcs/PetDALC"
+  ]
+ },
+ "PET_UID": {
+  "wire": "pet3",
+  "types": {
+   "Integer": 25,
+   "IntegerArray": 4
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/battle/victory/VictoryPetsTile",
+   "ui/consumable/ConsumableSelectWindow",
+   "ui/enchant/EnchantSelectWindow",
+   "ui/enchant/EnchantUpgradeWindow",
+   "ui/pet/PetEnchantOptionsWindow",
+   "ui/pet/PetExchangeWindow",
+   "ui/pet/PetFusionWindow",
+   "ui/pet/PetPrestigeWindow",
+   "ui/pet/PetWindowSkillsPanel",
+   "ui/pet/RevampedPetWindow"
+  ],
+  "written_by": [
+   "dalcs/PetDALC"
+  ]
+ },
+ "PET_YELLOW_ENCHANT": {
+  "wire": "pet16",
+  "types": {
+   "Integer": 5
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/enchant/EnchantSelectWindow",
+   "ui/enchant/EnchantUpgradeWindow",
+   "ui/pet/PetEnchantOptionsWindow"
+  ],
+  "written_by": []
+ },
+ "PET_YELLOW_ENCHANTS": {
+  "wire": "pet26",
+  "types": {
+   "IntegerArray": 5
+  },
+  "read_by": [
+   "model/pet/PetData",
+   "ui/enchant/EnchantSelectWindow",
+   "ui/enchant/EnchantUpgradeWindow",
+   "ui/pet/PetEnchantOptionsWindow"
+  ],
+  "written_by": []
+ },
+ "PLINKO_BALLS": {
+  "wire": "pli9",
+  "types": {
+   "Integer": 1,
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "ui/plinko/Plinko"
+  ],
+  "written_by": [
+   "dalcs/MerchantDALC"
+  ]
+ },
+ "PLINKO_BALL_CONTACTS": {
+  "wire": "pli13",
+  "types": {
+   "BooleanArray": 1
+  },
+  "read_by": [
+   "ui/plinko/PlinkoObject"
+  ],
+  "written_by": []
+ },
+ "PLINKO_BALL_ROTATIONS": {
+  "wire": "pli12",
+  "types": {
+   "IntegerArray": 1
+  },
+  "read_by": [
+   "ui/plinko/PlinkoObject"
+  ],
+  "written_by": []
+ },
+ "PLINKO_BALL_X_POINTS": {
+  "wire": "pli10",
+  "types": {
+   "IntegerArray": 1
+  },
+  "read_by": [
+   "ui/plinko/PlinkoObject"
+  ],
+  "written_by": []
+ },
+ "PLINKO_BALL_Y_POINTS": {
+  "wire": "pli11",
+  "types": {
+   "IntegerArray": 1
+  },
+  "read_by": [
+   "ui/plinko/PlinkoObject"
+  ],
+  "written_by": []
+ },
+ "PLINKO_ID": {
+  "wire": "pli14",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/plinko/PlinkoObject"
+  ],
+  "written_by": []
+ },
+ "PLINKO_OBJECTS": {
+  "wire": "pli1",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "ui/plinko/Plinko"
+  ],
+  "written_by": []
+ },
+ "PLINKO_OBJECT_RADIUS": {
+  "wire": "pli3",
+  "types": {
+   "Float": 1
+  },
+  "read_by": [
+   "ui/plinko/PlinkoObject"
+  ],
+  "written_by": []
+ },
+ "PLINKO_OBJECT_TYPE": {
+  "wire": "pli2",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/plinko/PlinkoObject"
+  ],
+  "written_by": []
+ },
+ "PLINKO_OBJECT_VERTICIES": {
+  "wire": "pli4",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "ui/plinko/PlinkoObject"
+  ],
+  "written_by": []
+ },
+ "PLINKO_OBJECT_X_POS": {
+  "wire": "pli7",
+  "types": {
+   "Float": 1
+  },
+  "read_by": [
+   "ui/plinko/PlinkoObject"
+  ],
+  "written_by": []
+ },
+ "PLINKO_OBJECT_X_VER": {
+  "wire": "pli5",
+  "types": {
+   "Float": 1
+  },
+  "read_by": [
+   "ui/plinko/PlinkoObject"
+  ],
+  "written_by": []
+ },
+ "PLINKO_OBJECT_Y_POS": {
+  "wire": "pli8",
+  "types": {
+   "Float": 1
+  },
+  "read_by": [
+   "ui/plinko/PlinkoObject"
+  ],
+  "written_by": []
+ },
+ "PLINKO_OBJECT_Y_VER": {
+  "wire": "pli6",
+  "types": {
+   "Float": 1
+  },
+  "read_by": [
+   "ui/plinko/PlinkoObject"
+  ],
+  "written_by": []
+ },
+ "PREVIOUS_NAME": {
+  "wire": "nam2",
+  "types": {
+   "String": 1
+  },
+  "read_by": [
+   "model/service/NameRef"
+  ],
+  "written_by": []
+ },
+ "PRIOR_NAMES": {
+  "wire": "nam0",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "ui/menu/MenuProfilePanel"
+  ],
+  "written_by": []
+ },
+ "PROMO_CODE": {
+  "wire": "pr01",
+  "types": {
+   "String": 3
+  },
+  "read_by": [
+   "ui/menu/MenuProfilePanel"
+  ],
+  "written_by": [
+   "dalcs/AdminDALC",
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "PROMO_END_DATE": {
+  "wire": "pr03",
+  "types": {
+   "String": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/AdminDALC"
+  ]
+ },
+ "PROMO_REFRESH_INFO": {
+  "wire": "pr06",
+  "types": {
+   "EsObject": 1
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": []
+ },
+ "PROMO_START_DATE": {
+  "wire": "pr02",
+  "types": {
+   "String": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/AdminDALC"
+  ]
+ },
+ "PROMO_USES": {
+  "wire": "pr05",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/AdminDALC"
+  ]
+ },
+ "PURCHASE_DATA": {
+  "wire": "pur01",
+  "types": {
+   "String": 5
+  },
+  "read_by": [
+   "model/payment/purchase/Purchase"
+  ],
+  "written_by": [
+   "dalcs/CharacterDALC",
+   "dalcs/LimitedOfferDALC"
+  ]
+ },
+ "PURCHASE_ERROR": {
+  "wire": "pur03",
+  "types": {
+   "String": 1,
+   "Integer": 3
+  },
+  "read_by": [
+   "model/payment/purchase/Purchase"
+  ],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "PURCHASE_PRICE": {
+  "wire": "pur04",
+  "types": {
+   "String": 1
+  },
+  "read_by": [
+   "model/payment/purchase/Purchase"
+  ],
+  "written_by": []
+ },
+ "PURCHASE_SIGNATURE": {
+  "wire": "pur02",
+  "types": {
+   "String": 4
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/CharacterDALC",
+   "dalcs/LimitedOfferDALC"
+  ]
+ },
+ "PURCHASE_TRANSACTION_ID": {
+  "wire": "pur05",
+  "types": {
+   "String": 3
+  },
+  "read_by": [
+   "model/payment/purchase/Purchase"
+  ],
+  "written_by": []
+ },
+ "PVE_EVENT_ID": {
+  "wire": "pve0",
+  "types": {
+   "Integer": 8
+  },
+  "read_by": [
+   "ui/battle/BattleScreen",
+   "ui/event/EventTile",
+   "ui/pve/PvEEventPage"
+  ],
+  "written_by": [
+   "dalcs/LeaderboardDALC",
+   "dalcs/PvEDALC"
+  ]
+ },
+ "PVE_PLAYER_HIGHEST": {
+  "wire": "pve3",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/pve/PvEEventPage"
+  ],
+  "written_by": []
+ },
+ "PVE_PLAYER_POINTS": {
+  "wire": "pve2",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "ui/pve/PvEEventPage",
+   "ui/pve/PvELeaderboardPanel"
+  ],
+  "written_by": []
+ },
+ "PVE_PLAYER_RANK": {
+  "wire": "pve1",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "ui/pve/PvEEventPage",
+   "ui/pve/PvELeaderboardPanel"
+  ],
+  "written_by": []
+ },
+ "PVP_ENEMY_LOSE_POINTS": {
+  "wire": "pvp11",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/pvp/PvPPlayerData"
+  ],
+  "written_by": []
+ },
+ "PVP_ENEMY_WIN_POINTS": {
+  "wire": "pvp10",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/pvp/PvPPlayerData"
+  ],
+  "written_by": []
+ },
+ "PVP_EVENT_HISTORY": {
+  "wire": "pvp19",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "ui/pvp/PvPEventHistoryWindow"
+  ],
+  "written_by": []
+ },
+ "PVP_EVENT_HISTORY_DATE": {
+  "wire": "pvp13",
+  "types": {
+   "String": 1
+  },
+  "read_by": [
+   "model/pvp/PvPEventHistoryData"
+  ],
+  "written_by": []
+ },
+ "PVP_EVENT_HISTORY_ENEMY_CHARID": {
+  "wire": "pvp16",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/pvp/PvPEventHistoryData"
+  ],
+  "written_by": []
+ },
+ "PVP_EVENT_HISTORY_ENEMY_NAME": {
+  "wire": "pvp15",
+  "types": {
+   "String": 1
+  },
+  "read_by": [
+   "model/pvp/PvPEventHistoryData"
+  ],
+  "written_by": []
+ },
+ "PVP_EVENT_HISTORY_ENEMY_POINT_CHANGE": {
+  "wire": "pvp17",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/pvp/PvPEventHistoryData"
+  ],
+  "written_by": []
+ },
+ "PVP_EVENT_HISTORY_PLAYER_POINT_CHANGE": {
+  "wire": "pvp14",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/pvp/PvPEventHistoryData"
+  ],
+  "written_by": []
+ },
+ "PVP_EVENT_HISTORY_WINNER": {
+  "wire": "pvp18",
+  "types": {
+   "Boolean": 1
+  },
+  "read_by": [
+   "model/pvp/PvPEventHistoryData"
+  ],
+  "written_by": []
+ },
+ "PVP_EVENT_ID": {
+  "wire": "pvp12",
+  "types": {
+   "Integer": 9
+  },
+  "read_by": [
+   "ui/battle/BattleScreen",
+   "ui/event/EventTile",
+   "ui/pvp/PvPPage"
+  ],
+  "written_by": [
+   "dalcs/LeaderboardDALC",
+   "dalcs/PvPDALC"
+  ]
+ },
+ "PVP_PLAYER_ID": {
+  "wire": "pvp0",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/event/EventPlayerData",
+   "model/pvp/PvPPlayerData"
+  ],
+  "written_by": []
+ },
+ "PVP_PLAYER_LEVEL": {
+  "wire": "pvp2",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/pvp/PvPPlayerData"
+  ],
+  "written_by": []
+ },
+ "PVP_PLAYER_LOSE_POINTS": {
+  "wire": "pvp9",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/pvp/PvPPlayerData"
+  ],
+  "written_by": []
+ },
+ "PVP_PLAYER_LOSSES": {
+  "wire": "pvp7",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/pvp/PvPPlayerInfo",
+   "ui/pvp/PvPPage"
+  ],
+  "written_by": []
+ },
+ "PVP_PLAYER_NAME": {
+  "wire": "pvp1",
+  "types": {
+   "String": 2
+  },
+  "read_by": [
+   "model/event/EventPlayerData",
+   "model/pvp/PvPPlayerData"
+  ],
+  "written_by": []
+ },
+ "PVP_PLAYER_PLAYERID": {
+  "wire": "pvp20",
+  "types": {
+   "String": 2
+  },
+  "read_by": [
+   "model/event/EventPlayerData",
+   "model/pvp/PvPPlayerData"
+  ],
+  "written_by": []
+ },
+ "PVP_PLAYER_POINTS": {
+  "wire": "pvp4",
+  "types": {
+   "Integer": 3
+  },
+  "read_by": [
+   "model/pvp/PvPPlayerInfo",
+   "ui/pvp/PvPLeaderboardPanel",
+   "ui/pvp/PvPPage"
+  ],
+  "written_by": []
+ },
+ "PVP_PLAYER_RANK": {
+  "wire": "pvp3",
+  "types": {
+   "Integer": 4
+  },
+  "read_by": [
+   "model/pvp/PvPPlayerData",
+   "model/pvp/PvPPlayerInfo",
+   "ui/pvp/PvPLeaderboardPanel",
+   "ui/pvp/PvPPage"
+  ],
+  "written_by": []
+ },
+ "PVP_PLAYER_STREAK": {
+  "wire": "pvp5",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/pvp/PvPPlayerInfo",
+   "ui/pvp/PvPPage"
+  ],
+  "written_by": []
+ },
+ "PVP_PLAYER_WINS": {
+  "wire": "pvp6",
+  "types": {
+   "Integer": 2
+  },
+  "read_by": [
+   "model/pvp/PvPPlayerInfo",
+   "ui/pvp/PvPPage"
+  ],
+  "written_by": []
+ },
+ "PVP_PLAYER_WIN_POINTS": {
+  "wire": "pvp8",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/pvp/PvPPlayerData"
+  ],
+  "written_by": []
+ },
+ "REFER_CODE": {
+  "wire": "ref0",
+  "types": {
+   "String": 2
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/FriendDALC",
+   "dalcs/GuildDALC"
+  ]
+ },
+ "REFER_COUNT": {
+  "wire": "ref1",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/referral/ReferManager"
+  ],
+  "written_by": []
+ },
+ "REFER_IS_REFERRED": {
+  "wire": "ref2",
+  "types": {
+   "Boolean": 1
+  },
+  "read_by": [
+   "model/referral/ReferManager"
+  ],
+  "written_by": []
+ },
+ "REFER_LOOTED_OBJ": {
+  "wire": "ref3",
+  "types": {
+   "IntegerArray": 1
+  },
+  "read_by": [
+   "model/referral/ReferManager"
+  ],
+  "written_by": []
+ },
+ "REFER_REWARD_ID": {
+  "wire": "ref4",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/FriendDALC"
+  ]
+ },
+ "ROOM_ID": {
+  "wire": "roo1",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/battle/BattleScreen"
+  ],
+  "written_by": []
+ },
+ "ROOM_ZONE_ID": {
+  "wire": "roo3",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/battle/BattleScreen"
+  ],
+  "written_by": []
+ },
+ "SERVER_EXCEPTION": {
+  "wire": "serv3",
+  "types": {
+   "String": 1
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": []
+ },
+ "SERVER_ID": {
+  "wire": "serv1",
+  "types": {
+   "String": 1
+  },
+  "read_by": [
+   "Project"
+  ],
+  "written_by": []
+ },
+ "SERVER_TIME": {
+  "wire": "serv0",
+  "types": {
+   "String": 1
+  },
+  "read_by": [
+   "Project"
+  ],
+  "written_by": []
+ },
+ "SERVER_VERSION": {
+  "wire": "serv4",
+  "types": {
+   "String": 1
+  },
+  "read_by": [
+   "Project"
+  ],
+  "written_by": []
+ },
+ "SERVER_WARNINGS": {
+  "wire": "serv2",
+  "types": {
+   "StringArray": 1
+  },
+  "read_by": [
+   "model/character/Character"
+  ],
+  "written_by": []
+ },
+ "SERVICE_DATA": {
+  "wire": "ser0",
+  "types": {
+   "String": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/MerchantDALC"
+  ]
+ },
+ "TEAM_ID": {
+  "wire": "tea0",
+  "types": {
+   "Integer": 8
+  },
+  "read_by": [
+   "model/character/Character",
+   "model/pet/PetTeam",
+   "ui/team/TeamPage"
+  ],
+  "written_by": [
+   "dalcs/CharacterDALC",
+   "dalcs/PetDALC"
+  ]
+ },
+ "TEAM_NAME": {
+  "wire": "tea1",
+  "types": {
+   "String": 2
+  },
+  "read_by": [
+   "model/pet/PetTeam"
+  ],
+  "written_by": [
+   "dalcs/PetDALC"
+  ]
+ },
+ "TEAM_PET_UIDS": {
+  "wire": "tea2",
+  "types": {
+   "IntegerArray": 3
+  },
+  "read_by": [
+   "model/character/Character",
+   "model/pet/PetTeam"
+  ],
+  "written_by": [
+   "dalcs/PetDALC"
+  ]
+ },
+ "USER_DATA": {
+  "wire": "use5",
+  "types": {
+   "EsObject": 1
+  },
+  "read_by": [
+   "Project"
+  ],
+  "written_by": []
+ },
+ "USER_ID": {
+  "wire": "use3",
+  "types": {
+   "String": 5
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "USER_PLATFORM": {
+  "wire": "use2",
+  "types": {
+   "Integer": 7
+  },
+  "read_by": [
+   "model/character/CharData"
+  ],
+  "written_by": [
+   "dalcs/CharacterDALC",
+   "plugins/ServerPlugin"
+  ]
+ },
+ "USER_TOKEN": {
+  "wire": "use4",
+  "types": {
+   "String": 5
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "VIDEO_OFFER_ENDTIME": {
+  "wire": "vo02",
+  "types": {
+   "Double": 1
+  },
+  "read_by": [
+   "model/video/VideoOfferData"
+  ],
+  "written_by": []
+ },
+ "VIDEO_OFFER_ID": {
+  "wire": "vo01",
+  "types": {
+   "Short": 2
+  },
+  "read_by": [
+   "model/video/VideoOfferData"
+  ],
+  "written_by": [
+   "dalcs/CharacterDALC"
+  ]
+ },
+ "WHEEL_SPIN_RESULT": {
+  "wire": "ws1",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/wheel/PrizeWheelScreen"
+  ],
+  "written_by": []
+ },
+ "XMLS": {
+  "wire": "xml0",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [
+   "model/xml/XMLBook"
+  ],
+  "written_by": []
+ },
+ "XML_BATCH": {
+  "wire": "xml3",
+  "types": {
+   "EsObjectArray": 1
+  },
+  "read_by": [],
+  "written_by": [
+   "dalcs/AdminDALC"
+  ]
+ },
+ "XML_DATA": {
+  "wire": "xml2",
+  "types": {
+   "ByteArray": 2
+  },
+  "read_by": [
+   "model/xml/XMLBook"
+  ],
+  "written_by": [
+   "dalcs/AdminDALC"
+  ]
+ },
+ "XML_MODIFIED_DATE": {
+  "wire": "xml4",
+  "types": {
+   "String": 2
+  },
+  "read_by": [
+   "model/xml/XMLBook"
+  ],
+  "written_by": [
+   "dalcs/AdminDALC"
+  ]
+ },
+ "XML_NAME": {
+  "wire": "xml1",
+  "types": {
+   "String": 2
+  },
+  "read_by": [
+   "model/xml/XMLBook"
+  ],
+  "written_by": [
+   "dalcs/AdminDALC"
+  ]
+ },
+ "ZONE_COMPLETES": {
+  "wire": "zon1",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "model/zone/ZoneData"
+  ],
+  "written_by": []
+ },
+ "ZONE_DIFFICULTY": {
+  "wire": "zon4",
+  "types": {
+   "Integer": 5
+  },
+  "read_by": [
+   "model/zone/ZoneData",
+   "ui/battle/BattleScreen"
+  ],
+  "written_by": [
+   "dalcs/CharacterDALC",
+   "dalcs/GameDALC"
+  ]
+ },
+ "ZONE_ID": {
+  "wire": "zon0",
+  "types": {
+   "Integer": 5
+  },
+  "read_by": [
+   "model/zone/ZoneData",
+   "ui/battle/BattleScreen"
+  ],
+  "written_by": [
+   "dalcs/CharacterDALC",
+   "dalcs/GameDALC"
+  ]
+ },
+ "ZONE_NODE_BATTLE_INDEX": {
+  "wire": "zon5",
+  "types": {
+   "Integer": 1
+  },
+  "read_by": [
+   "ui/battle/BattleScreen"
+  ],
+  "written_by": []
+ },
+ "ZONE_NODE_COMPLETES": {
+  "wire": "zon3",
+  "types": {
+   "IntegerArray": 1
+  },
+  "read_by": [
+   "model/zone/ZoneData"
+  ],
+  "written_by": []
+ },
+ "ZONE_NODE_ID": {
+  "wire": "zon2",
+  "types": {
+   "Integer": 3
+  },
+  "read_by": [
+   "ui/battle/BattleScreen"
+  ],
+  "written_by": [
+   "dalcs/GameDALC"
+  ]
+ }
+}

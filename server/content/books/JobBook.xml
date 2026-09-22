@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<jobs>
+		<job id="1" name="Warm-Up" desc="Win 3 zone battles." thumbnail="DefeatNodes.png" icon="DefeatNodes.png" objective="defeat" count="3" target="node" loadLocal="false">
+			<rewards>
+				<item id="1" type="currency" qty="300" />
+			</rewards>
+		</job>
+		<job id="2" name="Battle Ready" desc="Fight 5 battles." thumbnail="WinCvEBattles.png" icon="WinCvEBattles.png" objective="fight" count="5" target="none" loadLocal="false">
+			<rewards>
+				<item id="1" type="currency" qty="500" />
+			</rewards>
+		</job>
+		<job id="3" name="Curio Trainer" desc="Level up a curio." thumbnail="MaxLevel.png" icon="MaxLevel.png" objective="level" count="1" target="pet" loadLocal="false">
+			<rewards>
+				<item id="6" type="currency" qty="5" />
+			</rewards>
+		</job>
+		<job id="4" name="Lucky Drop" desc="Play Plinko once." thumbnail="PlayPlinko.png" icon="PlayPlinko.png" objective="plinko" count="1" target="self" loadLocal="false">
+			<rewards>
+				<item id="8" type="currency" qty="3" />
+			</rewards>
+		</job>
+		<job id="5" name="Collector" desc="Get a new curio." thumbnail="UniqueCurios.png" icon="UniqueCurios.png" objective="obtain" count="1" target="pet" loadLocal="false">
+			<rewards>
+				<item id="2" type="currency" qty="5" />
+			</rewards>
+		</job>
+		<job id="6" name="Power Up" desc="Rank up or evolve a curio." thumbnail="RankUpCurios.png" icon="RankUpCurios.png" objective="upgrade" count="1" target="pet" loadLocal="false">
+			<rewards>
+				<item id="1" type="currency" qty="1000" />
+			</rewards>
+		</job>
+		<job id="7" name="Arena Challenger" desc="Fight 3 PvP battles." thumbnail="WinPvPBattles.png" icon="WinPvPBattles.png" objective="fight" count="3" target="pvp" loadLocal="false">
+			<rewards>
+				<item id="9" type="currency" qty="3" />
+			</rewards>
+		</job>
+		<job id="8" name="Fire Fighter" desc="Defeat 5 fire curios." thumbnail="DealFireDamage.png" icon="DealFireDamage.png" objective="defeat" count="5" target="pet" petType="fire" loadLocal="false">
+			<rewards>
+				<item id="1" type="currency" qty="800" />
+			</rewards>
+		</job>
+		<job id="9" name="Wave Breaker" desc="Defeat 5 water curios." thumbnail="DealWaterDamage.png" icon="DealWaterDamage.png" objective="defeat" count="5" target="pet" petType="water" loadLocal="false">
+			<rewards>
+				<item id="1" type="currency" qty="800" />
+			</rewards>
+		</job>
+		<job id="10" name="Light Bringer" desc="Defeat 5 dark curios." thumbnail="DealDarkDamage.png" icon="DealDarkDamage.png" objective="defeat" count="5" target="pet" petType="dark" loadLocal="false">
+			<rewards>
+				<item id="1" type="currency" qty="800" />
+			</rewards>
+		</job>
+	</jobs>
+</data>

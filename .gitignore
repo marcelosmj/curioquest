@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+*.err
+
+# Saves temporários de teste (manter estrutura)
+# server/saves/
+
+# Binários pesados e APKs
+*.apk
+*.idsig
+*.keystore
+
+# Build screenshots temporários
+build/*.png
+build/*.log
+build/*.err
+
+# IDE e OS
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

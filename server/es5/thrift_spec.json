@@ -1,0 +1,3838 @@
+{
+ "structs": {
+  "ThriftAddBuddiesRequest": [
+   {
+    "id": 1,
+    "name": "buddyNames",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "val",
+      "STRING"
+     ]
+    ]
+   },
+   {
+    "id": 2,
+    "name": "esObject",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "skipInitialLoggedOutEvents",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   }
+  ],
+  "ThriftAddBuddiesResponse": [
+   {
+    "id": 1,
+    "name": "buddiesAdded",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "val",
+      "STRING"
+     ]
+    ]
+   },
+   {
+    "id": 2,
+    "name": "buddiesNotAdded",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "val",
+      "STRING"
+     ]
+    ]
+   }
+  ],
+  "ThriftAddRoomOperatorRequest": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "userName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   }
+  ],
+  "ThriftAggregatePluginMessageEvent": [
+   {
+    "id": 1,
+    "name": "pluginName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "esObjects",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "struct",
+      "ThriftFlattenedEsObjectRO"
+     ]
+    ]
+   },
+   {
+    "id": 3,
+    "name": "originZoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "originRoomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   }
+  ],
+  "ThriftAggregatePluginRequest": [
+   {
+    "id": 1,
+    "name": "pluginRequestArray",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "struct",
+      "ThriftRequestDetails"
+     ]
+    ]
+   }
+  ],
+  "ThriftBuddyStatusUpdateEvent": [
+   {
+    "id": 1,
+    "name": "userName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "action",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ],
+    "enum": "ThriftBuddyStatusUpdateAction"
+   },
+   {
+    "id": 3,
+    "name": "esObject",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   }
+  ],
+  "ThriftConnectionAttemptResponse": [
+   {
+    "id": 1,
+    "name": "successful",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "connectionId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "error",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ],
+    "enum": "ThriftErrorType"
+   }
+  ],
+  "ThriftConnectionClosedEvent": [
+   {
+    "id": 1,
+    "name": "connectionId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   }
+  ],
+  "ThriftConnectionResponse": [
+   {
+    "id": 1,
+    "name": "successful",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "hashId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "error",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ],
+    "enum": "ThriftErrorType"
+   },
+   {
+    "id": 4,
+    "name": "protocolConfiguration",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftProtocolConfiguration"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "serverVersion",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   }
+  ],
+  "ThriftCreateOrJoinGameResponse": [
+   {
+    "id": 1,
+    "name": "successful",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "error",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ],
+    "enum": "ThriftErrorType"
+   },
+   {
+    "id": 3,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "gameId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "gameDetails",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObjectRO"
+    ]
+   }
+  ],
+  "ThriftCreateRoomRequest": [
+   {
+    "id": 1,
+    "name": "zoneName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "roomName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "capacity",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "password",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "roomDescription",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 7,
+    "name": "persistent",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 8,
+    "name": "hidden",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 9,
+    "name": "receivingRoomListUpdates",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 10,
+    "name": "receivingRoomAttributeUpdates",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 11,
+    "name": "receivingUserListUpdates",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 12,
+    "name": "receivingUserVariableUpdates",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 13,
+    "name": "receivingRoomVariableUpdates",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 14,
+    "name": "receivingVideoEvents",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 15,
+    "name": "nonOperatorUpdateAllowed",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 16,
+    "name": "nonOperatorVariableUpdateAllowed",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 17,
+    "name": "createOrJoinRoom",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 18,
+    "name": "plugins",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "struct",
+      "ThriftPluginListEntry"
+     ]
+    ]
+   },
+   {
+    "id": 19,
+    "name": "variables",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "struct",
+      "ThriftRoomVariable"
+     ]
+    ]
+   },
+   {
+    "id": 20,
+    "name": "usingLanguageFilter",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 21,
+    "name": "languageFilterSpecified",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 22,
+    "name": "languageFilterName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 23,
+    "name": "languageFilterDeliverMessageOnFailure",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 24,
+    "name": "languageFilterFailuresBeforeKick",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 25,
+    "name": "languageFilterKicksBeforeBan",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 26,
+    "name": "languageFilterBanDuration",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 27,
+    "name": "languageFilterResetAfterKick",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 28,
+    "name": "usingFloodingFilter",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 29,
+    "name": "floodingFilterSpecified",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 30,
+    "name": "floodingFilterName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 31,
+    "name": "floodingFilterFailuresBeforeKick",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 32,
+    "name": "floodingFilterKicksBeforeBan",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 33,
+    "name": "floodingFilterBanDuration",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 34,
+    "name": "floodingFilterResetAfterKick",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   }
+  ],
+  "ThriftCreateRoomVariableRequest": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "name",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "value",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "locked",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "persistent",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   }
+  ],
+  "ThriftCrossDomainPolicyRequest": [],
+  "ThriftCrossDomainPolicyResponse": [
+   {
+    "id": 1,
+    "name": "customFileEnabled",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "customFileContents",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "port",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   }
+  ],
+  "ThriftDeleteRoomVariableRequest": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "name",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   }
+  ],
+  "ThriftDeleteUserVariableRequest": [
+   {
+    "id": 1,
+    "name": "name",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   }
+  ],
+  "ThriftDHInitiateKeyExchangeRequest": [],
+  "ThriftDHPublicNumbersResponse": [
+   {
+    "id": 1,
+    "name": "baseNumber",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "primeNumber",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   }
+  ],
+  "ThriftDHSharedModulusRequest": [
+   {
+    "id": 1,
+    "name": "number",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   }
+  ],
+  "ThriftDHSharedModulusResponse": [
+   {
+    "id": 1,
+    "name": "number",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   }
+  ],
+  "ThriftEncryptionStateChangeEvent": [
+   {
+    "id": 1,
+    "name": "encryptionOn",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   }
+  ],
+  "ThriftEvictUserFromRoomRequest": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "userName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "reason",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "ban",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "duration",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   }
+  ],
+  "ThriftFindGamesRequest": [
+   {
+    "id": 1,
+    "name": "searchCriteria",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftSearchCriteria"
+    ]
+   }
+  ],
+  "ThriftFindGamesResponse": [
+   {
+    "id": 1,
+    "name": "games",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "struct",
+      "ThriftServerGame"
+     ]
+    ]
+   }
+  ],
+  "ThriftFindZoneAndRoomByNameRequest": [
+   {
+    "id": 1,
+    "name": "zoneName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   }
+  ],
+  "ThriftFindZoneAndRoomByNameResponse": [
+   {
+    "id": 1,
+    "name": "roomAndZoneList",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "list",
+      [
+       "val",
+       "I32"
+      ]
+     ]
+    ]
+   }
+  ],
+  "ThriftFlattenedEsObject": [
+   {
+    "id": 1,
+    "name": "encodedEntries",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "val",
+      "BYTE"
+     ]
+    ]
+   }
+  ],
+  "ThriftFlattenedEsObjectRO": [
+   {
+    "id": 1,
+    "name": "encodedEntries",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "val",
+      "BYTE"
+     ]
+    ]
+   }
+  ],
+  "ThriftGatewayKickUserRequest": [
+   {
+    "id": 1,
+    "name": "clientId",
+    "type": "I64",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I64"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "error",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ],
+    "enum": "ThriftErrorType"
+   },
+   {
+    "id": 3,
+    "name": "esObject",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObjectRO"
+    ]
+   }
+  ],
+  "ThriftGenericErrorResponse": [
+   {
+    "id": 1,
+    "name": "requestMessageType",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ],
+    "enum": "ThriftMessageType"
+   },
+   {
+    "id": 2,
+    "name": "errorType",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ],
+    "enum": "ThriftErrorType"
+   },
+   {
+    "id": 3,
+    "name": "extraData",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   }
+  ],
+  "ThriftGetRoomsInZoneRequest": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "zoneName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   }
+  ],
+  "ThriftGetRoomsInZoneResponse": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "zoneName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "entries",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "struct",
+      "ThriftRoomListEntry"
+     ]
+    ]
+   }
+  ],
+  "ThriftGetServerLocalTimeRequest": [],
+  "ThriftGetServerLocalTimeResponse": [
+   {
+    "id": 1,
+    "name": "serverLocalTimeInMilliseconds",
+    "type": "I64",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I64"
+    ]
+   }
+  ],
+  "ThriftGetUserCountRequest": [],
+  "ThriftGetUserCountResponse": [
+   {
+    "id": 1,
+    "name": "count",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   }
+  ],
+  "ThriftGetUsersInRoomRequest": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   }
+  ],
+  "ThriftGetUsersInRoomResponse": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "users",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "struct",
+      "ThriftUserListEntry"
+     ]
+    ]
+   }
+  ],
+  "ThriftGetUserVariablesRequest": [
+   {
+    "id": 1,
+    "name": "userName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "userVariableNames",
+    "type": "SET",
+    "required": "OPTIONAL",
+    "meta": [
+     "set",
+     [
+      "val",
+      "STRING"
+     ]
+    ]
+   }
+  ],
+  "ThriftGetUserVariablesResponse": [
+   {
+    "id": 1,
+    "name": "userName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "userVariables",
+    "type": "MAP",
+    "required": "OPTIONAL",
+    "meta": [
+     "map",
+     [
+      "val",
+      "STRING"
+     ],
+     [
+      "struct",
+      "ThriftFlattenedEsObject"
+     ]
+    ]
+   }
+  ],
+  "ThriftGetZonesRequest": [],
+  "ThriftGetZonesResponse": [
+   {
+    "id": 1,
+    "name": "zones",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "struct",
+      "ThriftZoneListEntry"
+     ]
+    ]
+   }
+  ],
+  "ThriftIdleTimeoutWarningEvent": [],
+  "ThriftJoinGameRequest": [
+   {
+    "id": 1,
+    "name": "gameId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "password",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   }
+  ],
+  "ThriftJoinRoomEvent": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "roomName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "roomDescription",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "hasPassword",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "hidden",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 7,
+    "name": "capacity",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 8,
+    "name": "users",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "struct",
+      "ThriftUserListEntry"
+     ]
+    ]
+   },
+   {
+    "id": 9,
+    "name": "roomVariables",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "struct",
+      "ThriftRoomVariable"
+     ]
+    ]
+   }
+  ],
+  "ThriftJoinRoomRequest": [
+   {
+    "id": 1,
+    "name": "zoneName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "password",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "receivingRoomListUpdates",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 7,
+    "name": "receivingRoomAttributeUpdates",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 8,
+    "name": "receivingUserListUpdates",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 9,
+    "name": "receivingUserVariableUpdates",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 10,
+    "name": "receivingRoomVariableUpdates",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 11,
+    "name": "receivingVideoEvents",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   }
+  ],
+  "ThriftJoinZoneEvent": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "zoneName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "rooms",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "struct",
+      "ThriftRoomListEntry"
+     ]
+    ]
+   }
+  ],
+  "ThriftLeaveRoomEvent": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   }
+  ],
+  "ThriftLeaveRoomRequest": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   }
+  ],
+  "ThriftLeaveZoneEvent": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   }
+  ],
+  "ThriftLoginRequest": [
+   {
+    "id": 1,
+    "name": "userName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "password",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "sharedSecret",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "esObject",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObjectRO"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "userVariables",
+    "type": "MAP",
+    "required": "OPTIONAL",
+    "meta": [
+     "map",
+     [
+      "val",
+      "STRING"
+     ],
+     [
+      "struct",
+      "ThriftFlattenedEsObject"
+     ]
+    ]
+   },
+   {
+    "id": 6,
+    "name": "protocol",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ],
+    "enum": "ThriftProtocol"
+   },
+   {
+    "id": 7,
+    "name": "hashId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 8,
+    "name": "clientVersion",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 9,
+    "name": "clientType",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 10,
+    "name": "remoteAddress",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "val",
+      "BYTE"
+     ]
+    ]
+   }
+  ],
+  "ThriftLoginResponse": [
+   {
+    "id": 1,
+    "name": "successful",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "error",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ],
+    "enum": "ThriftErrorType"
+   },
+   {
+    "id": 3,
+    "name": "esObject",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObjectRO"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "userName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "userVariables",
+    "type": "MAP",
+    "required": "OPTIONAL",
+    "meta": [
+     "map",
+     [
+      "val",
+      "STRING"
+     ],
+     [
+      "struct",
+      "ThriftFlattenedEsObjectRO"
+     ]
+    ]
+   },
+   {
+    "id": 7,
+    "name": "buddyListEntries",
+    "type": "MAP",
+    "required": "OPTIONAL",
+    "meta": [
+     "map",
+     [
+      "val",
+      "STRING"
+     ],
+     [
+      "struct",
+      "ThriftFlattenedEsObjectRO"
+     ]
+    ]
+   }
+  ],
+  "ThriftLogOutRequest": [
+   {
+    "id": 1,
+    "name": "dropConnection",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "dropAllConnections",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   }
+  ],
+  "ThriftPingRequest": [
+   {
+    "id": 1,
+    "name": "globalResponseRequested",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "sessionKey",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "pingRequestId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   }
+  ],
+  "ThriftPingResponse": [
+   {
+    "id": 1,
+    "name": "globalResponseRequested",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "pingRequestId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   }
+  ],
+  "ThriftPluginListEntry": [
+   {
+    "id": 1,
+    "name": "extensionName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "pluginName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "pluginHandle",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "pluginId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "parameters",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   }
+  ],
+  "ThriftPluginMessageEvent": [
+   {
+    "id": 1,
+    "name": "pluginName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "sentToRoom",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "destinationZoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "destinationRoomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "roomLevelPlugin",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "originZoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 7,
+    "name": "originRoomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 8,
+    "name": "parameters",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   }
+  ],
+  "ThriftPluginRequest": [
+   {
+    "id": 1,
+    "name": "pluginName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "sessionKey",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "parameters",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   }
+  ],
+  "ThriftPrivateMessageEvent": [
+   {
+    "id": 1,
+    "name": "userName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "message",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "esObject",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   }
+  ],
+  "ThriftPrivateMessageRequest": [
+   {
+    "id": 1,
+    "name": "message",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "userNames",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "val",
+      "STRING"
+     ]
+    ]
+   },
+   {
+    "id": 3,
+    "name": "esObject",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   }
+  ],
+  "ThriftProtocolConfiguration": [
+   {
+    "id": 1,
+    "name": "messageCompressionThreshold",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   }
+  ],
+  "ThriftPublicMessageEvent": [
+   {
+    "id": 1,
+    "name": "message",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "userName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "esObject",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   }
+  ],
+  "ThriftPublicMessageRequest": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "message",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "esObject",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   }
+  ],
+  "ThriftQuickJoinGameRequest": [
+   {
+    "id": 1,
+    "name": "gameType",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "zoneName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "password",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "locked",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "hidden",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "createOnly",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 7,
+    "name": "gameDetails",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   },
+   {
+    "id": 8,
+    "name": "criteria",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftSearchCriteria"
+    ]
+   }
+  ],
+  "ThriftRegisterUDPConnectionRequest": [
+   {
+    "id": 1,
+    "name": "port",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   }
+  ],
+  "ThriftRegisterUDPConnectionResponse": [
+   {
+    "id": 1,
+    "name": "successful",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "sessionKey",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "error",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ],
+    "enum": "ThriftErrorType"
+   }
+  ],
+  "ThriftRegistryConnectToPreferredGatewayRequest": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "host",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "port",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "protocolToUse",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ],
+    "enum": "ThriftProtocol"
+   }
+  ],
+  "ThriftRemoveBuddiesRequest": [
+   {
+    "id": 1,
+    "name": "buddyNames",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "val",
+      "STRING"
+     ]
+    ]
+   }
+  ],
+  "ThriftRemoveBuddiesResponse": [
+   {
+    "id": 1,
+    "name": "buddiesRemoved",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "val",
+      "STRING"
+     ]
+    ]
+   },
+   {
+    "id": 2,
+    "name": "buddiesNotRemoved",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "val",
+      "STRING"
+     ]
+    ]
+   }
+  ],
+  "ThriftRemoveRoomOperatorRequest": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "userName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   }
+  ],
+  "ThriftRemoveUDPConnectionRequest": [
+   {
+    "id": 1,
+    "name": "port",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   }
+  ],
+  "ThriftRemoveUDPConnectionResponse": [
+   {
+    "id": 1,
+    "name": "successful",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "error",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ],
+    "enum": "ThriftErrorType"
+   }
+  ],
+  "ThriftRequestDetails": [
+   {
+    "id": 1,
+    "name": "pluginName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "parameters",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   }
+  ],
+  "ThriftRoomListEntry": [
+   {
+    "id": 1,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "roomName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "userCount",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "roomDescription",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "capacity",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 7,
+    "name": "hasPassword",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   }
+  ],
+  "ThriftRoomVariable": [
+   {
+    "id": 1,
+    "name": "persistent",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "name",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "value",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "locked",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   }
+  ],
+  "ThriftRoomVariableUpdateEvent": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "name",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "valueChanged",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "value",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "persistent",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 7,
+    "name": "lockStatusChanged",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 8,
+    "name": "locked",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 9,
+    "name": "action",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ],
+    "enum": "ThriftRoomVariableUpdateAction"
+   }
+  ],
+  "ThriftSearchCriteria": [
+   {
+    "id": 1,
+    "name": "gameId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "locked",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "lockedSet",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "gameType",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "gameDetails",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   }
+  ],
+  "ThriftServerGame": [
+   {
+    "id": 1,
+    "name": "gameDetails",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "id",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "locked",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "passwordProtected",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   }
+  ],
+  "ThriftServerKickUserEvent": [
+   {
+    "id": 1,
+    "name": "error",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ],
+    "enum": "ThriftErrorType"
+   },
+   {
+    "id": 2,
+    "name": "esObject",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObjectRO"
+    ]
+   }
+  ],
+  "ThriftSessionIdleEvent": [],
+  "ThriftUpdateRoomDetailsEvent": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "capacityUpdated",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "capacity",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "roomDescriptionUpdated",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "roomDescription",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 7,
+    "name": "roomNameUpdated",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 8,
+    "name": "roomName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 9,
+    "name": "hasPassword",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 10,
+    "name": "hasPasswordUpdated",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 11,
+    "name": "hiddenUpdated",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 12,
+    "name": "hidden",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   }
+  ],
+  "ThriftUpdateRoomDetailsRequest": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "capacityUpdate",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "capacity",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "roomDescriptionUpdate",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "roomDescription",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 7,
+    "name": "roomNameUpdate",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 8,
+    "name": "roomName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 9,
+    "name": "passwordUpdate",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 10,
+    "name": "password",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 11,
+    "name": "hiddenUpdate",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 12,
+    "name": "hidden",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   }
+  ],
+  "ThriftUpdateRoomVariableRequest": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "name",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "valueChanged",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "value",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "lockStatusChanged",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 7,
+    "name": "locked",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   }
+  ],
+  "ThriftUpdateUserVariableRequest": [
+   {
+    "id": 1,
+    "name": "name",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "value",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   }
+  ],
+  "ThriftUserEvictedFromRoomEvent": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "userName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "reason",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "ban",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "duration",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   }
+  ],
+  "ThriftUserListEntry": [
+   {
+    "id": 1,
+    "name": "userName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "userVariables",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "struct",
+      "ThriftUserVariable"
+     ]
+    ]
+   },
+   {
+    "id": 3,
+    "name": "sendingVideo",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "videoStreamName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "roomOperator",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   }
+  ],
+  "ThriftUserUpdateEvent": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "action",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ],
+    "enum": "ThriftUserUpdateAction"
+   },
+   {
+    "id": 4,
+    "name": "userName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "userVariables",
+    "type": "LIST",
+    "required": "OPTIONAL",
+    "meta": [
+     "list",
+     [
+      "struct",
+      "ThriftUserVariable"
+     ]
+    ]
+   },
+   {
+    "id": 6,
+    "name": "sendingVideo",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 7,
+    "name": "videoStreamName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   }
+  ],
+  "ThriftUserVariable": [
+   {
+    "id": 1,
+    "name": "name",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "value",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftFlattenedEsObject"
+    ]
+   }
+  ],
+  "ThriftUserVariableUpdateEvent": [
+   {
+    "id": 1,
+    "name": "userName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "variable",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftUserVariable"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "action",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ],
+    "enum": "ThriftUserVariableUpdateAction"
+   }
+  ],
+  "ThriftValidateAdditionalLoginRequest": [
+   {
+    "id": 1,
+    "name": "secret",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   }
+  ],
+  "ThriftValidateAdditionalLoginResponse": [
+   {
+    "id": 1,
+    "name": "approved",
+    "type": "BOOL",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "BOOL"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "secret",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   }
+  ],
+  "ThriftZoneListEntry": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "zoneName",
+    "type": "STRING",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "STRING"
+    ]
+   }
+  ],
+  "ThriftZoneUpdateEvent": [
+   {
+    "id": 1,
+    "name": "zoneId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "action",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ],
+    "enum": "ThriftZoneUpdateAction"
+   },
+   {
+    "id": 3,
+    "name": "roomId",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "roomCount",
+    "type": "I32",
+    "required": "OPTIONAL",
+    "meta": [
+     "val",
+     "I32"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "roomListEntry",
+    "type": "STRUCT",
+    "required": "OPTIONAL",
+    "meta": [
+     "struct",
+     "ThriftRoomListEntry"
+    ]
+   }
+  ]
+ },
+ "enums": {
+  "ThriftBuddyStatusUpdateAction": {
+   "LoggedIn": 1,
+   "LoggedOut": 2
+  },
+  "ThriftErrorType": {
+   "UserNameExists": 1,
+   "UserAlreadyLoggedIn": 2,
+   "InvalidMessageNumber": 3,
+   "InboundMessageFailedValidation": 4,
+   "MaximumClientConnectionsReached": 5,
+   "ZoneNotFound": 6,
+   "RoomNotFound": 7,
+   "RoomAtCapacity": 8,
+   "RoomPasswordMismatch": 9,
+   "GatewayPaused": 10,
+   "AccessDenied": 11,
+   "RoomVariableLocked": 12,
+   "RoomVariableAlreadyExists": 13,
+   "DuplicateRoomName": 14,
+   "DuplicateZoneName": 15,
+   "UserVariableAlreadyExists": 16,
+   "UserVariableDoesNotExist": 17,
+   "ZoneAllocationFailure": 18,
+   "RoomAllocationFailure": 19,
+   "UserBanned": 20,
+   "UserAlreadyInRoom": 21,
+   "LanguageFilterCheckFailed": 22,
+   "RegistryTransactionEncounteredError": 23,
+   "ActionRequiresLogin": 24,
+   "GenericError": 25,
+   "PluginNotFound": 26,
+   "LoginEventHandlerFailure": 27,
+   "InvalidUserName": 28,
+   "ExtensionNotFound": 29,
+   "PluginInitializationFailed": 30,
+   "EventNotFound": 31,
+   "FloodingFilterCheckFailed": 32,
+   "UserNotJoinedToRoom": 33,
+   "ManagedObjectNotFound": 34,
+   "IdleTimeReached": 35,
+   "ServerError": 36,
+   "OperationNotSupported": 37,
+   "InvalidLanguageFilterSettings": 38,
+   "InvalidFloodingFilterSettings": 39,
+   "ExtensionForcedReload": 40,
+   "UserLogOutRequested": 41,
+   "OnlyRtmpConnectionRemains": 42,
+   "GameDoesntExist": 43,
+   "FailedToJoinGameRoom": 44,
+   "GameIsLocked": 45,
+   "InvalidParameters": 46,
+   "PublicMessageRejected": 47,
+   "UserKickedFromServer": 48,
+   "LanguageFilterNotFound": 49,
+   "InvalidCryptoState": 50,
+   "FloodingFilterNotFound": 51,
+   "ConnectionFailed": 52,
+   "MultipleZonesFound": 53,
+   "MultipleRoomsFound": 54,
+   "LoginsAreDisabled": 55,
+   "ClientDroppedConnection": 56
+  },
+  "ThriftMessageType": {
+   "CrossDomainRequest": 1,
+   "CreateRoomRequest": 2,
+   "JoinRoomRequest": 3,
+   "LoginRequest": 4,
+   "LogOutRequest": 5,
+   "ValidateAdditionalLoginRequest": 6,
+   "ValidateAdditionalLoginResponse": 7,
+   "PublicMessageRequest": 8,
+   "PrivateMessageRequest": 9,
+   "LeaveRoomRequest": 10,
+   "CreateRoomVariableRequest": 11,
+   "DeleteRoomVariableRequest": 12,
+   "UpdateRoomVariableRequest": 13,
+   "GetZonesRequest": 14,
+   "GetRoomsInZoneRequest": 15,
+   "UpdateRoomDetailsRequest": 16,
+   "AddRoomOperatorRequest": 17,
+   "RemoveRoomOperatorRequest": 18,
+   "FindZoneAndRoomByNameRequest": 19,
+   "GetUsersInRoomRequest": 20,
+   "DeleteUserVariableRequest": 21,
+   "UpdateUserVariableRequest": 22,
+   "AddBuddiesRequest": 23,
+   "RemoveBuddiesRequest": 24,
+   "EvictUserFromRoomRequest": 25,
+   "GetUserCountRequest": 26,
+   "PluginRequest": 27,
+   "CreateOrJoinGameRequest": 28,
+   "JoinGameRequest": 29,
+   "FindGamesRequest": 30,
+   "GetUserVariablesRequest": 31,
+   "AggregatePluginRequest": 32,
+   "GetServerLocalTimeRequest": 33,
+   "ConnectionResponse": 34,
+   "CrossDomainResponse": 35,
+   "LoginResponse": 36,
+   "GetZonesResponse": 37,
+   "GetRoomsInZoneResponse": 38,
+   "GenericErrorResponse": 39,
+   "FindZoneAndRoomByNameResponse": 40,
+   "GetUsersInRoomResponse": 41,
+   "GetUserCountResponse": 42,
+   "CreateOrJoinGameResponse": 43,
+   "FindGamesResponse": 44,
+   "GetUserVariablesResponse": 45,
+   "AddBuddiesResponse": 46,
+   "RemoveBuddiesResponse": 47,
+   "GetServerLocalTimeResponse": 48,
+   "PublicMessageEvent": 49,
+   "PrivateMessageEvent": 50,
+   "SessionIdleEvent": 51,
+   "JoinRoomEvent": 52,
+   "JoinZoneEvent": 53,
+   "UserUpdateEvent": 54,
+   "ZoneUpdateEvent": 55,
+   "LeaveRoomEvent": 56,
+   "LeaveZoneEvent": 57,
+   "RoomVariableUpdateEvent": 58,
+   "UpdateRoomDetailsEvent": 59,
+   "BuddyStatusUpdatedEvent": 60,
+   "UserEvictedFromRoomEvent": 61,
+   "UserVariableUpdateEvent": 62,
+   "PluginMessageEvent": 63,
+   "AggregatePluginMessageEvent": 64,
+   "RegistryConnectToPreferredGatewayRequest": 65,
+   "DisconnectedEvent": 66,
+   "GatewayStartupExceptionsMessage": 67,
+   "RegistryLoginResponse": 68,
+   "RegistryConnectionResponse": 69,
+   "GatewayKickUserRequest": 70,
+   "ServerKickUserEvent": 71,
+   "UdpBackchannelEvent": 72,
+   "Unknown": 73,
+   "RtmpPlayVideo": 74,
+   "RtmpEventResponse": 75,
+   "RtmpRecordVideo": 76,
+   "RtmpPublishVideo": 77,
+   "RtmpUnpublishVideo": 78,
+   "RtmpAppendVideo": 79,
+   "RtmpStreamingStart": 80,
+   "RtmpStreamingStop": 81,
+   "DHInitiate": 82,
+   "DHPublicNumbers": 83,
+   "DHSharedModulusRequest": 84,
+   "DHSharedModulusResponse": 85,
+   "EncryptionStateChange": 86,
+   "ConnectionAttemptResponse": 87,
+   "ConnectionClosedEvent": 88,
+   "RegisterUDPConnectionRequest": 89,
+   "RegisterUDPConnectionResponse": 90,
+   "RemoveUDPConnectionRequest": 91,
+   "RemoveUDPConnectionResponse": 92,
+   "PingRequest": 93,
+   "PingResponse": 94,
+   "IdleTimeoutWarningEvent": 95,
+   "MarkGatewayClientLoggedInMessage": 96
+  },
+  "ThriftProtocol": {
+   "BinaryTCP": 1,
+   "RTMP": 2,
+   "BinaryHTTP": 3,
+   "TextTCP": 4,
+   "BinaryUDP": 5
+  },
+  "ThriftRoomVariableUpdateAction": {
+   "VariableCreated": 1,
+   "VariableUpdated": 2,
+   "VariableDeleted": 3
+  },
+  "ThriftUserUpdateAction": {
+   "AddUser": 1,
+   "DeleteUser": 2,
+   "OperatorGranted": 3,
+   "OperatorRevoked": 4,
+   "SendingVideoStream": 5,
+   "StoppingVideoStream": 6
+  },
+  "ThriftUserVariableUpdateAction": {
+   "VariableCreated": 1,
+   "VariableUpdated": 2,
+   "VariableDeleted": 3
+  },
+  "ThriftZoneUpdateAction": {
+   "AddRoom": 1,
+   "DeleteRoom": 2,
+   "UpdateRoom": 3
+  }
+ }
+}
