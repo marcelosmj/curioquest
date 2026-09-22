@@ -287,10 +287,17 @@ class MerchantDalc(Dalc):
         error = self._service_error(player, service, extra)
         if error:
             return EsObject().set_integer(K.ACTION_ERROR, error)
-        if not self._charge(player, service.cost_gold, service.cost_credits):
+        moeda = int(request.get(K.CURRENCY_ID, 0)) or (CURRENCY_CREDITS if service.cost_credits else CURRENCY_GOLD)
+        if moeda == CURRENCY_CREDITS and service.cost_credits:
+            custo_ouro, custo_plasma = 0, service.cost_credits
+        elif service.cost_gold:
+            custo_ouro, custo_plasma = service.cost_gold, 0
+        else:
+            custo_ouro, custo_plasma = 0, service.cost_credits or 0
+        if not self._charge(player, custo_ouro, custo_plasma):
             return EsObject().set_integer(K.ACTION_ERROR, INSUFFICIENT_FUNDS)
         reply = (EsObject().set_integer(K.ITEM_ID, service.id)
-                 .set_integer(K.CURRENCY_ID, int(request.get(K.CURRENCY_ID, CURRENCY_CREDITS))))
+                 .set_integer(K.CURRENCY_ID, moeda))
         self._apply_service(player, service, extra, reply)
         log.info("[%d] comprou o servico '%s'", session.id, service.name)
         self.game.players.save(player)

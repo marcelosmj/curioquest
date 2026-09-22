@@ -1,0 +1,12 @@
+{
+  "id": "ki_restoration_v1_status",
+  "title": "Status da Restauração e Patch Notes v1.0",
+  "summary": "Documentação do estado de restauração do Curio Quest, inventário de DALCs, descoberta da causa raiz do travamento de batalha e roadmap de entrega da v1.0.",
+  "created_at": "2026-09-22T15:57:00Z",
+  "updated_at": "2026-09-22T15:57:00Z",
+  "references": [
+    "docs/dossie.html",
+    "docs/patch_notes_v1.0.md",
+    "docs/investigacao_batalha_producao.md"
+  ]
+}
