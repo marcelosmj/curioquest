@@ -29,6 +29,15 @@ SERVER_XML = """<?xml version="1.0" encoding="UTF-8"?>
 </settings>
 """
 
+CROSSDOMAIN_XML = """<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+\t<allow-access-from domain="*" />
+\t<site-control permitted-cross-domain-policies="all"/>
+\t<allow-http-request-headers-from domain="*" headers="*"/>
+</cross-domain-policy>
+"""
+
 
 class ContentStore:
     def __init__(self, web_root, apk_path=None, aliases_path=None):
@@ -98,6 +107,12 @@ def _make_handler(store, es_port):
                 self.wfile.write(body)
 
         def _resolve(self, path):
+            if path in ("/crossdomain.xml", "/pets_live/crossdomain.xml"):
+                return CROSSDOMAIN_XML.encode("utf-8"), "text/xml"
+            if path in ("/CurioQuest.apk", "/curioquest.apk", "/app.apk"):
+                apk = Path(__file__).resolve().parent.parent / "build" / "CurioQuest-offline-192.168.1.69.apk"
+                if apk.is_file():
+                    return apk.read_bytes(), "application/vnd.android.package-archive"
             # anything outside the game content (internet check, analytics the client still
             # calls) just gets an OK, so nothing fails for being offline
             if not path.startswith(CONTENT_PREFIX):

@@ -98,8 +98,51 @@ def patch_swf(swf, rewrites):
         body = swf[8:]
     else:
         raise SystemExit(f"SWF com compressao nao suportada: {signature!r}")
+
+
+    # Bypass mobile Advertising.getID() hang on modern Android:
+    # Jump directly over the if(AppInfo.isMobile()) block to CharacterDALC.doLoginPlatform()
+    ADV_PATTERN = bytes.fromhex("60 ef 06 46 97 53 00 12 34 00 00")
+    ADV_REPLACEMENT = bytes.fromhex("10 3b 00 00 02 02 02 02 02 02 02")
+    if ADV_PATTERN in body:
+        body = body.replace(ADV_PATTERN, ADV_REPLACEMENT, 1)
+        print("[ok] Patched Project.doLoginPlatform with direct jump to CharacterDALC.doLoginPlatform()")
+
+    # Bypass crash-prone native telemetry/tracking SDKs (Adjust, Fabric, Supersonic):
+    INIT_NATIVE_PATTERN = bytes.fromhex("60 ef 06 46 97 53 00 12 0b 00 00 5d 84 50 4f 84 50 00")
+    INIT_NATIVE_REPLACEMENT = bytes.fromhex("60 ef 06 46 97 53 00 12 0b 00 00 02 02 02 02 02 02 02")
+    if INIT_NATIVE_PATTERN in body:
+        body = body.replace(INIT_NATIVE_PATTERN, INIT_NATIVE_REPLACEMENT, 1)
+        print("[ok] Patched CurioQuest.init: bypassed crash-prone native telemetry (Adjust/Fabric/Supersonic)")
+
+    # Bypass audio playback (prevents FP_AudioCallback AudioTrack.write crash in ARM emulation / headless):
+    PLAY_MUSIC_PATTERN = bytes.fromhex("5d bd 51 4f bd 51 00")
+    PLAY_MUSIC_REPLACEMENT = bytes.fromhex("47 02 02 02 02 02 02")
+    if PLAY_MUSIC_PATTERN in body:
+        body = body.replace(PLAY_MUSIC_PATTERN, PLAY_MUSIC_REPLACEMENT, 1)
+        print("[ok] Patched AudioManager.playMusic: early return to prevent audio thread crashes")
+
+    PLAY_SOUND_PATTERN = bytes.fromhex("65 01 d1 6d 01 65 01 6c 01 11 01 00 00 47")
+    PLAY_SOUND_REPLACEMENT = bytes.fromhex("47 02 02 02 02 02 02 02 02 02 02 02 02 02")
+    if PLAY_SOUND_PATTERN in body:
+        body = body.replace(PLAY_SOUND_PATTERN, PLAY_SOUND_REPLACEMENT, 1)
+        print("[ok] Patched AudioManager.playSound: early return to prevent audio thread crashes")
+
+    # Bypass dead third-party native extensions (GoViral / Facebook, GoogleGames / Play Games, StoreKit, AndroidIAB):
+    # Replaces callproperty isSupported() (46 ad 52 00) with:
+    # pop (0x29) [pops the class object], pushfalse (0x27) [pushes false], nop (0x02), nop (0x02).
+    # Result: isSupported() returns false everywhere cleanly without stack imbalance or native JNI calls!
+    IS_SUPPORTED_PATTERN = bytes.fromhex("46 ad 52 00")
+    IS_SUPPORTED_REPLACEMENT = bytes.fromhex("29 27 02 02")
+    count_supp = body.count(IS_SUPPORTED_PATTERN)
+    if count_supp > 0:
+        body = body.replace(IS_SUPPORTED_PATTERN, IS_SUPPORTED_REPLACEMENT)
+        print(f"[ok] Patched isSupported across {count_supp} call sites (GoViral/GoogleGames/Billing -> return false)")
+
+
     rect_bits = body[0] >> 3
     pos = (5 + rect_bits * 4 + 7) // 8 + 4    # frame size RECT, frame rate, frame count
+
     out = bytearray(body[:pos])
     replaced = 0
     while pos < len(body):
@@ -124,13 +167,54 @@ def patch_swf(swf, rewrites):
     return b"CWS" + bytes([version]) + struct.pack("<I", 8 + len(out)) + zlib.compress(bytes(out), 9), replaced
 
 
-def rebuild_apk(source_apk, target_apk, patched_swf):
+def patch_libcore(so_bytes):
+    """ATENCAO: desligado por padrao (--patch-libcore para ligar).
+
+    O patch 2 (AVMPI_allocateCodeMemory -> NULL) MATA o app no arranque.  Medido no
+    Redmi Note 11S / Android 13 em 24/09/2026:
+
+        Zygote: Process 3144 exited due to signal 11 (Segmentation fault)
+        DigestGenerator: ... libCore.so (nanojit::CodeAlloc::addMem()+)
+
+    A intencao era forcar o interpretador AVM2 no lugar do JIT, mas devolver NULL nao
+    desliga o JIT: o nanojit::CodeAlloc::addMem() usa o ponteiro devolvido sem testar
+    se e nulo, e o processo morre antes de desenhar a primeira tela.  Sem este patch o
+    app sobe normalmente (foi assim que a build de 23/09 16:13 rodou).
+    """
+    so = bytearray(so_bytes)
+    RET0_THUMB = bytes.fromhex("00 20 70 47")  # movs r0, #0; bx lr
+
+    # Patch 1: InvokerCompiler::canCompileInvoker -> return false (0)
+    # Offset 0x939fca: d0 b5 02 af -> 00 20 70 47
+    INVOKER_OFFSET = 0x939fca
+    INVOKER_ORIG = bytes.fromhex("d0 b5 02 af")
+    if so[INVOKER_OFFSET:INVOKER_OFFSET+4] == INVOKER_ORIG:
+        so[INVOKER_OFFSET:INVOKER_OFFSET+4] = RET0_THUMB
+        print("[ok] Patched libCore.so: canCompileInvoker -> return false (disables JIT invokers)")
+
+    # Patch 2: AVMPI_allocateCodeMemory -> return NULL (0)
+    # Offset 0x98ef3c: f0 b5 03 af -> 00 20 70 47
+    ALLOC_OFFSET = 0x98ef3c
+    ALLOC_ORIG = bytes.fromhex("f0 b5 03 af")
+    if so[ALLOC_OFFSET:ALLOC_OFFSET+4] == ALLOC_ORIG:
+        so[ALLOC_OFFSET:ALLOC_OFFSET+4] = RET0_THUMB
+        print("[ok] Patched libCore.so: AVMPI_allocateCodeMemory -> return NULL (forces AVM2 interpreter)")
+
+    return bytes(so)
+
+
+def rebuild_apk(source_apk, target_apk, patched_swf, patched_libcore=None):
     with zipfile.ZipFile(source_apk) as zin, zipfile.ZipFile(target_apk, "w") as zout:
         for info in zin.infolist():
             name = info.filename
             if name.startswith("META-INF/") and name.upper().endswith((".SF", ".RSA", ".DSA", ".EC", ".MF")):
                 continue  # original signature; apksigner writes a new one
-            data = patched_swf if name == "assets/Pets.swf" else zin.read(name)
+            if name == "assets/Pets.swf":
+                data = patched_swf
+            elif patched_libcore and name == "lib/armeabi-v7a/libCore.so":
+                data = patched_libcore
+            else:
+                data = zin.read(name)
             entry = zipfile.ZipInfo(name, date_time=info.date_time)
             entry.compress_type = info.compress_type
             entry.external_attr = info.external_attr
@@ -174,13 +258,17 @@ def main():
     parser.add_argument("--http-port", type=int, default=8080)
     parser.add_argument("--apk", type=Path, default=DEFAULT_APK)
     parser.add_argument("--out", type=Path)
+    parser.add_argument("--patch-libcore", action="store_true",
+                        help="aplica os patches binarios no libCore.so (SEGFAULT conhecido: ver patch_libcore)")
     args = parser.parse_args()
 
     rewrites = {old.encode(): new.format(host=args.host, port=args.http_port).encode()
                 for old, new in {**URL_REWRITES, **OPTIONAL_REWRITES}.items()}
     with zipfile.ZipFile(args.apk) as apk:
         swf = apk.read("assets/Pets.swf")
+        libcore = apk.read("lib/armeabi-v7a/libCore.so")
     patched, replaced = patch_swf(swf, rewrites)
+    patched_libcore = patch_libcore(libcore) if args.patch_libcore else None
     if replaced < len(URL_REWRITES):
         raise SystemExit(f"esperava trocar ao menos {len(URL_REWRITES)} URLs no Pets.swf, troquei {replaced}")
     if patch_swf(patched, rewrites)[1] != 0:
@@ -191,7 +279,7 @@ def main():
     build.mkdir(exist_ok=True)
     out = args.out or build / f"CurioQuest-offline-{args.host}.apk"
     unsigned, aligned = build / "tmp-unsigned.apk", build / "tmp-aligned.apk"
-    rebuild_apk(args.apk, unsigned, patched)
+    rebuild_apk(args.apk, unsigned, patched, patched_libcore)
     zipalign, apksigner = android_build_tools()
     ensure_keystore()
     run([zipalign, "-f", "-p", "4", unsigned, aligned])
@@ -204,3 +292,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
