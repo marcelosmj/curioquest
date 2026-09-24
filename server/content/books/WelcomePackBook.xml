@@ -5,7 +5,7 @@
 			<item id="1" type="currency" qty="1000" />
 			<item id="2" type="currency" qty="25" />
 			<item id="6" type="currency" qty="20" />
-			<item id="1" type="grabbag" qty="1" />
+			<item id="2" type="pet" qty="1" />
 		</items>
 	</welcomePack>
 </data>

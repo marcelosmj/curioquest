@@ -721,11 +721,17 @@ SKINS = [
 # Handed out once, the first time the menu opens.  MenuScreen.checkWelcomePack keeps asking on
 # every menu open until the player OWNS the pack item itself, so the server grants that too as
 # the "already claimed" marker - see MerchantDALC action 8 in server/game/dalcs/merchant.py.
+# The pack may only hand out things whose book is initialised BEFORE WelcomePackBook - see
+# BOOKS_RESOLVING_ITEMS in build_books.py.  It used to give a Curio Capsule (grabbag 1) and that
+# one line froze the client on LOADING forever: GrabBagBook.init() runs two lines later, so the
+# lookup hit a null Vector.  The gift is now a concrete curio instead, which also lets the popup
+# show the real art rather than a generic capsule.  Pigale is air, so it covers what the water
+# starter cannot.
 WELCOME_PACK = {
     "id": 1, "name": "Welcome Pack", "rarity": "epic", "icon": "RandomItem.png",
     "desc": "A hand from the islanders to get you started.",
     "items": [("currency", "gold", 1000), ("currency", "credits", 25),
-              ("currency", "energy", 20), ("grabbag", 1, 1)],
+              ("currency", "energy", 20), ("pet", 2, 1)],
 }
 
 # Crafting.  CraftRef.isCraftable() is decided entirely on the client from the player's own bag,

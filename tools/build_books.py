@@ -109,6 +109,36 @@ class Apk:
         return self.names.get(rel.lower())
 
 
+# Project.as:420-465 chama os Book.init() nesta ordem fixa.  So os nomes que importam para a
+# resolucao de itens estao aqui, na posicao real.
+BOOK_INIT_ORDER = [
+    "RarityOverrideBook.xml", "PetTypeBook.xml", "SkillBook.xml", "PetBook.xml", "ShardBook.xml",
+    "MaterialBook.xml", "CurrencyBook.xml", "ServiceBook.xml", "ConsumableBook.xml",
+    "SkinBook.xml", "EnchantBook.xml", "WelcomePackBook.xml", "TimedModifierBook.xml",
+    "GrabBagBook.xml", "VariableBook.xml", "PetRankBook.xml", "CraftBook.xml",
+    "PvPEventBook.xml", "PvEEventBook.xml", "GvGEventBook.xml", "GvEEventBook.xml",
+    "FvFEventBook.xml", "JobBook.xml", "AchievementBook.xml", "ShopBook.xml", "DailyBook.xml",
+    "ReferBook.xml", "NewsBook.xml", "LimitedOfferBook.xml",
+]
+
+# ItemBook.lookup despacha o tipo para estes livros.
+ITEM_TYPE_BOOK = {
+    "pet": "PetBook.xml", "shard": "ShardBook.xml", "material": "MaterialBook.xml",
+    "currency": "CurrencyBook.xml", "service": "ServiceBook.xml",
+    "consumable": "ConsumableBook.xml", "skin": "SkinBook.xml", "enchant": "EnchantBook.xml",
+    "welcomepack": "WelcomePackBook.xml", "timedModifier": "TimedModifierBook.xml",
+    "grabbag": "GrabBagBook.xml",
+}
+
+# Livros cujo parseXML chama ItemData.fromXml/ItemBook.lookup (levantado do AS3 decompilado).
+BOOKS_RESOLVING_ITEMS = [
+    "WelcomePackBook.xml", "VariableBook.xml", "PetRankBook.xml", "CraftBook.xml",
+    "PvPEventBook.xml", "PvEEventBook.xml", "GvGEventBook.xml", "GvEEventBook.xml",
+    "FvFEventBook.xml", "JobBook.xml", "AchievementBook.xml", "ShopBook.xml", "DailyBook.xml",
+    "ReferBook.xml", "NewsBook.xml", "LimitedOfferBook.xml",
+]
+
+
 class Builder:
     def __init__(self, apk, local=True):
         self.apk = apk
@@ -819,6 +849,20 @@ class Builder:
                 ids = known.get(item.get("type"))
                 if ids is None or item.get("id") not in ids:
                     self.errors.append(f"{name}: item inexistente {item.attrib}")
+        # Ordem de inicializacao: um livro da lista abaixo resolve os <item> filhos ali mesmo no
+        # parseXML (ItemData.fromXml -> ItemBook.lookup).  Se o livro do tipo referenciado ainda
+        # nao rodou, o lookup le .length de um Vector nulo -> TypeError #1009, que o AIR de
+        # release engole: initBooks() para no meio e o cliente fica em LOADING para sempre.
+        for name in BOOKS_RESOLVING_ITEMS:
+            root = self.books.get(name)
+            if root is None or name not in BOOK_INIT_ORDER:
+                continue
+            for item in root.iter("item"):
+                target = ITEM_TYPE_BOOK.get(item.get("type"))
+                if target and BOOK_INIT_ORDER.index(target) > BOOK_INIT_ORDER.index(name):
+                    self.errors.append(
+                        f"{name}: referencia adiantada para {target} em {item.attrib} - "
+                        f"{target} so e inicializado depois, o cliente trava em LOADING")
 
     def write(self):
         if not self.local:
