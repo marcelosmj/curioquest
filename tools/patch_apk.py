@@ -9,6 +9,7 @@ Usage:
   python tools/patch_apk.py --host 192.168.0.10   (phone on the same Wi-Fi: the PC's LAN IP)
 """
 import argparse
+import socket
 import os
 import shutil
 import struct
@@ -252,15 +253,35 @@ def ensure_keystore():
          "-dname", "CN=Curio Quest Offline, O=Preservacao"])
 
 
+def detectar_ip():
+    """IP desta maquina na rede local, do ponto de vista do aparelho.
+
+    Abre um socket UDP para um endereco externo e le o lado local: nada e enviado,
+    mas o sistema escolhe a interface que sairia para a rede - que e justamente a
+    que o celular enxerga.  Melhor que gethostbyname(hostname), que costuma
+    devolver 127.0.0.1 em Linux e a interface errada em maquinas com VPN.
+    """
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    try:
+        s.connect(("8.8.8.8", 80))
+        return s.getsockname()[0]
+    finally:
+        s.close()
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--host", required=True, help="IP do PC visto pelo aparelho (emulador: 10.0.2.2)")
+    parser.add_argument("--host", help="IP do PC visto pelo aparelho (emulador: 10.0.2.2). Omitido, usa o IP de rede local desta maquina.")
     parser.add_argument("--http-port", type=int, default=8080)
     parser.add_argument("--apk", type=Path, default=DEFAULT_APK)
     parser.add_argument("--out", type=Path)
     parser.add_argument("--patch-libcore", action="store_true",
                         help="aplica os patches binarios no libCore.so (SEGFAULT conhecido: ver patch_libcore)")
     args = parser.parse_args()
+    if not args.host:
+        args.host = detectar_ip()
+        print(f"[..] --host omitido; usando o IP local detectado: {args.host}")
+        print("     (para emulador use --host 10.0.2.2; para cabo USB use --host 127.0.0.1)")
 
     rewrites = {old.encode(): new.format(host=args.host, port=args.http_port).encode()
                 for old, new in {**URL_REWRITES, **OPTIONAL_REWRITES}.items()}
