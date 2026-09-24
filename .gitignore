@@ -23,3 +23,17 @@ build/*.err
 .idea/
 Thumbs.db
 Desktop.ini
+
+# NAO PUBLICAR: codigo descompilado de terceiros (Pets.swf, 5th Planet Games).
+# Serve de referencia local para a engenharia reversa; publicar expoe a pedido
+# de remocao por direito autoral.
+reverse/
+
+# Dump da wiki da comunidade (47 MB) - volumoso e redistribuicao de terceiros
+base de dados/
+
+# Scratch, backups e anotacoes de sessao
+scratch_*.py
+server/content/books.bak/
+historico claude.txt
+Curio_Quest_Servidor_Privado_RESUMO.txt

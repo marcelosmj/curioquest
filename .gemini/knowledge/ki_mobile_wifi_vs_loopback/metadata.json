@@ -1,0 +1,6 @@
+{
+  "title": "Configuração de Rede para Dispositivo Móvel Real (Wi-Fi LAN vs ADB Reverse 127.0.0.1)",
+  "summary": "Documenta a obrigatoriedade de compilar o APK apontando para o IP LAN (192.168.1.69) em vez de loopback (127.0.0.1) para evitar bloqueios de rede no Android 13.",
+  "timestamp": "2026-09-23T10:25:00Z",
+  "tags": ["android", "network", "apk", "adb", "electroserver"]
+}

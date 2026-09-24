@@ -5,7 +5,7 @@
  "name": "Luffy",
  "gender": "M",
  "created": 1789575188.5995653,
- "last_login": 1790258393.626347,
+ "last_login": 1790259001.0319722,
  "level": 1,
  "bps": 0,
  "exp": 0,
@@ -211,12 +211,12 @@
   },
   {
    "id": 4,
-   "progress": 1670,
+   "progress": 2183,
    "rank": 0
   },
   {
    "id": 5,
-   "progress": 897,
+   "progress": 1172,
    "rank": 0
   },
   {
@@ -246,7 +246,7 @@
   },
   {
    "id": 11,
-   "progress": 773,
+   "progress": 1011,
    "rank": 0
   },
   {
@@ -362,23 +362,23 @@
  ],
  "gold": 7025,
  "credits": 30,
- "energy": 44,
+ "energy": 43,
  "tokens": 10,
  "tickets": 5,
  "rating": 1000,
  "teams_max": 3,
- "energy_updated": 1790258857.3152614,
- "tokens_updated": 1790258857.3152614,
- "tickets_updated": 1790258857.3152614,
+ "energy_updated": 1790259027.6222904,
+ "tokens_updated": 1790259027.6222904,
+ "tickets_updated": 1790259027.6222904,
  "jobs_day": 20720,
  "dna": {
   "19": 30
  },
  "pending_roll": 19,
  "counters": {
-  "damage": 1670,
-  "damage:water": 773,
-  "damage:physical": 897,
+  "damage": 2183,
+  "damage:water": 1011,
+  "damage:physical": 1172,
   "node_wins": 1,
   "gold_earned": 25,
   "exp_earned": 7,
