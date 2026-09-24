@@ -37,3 +37,7 @@ scratch_*.py
 server/content/books.bak/
 historico claude.txt
 Curio_Quest_Servidor_Privado_RESUMO.txt
+
+# Pacote de compartilhamento privado (contem o APK comercial original)
+distribuição/
+distribuicao/
