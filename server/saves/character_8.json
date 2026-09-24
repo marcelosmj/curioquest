@@ -158,19 +158,9 @@
  "inventory": [],
  "jobs_active": [
   {
-   "id": 3,
-   "progress": 1,
-   "looted": true
-  },
-  {
    "id": 9,
    "progress": 0,
    "looted": false
-  },
-  {
-   "id": 8,
-   "progress": 5,
-   "looted": true
   },
   {
    "id": 1,

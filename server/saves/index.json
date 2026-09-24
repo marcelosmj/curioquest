@@ -1,5 +1,5 @@
 {
- "next_char_id": 62,
+ "next_char_id": 64,
  "devices": {
   "200f60ee-a7b1-3a9b-afd5-a4e103c097a9": 1,
   "7adb442d-80a0-3179-abd3-9f5a24d81a42": 2,
@@ -61,6 +61,8 @@
   "teste-raridade-2": 58,
   "teste-nucleo-2": 59,
   "teste-raridade-3": 60,
-  "teste-encbolsa-3": 61
+  "teste-encbolsa-3": 61,
+  "cliente-de-teste": 62,
+  "battle-tester-device-01": 63
  }
 }

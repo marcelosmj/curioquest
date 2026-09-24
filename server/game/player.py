@@ -69,9 +69,16 @@ class PlayerStore:
 
     @staticmethod
     def _write(path, data):
-        tmp = path.with_suffix(".tmp")
-        tmp.write_text(json.dumps(data, indent=1, ensure_ascii=False), encoding="utf-8")
-        tmp.replace(path)
+        content = json.dumps(data, indent=1, ensure_ascii=False)
+        try:
+            tmp = path.with_suffix(".tmp")
+            tmp.write_text(content, encoding="utf-8")
+            tmp.replace(path)
+        except Exception:
+            try:
+                path.write_text(content, encoding="utf-8")
+            except Exception as e:
+                log.error("Erro salvando %s: %s", path, e)
 
 
 def new_player(char_id, device_id, data):
@@ -261,7 +268,7 @@ def character_esobject(player, data, now=None):
     eso.set_esobject_array(K.CHARACTER_JOBS_ACTIVE, [
         EsObject().set_integer(K.JOB_ID, job["id"]).set_integer(K.JOB_PROGRESS, job["progress"])
         .set_boolean(K.JOB_ISLOOTED, job["looted"])
-        for job in player["jobs_active"]])
+        for job in player["jobs_active"] if not job["looted"]])
     eso.set_integer_array(K.CHARACTER_JOBS_COMPLETE, player["jobs_complete"])
     eso.set_string(K.LAST_DAILY_JOB_UPDATE_TIME, as3_date(now))
     eso.set_string(K.CHARACTER_LAST_LOGIN, as3_date(player["last_login"]))

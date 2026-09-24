@@ -36,7 +36,12 @@ class JobDalc(Dalc):
             return EsObject().set_integer(K.ACTION_ERROR, JOB_LOOTED)
         if job["progress"] < ref.count:
             return EsObject().set_integer(K.ACTION_ERROR, JOB_INCOMPLETE)
+        # JobData.isComplete olha SO para progress >= count e ignora _isLooted, e Jobs nao filtra
+        # nada do que o servidor manda.  Um trabalho recolhido que continue em CHARACTER_JOBS_ACTIVE
+        # faz MenuScreen.checkTutorial() reencontra-lo, pedir o loot de novo, receber JOB_LOOTED e
+        # chamar checkTutorial() outra vez - recursao infinita que trava a tela no LOADING.
         job["looted"] = True
+        player["jobs_active"] = [j for j in player["jobs_active"] if j["id"] != job_id]
         if job_id not in player["jobs_complete"]:
             player["jobs_complete"].append(job_id)
         items = rewards.give_all(player, self.game.data, ref.rewards)
@@ -64,7 +69,8 @@ class JobDalc(Dalc):
     # ------------------------------------------------------------------ helpers
     def job_lists(self, player):
         eso = EsObject()
-        eso.set_esobject_array(K.CHARACTER_JOBS_ACTIVE, [self.job_esobject(job) for job in player["jobs_active"]])
+        eso.set_esobject_array(K.CHARACTER_JOBS_ACTIVE,
+                               [self.job_esobject(job) for job in player["jobs_active"] if not job["looted"]])
         return eso.set_integer_array(K.CHARACTER_JOBS_COMPLETE, player["jobs_complete"])
 
     @staticmethod
