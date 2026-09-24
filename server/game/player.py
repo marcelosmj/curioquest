@@ -146,6 +146,13 @@ def add_pet(player, data, species_id, level=1):
         "skill_slots": (slots[:slot_count] + [0] * slot_count)[:slot_count],
     }
     player["pets"].append(pet)
+    # Escala o curio se houver vaga no time de ataque.  Sem isto o jogador recebe curios
+    # (pacote de boas-vindas, loja, sacolas, DNA) que ficam so na colecao: o time continua com
+    # um so lutador enquanto o no 2 da zona 1 em diante ja manda dois inimigos, e a tela de
+    # time so abre depois de progredir - ou seja, a campanha travava sem saida.
+    equipe = next((t for t in player.get("teams", []) if t["id"] == player.get("offense_team", 0)), None)
+    if equipe is not None and len(equipe["pet_uids"]) < data.var("petTeamSize", 3):
+        equipe["pet_uids"].append(uid)
     return pet
 
 

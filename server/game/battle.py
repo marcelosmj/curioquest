@@ -19,6 +19,7 @@ SELECT_PET, CURRENT_PLAYER, HEALTH_CHANGE, MANA_CHANGE, COMPLETE = 2, 3, 4, 5, 6
 SKILL, FX, RESULTS, BUFF_ADD, BUFF_REMOVE, DEFEND, CONCEDE = 7, 8, 9, 10, 11, 12, 13
 ABILITY, MISS, COOLDOWNS, SKILL_DISABLE, AUTO_PLAY, PET_REMOVE, PET_ADD = 14, 15, 16, 17, 18, 19, 20
 
+CURRENCY_DUST = 5          # CurrencyBook: stardust
 SHARD_DROP_CHANCE = 35        # percent, per won fight, for a shard of the curio defeated
 TYPE_NODE = 1                 # ui.battle.BattleScreen.TYPE_NODE
 MISS_CHANCE = 0.04
@@ -583,8 +584,16 @@ class Battle:
         the 2500-gold Mystery Box, which put a single recipe out of reach for good.
         """
         from . import rewards
-        table = self.data.battle_loot(self._average_enemy_level())
+        nivel = self._average_enemy_level()
+        table = self.data.battle_loot(nivel)
         granted = []
+        # Stardust.  O rank up e pago em stardust (PetRankBook: 100/300/800/2000 por rank) e
+        # NADA no jogo a concedia, entao subir de rank era inalcancavel.  A janela de resultado
+        # nao tem campo proprio para isso (nao existe BATTLE_DUST), mas moeda e um tipo de item
+        # valido e ITEM_LIST ja e exibido, entao ela cai como loot, igual aos materiais.
+        po = max(1, round(3 + 2 * nivel))
+        granted.append(rewards.give(self.player_save, self.data, CURRENCY_DUST,
+                                    rewards.ITEM_CURRENCY, po))
         for material_id, percent in table:
             if random.randint(1, 100) <= percent:
                 granted.append(rewards.give(self.player_save, self.data, material_id,
