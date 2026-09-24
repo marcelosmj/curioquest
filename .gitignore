@@ -41,3 +41,10 @@ Curio_Quest_Servidor_Privado_RESUMO.txt
 # Pacote de compartilhamento privado (contem o APK comercial original)
 distribuição/
 distribuicao/
+
+# App servidor Android: saidas de build e o APK comercial embutido
+servidor-android/build/
+servidor-android/app/build/
+servidor-android/.gradle/
+servidor-android/local.properties
+servidor-android/app/src/main/assets/CurioQuest.apk
