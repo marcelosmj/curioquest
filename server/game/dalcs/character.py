@@ -24,6 +24,7 @@ SET_DEFENSE_TEAM = 10
 UPGRADE_COOLDOWN_RESET = 13
 UPDATE_CURRENCY = 14
 DAILY_REWARD = 15
+PRIOR_NAME = 24
 
 INVALID_ZONE = 29       # model.utility.ErrorCode (BATTLE_RESTRICTIONS)
 
@@ -111,11 +112,33 @@ class CharacterDalc(Dalc):
         player = session.data["player"]
         name = " ".join(str(request.get(K.CHARACTER_NAME) or "").split())[:NAME_MAX_LENGTH]
         if name:
+            # MenuProfilePanel prices the next rename off how many names came before
+            # (getServiceBasedOnPriorNameChanges), so the history has to be kept - see PRIOR_NAME.
+            previous = player.get("name")
+            if previous and previous != name:
+                player.setdefault("prior_names", []).append(
+                    {"name": previous, "until": as3_date(time.time())})
             player["name"] = name
         # the client sends the gender as a Boolean here but reads it back as "M"/"F"
         player["gender"] = "M" if request.get(K.CHARACTER_GENDER) else "F"
         self.game.players.save(player)
         return EsObject().set_string(K.CHARACTER_NAME, player["name"]).set_string(K.CHARACTER_GENDER, player["gender"])
+
+    @action(PRIOR_NAME)
+    async def prior_name(self, session, request):
+        """MenuProfilePanel calls showLoading() before asking and only hides it when this answers.
+
+        Leaving it unanswered froze the whole session: the panel span its LOADING dialog until the
+        client's 60s timeout closed the connection.  An empty list is the right answer for a player
+        who never renamed - the panel reads only the LENGTH, to price the next change.
+        """
+        player = session.data["player"]
+        names = [EsObject()
+                 .set_integer(K.CHARACTER_ID, player["id"])
+                 .set_string(K.PREVIOUS_NAME, entry["name"])
+                 .set_string(K.LAST_DATE_NAME_WAS_VALID, entry["until"])
+                 for entry in player.get("prior_names", [])]
+        return EsObject().set_esobject_array(K.PRIOR_NAMES, names)
 
     @action(SAVE_TUTORIAL)
     async def save_tutorial(self, session, request):

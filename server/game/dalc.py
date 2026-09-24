@@ -6,11 +6,19 @@ switches on ACTION_TYPE.
 """
 import logging
 
+from ..es5.esobject import EsObject
 from .keys import K, NAMES
 
 log = logging.getLogger("dalc")
 
 SERVER_PLUGIN = "ServerPlugin"
+
+# Nenhum pedido pode ficar sem resposta.  Varios paineis chamam DialogManager.showLoading() antes
+# de enviar e so fecham o dialogo quando a resposta chega (MenuProfilePanel e o caso exemplar):
+# sem resposta o cliente gira para sempre e, 60s depois, o timeout derruba a sessao inteira.
+# Responder com erro fecha o LOADING e mantem o jogador dentro do jogo.  ErrorCode.getErrorMessage
+# devolve "" para um codigo que nao conhece, entao o popup sai sem texto - feio, mas vivo.
+NOT_IMPLEMENTED = 200
 
 
 def action(action_id):
@@ -39,11 +47,13 @@ class Dalc:
         if method is None:
             log.warning("[%d] %s: acao %s nao implementada: %s",
                         session.id, self.name, action_id, request.to_debug(NAMES))
+            self.send(session, action_id, EsObject().set_integer(K.ACTION_ERROR, NOT_IMPLEMENTED))
             return
         try:
             response = await method(session, request)
         except Exception:
             log.exception("[%d] %s: erro na acao %s: %s", session.id, self.name, action_id, request.to_debug(NAMES))
+            self.send(session, action_id, EsObject().set_integer(K.ACTION_ERROR, NOT_IMPLEMENTED))
             return
         if response is not None:
             self.send(session, action_id, response)
